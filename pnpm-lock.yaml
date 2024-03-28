@@ -11,12 +11,18 @@ dependencies:
   '@astrojs/starlight':
     specifier: ^0.21.2
     version: 0.21.2(astro@4.5.9)
+  '@twitchapi/api-types':
+    specifier: ^1.1.18
+    version: 1.1.18
   '@twitchapi/eventsub':
     specifier: 1.0.0-beta.18
     version: 1.0.0-beta.18
   '@twitchapi/helix':
     specifier: ^1.5.0
     version: 1.5.0
+  '@types/node':
+    specifier: ^20.11.30
+    version: 20.11.30
   astro:
     specifier: ^4.3.5
     version: 4.5.9(@types/node@20.11.30)(typescript@5.4.3)
@@ -38,14 +44,6 @@ dependencies:
   websocket:
     specifier: ^1.0.34
     version: 1.0.34
-
-devDependencies:
-  '@twitchapi/api-types':
-    specifier: ^1.1.18
-    version: 1.1.18
-  '@types/node':
-    specifier: ^20.11.30
-    version: 20.11.30
 
 packages:
 
@@ -1154,7 +1152,7 @@ packages:
 
   /@twitchapi/api-types@1.1.18:
     resolution: {integrity: sha512-aTmm2s8uLjpGt9g1mhMdokCgivTZd1xiu6D7Y0T87mvD7vF8PpHIZt8Oy5M54AvOewH9FcFs9pdvHrfdYiqXyg==}
-    dev: true
+    dev: false
 
   /@twitchapi/eventsub@1.0.0-beta.18:
     resolution: {integrity: sha512-zIUjXbfG8RzlJ7OzKB4/4XJ5peIrQZ9QtPqTihBK7hCsWjnIyH6mzcDtIeaGdxm7L0iw9KLHYy7RbfCwdpEiKQ==}
@@ -1262,6 +1260,7 @@ packages:
     resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
     dependencies:
       undici-types: 5.26.5
+    dev: false
 
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
@@ -4994,6 +4993,7 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: false
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
