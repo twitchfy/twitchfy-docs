@@ -1,0 +1,26 @@
+---
+editUrl: false
+next: false
+prev: false
+title: "bgBlack"
+---
+
+```ts
+bgBlack(str: string): string
+```
+
+Set background color to black.
+
+## Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` | text to make its background black |
+
+## Returns
+
+`string`
+
+## Source
+
+[twitchapi/packages/eventsub/src/logger/colors.ts:257](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L257)

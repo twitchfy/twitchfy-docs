@@ -1,0 +1,26 @@
+---
+editUrl: false
+next: false
+prev: false
+title: "brightMagenta"
+---
+
+```ts
+brightMagenta(str: string): string
+```
+
+Set text color to bright magenta.
+
+## Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` | text to make bright-magenta |
+
+## Returns
+
+`string`
+
+## Source
+
+[twitchapi/packages/eventsub/src/logger/colors.ts:233](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L233)

@@ -1,0 +1,3 @@
+[submodule "twitchapi"]
+	path = twitchapi
+	url = https://github.com/pablornc/twitchapi/
