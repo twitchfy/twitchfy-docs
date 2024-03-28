@@ -19,7 +19,7 @@ dependencies:
     version: 1.5.0
   astro:
     specifier: ^4.3.5
-    version: 4.5.9(typescript@5.4.3)
+    version: 4.5.9(@types/node@20.11.30)(typescript@5.4.3)
   sharp:
     specifier: ^0.32.5
     version: 0.32.6
@@ -35,11 +35,17 @@ dependencies:
   typescript:
     specifier: ^5.4.3
     version: 5.4.3
+  websocket:
+    specifier: ^1.0.34
+    version: 1.0.34
 
 devDependencies:
   '@twitchapi/api-types':
     specifier: ^1.1.18
     version: 1.1.18
+  '@types/node':
+    specifier: ^20.11.30
+    version: 20.11.30
 
 packages:
 
@@ -142,7 +148,7 @@ packages:
       '@astrojs/markdown-remark': 4.3.1
       '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
-      astro: 4.5.9(typescript@5.4.3)
+      astro: 4.5.9(@types/node@20.11.30)(typescript@5.4.3)
       es-module-lexer: 1.4.2
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -183,7 +189,7 @@ packages:
       '@pagefind/default-ui': 1.0.4
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.3
-      astro: 4.5.9(typescript@5.4.3)
+      astro: 4.5.9(@types/node@20.11.30)(typescript@5.4.3)
       astro-expressive-code: 0.33.5(astro@4.5.9)
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.1
@@ -1252,6 +1258,11 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: false
 
+  /@types/node@20.11.30:
+    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+    dependencies:
+      undici-types: 5.26.5
+
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
     dev: false
@@ -1259,7 +1270,7 @@ packages:
   /@types/sax@1.2.7:
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.11.30
     dev: false
 
   /@types/unist@2.0.10:
@@ -1463,12 +1474,12 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
     dependencies:
-      astro: 4.5.9(typescript@5.4.3)
+      astro: 4.5.9(@types/node@20.11.30)(typescript@5.4.3)
       hast-util-to-html: 8.0.4
       remark-expressive-code: 0.33.5
     dev: false
 
-  /astro@4.5.9(typescript@5.4.3):
+  /astro@4.5.9(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-GheU72Goz7dYQNKaqTxB2H49cNvHfahGSbNkTvMXk+gyHf/g633qadqlO2ZQbTUacoUWmDzvS5fhMZt2/w4naQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1529,7 +1540,7 @@ packages:
       tsconfck: 3.0.3(typescript@5.4.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.4
+      vite: 5.2.4(@types/node@20.11.30)
       vitefu: 0.2.5(vite@5.2.4)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -4704,7 +4715,7 @@ packages:
       typedoc-plugin-markdown: '>=4.0.0-next.45'
     dependencies:
       '@astrojs/starlight': 0.21.2(astro@4.5.9)
-      astro: 4.5.9(typescript@5.4.3)
+      astro: 4.5.9(@types/node@20.11.30)(typescript@5.4.3)
       github-slugger: 2.0.0
       typedoc: 0.25.12(typescript@5.4.3)
       typedoc-plugin-markdown: 4.0.0-next.54(typedoc@0.25.12)
@@ -4981,6 +4992,9 @@ packages:
     hasBin: true
     dev: false
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
     dev: false
@@ -5199,7 +5213,7 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@5.2.4:
+  /vite@5.2.4(@types/node@20.11.30):
     resolution: {integrity: sha512-vjFghvHWidBTinu5TCymJk/lRHlR5ljqB83yugr0HA1xspUPdOZHqbqDLnZ8f9/jINrtFHTCYYyIUi+o+Q5iyg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5227,6 +5241,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.11.30
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.0
@@ -5242,7 +5257,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.2.4
+      vite: 5.2.4(@types/node@20.11.30)
     dev: false
 
   /volar-service-css@0.0.34(@volar/language-service@2.1.5):
