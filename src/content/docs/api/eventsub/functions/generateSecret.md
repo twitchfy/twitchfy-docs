@@ -15,4 +15,4 @@ generateSecret(): string
 
 ## Source
 
-[twitchapi/packages/eventsub/src/webhook/util/generateSecret.ts:3](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/util/generateSecret.ts#L3)
+twitchapi/packages/eventsub/src/webhook/util/generateSecret.ts:3

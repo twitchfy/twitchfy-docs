@@ -23,4 +23,4 @@ Set text color to blue.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:153](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L153)
+twitchapi/packages/eventsub/src/logger/colors.ts:153

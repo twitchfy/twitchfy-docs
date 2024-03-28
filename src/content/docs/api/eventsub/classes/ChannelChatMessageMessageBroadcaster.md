@@ -48,7 +48,7 @@ dislayName: string): ChannelChatMessageMessageBroadcaster<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageBroadcaster.ts:6](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageBroadcaster.ts#L6)
+twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageBroadcaster.ts:6
 
 ## Properties
 

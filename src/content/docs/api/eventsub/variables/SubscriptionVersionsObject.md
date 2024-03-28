@@ -23,4 +23,4 @@ const SubscriptionVersionsObject: Object;
 
 ## Source
 
-[twitchapi/packages/eventsub/src/util/SubscriptionVersionsObject.ts:1](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/util/SubscriptionVersionsObject.ts#L1)
+twitchapi/packages/eventsub/src/util/SubscriptionVersionsObject.ts:1

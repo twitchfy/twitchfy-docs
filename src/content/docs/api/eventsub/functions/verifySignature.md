@@ -22,4 +22,4 @@ verifySignature(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string
 
 ## Source
 
-[twitchapi/packages/eventsub/src/webhook/util/verifySignature.ts:4](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/util/verifySignature.ts#L4)
+twitchapi/packages/eventsub/src/webhook/util/verifySignature.ts:4

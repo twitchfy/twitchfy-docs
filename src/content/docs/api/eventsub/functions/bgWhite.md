@@ -23,4 +23,4 @@ Set background color to white.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:313](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L313)
+twitchapi/packages/eventsub/src/logger/colors.ts:313

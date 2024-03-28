@@ -23,4 +23,4 @@ Remove ANSI escape codes from the string.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:470](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L470)
+twitchapi/packages/eventsub/src/logger/colors.ts:470

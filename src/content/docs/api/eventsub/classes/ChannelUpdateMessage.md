@@ -44,7 +44,7 @@ data: ChannelUpdateEvent): ChannelUpdateMessage<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts:21](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts#L21)
+twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts:21
 
 ## Properties
 

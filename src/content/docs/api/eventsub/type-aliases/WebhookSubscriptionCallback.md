@@ -27,4 +27,4 @@ type WebhookSubscriptionCallback<T>: (message: SubscriptionMessages<WebhookConne
 
 ## Source
 
-[twitchapi/packages/eventsub/src/webhook/types/WebhookSubscriptionCallback.ts:8](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/types/WebhookSubscriptionCallback.ts#L8)
+twitchapi/packages/eventsub/src/webhook/types/WebhookSubscriptionCallback.ts:8

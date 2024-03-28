@@ -27,4 +27,4 @@ type WebSocketSubscriptionCallback<T>: (message: SubscriptionMessages<WebSocketC
 
 ## Source
 
-[twitchapi/packages/eventsub/src/ws/types/WebSocketSubscriptionCallback.ts:8](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/types/WebSocketSubscriptionCallback.ts#L8)
+twitchapi/packages/eventsub/src/ws/types/WebSocketSubscriptionCallback.ts:8

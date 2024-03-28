@@ -44,7 +44,7 @@ data: ChannelChatClearEvent): ChannelChatClearMessage<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelChatClear/ChannelChatClearMessage.ts:11](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelChatClear/ChannelChatClearMessage.ts#L11)
+twitchapi/packages/eventsub/src/structures/messages/ChannelChatClear/ChannelChatClearMessage.ts:11
 
 ## Properties
 

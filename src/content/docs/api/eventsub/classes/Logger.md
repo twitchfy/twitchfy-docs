@@ -29,7 +29,7 @@ Constructs a new Logger instance with the provided options.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:94](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L94)
+twitchapi/packages/eventsub/src/logger/Logger.ts:94
 
 ## Properties
 
@@ -71,7 +71,7 @@ Sets whether the logger is active or not.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:130](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L130)
+twitchapi/packages/eventsub/src/logger/Logger.ts:130
 
 ***
 
@@ -101,7 +101,7 @@ Sets the log level of the logger.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:108](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L108)
+twitchapi/packages/eventsub/src/logger/Logger.ts:108
 
 ***
 
@@ -131,7 +131,7 @@ Sets the name of the logger.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:144](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L144)
+twitchapi/packages/eventsub/src/logger/Logger.ts:144
 
 ***
 
@@ -157,7 +157,7 @@ set saveOnFile(saveOnFile: boolean): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:116](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L116)
+twitchapi/packages/eventsub/src/logger/Logger.ts:116
 
 ## Methods
 
@@ -181,7 +181,7 @@ Logs a debug message.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:182](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L182)
+twitchapi/packages/eventsub/src/logger/Logger.ts:182
 
 ***
 
@@ -205,7 +205,7 @@ Logs an error message.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:206](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L206)
+twitchapi/packages/eventsub/src/logger/Logger.ts:206
 
 ***
 
@@ -229,7 +229,7 @@ Logs a fatal error message.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:214](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L214)
+twitchapi/packages/eventsub/src/logger/Logger.ts:214
 
 ***
 
@@ -253,7 +253,7 @@ Logs an info message.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:190](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L190)
+twitchapi/packages/eventsub/src/logger/Logger.ts:190
 
 ***
 
@@ -280,7 +280,7 @@ The logged message.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:154](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L154)
+twitchapi/packages/eventsub/src/logger/Logger.ts:154
 
 ***
 
@@ -304,7 +304,7 @@ Logs a warning message.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:198](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L198)
+twitchapi/packages/eventsub/src/logger/Logger.ts:198
 
 ***
 
@@ -320,7 +320,7 @@ static clearLogs(): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:82](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L82)
+twitchapi/packages/eventsub/src/logger/Logger.ts:82
 
 ***
 
@@ -352,7 +352,7 @@ Logger.customize((logger, level, args) => {
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:78](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L78)
+twitchapi/packages/eventsub/src/logger/Logger.ts:78
 
 ***
 
@@ -378,4 +378,4 @@ The input message as is.
 
 #### Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:248](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L248)
+twitchapi/packages/eventsub/src/logger/Logger.ts:248

@@ -33,7 +33,7 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:12](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/structures/WebSocket.ts#L12)
+twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:12
 
 ## Properties
 
@@ -197,7 +197,7 @@ connect(): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:23](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/structures/WebSocket.ts#L23)
+twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:23
 
 ***
 

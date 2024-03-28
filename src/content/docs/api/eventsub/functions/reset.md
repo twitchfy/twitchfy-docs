@@ -23,4 +23,4 @@ Reset the text modified
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:57](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L57)
+twitchapi/packages/eventsub/src/logger/colors.ts:57

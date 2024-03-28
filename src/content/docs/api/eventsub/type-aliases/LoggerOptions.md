@@ -20,4 +20,4 @@ type LoggerOptions: Object;
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:42](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L42)
+twitchapi/packages/eventsub/src/logger/Logger.ts:42

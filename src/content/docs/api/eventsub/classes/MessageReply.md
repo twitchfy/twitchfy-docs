@@ -25,7 +25,7 @@ new MessageReply(data: ReplyData): MessageReply
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/MessageReply.ts:11](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/MessageReply.ts#L11)
+twitchapi/packages/eventsub/src/structures/messages/MessageReply.ts:11
 
 ## Properties
 

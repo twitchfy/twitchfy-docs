@@ -37,7 +37,7 @@ new Subscription<T>(options: SubscriptionOptions<T>, data: PostEventSubSubscript
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/Subscription.ts:25](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/Subscription.ts#L25)
+twitchapi/packages/eventsub/src/structures/Subscription.ts:25
 
 ## Properties
 

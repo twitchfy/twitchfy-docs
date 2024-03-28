@@ -30,7 +30,7 @@ new UncompleteUser(
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/UncompleteUser.ts:9](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/UncompleteUser.ts#L9)
+twitchapi/packages/eventsub/src/structures/messages/UncompleteUser.ts:9
 
 ## Properties
 

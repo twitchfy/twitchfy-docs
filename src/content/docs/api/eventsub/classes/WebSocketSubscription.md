@@ -44,7 +44,7 @@ data: PostEventSubSubscription): WebSocketSubscription<T>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:17](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L17)
+twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:17
 
 ## Properties
 
@@ -87,7 +87,7 @@ checkSubscriptionType<U>(type: U): this is WebSocketSubscription<U>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:37](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L37)
+twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:37
 
 ***
 
@@ -103,7 +103,7 @@ delete(): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:41](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L41)
+twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:41
 
 ***
 
@@ -125,4 +125,4 @@ onMessage(callback: WebSocketSubscriptionCallback<T>): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:31](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L31)
+twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:31

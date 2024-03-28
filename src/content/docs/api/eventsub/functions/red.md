@@ -23,4 +23,4 @@ Set text color to red.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:129](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L129)
+twitchapi/packages/eventsub/src/logger/colors.ts:129

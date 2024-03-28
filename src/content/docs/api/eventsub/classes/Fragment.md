@@ -31,7 +31,7 @@ new Fragment<T>(data: FragmentData<T>): Fragment<T>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/Fragment.ts:15](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/Fragment.ts#L15)
+twitchapi/packages/eventsub/src/structures/messages/Fragment.ts:15
 
 ## Properties
 

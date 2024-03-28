@@ -23,4 +23,4 @@ Make the text underline.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:89](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L89)
+twitchapi/packages/eventsub/src/logger/colors.ts:89

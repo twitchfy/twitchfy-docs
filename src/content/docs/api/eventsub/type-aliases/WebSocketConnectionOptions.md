@@ -18,4 +18,4 @@ type WebSocketConnectionOptions: BaseConnectionOptions<WebSocketConnection> & Ob
 
 ## Source
 
-[twitchapi/packages/eventsub/src/ws/types/WebSocketConnectionOptions.ts:5](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/types/WebSocketConnectionOptions.ts#L5)
+twitchapi/packages/eventsub/src/ws/types/WebSocketConnectionOptions.ts:5

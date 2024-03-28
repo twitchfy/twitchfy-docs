@@ -23,4 +23,4 @@ Set background color to bright green.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:337](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L337)
+twitchapi/packages/eventsub/src/logger/colors.ts:337

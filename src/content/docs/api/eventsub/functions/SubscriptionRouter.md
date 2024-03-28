@@ -26,4 +26,4 @@ SubscriptionRouter(
 
 ## Source
 
-[twitchapi/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts:9](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts#L9)
+twitchapi/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts:9

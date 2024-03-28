@@ -22,4 +22,4 @@ messageHandler(websocket: WebSocket, message: Message): Promise<void>
 
 ## Source
 
-[twitchapi/packages/eventsub/src/ws/util/messageHandler.ts:10](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/util/messageHandler.ts#L10)
+twitchapi/packages/eventsub/src/ws/util/messageHandler.ts:10

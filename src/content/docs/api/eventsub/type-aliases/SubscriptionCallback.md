@@ -28,4 +28,4 @@ type SubscriptionCallback<T, K>: (message: SubscriptionMessages<K>[T]) => any | 
 
 ## Source
 
-[twitchapi/packages/eventsub/src/types/SubscriptionCallback.ts:7](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/types/SubscriptionCallback.ts#L7)
+twitchapi/packages/eventsub/src/types/SubscriptionCallback.ts:7

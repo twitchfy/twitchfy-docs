@@ -45,7 +45,7 @@ data: ChannelChatMessageEvent): BaseMessage<T, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/BaseMessage.ts:25](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/BaseMessage.ts#L25)
+twitchapi/packages/eventsub/src/structures/messages/BaseMessage.ts:25
 
 ## Properties
 

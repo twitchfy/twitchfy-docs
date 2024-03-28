@@ -23,4 +23,4 @@ Set background color to bright black.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:321](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L321)
+twitchapi/packages/eventsub/src/logger/colors.ts:321

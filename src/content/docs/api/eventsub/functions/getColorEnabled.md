@@ -17,4 +17,4 @@ Get whether text color change is enabled or disabled.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:27](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L27)
+twitchapi/packages/eventsub/src/logger/colors.ts:27

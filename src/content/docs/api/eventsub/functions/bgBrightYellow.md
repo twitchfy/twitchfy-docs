@@ -23,4 +23,4 @@ Set background color to bright yellow.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:345](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L345)
+twitchapi/packages/eventsub/src/logger/colors.ts:345

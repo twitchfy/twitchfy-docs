@@ -17,4 +17,4 @@ type BaseConnectionOptions<K>: Object | Object;
 
 ## Source
 
-[twitchapi/packages/eventsub/src/types/BaseConnectionOptions.ts:6](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/types/BaseConnectionOptions.ts#L6)
+twitchapi/packages/eventsub/src/types/BaseConnectionOptions.ts:6

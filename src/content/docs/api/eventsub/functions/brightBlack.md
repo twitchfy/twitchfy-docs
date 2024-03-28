@@ -23,4 +23,4 @@ Set text color to bright black.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:193](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L193)
+twitchapi/packages/eventsub/src/logger/colors.ts:193

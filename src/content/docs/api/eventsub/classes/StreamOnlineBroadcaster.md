@@ -48,7 +48,7 @@ displayName: string): StreamOnlineBroadcaster<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineBroadcaster.ts:8](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineBroadcaster.ts#L8)
+twitchapi/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineBroadcaster.ts:8
 
 ## Properties
 

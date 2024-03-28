@@ -23,4 +23,4 @@ Set background color to bright magenta.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:361](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L361)
+twitchapi/packages/eventsub/src/logger/colors.ts:361

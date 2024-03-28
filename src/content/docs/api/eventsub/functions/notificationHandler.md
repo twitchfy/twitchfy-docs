@@ -22,4 +22,4 @@ notificationHandler(connection: ConnectionTypes, payload: BasePayload<Subscripti
 
 ## Source
 
-[twitchapi/packages/eventsub/src/util/notificationHandler.ts:7](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/util/notificationHandler.ts#L7)
+twitchapi/packages/eventsub/src/util/notificationHandler.ts:7

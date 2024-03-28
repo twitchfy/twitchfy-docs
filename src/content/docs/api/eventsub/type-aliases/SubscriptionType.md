@@ -18,4 +18,4 @@ type SubscriptionType<U, K>: K extends WebhookConnection ? WebhookSubscription<U
 
 ## Source
 
-[twitchapi/packages/eventsub/src/types/SubscriptionType.ts:6](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/types/SubscriptionType.ts#L6)
+twitchapi/packages/eventsub/src/types/SubscriptionType.ts:6

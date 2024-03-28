@@ -33,7 +33,7 @@ new EventSubEventEmitter<U>(): EventSubEventEmitter<U>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/BaseConnection.ts#L14)
+twitchapi/packages/eventsub/src/structures/BaseConnection.ts:14
 
 ## Methods
 

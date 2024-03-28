@@ -19,7 +19,7 @@ new Client(): Client
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/Client.ts:7](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/Client.ts#L7)
+twitchapi/packages/eventsub/src/structures/Client.ts:7
 
 ## Methods
 
@@ -41,7 +41,7 @@ createWebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnect
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/Client.ts:9](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/Client.ts#L9)
+twitchapi/packages/eventsub/src/structures/Client.ts:9
 
 ***
 
@@ -64,4 +64,4 @@ createWebhookConnection(options: WebhookConnectionOptions, server: Express): Web
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/Client.ts:15](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/Client.ts#L15)
+twitchapi/packages/eventsub/src/structures/Client.ts:15

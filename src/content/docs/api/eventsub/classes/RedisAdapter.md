@@ -39,7 +39,7 @@ new RedisAdapter<K>(data: Object | Object | Object): RedisAdapter<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/storage/adapters/RedisAdapter.ts#L14)
+twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:14
 
 ## Properties
 
@@ -71,7 +71,7 @@ delete(id: string): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:49](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/storage/adapters/RedisAdapter.ts#L49)
+twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:49
 
 ***
 
@@ -103,7 +103,7 @@ get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:43](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/storage/adapters/RedisAdapter.ts#L43)
+twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:43
 
 ***
 
@@ -123,7 +123,7 @@ getAll(): Promise<StorageAdapterGet<K, SubscriptionTypes>[]>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:57](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/storage/adapters/RedisAdapter.ts#L57)
+twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:57
 
 ***
 
@@ -156,4 +156,4 @@ set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:22](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/storage/adapters/RedisAdapter.ts#L22)
+twitchapi/packages/eventsub/src/storage/adapters/RedisAdapter.ts:22

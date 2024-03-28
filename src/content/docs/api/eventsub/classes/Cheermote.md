@@ -29,7 +29,7 @@ new Cheermote(cheermote: CheermoteData): Cheermote
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/Cheermote.ts:11](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/Cheermote.ts#L11)
+twitchapi/packages/eventsub/src/structures/messages/Cheermote.ts:11
 
 ## Properties
 

@@ -23,4 +23,4 @@ Set text color to yellow.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:145](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L145)
+twitchapi/packages/eventsub/src/logger/colors.ts:145

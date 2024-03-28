@@ -31,7 +31,7 @@ new WebhookSubscriptionCallbackManager<T>(connection: WebhookConnection): Webhoo
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:17](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts#L17)
+twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:17
 
 ## Properties
 
@@ -59,7 +59,7 @@ add(callback: WebhookSubscriptionCallback<T>): this
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:24](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts#L24)
+twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:24
 
 ***
 
@@ -81,4 +81,4 @@ execute(message: SubscriptionMessages<ConnectionTypes>[T]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:32](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts#L32)
+twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:32

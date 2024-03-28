@@ -49,7 +49,7 @@ started_at: string): BaseStream<T, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/BaseStream.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/BaseStream.ts#L14)
+twitchapi/packages/eventsub/src/structures/messages/BaseStream.ts:14
 
 ## Properties
 

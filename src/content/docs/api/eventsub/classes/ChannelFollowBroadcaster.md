@@ -48,7 +48,7 @@ displayName: string): ChannelFollowBroadcaster<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowBroadcaster.ts:8](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowBroadcaster.ts#L8)
+twitchapi/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowBroadcaster.ts:8
 
 ## Properties
 

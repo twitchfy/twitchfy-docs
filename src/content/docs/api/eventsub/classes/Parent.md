@@ -25,7 +25,7 @@ new Parent(data: ReplyData): Parent
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/Parent.ts:11](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/Parent.ts#L11)
+twitchapi/packages/eventsub/src/structures/messages/Parent.ts:11
 
 ## Properties
 

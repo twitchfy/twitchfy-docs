@@ -52,7 +52,7 @@ badges: BadgeData[]): ChannelChatMessageMessageChatter<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageChatter.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageChatter.ts#L14)
+twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageChatter.ts:14
 
 ## Properties
 

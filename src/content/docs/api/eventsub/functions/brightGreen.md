@@ -23,4 +23,4 @@ Set text color to bright green.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:209](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L209)
+twitchapi/packages/eventsub/src/logger/colors.ts:209

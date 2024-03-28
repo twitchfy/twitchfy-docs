@@ -21,4 +21,4 @@ startup(connection: WebSocketConnection): Promise<void>
 
 ## Source
 
-[twitchapi/packages/eventsub/src/ws/util/startup.ts:6](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/ws/util/startup.ts#L6)
+twitchapi/packages/eventsub/src/ws/util/startup.ts:6

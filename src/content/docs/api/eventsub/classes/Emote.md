@@ -25,7 +25,7 @@ new Emote(data: EmoteData): Emote
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/Emote.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/Emote.ts#L14)
+twitchapi/packages/eventsub/src/structures/messages/Emote.ts:14
 
 ## Properties
 

@@ -49,7 +49,7 @@ displayName: string): BaseRequester<T, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/BaseRequester.ts:13](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/BaseRequester.ts#L13)
+twitchapi/packages/eventsub/src/structures/messages/BaseRequester.ts:13
 
 ## Properties
 

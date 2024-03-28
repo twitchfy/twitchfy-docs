@@ -44,7 +44,7 @@ data: StreamOnlineEvent): StreamOnlineMessage<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineMessage.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineMessage.ts#L14)
+twitchapi/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineMessage.ts:14
 
 ## Properties
 

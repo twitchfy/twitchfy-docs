@@ -23,4 +23,4 @@ Make the text hidden.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:105](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L105)
+twitchapi/packages/eventsub/src/logger/colors.ts:105

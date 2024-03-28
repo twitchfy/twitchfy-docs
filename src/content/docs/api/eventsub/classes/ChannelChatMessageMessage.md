@@ -44,7 +44,7 @@ data: ChannelChatMessageEvent): ChannelChatMessageMessage<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessage.ts:15](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessage.ts#L15)
+twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessage.ts:15
 
 ## Properties
 

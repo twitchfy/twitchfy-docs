@@ -46,7 +46,7 @@ name: string): ChannelUpdateCategory<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateCategory.ts:11](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateCategory.ts#L11)
+twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateCategory.ts:11
 
 ## Properties
 

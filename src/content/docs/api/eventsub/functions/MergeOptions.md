@@ -28,4 +28,4 @@ MergeOptions<T>(defaults: any, ...options: any[]): T
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/Logger.ts:14](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/Logger.ts#L14)
+twitchapi/packages/eventsub/src/logger/Logger.ts:14

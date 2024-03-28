@@ -23,4 +23,4 @@ Set text color to magenta.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:161](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/logger/colors.ts#L161)
+twitchapi/packages/eventsub/src/logger/colors.ts:161

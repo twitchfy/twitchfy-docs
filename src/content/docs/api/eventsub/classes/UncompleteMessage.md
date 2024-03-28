@@ -26,7 +26,7 @@ new UncompleteMessage(id: string, content: string): UncompleteMessage
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/UncompleteMessage.ts:7](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/structures/messages/UncompleteMessage.ts#L7)
+twitchapi/packages/eventsub/src/structures/messages/UncompleteMessage.ts:7
 
 ## Properties
 

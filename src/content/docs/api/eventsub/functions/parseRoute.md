@@ -21,4 +21,4 @@ parseRoute(path: string): string
 
 ## Source
 
-[twitchapi/packages/eventsub/src/webhook/util/parseRoute.ts:1](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/webhook/util/parseRoute.ts#L1)
+twitchapi/packages/eventsub/src/webhook/util/parseRoute.ts:1

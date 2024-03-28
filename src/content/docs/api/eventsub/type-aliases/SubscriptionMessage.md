@@ -24,4 +24,4 @@ type SubscriptionMessage<K>:
 
 ## Source
 
-[twitchapi/packages/eventsub/src/types/SubscriptionMessage.ts:4](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/types/SubscriptionMessage.ts#L4)
+twitchapi/packages/eventsub/src/types/SubscriptionMessage.ts:4

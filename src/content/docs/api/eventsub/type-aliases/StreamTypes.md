@@ -16,4 +16,4 @@ type StreamTypes:
 
 ## Source
 
-[twitchapi/packages/eventsub/src/types/StreamTypes.ts:1](https://github.com/pablornc/twitchapi//blob/b274026/packages/eventsub/src/types/StreamTypes.ts#L1)
+twitchapi/packages/eventsub/src/types/StreamTypes.ts:1
