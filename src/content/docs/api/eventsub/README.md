@@ -17,6 +17,7 @@ title: "@twitchapi/eventsub"
 
 | Class | Description |
 | :------ | :------ |
+| [Badge](classes/Badge.md) | - |
 | [Base](classes/Base.md) | - |
 | [BaseBroadcaster](classes/BaseBroadcaster.md) | - |
 | [BaseConnection](classes/BaseConnection.md) | - |
@@ -106,6 +107,10 @@ title: "@twitchapi/eventsub"
 | [ISubscription](interfaces/ISubscription.md) | - |
 | [MentionData](interfaces/MentionData.md) | - |
 | [MessageData](interfaces/MessageData.md) | - |
+| [ReconnectMessage](interfaces/ReconnectMessage.md) | - |
+| [ReconnectMessageMetadata](interfaces/ReconnectMessageMetadata.md) | - |
+| [ReconnectMessagePayload](interfaces/ReconnectMessagePayload.md) | - |
+| [ReconnectMessageSession](interfaces/ReconnectMessageSession.md) | - |
 | [ReplyData](interfaces/ReplyData.md) | - |
 | [Rgb](interfaces/Rgb.md) | RGB 8-bits per channel. Each in range `0->255` or `0x00->0xff` |
 | [StorageOptions](interfaces/StorageOptions.md) | - |

@@ -25,11 +25,11 @@ new Thread(data: ReplyData): Thread
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/messages/Thread.ts:11
+[twitchapi/packages/eventsub/src/structures/messages/Thread.ts:10](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/messages/Thread.ts#L10)
 
 ## Properties
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `message` | `public` | [`UncompleteMessage`](UncompleteMessage.md) |
+| `messageID` | `public` | `string` |
 | `user` | `public` | [`UncompleteUser`](UncompleteUser.md) |

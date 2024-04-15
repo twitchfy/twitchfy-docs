@@ -5,307 +5,217 @@ prev: false
 title: "AutoModSettings"
 ---
 
-Represents the settings of the automod.
+Represents the settings of an automod.
+
+## Extends
+
+- `Base`\<`T`\>
+
+## Type parameters
+
+| Type parameter |
+| :------ |
+| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
 
 ## Constructors
 
-### new AutoModSettings(chatbot, data, channel)
+### new AutoModSettings(chatbot, automod, data)
 
 ```ts
-new AutoModSettings(
-   chatbot: ChatBot, 
-   data: AutoModSettings, 
-   channel: Channel): AutoModSettings
+new AutoModSettings<T>(
+   chatbot: ChatBot<T>, 
+   automod: AutoMod<T>, 
+data: AutoModSettings): AutoModSettings<T>
 ```
+
+Creates a new instance of the automod settings.
 
 #### Parameters
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md) |  |
-| `data` | `AutoModSettings` |  |
-| `channel` | [`Channel`](Channel.md) |  |
+| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `automod` | [`AutoMod`](AutoMod.md)\<`T`\> | The automod whose settings are. |
+| `data` | `AutoModSettings` | The data of the settings returned from the API. |
 
 #### Returns
 
-[`AutoModSettings`](AutoModSettings.md)
+[`AutoModSettings`](AutoModSettings.md)\<`T`\>
+
+#### Overrides
+
+`Base<T>.constructor`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:74](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L74)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:30](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L30)
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `aggression` | `public` | `number` | **Description**<br />The aggression level of the automod. |
-| `bullying` | `public` | `number` | **Description**<br />The level of bullying of the automod. |
-| `channel` | `public` | [`Channel`](Channel.md) | **Description**<br />The channel whose autmod is. |
-| `chatbot` | `public` | [`ChatBot`](ChatBot.md) | **Description**<br />The current instance of the [ChatBot](../../api/chatbot/classes/chatbot). |
-| `disability` | `public` | `number` | **Description**<br />The disability level of the automod. |
-| `ethnicityOrReligion` | `public` | `number` | **Description**<br />The level of ethnicity and religion terms of the automod. |
-| `misogyny` | `public` | `number` | **Description**<br />The level of misogyny of the automod. |
-| `overallLevel` | `public` | `number` | **Description**<br />The overallLevel of the automod. |
-| `sexBasedTerms` | `public` | `number` | **Description**<br />The level of sex based terms of the automod. |
-| `sexOrGen` | `public` | `number` | **Description**<br />The level of sexuality of the automod. |
-| `swearing` | `public` | `number` | **Description**<br />The level of swearing of the automod. |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `automod` | `readonly` | [`AutoMod`](AutoMod.md)\<`T`\> | The autmod whose settings are. | - |
+| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `data` | `public` | `AutoModSettings` | The data of the settings returned from the API. | - |
 
-## Methods
+## Accessors
 
-### set()
+### aggression
 
 ```ts
-set(options: AutoModSettingsOptions): Promise<AutoModSettings>
+get aggression(): number
 ```
 
-Set multiples options of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `options` | [`AutoModSettingsOptions`](../interfaces/AutoModSettingsOptions.md) | The options that contains all the terms of the automod. |
+The aggression level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:93](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L93)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:53](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L53)
 
 ***
 
-### setAggression()
+### bullying
 
 ```ts
-setAggression(value: number): Promise<AutoModSettings>
+get bullying(): number
 ```
 
-Set the agression level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the agression level from 0 to 4. |
+The bullying level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:149](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L149)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:74](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L74)
 
 ***
 
-### setBullying()
+### disability
 
 ```ts
-setBullying(value: number): Promise<AutoModSettings>
+get disability(): number
 ```
 
-Set the bullying level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the bullying level from 0 to 4. |
+The disability level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:199](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L199)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:46](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L46)
 
 ***
 
-### setDisability()
+### misogyny
 
 ```ts
-setDisability(value: number): Promise<AutoModSettings>
+get misogyny(): number
 ```
 
-Set the disability level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the disability level from 0 to 4. |
+The misogyny level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:133](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L133)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:67](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L67)
 
 ***
 
-### setEthnicityOrReligion()
+### overall
 
 ```ts
-setEthnicityOrReligion(value: number): Promise<AutoModSettings>
+get overall(): null | number
 ```
 
-Set the ethnicity and religion level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the ethnicity and religion level from 0 to 4. |
+The overall level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`null` \| `number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:233](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L233)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:39](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L39)
 
 ***
 
-### setMisogyny()
+### racism
 
 ```ts
-setMisogyny(value: number): Promise<AutoModSettings>
+get racism(): number
 ```
 
-Set the misogyny level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the overallLevel from 0 to 4. |
+The racism level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Retruns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:183](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L183)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:88](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L88)
 
 ***
 
-### setOverallLevel()
+### sexBasedTerms
 
 ```ts
-setOverallLevel(value: number): Promise<AutoModSettings>
+get sexBasedTerms(): number
 ```
 
-Set the overallLevel of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the overallLevel from 0 to 4. |
+The level of sex based terms of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:117](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L117)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:95](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L95)
 
 ***
 
-### setSexBasedTerms()
+### sexuality
 
 ```ts
-setSexBasedTerms(value: number): Promise<AutoModSettings>
+get sexuality(): number
 ```
 
-Set the sex based terms levels of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the sex based terms level from 0 to 4. |
+The sexuality level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:252](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L252)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:60](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L60)
 
 ***
 
-### setSexOrGen()
+### swearing
 
 ```ts
-setSexOrGen(value: number): Promise<AutoModSettings>
+get swearing(): number
 ```
 
-Set the sex or gender level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the sex or gender level from 0 to 4. |
+The harassment level of the automod.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
+`number`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:165](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L165)
-
-***
-
-### setSwearing()
-
-```ts
-setSwearing(value: number): Promise<AutoModSettings>
-```
-
-Set the swearing level of the automod.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | The value of the swearing level from 0 to 4. |
-
-#### Returns
-
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\>
-
-Returns the new automod settings.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:215](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/AutoModSettings.ts#L215)
+[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:81](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoModSettings.ts#L81)

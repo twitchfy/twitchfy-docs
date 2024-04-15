@@ -52,13 +52,13 @@ badges: BadgeData[]): ChannelChatMessageMessageChatter<K>
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageChatter.ts:14
+[twitchapi/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageChatter.ts:14](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/messages/ChannelChatMessage/ChannelChatMessageMessageChatter.ts#L14)
 
 ## Properties
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `badges` | `public` | `Badge`[] | - |
+| `badges` | `public` | [`Badge`](Badge.md)[] | - |
 | `color` | `public` | `string` | - |
 | `connection` | `public` | `K` | [`BaseUser`](BaseUser.md).`connection` |
 | `displayName` | `public` | `string` | [`BaseUser`](BaseUser.md).`displayName` |

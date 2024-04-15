@@ -6,14 +6,14 @@ title: "messageHandler"
 ---
 
 ```ts
-messageHandler(websocket: WebSocket, message: Message): Promise<void>
+messageHandler(this: WebSocket, message: Message): Promise<void>
 ```
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `websocket` | [`WebSocket`](../classes/WebSocket.md) |
+| `this` | [`WebSocket`](../classes/WebSocket.md) |
 | `message` | `Message` |
 
 ## Returns
@@ -22,4 +22,4 @@ messageHandler(websocket: WebSocket, message: Message): Promise<void>
 
 ## Source
 
-twitchapi/packages/eventsub/src/ws/util/messageHandler.ts:10
+[twitchapi/packages/eventsub/src/ws/util/messageHandler.ts:11](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/util/messageHandler.ts#L11)

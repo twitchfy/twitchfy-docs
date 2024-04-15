@@ -5,242 +5,267 @@ prev: false
 title: "Channel"
 ---
 
-Represents a Twitch Channel. If the origin of this channel is not the [ChannelManager](../../api/chatbot/classes/channelmanager) the information might be unupdated, to update this information use the fetch method.
+Represents a Twitch channel.
+
+## Extends
+
+- `Base`\<`T`\>
+
+## Type parameters
+
+| Type parameter |
+| :------ |
+| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
 
 ## Constructors
 
-### new Channel(chatbot, data, user)
+### new Channel(chatbot, data)
 
 ```ts
-new Channel(
-   chatbot: ChatBot, 
-   data: Channel, 
-   user: User): Channel
+new Channel<T>(chatbot: ChatBot<T>, data: Channel): Channel<T>
 ```
+
+Creates a new instance of the channel.
 
 #### Parameters
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md) |  |
-| `data` | `Channel` |  |
-| `user` | [`User`](User.md) |  |
+| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `data` | `Channel` | The data of the channel returned from the API. |
 
 #### Returns
 
-[`Channel`](Channel.md)
+[`Channel`](Channel.md)\<`T`\>
+
+#### Overrides
+
+`Base<T>.constructor`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:109](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L109)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:57](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L57)
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `automod` | `public` | [`AutoMod`](AutoMod.md) | **Description**<br />The [AutoMod](../../api/chatbot/classes/automod) of the chat. |
-| `bans` | `public` | [`BanManager`](BanManager.md) | **Description**<br />The [BanManager](../../api/chatbot/classes/banmanager) of this channel. |
-| `broadcaster` | `public` | [`User`](User.md) | **Description**<br />The user whose channel is. |
-| `chat` | `public` | [`Chat`](Chat.md) | **Description**<br />The [Chat](../../api/chatbot/classes/chat) of this channel. |
-| `chatbot` | `public` | [`ChatBot`](ChatBot.md) | **Description**<br />The current instance of the [ChatBot](../../api/chatbot/classes/chatbot) |
-| `delay` | `public` | `number` | **Description**<br />The value of the broadcaster’s stream delay setting, in seconds. If the channel is not the ChatBot's channel the delay is 0. Instead of use this property is recommended to fetch the channel settings. |
-| `displayName` | `public` | `string` | **Description**<br />The public name the user has in any chat. |
-| `gameId` | `public` | `string` | **Description**<br />The unique id of the game that the broadcaster is playing or last played. |
-| `gameName` | `public` | `string` | **Description**<br />The name of the game that the broadcaster is playing or last played. |
-| `id` | `public` | `string` | **Description**<br />The unique id of the channel. |
-| `language` | `public` | `string` | **Description**<br />The language of the current channel. |
-| `name` | `public` | `string` | **Description**<br />The name of the channel. |
-| `stream` | `public` | [`StreamManager`](StreamManager.md) | **Description**<br />The [StreamManager](../../api/chatbot/classes/streammanager) of the channel. |
-| `tags` | `public` | `string`[] | **Description**<br />The tags applied to the channel. |
-| `title` | `public` | `string` | **Description**<br />The title of the stream that the broadcaster is currently streaming or last streamed. |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `broadcaster` | `readonly` | [`BaseUser`](BaseUser.md)\<`T`\> | The broadcaster of the channel. | - |
+| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatroom` | `readonly` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom of the channel. | - |
+| `classificationLabels` | `readonly` | `string`[] | The classification labels of the channel. | - |
+| `game` | `readonly` | [`Game`](../interfaces/Game.md) | The game which was currently set into the channel. | - |
+| `isBrandedContent` | `readonly` | `boolean` | Whether the channel has branded content. | - |
+| `tags` | `readonly` | `string`[] | The tags of the channel. | - |
+
+## Accessors
+
+### bans
+
+```ts
+get bans(): BanManager<T>
+```
+
+The chatroom bans manager. See [BanManager](../../api/chatbot/classes/banmanager).
+
+#### Returns
+
+[`BanManager`](BanManager.md)\<`T`\>
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:99](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L99)
+
+***
+
+### broadcasterID
+
+```ts
+get broadcasterID(): string
+```
+
+The id of the broadcaster who owns the channel.
+
+#### Returns
+
+`string`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L71)
+
+***
+
+### chatroomID
+
+```ts
+get chatroomID(): string
+```
+
+The id of the chatroom of the channel.
+
+#### Returns
+
+`string`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:78](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L78)
+
+***
+
+### language
+
+```ts
+get language(): string
+```
+
+The language that was set to the channel.
+
+#### Returns
+
+`string`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:92](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L92)
+
+***
+
+### messages
+
+```ts
+get messages(): MessageManager<T>
+```
+
+The chatroom messages manager. See [MessageManager](../../api/chatbot/classes/messagemanager).
+
+#### Returns
+
+[`MessageManager`](MessageManager.md)\<`T`\>
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:113](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L113)
+
+***
+
+### timeouts
+
+```ts
+get timeouts(): TimeoutManager<T>
+```
+
+The chatroom timeouts manager. See [TimeoutManager](../../api/chatbot/classes/timeoutmanager).
+
+#### Returns
+
+[`TimeoutManager`](TimeoutManager.md)\<`T`\>
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:106](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L106)
+
+***
+
+### title
+
+```ts
+get title(): null | string
+```
+
+The title of the channel. If it was never set, it will return a nullish value.
+
+#### Returns
+
+`null` \| `string`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:85](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L85)
 
 ## Methods
+
+### clips()
+
+```ts
+clips(options?: Omit<GetClipsOptions<true>, "broadcaster_id">): Promise<null | Clip<T>[]>
+```
+
+Fetches the clips of the channel from the API.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options`? | `Omit`\<`GetClipsOptions`\<`true`\>, `"broadcaster_id"`\> | The options to fetch the clips. |
+
+#### Returns
+
+`Promise`\<`null` \| [`Clip`](Clip.md)\<`T`\>[]\>
+
+An array containing the clips of the channel.
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:139](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L139)
+
+***
+
+### emotes()
+
+```ts
+emotes(): Promise<Collection<string, ChannelEmote<T>>>
+```
+
+Fetches all the emotes of this channel.
+
+#### Returns
+
+`Promise`\<[`Collection`](Collection.md)\<`string`, [`ChannelEmote`](ChannelEmote.md)\<`T`\>\>\>
+
+The a Collection containing all the emotes of the channel.
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Channel.ts:121](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L121)
+
+***
 
 ### fetch()
 
 ```ts
-fetch(): Promise<Channel>
+fetch(): Promise<Channel<T>>
 ```
 
-Get the whole [Channel](../../api/chatbot/classes/channel) object with all the channel's information.
+Fetches the current channel from the API.
 
 #### Returns
 
-`Promise`\<[`Channel`](Channel.md)\>
+`Promise`\<[`Channel`](Channel.md)\<`T`\>\>
 
-Returns a complete [Channel](../../api/chatbot/classes/channel).
+The fetched channel from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:182](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L182)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:148](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L148)
 
 ***
 
-### getFollower()
+### stream()
 
 ```ts
-getFollower(userID: string): Promise<Follower>
+stream(): Promise<null | Stream<T>>
 ```
 
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `userID` | `string` | The userID of the follower you want to get. |
+Fetches the current stream of the channel from the API.
 
 #### Returns
 
-`Promise`\<[`Follower`](Follower.md)\>
+`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>\>
 
-Returns the [Follower](../../api/chatbot/classes/follower) if the user is following the channel, if not a nullish value will be returned.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:215](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L215)
-
-***
-
-### getFollowerCount()
-
-```ts
-getFollowerCount(): Promise<number>
-```
-
-Get the number of followers of this channel.
-
-#### Returns
-
-`Promise`\<`number`\>
-
-Returns the number of followers that follow this channel.
+The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:192](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L192)
-
-***
-
-### getFollowers()
-
-```ts
-getFollowers(): Promise<Follower[]>
-```
-
-Retrieve all followers of the channel. If the chatbot is not a moderator of that channel, an empty array will be returned.
-
-#### Returns
-
-`Promise`\<[`Follower`](Follower.md)[]\>
-
-Returns an array that contains each follower of that channel.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:202](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L202)
-
-***
-
-### inStream()
-
-```ts
-inStream(): Promise<boolean>
-```
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-Returns a boolean indicating if the channel is currently streaming or not.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:229](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L229)
-
-***
-
-### join()
-
-```ts
-join(): JoinedChannel
-```
-
-Connects the ChatBot to the chat of the channel.
-
-#### Returns
-
-[`JoinedChannel`](JoinedChannel.md)
-
-The [JoinedChannel](../../api/chatbot/classes/joinedchannel).
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:154](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L154)
-
-***
-
-### leave()
-
-```ts
-leave(): JoinedChannel
-```
-
-Disconnect the ChatBot to the chat of the channel.
-
-#### Returns
-
-[`JoinedChannel`](JoinedChannel.md)
-
-The [JoinedChannel](../../api/chatbot/classes/joinedchannel) that the bot has disconnected.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:169](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L169)
-
-***
-
-### sendAnnouncement()
-
-```ts
-sendAnnouncement(message: string, color: AnnouncementColor): Promise<void>
-```
-
-Send an announcement to the chat where everyone can see it.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `message` | `string` | The message of the announcement to send. |
-| `color` | [`AnnouncementColor`](../enumerations/AnnouncementColor.md) | The color of the announcement to send. |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:145](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L145)
-
-***
-
-### sendMessage()
-
-```ts
-sendMessage(message: string): void
-```
-
-Send a message to the channel.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `message` | `string` | The message that is going to be sent to the channel. |
-
-#### Returns
-
-`void`
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Channel.ts:133](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Channel.ts#L133)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:130](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L130)

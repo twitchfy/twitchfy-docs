@@ -40,7 +40,7 @@ new SubscriptionCollection<K, T>(entries?: readonly readonly [string, Subscripti
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:50
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:50
 
 ### new SubscriptionCollection(iterable)
 
@@ -64,7 +64,7 @@ new SubscriptionCollection<K, T>(iterable?: Iterable<readonly [string, Subscript
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:49
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:49
 
 ## Properties
 
@@ -94,7 +94,7 @@ Returns an iterable of entries in the map.
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:119
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:119
 
 ***
 
@@ -114,7 +114,7 @@ clear(): void
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:20
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:20
 
 ***
 
@@ -142,7 +142,7 @@ true if an element in the Map existed and has been removed, or false if the elem
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:24
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:24
 
 ***
 
@@ -164,7 +164,7 @@ Returns an iterable of key, value pairs for every entry in the map.
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:124
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:124
 
 ***
 
@@ -193,7 +193,7 @@ exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<T, K>
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:18
+[twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:18](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/SubscriptionCollection.ts#L18)
 
 ***
 
@@ -222,7 +222,7 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 ***
 
@@ -254,7 +254,7 @@ get<U>(key: string): SubscriptionType<U, K>
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:10
+[twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:10](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/SubscriptionCollection.ts#L10)
 
 ***
 
@@ -282,7 +282,7 @@ boolean indicating whether an element with the specified key exists or not.
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
 
 ***
 
@@ -304,7 +304,7 @@ Returns an iterable of keys in the map
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:129
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:129
 
 ***
 
@@ -337,7 +337,7 @@ set<U>(key: string, value: SubscriptionType<U, K>): this
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:14
+[twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:14](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/SubscriptionCollection.ts#L14)
 
 ***
 
@@ -359,4 +359,4 @@ Returns an iterable of values in the map
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.4.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:134
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:134

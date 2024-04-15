@@ -44,7 +44,7 @@ data: ChannelUpdateEvent): ChannelUpdateMessage<K>
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts:21
+[twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts:21](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts#L21)
 
 ## Properties
 
@@ -53,7 +53,7 @@ twitchapi/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateM
 | `broadcaster` | `public` | [`ChannelUpdateBroadcaster`](ChannelUpdateBroadcaster.md)\<`K`\> | - |
 | `category` | `public` | [`ChannelUpdateCategory`](ChannelUpdateCategory.md)\<`K`\> | - |
 | `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
-| `labels` | `public` | `string` | - |
+| `labels` | `public` | `string`[] | - |
 | `language` | `public` | `string` | - |
 | `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelUpdate`, `K`\> | [`Base`](Base.md).`subscription` |
 | `title` | `public` | `string` | - |

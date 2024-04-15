@@ -48,7 +48,7 @@ abstract delete(id: string): any
 
 #### Source
 
-twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:14
+[twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:14](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/storage/StorageAdapter.ts#L14)
 
 ***
 
@@ -76,7 +76,7 @@ abstract get<T>(id: string): StorageAdapterGet<K, T> | Promise<StorageAdapterGet
 
 #### Source
 
-twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:10
+[twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:10](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/storage/StorageAdapter.ts#L10)
 
 ***
 
@@ -92,7 +92,7 @@ abstract getAll(): StorageAdapterGet<K>[] | Promise<StorageAdapterGet<K>[]>
 
 #### Source
 
-twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:12
+[twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:12](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/storage/StorageAdapter.ts#L12)
 
 ***
 
@@ -121,4 +121,4 @@ abstract set<T>(id: string, subscription: SubscriptionType<T, K>): any
 
 #### Source
 
-twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:8
+[twitchapi/packages/eventsub/src/storage/StorageAdapter.ts:8](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/storage/StorageAdapter.ts#L8)

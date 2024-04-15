@@ -34,7 +34,7 @@ new WebhookConnection(options: WebhookConnectionOptions, server: Express): Webho
 
 #### Source
 
-twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L34)
 
 ## Properties
 
@@ -60,7 +60,7 @@ twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34
 ### addListener()
 
 ```ts
-addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -74,7 +74,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -93,7 +93,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
 ### emit()
 
 ```ts
-emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]): boolean
+emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]): boolean
 ```
 
 #### Type parameters
@@ -107,7 +107,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\] |
+| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\] |
 
 #### Returns
 
@@ -249,7 +249,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L65)
 
 ***
 
@@ -275,14 +275,14 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L71)
 
 ***
 
 ### off()
 
 ```ts
-off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -296,7 +296,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -315,7 +315,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
 ### on()
 
 ```ts
-on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -329,7 +329,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -348,7 +348,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
 ### once()
 
 ```ts
-once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -362,7 +362,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -381,7 +381,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
 ### prependListener()
 
 ```ts
-prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -395,7 +395,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -414,7 +414,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
 ### prependOnceListener()
 
 ```ts
-prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -428,7 +428,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -511,7 +511,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
 ### removeListener()
 
 ```ts
-removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebhookEvents[K]) => void): this
+removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebhookEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -525,7 +525,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -559,7 +559,7 @@ setAuth(appToken: TokenAdapter<"app", boolean>): WebhookConnection
 
 #### Source
 
-twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:123
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:123](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L123)
 
 ***
 
@@ -608,7 +608,7 @@ start(port?: number, callback?: () => void): Promise<boolean>
 
 #### Source
 
-twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:113
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:113](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L113)
 
 ***
 
@@ -640,7 +640,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 
 #### Source
 
-twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:65
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L65)
 
 ***
 
@@ -672,7 +672,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscripti
 
 #### Source
 
-twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:86
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:86](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L86)
 
 ***
 

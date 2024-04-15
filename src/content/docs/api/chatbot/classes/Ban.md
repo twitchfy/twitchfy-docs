@@ -5,41 +5,108 @@ prev: false
 title: "Ban"
 ---
 
-Represents a ban in a channel. The ban can be a Twitch ban or a Twitch timeout.
+Represents a ban in a chatroom.
+
+## Extends
+
+- `Base`\<`T`\>
+
+## Type parameters
+
+| Type parameter |
+| :------ |
+| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
 
 ## Constructors
 
 ### new Ban(chatbot, data)
 
 ```ts
-new Ban(chatbot: ChatBot, data: Ban): Ban
+new Ban<T>(chatbot: ChatBot<T>, data: Ban): Ban<T>
 ```
+
+Creates a new instance of the ban.
 
 #### Parameters
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md) |  |
-| `data` | `Ban` |  |
+| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `data` | `Ban` | The data of the ban returned from the API. |
 
 #### Returns
 
-[`Ban`](Ban.md)
+[`Ban`](Ban.md)\<`T`\>
+
+#### Overrides
+
+`Base<T>.constructor`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:46](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Ban.ts#L46)
+[twitchapi/packages/chatbot/src/structures/Ban.ts:31](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Ban.ts#L31)
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`BanUser`](BanUser.md) | **Description**<br />The broadcaster who has the channel where the ban was done. |
-| `chatbot` | `public` | [`ChatBot`](ChatBot.md) | **Description**<br />The current instance of the [ChatBot](../../api/chatbot/classes/chatbot). |
-| `createdAt` | `public` | `Date` | **Description**<br />A JavaScript Date that represents when the ban was created. |
-| `duration` | `public` | `number` | **Description**<br />The duration of the ban. This is null if the ban is a Twitch ban. |
-| `moderator` | `public` | [`BanUser`](BanUser.md) | **Description**<br />The moderator who ban the user. |
-| `user` | `public` | [`BanUser`](BanUser.md) | **Description**<br />The user who was banned. |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `moderatorID` | `readonly` | `string` | The ID of the moderator who banned the user. | - |
+| `userID` | `readonly` | `string` | The ID of the user who was banned. | - |
+
+## Accessors
+
+### chatroomID
+
+```ts
+get chatroomID(): string
+```
+
+The ID of the chatroom where the ban was made.
+
+#### Returns
+
+`string`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Ban.ts:49](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Ban.ts#L49)
+
+***
+
+### createdAt
+
+```ts
+get createdAt(): Date
+```
+
+The Date when the ban was created. Returns a JavaScript Date object.
+
+#### Returns
+
+`Date`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Ban.ts:56](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Ban.ts#L56)
+
+***
+
+### endTime
+
+```ts
+get endTime(): null | Date
+```
+
+If the ban is a timeout this will return the end time of the timeout in a JavaScript Date object. If not, it will return a nullish value.
+
+#### Returns
+
+`null` \| `Date`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/Ban.ts:63](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Ban.ts#L63)
 
 ## Methods
 
@@ -49,7 +116,7 @@ new Ban(chatbot: ChatBot, data: Ban): Ban
 delete(): Promise<void>
 ```
 
-Delete this ban.
+Deletes the ban from the chatroom.
 
 #### Returns
 
@@ -57,44 +124,4 @@ Delete this ban.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:74](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Ban.ts#L74)
-
-***
-
-### isBan()
-
-```ts
-isBan(): boolean
-```
-
-Check if the ban is a Twitch ban.
-
-#### Returns
-
-`boolean`
-
-Returns a boolean that determines if the ban is a Twitch ban.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Ban.ts:59](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Ban.ts#L59)
-
-***
-
-### isTimeout()
-
-```ts
-isTimeout(): boolean
-```
-
-Check if the ban is a Twitch timeout
-
-#### Returns
-
-`boolean`
-
-Returns a boolean that determines if the ban is a timeout.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/Ban.ts:67](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/Ban.ts#L67)
+[twitchapi/packages/chatbot/src/structures/Ban.ts:42](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Ban.ts#L42)

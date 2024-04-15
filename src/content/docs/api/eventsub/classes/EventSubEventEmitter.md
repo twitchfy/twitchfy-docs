@@ -33,14 +33,14 @@ new EventSubEventEmitter<U>(): EventSubEventEmitter<U>
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/BaseConnection.ts:14
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:14](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L14)
 
 ## Methods
 
 ### addListener()
 
 ```ts
-addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -54,7 +54,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -73,7 +73,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
 ### emit()
 
 ```ts
-emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]): boolean
+emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]): boolean
 ```
 
 #### Type parameters
@@ -87,7 +87,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\] |
+| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\] |
 
 #### Returns
 
@@ -210,7 +210,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:15
 ### off()
 
 ```ts
-off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -224,7 +224,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -243,7 +243,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
 ### on()
 
 ```ts
-on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -257,7 +257,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -276,7 +276,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
 ### once()
 
 ```ts
-once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -290,7 +290,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -309,7 +309,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
 ### prependListener()
 
 ```ts
-prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -323,7 +323,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -342,7 +342,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
 ### prependOnceListener()
 
 ```ts
-prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -356,7 +356,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -439,7 +439,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
 ### removeListener()
 
 ```ts
-removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : U[K]) => void): this
+removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
 ```
 
 #### Type parameters
@@ -453,7 +453,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 

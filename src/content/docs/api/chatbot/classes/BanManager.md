@@ -5,101 +5,95 @@ prev: false
 title: "BanManager"
 ---
 
-Represents a BanManager of a channel
+The ban manager of a chatroom.
+
+## Extends
+
+- `Base`\<`T`\>
+
+## Type parameters
+
+| Type parameter |
+| :------ |
+| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
 
 ## Constructors
 
-### new BanManager(chatbot, channel)
+### new BanManager(chatbot, chatroom)
 
 ```ts
-new BanManager(chatbot: ChatBot, channel: Channel): BanManager
+new BanManager<T>(chatbot: ChatBot<T>, chatroom: ChatRoom<T>): BanManager<T>
 ```
+
+Creates a new instance of the badge manager.
 
 #### Parameters
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md) |  |
-| `channel` | [`Channel`](Channel.md) |  |
+| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `chatroom` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom which includes this manager. |
 
 #### Returns
 
-[`BanManager`](BanManager.md)
+[`BanManager`](BanManager.md)\<`T`\>
+
+#### Overrides
+
+`Base<T>.constructor`
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:38](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/managers/BanManager.ts#L38)
+[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:22](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/BanManager.ts#L22)
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `channel` | `public` | [`Channel`](Channel.md) | **Description**<br />The [Channel](../../api/chatbot/classes/channel) of the BanManager. |
-| `chatbot` | `public` | [`ChatBot`](ChatBot.md) | **Description**<br />The current instance of the [ChatBot](../../api/chatbot/classes/chatbot). |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatroom` | `readonly` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom which includes this manager. | - |
 
 ## Methods
 
-### createBan()
+### add()
 
 ```ts
-createBan(userID: string, options?: BanOptions): Promise<Ban>
+add(options: BanOptions): Promise<Ban<T>>
 ```
+
+Ban a specific user.
 
 #### Parameters
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `userID` | `string` | The user's id of the user you want to ban. |
-| `options`? | [`BanOptions`](../interfaces/BanOptions.md) | The options of the ban. |
+| `options` | [`BanOptions`](../interfaces/BanOptions.md) | The options required for banning an user. See [BanOptions](../../api/chatbot/interfaces/banoptions). |
 
 #### Returns
 
-`Promise`\<[`Ban`](Ban.md)\>
+`Promise`\<[`Ban`](Ban.md)\<`T`\>\>
 
-Returns a [Ban](../../api/chatbot/classes/ban) class that represents the ban.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:49](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/managers/BanManager.ts#L49)
-
-***
-
-### createTimeout()
-
-```ts
-createTimeout(userID: string, options: TimeoutOptions): Promise<Ban>
-```
-
-#### Parameters
-
-| Parameter | Type |
-| :------ | :------ |
-| `userID` | `string` |
-| `options` | [`TimeoutOptions`](../interfaces/TimeoutOptions.md) |
-
-#### Returns
-
-`Promise`\<[`Ban`](Ban.md)\>
+A class representation of the ban. See [Ban](../../api/chatbot/classes/ban).
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:57](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/managers/BanManager.ts#L57)
+[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:32](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/BanManager.ts#L32)
 
 ***
 
-### unBan()
+### delete()
 
 ```ts
-unBan(userID: string): Promise<void>
+delete(userID: string): Promise<void>
 ```
 
-UnBan the specified user in the [Channel](../../api/chatbot/classes/channel) of this BanManager.
+Deletes the ban of a specific user.
 
 #### Parameters
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `userID` | `string` | The userID of the person who is banned and you are going to unBan. |
+| `userID` | `string` | The id of the user to unban. |
 
 #### Returns
 
@@ -107,4 +101,4 @@ UnBan the specified user in the [Channel](../../api/chatbot/classes/channel) of 
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:70](https://github.com/pablornc/twitchapi//blob/b274026/packages/chatbot/src/structures/managers/BanManager.ts#L70)
+[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:41](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/BanManager.ts#L41)

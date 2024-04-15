@@ -33,7 +33,7 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 #### Source
 
-twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L22)
 
 ## Properties
 
@@ -49,14 +49,14 @@ twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22
 | `sessionID` | `public` | `string` | - |
 | `storage` | `readonly` | [`StorageAdapter`](StorageAdapter.md)\<[`WebSocketConnection`](WebSocketConnection.md)\> | [`BaseConnection`](BaseConnection.md).`storage` |
 | `subscriptions` | `readonly` | [`SubscriptionCollection`](SubscriptionCollection.md)\<[`WebSocketConnection`](WebSocketConnection.md), [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\> | [`BaseConnection`](BaseConnection.md).`subscriptions` |
-| `ws` | `readonly` | [`WebSocket`](WebSocket.md) | - |
+| `ws` | `public` | [`WebSocket`](WebSocket.md) | - |
 
 ## Methods
 
 ### addListener()
 
 ```ts
-addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -70,7 +70,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -98,14 +98,14 @@ connect(): void
 
 #### Source
 
-twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L50)
 
 ***
 
 ### emit()
 
 ```ts
-emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]): boolean
+emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]): boolean
 ```
 
 #### Type parameters
@@ -119,7 +119,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\] |
+| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\] |
 
 #### Returns
 
@@ -261,7 +261,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L65)
 
 ***
 
@@ -287,14 +287,14 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L71)
 
 ***
 
 ### off()
 
 ```ts
-off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -308,7 +308,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -327,7 +327,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
 ### on()
 
 ```ts
-on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -341,7 +341,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -360,7 +360,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
 ### once()
 
 ```ts
-once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -374,7 +374,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -393,7 +393,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
 ### prependListener()
 
 ```ts
-prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -407,7 +407,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -426,7 +426,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
 ### prependOnceListener()
 
 ```ts
-prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -440,7 +440,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -523,7 +523,7 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
 ### removeListener()
 
 ```ts
-removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K] : WebSocketEvents[K]) => void): this
+removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : WebSocketEvents[K]) => void): this
 ```
 
 #### Type parameters
@@ -537,7 +537,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -571,7 +571,7 @@ setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnect
 
 #### Source
 
-twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L105)
 
 ***
 
@@ -629,7 +629,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Source
 
-twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L56)
 
 ***
 
@@ -661,7 +661,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Source
 
-twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L77)
 
 ***
 

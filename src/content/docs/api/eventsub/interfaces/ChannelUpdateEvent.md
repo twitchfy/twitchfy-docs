@@ -14,6 +14,6 @@ title: "ChannelUpdateEvent"
 | `broadcaster_user_name` | `string` |
 | `category_id` | `string` |
 | `category_name` | `string` |
-| `content_classification_labels` | `string` |
+| `content_classification_labels` | `string`[] |
 | `language` | `string` |
 | `title` | `string` |

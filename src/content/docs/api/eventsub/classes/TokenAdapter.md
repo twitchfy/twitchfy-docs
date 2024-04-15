@@ -32,7 +32,7 @@ new TokenAdapter<T, K>(options: TokenAdapterOptions<T, K>): TokenAdapter<T, K>
 
 #### Source
 
-node\_modules/.pnpm/@twitchapi+helix@1.5.0/node\_modules/@twitchapi/helix/dist/structures/TokenAdapter.d.ts:7
+twitchapi/packages/helix/dist/structures/TokenAdapter.d.ts:7
 
 ## Properties
 
@@ -57,7 +57,7 @@ isAppToken(): boolean
 
 #### Source
 
-node\_modules/.pnpm/@twitchapi+helix@1.5.0/node\_modules/@twitchapi/helix/dist/structures/TokenAdapter.d.ts:11
+twitchapi/packages/helix/dist/structures/TokenAdapter.d.ts:11
 
 ***
 
@@ -73,7 +73,7 @@ isUserToken(): boolean
 
 #### Source
 
-node\_modules/.pnpm/@twitchapi+helix@1.5.0/node\_modules/@twitchapi/helix/dist/structures/TokenAdapter.d.ts:10
+twitchapi/packages/helix/dist/structures/TokenAdapter.d.ts:10
 
 ***
 
@@ -95,7 +95,7 @@ setRefreshToken(refreshToken: string): this
 
 #### Source
 
-node\_modules/.pnpm/@twitchapi+helix@1.5.0/node\_modules/@twitchapi/helix/dist/structures/TokenAdapter.d.ts:9
+twitchapi/packages/helix/dist/structures/TokenAdapter.d.ts:9
 
 ***
 
@@ -117,4 +117,4 @@ setToken(token: string): this
 
 #### Source
 
-node\_modules/.pnpm/@twitchapi+helix@1.5.0/node\_modules/@twitchapi/helix/dist/structures/TokenAdapter.d.ts:8
+twitchapi/packages/helix/dist/structures/TokenAdapter.d.ts:8
