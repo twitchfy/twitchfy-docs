@@ -9,5 +9,5 @@ title: "WelcomeMessage"
 
 | Property | Type |
 | :------ | :------ |
-| `metadata` | [`WelcomeMessageMetadata`](WelcomeMessageMetadata.md) |
-| `payload` | [`WelcomeMessagePayload`](WelcomeMessagePayload.md) |
+| `metadata` | [`WelcomeMessageMetadata`](/api/eventsub/interfaces/welcomemessagemetadata/) |
+| `payload` | [`WelcomeMessagePayload`](/api/eventsub/interfaces/welcomemessagepayload/) |

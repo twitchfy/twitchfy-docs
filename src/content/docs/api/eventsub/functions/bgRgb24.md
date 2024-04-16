@@ -26,7 +26,7 @@ To produce the color magenta:
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `str` | `string` | text color to apply 24bit rgb to |
-| `color` | `number` \| [`Rgb`](../interfaces/Rgb.md) | code |
+| `color` | `number` \| [`Rgb`](/api/eventsub/interfaces/rgb/) | code |
 
 ## Returns
 

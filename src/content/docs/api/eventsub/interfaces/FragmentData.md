@@ -15,8 +15,8 @@ title: "FragmentData"
 
 | Property | Type |
 | :------ | :------ |
-| `cheermote` | `T` extends `"cheermote"` ? [`CheermoteData`](CheermoteData.md) : `null` |
-| `emote` | `T` extends `"emote"` ? [`EmoteData`](EmoteData.md) : `null` |
-| `mention` | `T` extends `"mention"` ? [`MentionData`](MentionData.md) : `null` |
+| `cheermote` | `T` extends `"cheermote"` ? [`CheermoteData`](/api/eventsub/interfaces/cheermotedata/) : `null` |
+| `emote` | `T` extends `"emote"` ? [`EmoteData`](/api/eventsub/interfaces/emotedata/) : `null` |
+| `mention` | `T` extends `"mention"` ? [`MentionData`](/api/eventsub/interfaces/mentiondata/) : `null` |
 | `text` | `string` |
-| `type` | [`FragmentTypes`](../type-aliases/FragmentTypes.md) |
+| `type` | [`FragmentTypes`](/api/eventsub/type-aliases/fragmenttypes/) |

@@ -7,14 +7,14 @@ title: "BaseUser"
 
 ## Extends
 
-- [`Base`](Base.md)\<`T`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | - |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | - |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -34,18 +34,18 @@ displayName: string): BaseUser<T, K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
 | `id` | `string` |
 | `login` | `string` |
 | `displayName` | `string` |
 
 #### Returns
 
-[`BaseUser`](BaseUser.md)\<`T`, `K`\>
+[`BaseUser`](/api/eventsub/classes/baseuser/)\<`T`, `K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -55,8 +55,8 @@ displayName: string): BaseUser<T, K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
 | `displayName` | `public` | `string` | - |
 | `id` | `public` | `string` | - |
 | `login` | `public` | `string` | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> | [`Base`](Base.md).`subscription` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |

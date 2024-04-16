@@ -7,13 +7,13 @@ title: "ChannelFollowUser"
 
 ## Extends
 
-- [`BaseUser`](BaseUser.md)\<`SubscriptionTypes.ChannelFollow`, `K`\>
+- [`BaseUser`](/api/eventsub/classes/baseuser/)\<`SubscriptionTypes.ChannelFollow`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -33,18 +33,18 @@ displayName: string): ChannelFollowUser<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelFollow`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> |
 | `id` | `string` |
 | `login` | `string` |
 | `displayName` | `string` |
 
 #### Returns
 
-[`ChannelFollowUser`](ChannelFollowUser.md)\<`K`\>
+[`ChannelFollowUser`](/api/eventsub/classes/channelfollowuser/)\<`K`\>
 
 #### Overrides
 
-[`BaseUser`](BaseUser.md).[`constructor`](BaseUser.md#constructors)
+[`BaseUser`](/api/eventsub/classes/baseuser/).[`constructor`](/api/eventsub/classes/baseuser/#constructors)
 
 #### Source
 
@@ -54,8 +54,8 @@ displayName: string): ChannelFollowUser<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`BaseUser`](BaseUser.md).`connection` |
-| `displayName` | `public` | `string` | [`BaseUser`](BaseUser.md).`displayName` |
-| `id` | `public` | `string` | [`BaseUser`](BaseUser.md).`id` |
-| `login` | `public` | `string` | [`BaseUser`](BaseUser.md).`login` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelFollow`, `K`\> | [`BaseUser`](BaseUser.md).`subscription` |
+| `connection` | `public` | `K` | [`BaseUser`](/api/eventsub/classes/baseuser/).`connection` |
+| `displayName` | `public` | `string` | [`BaseUser`](/api/eventsub/classes/baseuser/).`displayName` |
+| `id` | `public` | `string` | [`BaseUser`](/api/eventsub/classes/baseuser/).`id` |
+| `login` | `public` | `string` | [`BaseUser`](/api/eventsub/classes/baseuser/).`login` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> | [`BaseUser`](/api/eventsub/classes/baseuser/).`subscription` |

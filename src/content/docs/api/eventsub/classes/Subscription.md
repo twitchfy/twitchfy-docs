@@ -7,14 +7,14 @@ title: "Subscription"
 
 ## Extended by
 
-- [`WebhookSubscription`](WebhookSubscription.md)
-- [`WebSocketSubscription`](WebSocketSubscription.md)
+- [`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)
+- [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
@@ -28,12 +28,12 @@ new Subscription<T>(options: SubscriptionOptions<T>, data: PostEventSubSubscript
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\> |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
 | `data` | `PostEventSubSubscription` |
 
 #### Returns
 
-[`Subscription`](Subscription.md)\<`T`\>
+[`Subscription`](/api/eventsub/classes/subscription/)\<`T`\>
 
 #### Source
 
@@ -47,7 +47,7 @@ new Subscription<T>(options: SubscriptionOptions<T>, data: PostEventSubSubscript
 | `createdAt` | `readonly` | `Date` |
 | `id` | `readonly` | `string` |
 | `nonce` | `public` | `string` |
-| `options` | `readonly` | [`SubscriptionTypeOptions`](../interfaces/SubscriptionTypeOptions.md)\[`T`\] |
+| `options` | `readonly` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`T`\] |
 | `status` | `public` | `string` |
 | `type` | `readonly` | `T` |
 | `version` | `readonly` | `string` |

@@ -7,20 +7,20 @@ title: "EventSubEvents"
 
 ## Extended by
 
-- [`WebhookEvents`](WebhookEvents.md)
-- [`WebSocketEvents`](WebSocketEvents.md)
+- [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)
+- [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Properties
 
 | Property | Type |
 | :------ | :------ |
 | `connectionReady` | [`K`] |
-| `subscriptionCreate` | [[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md), `K`\>] |
-| `subscriptionMessage` | [[`SubscriptionMessage`](../type-aliases/SubscriptionMessage.md)\<`K`\>, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md), `K`\>] |
-| `subscriptionReload` | [[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md), `K`\>] |
+| `subscriptionCreate` | [[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] |
+| `subscriptionMessage` | [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<`K`\>, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] |
+| `subscriptionReload` | [[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] |

@@ -17,11 +17,11 @@ new Parent(data: ReplyData): Parent
 
 | Parameter | Type |
 | :------ | :------ |
-| `data` | [`ReplyData`](../interfaces/ReplyData.md) |
+| `data` | [`ReplyData`](/api/eventsub/interfaces/replydata/) |
 
 #### Returns
 
-[`Parent`](Parent.md)
+[`Parent`](/api/eventsub/classes/parent/)
 
 #### Source
 
@@ -31,5 +31,5 @@ new Parent(data: ReplyData): Parent
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `message` | `public` | [`UncompleteMessage`](UncompleteMessage.md) |
-| `user` | `public` | [`UncompleteUser`](UncompleteUser.md) |
+| `message` | `public` | [`UncompleteMessage`](/api/eventsub/classes/uncompletemessage/) |
+| `user` | `public` | [`UncompleteUser`](/api/eventsub/classes/uncompleteuser/) |

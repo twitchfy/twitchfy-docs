@@ -13,7 +13,7 @@ type WebhookConnectionOptions: BaseConnectionOptions<WebhookConnection> & Object
 
 | Member | Type |
 | :------ | :------ |
-| `appToken` | [`TokenAdapter`](../classes/TokenAdapter.md)\<`"app"`, `boolean`\> |
+| `appToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\> |
 | `baseURL` | `string` |
 | `dropSubsAtStart` | `boolean` |
 | `secret` | `string` |

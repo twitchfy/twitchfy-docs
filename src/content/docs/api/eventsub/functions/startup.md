@@ -13,7 +13,7 @@ startup(this: WebSocketConnection): Promise<void>
 
 | Parameter | Type |
 | :------ | :------ |
-| `this` | [`WebSocketConnection`](../classes/WebSocketConnection.md) |
+| `this` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
 
 ## Returns
 

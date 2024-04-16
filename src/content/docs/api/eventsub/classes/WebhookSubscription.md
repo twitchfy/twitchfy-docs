@@ -7,13 +7,13 @@ title: "WebhookSubscription"
 
 ## Extends
 
-- [`Subscription`](Subscription.md)\<`T`\>
+- [`Subscription`](/api/eventsub/classes/subscription/)\<`T`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
@@ -31,18 +31,18 @@ secret: string): WebhookSubscription<T>
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`WebhookConnection`](WebhookConnection.md) |
-| `options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\> |
+| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
 | `data` | `PostEventSubSubscription` |
 | `secret` | `string` |
 
 #### Returns
 
-[`WebhookSubscription`](WebhookSubscription.md)\<`T`\>
+[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<`T`\>
 
 #### Overrides
 
-[`Subscription`](Subscription.md).[`constructor`](Subscription.md#constructors)
+[`Subscription`](/api/eventsub/classes/subscription/).[`constructor`](/api/eventsub/classes/subscription/#constructors)
 
 #### Source
 
@@ -52,17 +52,17 @@ secret: string): WebhookSubscription<T>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `callbacks` | `public` | [`WebhookSubscriptionCallbackManager`](WebhookSubscriptionCallbackManager.md)\<`T`\> | - |
-| `connection` | `readonly` | [`WebhookConnection`](WebhookConnection.md) | - |
-| `cost` | `readonly` | `number` | [`Subscription`](Subscription.md).`cost` |
-| `createdAt` | `readonly` | `Date` | [`Subscription`](Subscription.md).`createdAt` |
-| `id` | `readonly` | `string` | [`Subscription`](Subscription.md).`id` |
-| `nonce` | `public` | `string` | [`Subscription`](Subscription.md).`nonce` |
-| `options` | `readonly` | [`SubscriptionTypeOptions`](../interfaces/SubscriptionTypeOptions.md)\[`T`\] | [`Subscription`](Subscription.md).`options` |
+| `callbacks` | `public` | [`WebhookSubscriptionCallbackManager`](/api/eventsub/classes/webhooksubscriptioncallbackmanager/)\<`T`\> | - |
+| `connection` | `readonly` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) | - |
+| `cost` | `readonly` | `number` | [`Subscription`](/api/eventsub/classes/subscription/).`cost` |
+| `createdAt` | `readonly` | `Date` | [`Subscription`](/api/eventsub/classes/subscription/).`createdAt` |
+| `id` | `readonly` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`id` |
+| `nonce` | `public` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`nonce` |
+| `options` | `readonly` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`T`\] | [`Subscription`](/api/eventsub/classes/subscription/).`options` |
 | `secret` | `readonly` | `string` | - |
-| `status` | `public` | `string` | [`Subscription`](Subscription.md).`status` |
-| `type` | `readonly` | `T` | [`Subscription`](Subscription.md).`type` |
-| `version` | `readonly` | `string` | [`Subscription`](Subscription.md).`version` |
+| `status` | `public` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`status` |
+| `type` | `readonly` | `T` | [`Subscription`](/api/eventsub/classes/subscription/).`type` |
+| `version` | `readonly` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`version` |
 
 ## Methods
 
@@ -76,7 +76,7 @@ checkSubscriptionType<U>(type: U): this is WebhookSubscription<U>
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -120,7 +120,7 @@ onMessage(callback: WebhookSubscriptionCallback<T>): void
 
 | Parameter | Type |
 | :------ | :------ |
-| `callback` | [`WebhookSubscriptionCallback`](../type-aliases/WebhookSubscriptionCallback.md)\<`T`\> |
+| `callback` | [`WebhookSubscriptionCallback`](/api/eventsub/type-aliases/webhooksubscriptioncallback/)\<`T`\> |
 
 #### Returns
 

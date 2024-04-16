@@ -7,7 +7,7 @@ title: "Cheermote"
 
 ## Implements
 
-- [`CheermoteData`](../interfaces/CheermoteData.md)
+- [`CheermoteData`](/api/eventsub/interfaces/cheermotedata/)
 
 ## Constructors
 
@@ -21,11 +21,11 @@ new Cheermote(cheermote: CheermoteData): Cheermote
 
 | Parameter | Type |
 | :------ | :------ |
-| `cheermote` | [`CheermoteData`](../interfaces/CheermoteData.md) |
+| `cheermote` | [`CheermoteData`](/api/eventsub/interfaces/cheermotedata/) |
 
 #### Returns
 
-[`Cheermote`](Cheermote.md)
+[`Cheermote`](/api/eventsub/classes/cheermote/)
 
 #### Source
 

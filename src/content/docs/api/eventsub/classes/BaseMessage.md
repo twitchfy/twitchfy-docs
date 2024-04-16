@@ -7,14 +7,14 @@ title: "BaseMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`T`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | - |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | - |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -32,16 +32,16 @@ data: ChannelChatMessageEvent): BaseMessage<T, K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> |
-| `data` | [`ChannelChatMessageEvent`](../interfaces/ChannelChatMessageEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
+| `data` | [`ChannelChatMessageEvent`](/api/eventsub/interfaces/channelchatmessageevent/) |
 
 #### Returns
 
-[`BaseMessage`](BaseMessage.md)\<`T`, `K`\>
+[`BaseMessage`](/api/eventsub/classes/basemessage/)\<`T`, `K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -53,10 +53,10 @@ data: ChannelChatMessageEvent): BaseMessage<T, K>
 | :------ | :------ | :------ | :------ |
 | `bits` | `public` | `number` | - |
 | `channelRewardId` | `public` | `string` | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
 | `content` | `public` | `string` | - |
-| `fragments` | `public` | [`Fragment`](Fragment.md)\<[`FragmentTypes`](../type-aliases/FragmentTypes.md)\>[] | - |
+| `fragments` | `public` | [`Fragment`](/api/eventsub/classes/fragment/)\<[`FragmentTypes`](/api/eventsub/type-aliases/fragmenttypes/)\>[] | - |
 | `id` | `public` | `string` | - |
-| `reply` | `public` | [`MessageReply`](MessageReply.md) | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> | [`Base`](Base.md).`subscription` |
-| `type` | `public` | [`MessageTypes`](../type-aliases/MessageTypes.md) | - |
+| `reply` | `public` | [`MessageReply`](/api/eventsub/classes/messagereply/) | - |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| `type` | `public` | [`MessageTypes`](/api/eventsub/type-aliases/messagetypes/) | - |

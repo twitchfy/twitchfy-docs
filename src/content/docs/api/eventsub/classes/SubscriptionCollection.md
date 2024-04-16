@@ -7,14 +7,14 @@ title: "SubscriptionCollection"
 
 ## Extends
 
-- `Map`\<`string`, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>\>
+- `Map`\<`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
@@ -28,11 +28,11 @@ new SubscriptionCollection<K, T>(entries?: readonly readonly [string, Subscripti
 
 | Parameter | Type |
 | :------ | :------ |
-| `entries`? | readonly readonly [`string`, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>][] |
+| `entries`? | readonly readonly [`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>][] |
 
 #### Returns
 
-[`SubscriptionCollection`](SubscriptionCollection.md)\<`K`, `T`\>
+[`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<`K`, `T`\>
 
 #### Inherited from
 
@@ -52,11 +52,11 @@ new SubscriptionCollection<K, T>(iterable?: Iterable<readonly [string, Subscript
 
 | Parameter | Type |
 | :------ | :------ |
-| `iterable`? | `Iterable`\<readonly [`string`, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>]\> |
+| `iterable`? | `Iterable`\<readonly [`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>]\> |
 
 #### Returns
 
-[`SubscriptionCollection`](SubscriptionCollection.md)\<`K`, `T`\>
+[`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<`K`, `T`\>
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ Returns an iterable of entries in the map.
 
 #### Returns
 
-`IterableIterator`\<[`string`, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>]\>
+`IterableIterator`\<[`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>]\>
 
 #### Inherited from
 
@@ -156,7 +156,7 @@ Returns an iterable of key, value pairs for every entry in the map.
 
 #### Returns
 
-`IterableIterator`\<[`string`, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>]\>
+`IterableIterator`\<[`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>]\>
 
 #### Inherited from
 
@@ -178,18 +178,18 @@ exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<T, K>
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `type` | `U` |
-| `options` | [`SubscriptionTypeOptions`](../interfaces/SubscriptionTypeOptions.md)\[`U`\] |
+| `options` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`U`\] |
 
 #### Returns
 
-[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>
+[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>
 
 #### Source
 
@@ -209,7 +209,7 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 | Parameter | Type |
 | :------ | :------ |
-| `callbackfn` | (`value`: [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>, `key`: `string`, `map`: `Map`\<`string`, [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>\>) => `void` |
+| `callbackfn` | (`value`: [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>, `key`: `string`, `map`: `Map`\<`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>\>) => `void` |
 | `thisArg`? | `any` |
 
 #### Returns
@@ -236,7 +236,7 @@ get<U>(key: string): SubscriptionType<U, K>
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -246,7 +246,7 @@ get<U>(key: string): SubscriptionType<U, K>
 
 #### Returns
 
-[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`U`, `K`\>
+[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\>
 
 #### Overrides
 
@@ -318,14 +318,14 @@ set<U>(key: string, value: SubscriptionType<U, K>): this
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `key` | `string` |
-| `value` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`U`, `K`\> |
+| `value` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\> |
 
 #### Returns
 
@@ -351,7 +351,7 @@ Returns an iterable of values in the map
 
 #### Returns
 
-`IterableIterator`\<[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>\>
+`IterableIterator`\<[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>\>
 
 #### Inherited from
 

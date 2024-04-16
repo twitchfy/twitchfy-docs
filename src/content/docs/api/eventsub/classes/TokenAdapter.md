@@ -28,7 +28,7 @@ new TokenAdapter<T, K>(options: TokenAdapterOptions<T, K>): TokenAdapter<T, K>
 
 #### Returns
 
-[`TokenAdapter`](TokenAdapter.md)\<`T`, `K`\>
+[`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`T`, `K`\>
 
 #### Source
 

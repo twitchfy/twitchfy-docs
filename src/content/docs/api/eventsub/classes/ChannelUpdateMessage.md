@@ -7,13 +7,13 @@ title: "ChannelUpdateMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.ChannelUpdate`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelUpdate`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelUpdateEvent): ChannelUpdateMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelUpdate`, `K`\> |
-| `data` | [`ChannelUpdateEvent`](../interfaces/ChannelUpdateEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> |
+| `data` | [`ChannelUpdateEvent`](/api/eventsub/interfaces/channelupdateevent/) |
 
 #### Returns
 
-[`ChannelUpdateMessage`](ChannelUpdateMessage.md)\<`K`\>
+[`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,10 +50,10 @@ data: ChannelUpdateEvent): ChannelUpdateMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelUpdateBroadcaster`](ChannelUpdateBroadcaster.md)\<`K`\> | - |
-| `category` | `public` | [`ChannelUpdateCategory`](ChannelUpdateCategory.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
+| `broadcaster` | `public` | [`ChannelUpdateBroadcaster`](/api/eventsub/classes/channelupdatebroadcaster/)\<`K`\> | - |
+| `category` | `public` | [`ChannelUpdateCategory`](/api/eventsub/classes/channelupdatecategory/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
 | `labels` | `public` | `string`[] | - |
 | `language` | `public` | `string` | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelUpdate`, `K`\> | [`Base`](Base.md).`subscription` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
 | `title` | `public` | `string` | - |

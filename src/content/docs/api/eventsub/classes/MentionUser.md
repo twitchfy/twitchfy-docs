@@ -26,7 +26,7 @@ new MentionUser(
 
 #### Returns
 
-[`MentionUser`](MentionUser.md)
+[`MentionUser`](/api/eventsub/classes/mentionuser/)
 
 #### Source
 

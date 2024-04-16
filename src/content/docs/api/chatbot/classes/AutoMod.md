@@ -15,7 +15,7 @@ Represents the automod of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,12 +31,12 @@ Creates a new instance of the automod.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
-| `chatroom` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom where the automod is. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
+| `chatroom` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom where the automod is. |
 
 #### Returns
 
-[`AutoMod`](AutoMod.md)\<`T`\>
+[`AutoMod`](/api/chatbot/classes/automod/)\<`T`\>
 
 #### Overrides
 
@@ -50,9 +50,9 @@ Creates a new instance of the automod.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
-| `chatroom` | `readonly` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom where the automod is. | - |
-| `settings` | `readonly` | [`AutoModSettingsManager`](AutoModSettingsManager.md)\<`T`\> | The settings manager of the automod. | - |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatroom` | `readonly` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom where the automod is. | - |
+| `settings` | `readonly` | [`AutoModSettingsManager`](/api/chatbot/classes/automodsettingsmanager/)\<`T`\> | The settings manager of the automod. | - |
 
 ## Methods
 
@@ -72,7 +72,7 @@ Sets the aggression level of the automod. This settings will disable the overall
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -98,7 +98,7 @@ Sets the bullying level of the automod. This settings will disable the overall l
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -124,7 +124,7 @@ Sets the disability level of the automod. This settings will disable the overall
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -150,7 +150,7 @@ Sets the misogyny level of the automod. This settings will disable the overall l
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -176,7 +176,7 @@ Sets the overall level of the automod. This setting will overwrite all the other
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -202,7 +202,7 @@ Sets the racism level of the automod. This settings will disable the overall lev
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -228,7 +228,7 @@ Sets the level of sex based terms of the automod. This settings will disable the
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -254,7 +254,7 @@ Sets the sexuality level of the automod. This settings will disable the overall 
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -280,7 +280,7 @@ Sets the harassment level of the automod. This settings will disable the overall
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 

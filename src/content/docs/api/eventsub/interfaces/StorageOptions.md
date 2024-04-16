@@ -9,10 +9,10 @@ title: "StorageOptions"
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Properties
 
 | Property | Type |
 | :------ | :------ |
-| `adapter` | [`StorageAdapter`](../classes/StorageAdapter.md)\<`K`\> |
+| `adapter` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<`K`\> |

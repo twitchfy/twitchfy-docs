@@ -30,8 +30,8 @@ dependencies:
     specifier: ^0.32.6
     version: 0.32.6
   starlight-typedoc:
-    specifier: ^0.10.1
-    version: 0.10.1(@astrojs/starlight@0.21.5)(astro@4.6.1)(typedoc-plugin-markdown@4.0.0-next.54)(typedoc@0.25.13)
+    specifier: ^0.11.0
+    version: 0.11.0(@astrojs/starlight@0.21.5)(astro@4.6.1)(typedoc-plugin-markdown@4.0.0-next.54)(typedoc@0.25.13)
   typedoc:
     specifier: ^0.25.13
     version: 0.25.13(typescript@5.4.5)
@@ -4906,14 +4906,14 @@ packages:
     dev: false
     optional: true
 
-  /starlight-typedoc@0.10.1(@astrojs/starlight@0.21.5)(astro@4.6.1)(typedoc-plugin-markdown@4.0.0-next.54)(typedoc@0.25.13):
-    resolution: {integrity: sha512-pcL7ZLODLXzPJAU5v6WFnP+SEk1JRC7ZBYlFoNIwnyFOKkDo+5pT37NoJs6cWwk6e2jN/fKjiSmgR/ylIyqhQw==}
+  /starlight-typedoc@0.11.0(@astrojs/starlight@0.21.5)(astro@4.6.1)(typedoc-plugin-markdown@4.0.0-next.54)(typedoc@0.25.13):
+    resolution: {integrity: sha512-wSyIT46XU6nSxBqkLajKxF3P1hho858GaaG8d+tjmEQrloOMGri+GEEySPaWztm1epgMXUylhB2e3N9b7BDOAA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       '@astrojs/starlight': '>=0.15.0'
       astro: '>=4.0.0'
       typedoc: '>=0.25.0'
-      typedoc-plugin-markdown: '>=4.0.0-next.45'
+      typedoc-plugin-markdown: '>=4.0.0-next.54'
     dependencies:
       '@astrojs/starlight': 0.21.5(astro@4.6.1)
       astro: 4.6.1(@types/node@20.12.7)(typescript@5.4.5)

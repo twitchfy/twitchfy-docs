@@ -21,11 +21,11 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`WebSocketConnection`](WebSocketConnection.md) |
+| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
 
 #### Returns
 
-[`WebSocket`](WebSocket.md)
+[`WebSocket`](/api/eventsub/classes/websocket/)
 
 #### Overrides
 
@@ -39,7 +39,7 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `connection` | `public` | [`WebSocketConnection`](WebSocketConnection.md) | - | - |
+| `connection` | `public` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | - | - |
 | `wsConnection` | `public` | `connection` | - | - |
 | `captureRejectionSymbol` | `readonly` | *typeof* `captureRejectionSymbol` | Value: `Symbol.for('nodejs.rejection')`<br /><br />See how to write a custom `rejection handler`.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejectionSymbol` |
 | `captureRejections` | `static` | `boolean` | Value: [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)<br /><br />Change the default `captureRejections` option on all new `EventEmitter` objects.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejections` |
@@ -980,10 +980,6 @@ Disposable that removes the `abort` listener.
 
 v20.5.0
 
-:::caution[Experimental]
-This API should not be used in production and may be trimmed from a public release.
-:::
-
 #### Source
 
 twitchapi/node\_modules/@types/node/events.d.ts:387
@@ -1142,10 +1138,6 @@ Since v3.2.0 - Use `listenerCount` instead.
 #### Since
 
 v0.9.12
-
-:::caution[Deprecated]
-Since v3.2.0 - Use `listenerCount` instead.
-:::
 
 #### Source
 

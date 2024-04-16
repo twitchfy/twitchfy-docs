@@ -7,13 +7,13 @@ title: "ChannelAdBreakBeginMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.ChannelAdBreakBegin`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelAdBreakBegin`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelAdBreakBeginEvent): ChannelAdBreakBeginMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelAdBreakBegin`, `K`\> |
-| `data` | [`ChannelAdBreakBeginEvent`](../interfaces/ChannelAdBreakBeginEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelAdBreakBegin`, `K`\> |
+| `data` | [`ChannelAdBreakBeginEvent`](/api/eventsub/interfaces/channeladbreakbeginevent/) |
 
 #### Returns
 
-[`ChannelAdBreakBeginMessage`](ChannelAdBreakBeginMessage.md)\<`K`\>
+[`ChannelAdBreakBeginMessage`](/api/eventsub/classes/channeladbreakbeginmessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,10 +50,10 @@ data: ChannelAdBreakBeginEvent): ChannelAdBreakBeginMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelAdBreakBeginBroadcaster`](ChannelAdBreakBeginBroadcaster.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
+| `broadcaster` | `public` | [`ChannelAdBreakBeginBroadcaster`](/api/eventsub/classes/channeladbreakbeginbroadcaster/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
 | `duration` | `public` | `number` | - |
 | `isAutomatic` | `public` | `boolean` | - |
-| `requester` | `public` | [`ChannelAdBreakBeginRequester`](ChannelAdBreakBeginRequester.md)\<`K`\> | - |
+| `requester` | `public` | [`ChannelAdBreakBeginRequester`](/api/eventsub/classes/channeladbreakbeginrequester/)\<`K`\> | - |
 | `startedAt` | `public` | `Date` | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelAdBreakBegin`, `K`\> | [`Base`](Base.md).`subscription` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelAdBreakBegin`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |

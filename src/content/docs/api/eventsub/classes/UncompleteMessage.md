@@ -22,7 +22,7 @@ new UncompleteMessage(id: string, content: string): UncompleteMessage
 
 #### Returns
 
-[`UncompleteMessage`](UncompleteMessage.md)
+[`UncompleteMessage`](/api/eventsub/classes/uncompletemessage/)
 
 #### Source
 

@@ -11,7 +11,7 @@ Represents a chatbot.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) | [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -27,11 +27,11 @@ Creates a new instance of the chatbot.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `options` | [`ChatBotOptions`](../interfaces/ChatBotOptions.md)\<`T`\> | The options to build up the chatbot. |
+| `options` | [`ChatBotOptions`](/api/chatbot/interfaces/chatbotoptions/)\<`T`\> | The options to build up the chatbot. |
 
 #### Returns
 
-[`ChatBot`](ChatBot.md)\<`T`\>
+[`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\>
 
 #### Source
 
@@ -41,23 +41,23 @@ Creates a new instance of the chatbot.
 
 | Property | Modifier | Type | Description |
 | :------ | :------ | :------ | :------ |
-| `bans` | `readonly` | [`ChatBotBanManager`](ChatBotBanManager.md)\<`T`\> | The ban manager of the chatbot. |
-| `channels` | `readonly` | [`ChannelManager`](ChannelManager.md)\<`T`\> | The manager of the chatbot channels. |
+| `bans` | `readonly` | [`ChatBotBanManager`](/api/chatbot/classes/chatbotbanmanager/)\<`T`\> | The ban manager of the chatbot. |
+| `channels` | `readonly` | [`ChannelManager`](/api/chatbot/classes/channelmanager/)\<`T`\> | The manager of the chatbot channels. |
 | `clientID` | `readonly` | `string` | The client ID of the Twitch's application. |
 | `clientSecret` | `readonly` | `string` | The client secret of the Twitch's application. |
-| `commands` | `readonly` | [`Collection`](Collection.md)\<`string`, [`Command`](Command.md)\<`T`\>\> | A Collection of the chatbot commands. |
+| `commands` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<`string`, [`Command`](/api/chatbot/classes/command/)\<`T`\>\> | A Collection of the chatbot commands. |
 | `connectionType` | `readonly` | `T` | The EventSub connection type used by the chatbot. |
-| `events` | `readonly` | [`Collection`](Collection.md)\<[`Events`](../type-aliases/Events.md), \| [`EventData`](../type-aliases/EventData.md)\<`T`, `"ChannelChatClear"`\> \| [`EventData`](../type-aliases/EventData.md)\<`T`, `"ChannelFollow"`\> \| [`EventData`](../type-aliases/EventData.md)\<`T`, `"ChannelUpdate"`\> \| [`EventData`](../type-aliases/EventData.md)\<`T`, `"StreamOnline"`\> \| [`EventData`](../type-aliases/EventData.md)\<`T`, `"ChannelChatMessage"`\> \| [`EventData`](../type-aliases/EventData.md)\<`T`, `"ChatBotReady"`\>\> | A Collection of the chatbot events. |
+| `events` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<[`Events`](/api/chatbot/type-aliases/events/), \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelChatClear"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelFollow"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelUpdate"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"StreamOnline"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelChatMessage"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChatBotReady"`\>\> | A Collection of the chatbot events. |
 | `eventsub` | `readonly` | `EventSubConnectionMap`\[`T`\] | The EventSub connection of the chatbot. |
 | `helixClient` | `readonly` | `HelixClient` | The Helix client of the chatbot. |
-| `messages` | `readonly` | [`ChatBotMessageManager`](ChatBotMessageManager.md)\<`T`\> | The message manager of the chatbot. |
+| `messages` | `readonly` | [`ChatBotMessageManager`](/api/chatbot/classes/chatbotmessagemanager/)\<`T`\> | The message manager of the chatbot. |
 | `optionOperator` | `readonly` | `string` | The operator to separate the options in the command. |
-| `options` | `readonly` | [`ChatBotOptions`](../interfaces/ChatBotOptions.md)\<`T`\> | The options of the chatbot. |
-| `profiles` | `readonly` | [`Collection`](Collection.md)\<`string`, [`ChannelProfile`](ChannelProfile.md)\<`T`\>\> | A Collection of the profiles of the joined channels. |
-| `timeouts` | `readonly` | [`ChatBotTimeoutManager`](ChatBotTimeoutManager.md)\<`T`\> | The timeout manager of the chatbot. |
-| `user` | `public` | [`ChatBotUser`](ChatBotUser.md)\<`T`\> | The Twitch user of the chatbot. |
+| `options` | `readonly` | [`ChatBotOptions`](/api/chatbot/interfaces/chatbotoptions/)\<`T`\> | The options of the chatbot. |
+| `profiles` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<`string`, [`ChannelProfile`](/api/chatbot/classes/channelprofile/)\<`T`\>\> | A Collection of the profiles of the joined channels. |
+| `timeouts` | `readonly` | [`ChatBotTimeoutManager`](/api/chatbot/classes/chatbottimeoutmanager/)\<`T`\> | The timeout manager of the chatbot. |
+| `user` | `public` | [`ChatBotUser`](/api/chatbot/classes/chatbotuser/)\<`T`\> | The Twitch user of the chatbot. |
 | `userID` | `public` | `string` | The user ID of the chatbot. |
-| `users` | `readonly` | [`ChatBotUserManager`](ChatBotUserManager.md)\<`T`\> | The user manager of the chatbot. |
+| `users` | `readonly` | [`ChatBotUserManager`](/api/chatbot/classes/chatbotusermanager/)\<`T`\> | The user manager of the chatbot. |
 
 ## Accessors
 
@@ -113,7 +113,7 @@ Get a specific Twitch clip from the API.
 
 #### Returns
 
-`Promise`\<`null` \| [`Clip`](Clip.md)\<`T`\>\>
+`Promise`\<`null` \| [`Clip`](/api/chatbot/classes/clip/)\<`T`\>\>
 
 The clip fetched from the API or null if the clip wasn't founded.
 
@@ -139,7 +139,7 @@ Get Twitch clips from the API.
 
 #### Returns
 
-`Promise`\<`null` \| [`Clip`](Clip.md)\<`T`\>[]\>
+`Promise`\<`null` \| [`Clip`](/api/chatbot/classes/clip/)\<`T`\>[]\>
 
 An array containing the clips fetched from the API. If there isn't any clip founded, it will return a nullish value.
 
@@ -161,11 +161,11 @@ Start the chatbot.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `options`? | [`StartOptions`](../type-aliases/StartOptions.md)\<`T`\> | The start options to start the chatbot. |
+| `options`? | [`StartOptions`](/api/chatbot/type-aliases/startoptions/)\<`T`\> | The start options to start the chatbot. |
 
 #### Returns
 
-`Promise`\<[`ChatBot`](ChatBot.md)\<`T`\>\>
+`Promise`\<[`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\>\>
 
 The current instance of the chatbot. When the promise is resolved the chatbot has been completly started.
 
@@ -191,7 +191,7 @@ Fetches a Twitch stream from the API.
 
 #### Returns
 
-`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>\>
+`Promise`\<`null` \| [`Stream`](/api/chatbot/classes/stream/)\<`T`\>\>
 
 A stream fetched from the API or null if the stream wasn't founded.
 
@@ -213,7 +213,7 @@ Get Twitch streams from the API.
 
 ##### Returns
 
-`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>[]\>
+`Promise`\<`null` \| [`Stream`](/api/chatbot/classes/stream/)\<`T`\>[]\>
 
 An array containing the streams fetched from the API. If there isn't any stream founded, it will return a nullish value.
 
@@ -237,7 +237,7 @@ Get Twitch streams from the API.
 
 ##### Returns
 
-`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>[]\>
+`Promise`\<`null` \| [`Stream`](/api/chatbot/classes/stream/)\<`T`\>[]\>
 
 An array containing the streams fetched from the API. If there isn't any stream founded, it will return a nullish value.
 
@@ -262,7 +262,7 @@ Get Twitch streams from the API.
 
 ##### Returns
 
-`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>[]\>
+`Promise`\<`null` \| [`Stream`](/api/chatbot/classes/stream/)\<`T`\>[]\>
 
 An array containing the streams fetched from the API. If there isn't any stream founded, it will return a nullish value.
 

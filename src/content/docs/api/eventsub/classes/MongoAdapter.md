@@ -7,13 +7,13 @@ title: "MongoAdapter"
 
 ## Extends
 
-- [`StorageAdapter`](StorageAdapter.md)\<`K`\>
+- [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<`K`\>
 
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -25,11 +25,11 @@ new MongoAdapter<K>(): MongoAdapter<K>
 
 #### Returns
 
-[`MongoAdapter`](MongoAdapter.md)\<`K`\>
+[`MongoAdapter`](/api/eventsub/classes/mongoadapter/)\<`K`\>
 
 #### Overrides
 
-[`StorageAdapter`](StorageAdapter.md).[`constructor`](StorageAdapter.md#constructors)
+[`StorageAdapter`](/api/eventsub/classes/storageadapter/).[`constructor`](/api/eventsub/classes/storageadapter/#constructors)
 
 #### Source
 
@@ -55,7 +55,7 @@ delete(id: string): Promise<void>
 
 #### Overrides
 
-[`StorageAdapter`](StorageAdapter.md).[`delete`](StorageAdapter.md#delete)
+[`StorageAdapter`](/api/eventsub/classes/storageadapter/).[`delete`](/api/eventsub/classes/storageadapter/#delete)
 
 #### Source
 
@@ -73,7 +73,7 @@ get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -83,11 +83,11 @@ get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 
 #### Returns
 
-`Promise`\<[`StorageAdapterGet`](../type-aliases/StorageAdapterGet.md)\<`K`, `T`\>\>
+`Promise`\<[`StorageAdapterGet`](/api/eventsub/type-aliases/storageadapterget/)\<`K`, `T`\>\>
 
 #### Overrides
 
-[`StorageAdapter`](StorageAdapter.md).[`get`](StorageAdapter.md#get)
+[`StorageAdapter`](/api/eventsub/classes/storageadapter/).[`get`](/api/eventsub/classes/storageadapter/#get)
 
 #### Source
 
@@ -103,11 +103,11 @@ getAll(): Promise<StorageAdapterGet<K, SubscriptionTypes>[]>
 
 #### Returns
 
-`Promise`\<[`StorageAdapterGet`](../type-aliases/StorageAdapterGet.md)\<`K`, [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>[]\>
+`Promise`\<[`StorageAdapterGet`](/api/eventsub/type-aliases/storageadapterget/)\<`K`, [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>[]\>
 
 #### Overrides
 
-[`StorageAdapter`](StorageAdapter.md).[`getAll`](StorageAdapter.md#getall)
+[`StorageAdapter`](/api/eventsub/classes/storageadapter/).[`getAll`](/api/eventsub/classes/storageadapter/#getall)
 
 #### Source
 
@@ -125,14 +125,14 @@ set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `id` | `string` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
 
 #### Returns
 
@@ -140,7 +140,7 @@ set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 
 #### Overrides
 
-[`StorageAdapter`](StorageAdapter.md).[`set`](StorageAdapter.md#set)
+[`StorageAdapter`](/api/eventsub/classes/storageadapter/).[`set`](/api/eventsub/classes/storageadapter/#set)
 
 #### Source
 

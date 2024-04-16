@@ -7,7 +7,7 @@ title: "WebSocketConnection"
 
 ## Extends
 
-- [`BaseConnection`](BaseConnection.md)\<[`WebSocketConnection`](WebSocketConnection.md), [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\>
+- [`BaseConnection`](/api/eventsub/classes/baseconnection/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\>
 
 ## Constructors
 
@@ -21,15 +21,15 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`WebSocketConnectionOptions`](../type-aliases/WebSocketConnectionOptions.md) |
+| `options` | [`WebSocketConnectionOptions`](/api/eventsub/type-aliases/websocketconnectionoptions/) |
 
 #### Returns
 
-[`WebSocketConnection`](WebSocketConnection.md)
+[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)
 
 #### Overrides
 
-[`BaseConnection`](BaseConnection.md).[`constructor`](BaseConnection.md#constructors)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`constructor`](/api/eventsub/classes/baseconnection/#constructors)
 
 #### Source
 
@@ -39,17 +39,17 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `clientID` | `readonly` | `string` | [`BaseConnection`](BaseConnection.md).`clientID` |
-| `clientSecret` | `readonly` | `string` | [`BaseConnection`](BaseConnection.md).`clientSecret` |
-| `debug` | `public` | `boolean` | [`BaseConnection`](BaseConnection.md).`debug` |
-| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](BaseConnection.md).`helixClient` |
-| `logger` | `readonly` | [`Logger`](Logger.md) | [`BaseConnection`](BaseConnection.md).`logger` |
-| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](BaseConnection.md).`maintainSubscriptions` |
+| `clientID` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientID` |
+| `clientSecret` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
+| `debug` | `public` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
+| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
+| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
 | `proxy?` | `readonly` | `string` | - |
 | `sessionID` | `public` | `string` | - |
-| `storage` | `readonly` | [`StorageAdapter`](StorageAdapter.md)\<[`WebSocketConnection`](WebSocketConnection.md)\> | [`BaseConnection`](BaseConnection.md).`storage` |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](SubscriptionCollection.md)\<[`WebSocketConnection`](WebSocketConnection.md), [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\> | [`BaseConnection`](BaseConnection.md).`subscriptions` |
-| `ws` | `public` | [`WebSocket`](WebSocket.md) | - |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
+| `ws` | `public` | [`WebSocket`](/api/eventsub/classes/websocket/) | - |
 
 ## Methods
 
@@ -70,7 +70,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -78,7 +78,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`addListener`](BaseConnection.md#addlistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`addListener`](/api/eventsub/classes/baseconnection/#addlistener)
 
 #### Source
 
@@ -119,7 +119,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\] |
+| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\] |
 
 #### Returns
 
@@ -127,7 +127,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`emit`](BaseConnection.md#emit)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`emit`](/api/eventsub/classes/baseconnection/#emit)
 
 #### Source
 
@@ -147,7 +147,7 @@ eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof WebSocketEvents)[
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`eventNames`](BaseConnection.md#eventnames)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`eventNames`](/api/eventsub/classes/baseconnection/#eventnames)
 
 #### Source
 
@@ -167,7 +167,7 @@ getMaxListeners(): number
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`getMaxListeners`](BaseConnection.md#getmaxlisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`getMaxListeners`](/api/eventsub/classes/baseconnection/#getmaxlisteners)
 
 #### Source
 
@@ -199,7 +199,7 @@ listenerCount<K>(eventName: K): number
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`listenerCount`](BaseConnection.md#listenercount)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`listenerCount`](/api/eventsub/classes/baseconnection/#listenercount)
 
 #### Source
 
@@ -227,11 +227,11 @@ listeners<K>(eventName: K): (...args: [WebSocketConnection] | [WebSocketSubscrip
 
 #### Returns
 
-(...`args`: [[`WebSocketConnection`](WebSocketConnection.md)] \| [[`WebSocketSubscription`](WebSocketSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`SubscriptionMessage`](../type-aliases/SubscriptionMessage.md)\<[`WebSocketConnection`](WebSocketConnection.md)\>, [`WebSocketSubscription`](WebSocketSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`WebSocketSubscription`](WebSocketSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>]) => `Awaitable`\<`void`\>[]
+(...`args`: [[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>, [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]) => `Awaitable`\<`void`\>[]
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`listeners`](BaseConnection.md#listeners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`listeners`](/api/eventsub/classes/baseconnection/#listeners)
 
 #### Source
 
@@ -257,7 +257,7 @@ makeDebug(...args: any[]): void
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`makeDebug`](BaseConnection.md#makedebug)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`makeDebug`](/api/eventsub/classes/baseconnection/#makedebug)
 
 #### Source
 
@@ -283,7 +283,7 @@ makeWarn(...args: any[]): void
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`makeWarn`](BaseConnection.md#makewarn)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`makeWarn`](/api/eventsub/classes/baseconnection/#makewarn)
 
 #### Source
 
@@ -308,7 +308,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -316,7 +316,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`off`](BaseConnection.md#off)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`off`](/api/eventsub/classes/baseconnection/#off)
 
 #### Source
 
@@ -341,7 +341,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -349,7 +349,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`on`](BaseConnection.md#on)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`on`](/api/eventsub/classes/baseconnection/#on)
 
 #### Source
 
@@ -374,7 +374,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -382,7 +382,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`once`](BaseConnection.md#once)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`once`](/api/eventsub/classes/baseconnection/#once)
 
 #### Source
 
@@ -407,7 +407,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -415,7 +415,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`prependListener`](BaseConnection.md#prependlistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`prependListener`](/api/eventsub/classes/baseconnection/#prependlistener)
 
 #### Source
 
@@ -440,7 +440,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -448,7 +448,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`prependOnceListener`](BaseConnection.md#prependoncelistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`prependOnceListener`](/api/eventsub/classes/baseconnection/#prependoncelistener)
 
 #### Source
 
@@ -476,11 +476,11 @@ rawListeners<K>(eventName: K): Listener<[WebSocketConnection] | [WebSocketSubscr
 
 #### Returns
 
-`Listener`\<[[`WebSocketConnection`](WebSocketConnection.md)] \| [[`WebSocketSubscription`](WebSocketSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`SubscriptionMessage`](../type-aliases/SubscriptionMessage.md)\<[`WebSocketConnection`](WebSocketConnection.md)\>, [`WebSocketSubscription`](WebSocketSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`WebSocketSubscription`](WebSocketSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>]\>[]
+`Listener`\<[[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>, [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]\>[]
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`rawListeners`](BaseConnection.md#rawlisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`rawListeners`](/api/eventsub/classes/baseconnection/#rawlisteners)
 
 #### Source
 
@@ -512,7 +512,7 @@ removeAllListeners<K>(event?: K): this
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`removeAllListeners`](BaseConnection.md#removealllisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`removeAllListeners`](/api/eventsub/classes/baseconnection/#removealllisteners)
 
 #### Source
 
@@ -537,7 +537,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](../interfaces/WebSocketEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -545,7 +545,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`removeListener`](BaseConnection.md#removelistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`removeListener`](/api/eventsub/classes/baseconnection/#removelistener)
 
 #### Source
 
@@ -563,11 +563,11 @@ setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnect
 
 | Parameter | Type |
 | :------ | :------ |
-| `userToken` | [`TokenAdapter`](TokenAdapter.md)\<`"code"` \| `"implicit"`, `boolean`\> |
+| `userToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"code"` \| `"implicit"`, `boolean`\> |
 
 #### Returns
 
-[`WebSocketConnection`](WebSocketConnection.md)
+[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)
 
 #### Source
 
@@ -593,7 +593,7 @@ setMaxListeners(n: number): this
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`setMaxListeners`](BaseConnection.md#setmaxlisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`setMaxListeners`](/api/eventsub/classes/baseconnection/#setmaxlisteners)
 
 #### Source
 
@@ -611,21 +611,21 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\> |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
 
 #### Returns
 
-`Promise`\<[`WebSocketSubscription`](WebSocketSubscription.md)\<`T`\>\>
+`Promise`\<[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<`T`\>\>
 
 #### Overrides
 
-[`BaseConnection`](BaseConnection.md).[`subscribe`](BaseConnection.md#subscribe)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`subscribe`](/api/eventsub/classes/baseconnection/#subscribe)
 
 #### Source
 
@@ -643,21 +643,21 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\>[] |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
 
 #### Returns
 
-`Promise`\<[`WebSocketSubscription`](WebSocketSubscription.md)\<`T`\>[]\>
+`Promise`\<[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<`T`\>[]\>
 
 #### Overrides
 
-[`BaseConnection`](BaseConnection.md).[`subscribeAll`](BaseConnection.md#subscribeall)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`subscribeAll`](/api/eventsub/classes/baseconnection/#subscribeall)
 
 #### Source
 
@@ -677,7 +677,7 @@ waitForAllListenersToComplete(): Promise<boolean>
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`waitForAllListenersToComplete`](BaseConnection.md#waitforalllistenerstocomplete)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`waitForAllListenersToComplete`](/api/eventsub/classes/baseconnection/#waitforalllistenerstocomplete)
 
 #### Source
 
@@ -712,7 +712,7 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`listenerCount`](BaseConnection.md#listenercount-1)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`listenerCount`](/api/eventsub/classes/baseconnection/#listenercount-1)
 
 #### Source
 
@@ -752,7 +752,7 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`on`](BaseConnection.md#on-1)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`on`](/api/eventsub/classes/baseconnection/#on-1)
 
 #### Source
 
@@ -792,7 +792,7 @@ options?: AbortableMethods): Promise<EventResult>
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`once`](BaseConnection.md#once-1)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`once`](/api/eventsub/classes/baseconnection/#once-1)
 
 #### Source
 

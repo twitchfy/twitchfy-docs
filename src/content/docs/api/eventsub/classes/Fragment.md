@@ -9,7 +9,7 @@ title: "Fragment"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`FragmentTypes`](../type-aliases/FragmentTypes.md) | [`FragmentTypes`](../type-aliases/FragmentTypes.md) |
+| `T` extends [`FragmentTypes`](/api/eventsub/type-aliases/fragmenttypes/) | [`FragmentTypes`](/api/eventsub/type-aliases/fragmenttypes/) |
 
 ## Constructors
 
@@ -23,11 +23,11 @@ new Fragment<T>(data: FragmentData<T>): Fragment<T>
 
 | Parameter | Type |
 | :------ | :------ |
-| `data` | [`FragmentData`](../interfaces/FragmentData.md)\<`T`\> |
+| `data` | [`FragmentData`](/api/eventsub/interfaces/fragmentdata/)\<`T`\> |
 
 #### Returns
 
-[`Fragment`](Fragment.md)\<`T`\>
+[`Fragment`](/api/eventsub/classes/fragment/)\<`T`\>
 
 #### Source
 
@@ -37,8 +37,8 @@ new Fragment<T>(data: FragmentData<T>): Fragment<T>
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `cheermote` | `public` | `T` extends `"cheermote"` ? [`Cheermote`](Cheermote.md) : `null` |
+| `cheermote` | `public` | `T` extends `"cheermote"` ? [`Cheermote`](/api/eventsub/classes/cheermote/) : `null` |
 | `content` | `public` | `string` |
-| `emote` | `public` | `T` extends `"emote"` ? [`Emote`](Emote.md) : `null` |
-| `mention` | `public` | `T` extends `"mention"` ? [`Mention`](Mention.md) : `null` |
+| `emote` | `public` | `T` extends `"emote"` ? [`Emote`](/api/eventsub/classes/emote/) : `null` |
+| `mention` | `public` | `T` extends `"mention"` ? [`Mention`](/api/eventsub/classes/mention/) : `null` |
 | `type` | `public` | `T` |

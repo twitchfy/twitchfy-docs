@@ -21,11 +21,11 @@ Constructs a new Logger instance with the provided options.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `options` | [`LoggerOptions`](../type-aliases/LoggerOptions.md) | The options for configuring the logger. |
+| `options` | [`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/) | The options for configuring the logger. |
 
 #### Returns
 
-[`Logger`](Logger.md)
+[`Logger`](/api/eventsub/classes/logger/)
 
 #### Source
 
@@ -35,11 +35,11 @@ Constructs a new Logger instance with the provided options.
 
 | Property | Modifier | Type | Description |
 | :------ | :------ | :------ | :------ |
-| `options` | `readonly` | `Required`\<[`LoggerOptions`](../type-aliases/LoggerOptions.md)\> | The options for configuring the logger. |
-| `DEFAULT_OPTIONS` | `static` | `Required`\<[`LoggerOptions`](../type-aliases/LoggerOptions.md)\> | The default options for the logger. |
-| `colorFunctions` | `static` | `Map`\<[`LogLevels`](../enumerations/LogLevels.md), (`str`: `string`) => `string`\> | A map containing color functions for different log levels. |
+| `options` | `readonly` | `Required`\<[`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/)\> | The options for configuring the logger. |
+| `DEFAULT_OPTIONS` | `static` | `Required`\<[`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/)\> | The default options for the logger. |
+| `colorFunctions` | `static` | `Map`\<[`LogLevels`](/api/eventsub/enumerations/loglevels/), (`str`: `string`) => `string`\> | A map containing color functions for different log levels. |
 | `dirname` | `static` | `string` | - |
-| `prefixes` | `static` | `Map`\<[`LogLevels`](../enumerations/LogLevels.md), `string`\> | A map containing prefixes for different log levels. |
+| `prefixes` | `static` | `Map`\<[`LogLevels`](/api/eventsub/enumerations/loglevels/), `string`\> | A map containing prefixes for different log levels. |
 | `saveOnFile?` | `static` | `string`[] \| `"all"` | - |
 | `streams` | `static` | `Partial`\<`Record`\<`string`, `WriteStream`\>\> | - |
 
@@ -93,11 +93,11 @@ Sets the log level of the logger.
 
 | Parameter | Type |
 | :------ | :------ |
-| `level` | [`LogLevels`](../enumerations/LogLevels.md) |
+| `level` | [`LogLevels`](/api/eventsub/enumerations/loglevels/) |
 
 #### Returns
 
-[`LogLevels`](../enumerations/LogLevels.md)
+[`LogLevels`](/api/eventsub/enumerations/loglevels/)
 
 #### Source
 
@@ -269,7 +269,7 @@ Logs a message with the specified log level.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `level` | [`LogLevels`](../enumerations/LogLevels.md) | The log level. |
+| `level` | [`LogLevels`](/api/eventsub/enumerations/loglevels/) | The log level. |
 | ...`args` | `unknown`[] | The arguments to log. |
 
 #### Returns
@@ -336,7 +336,7 @@ Allows customization of the logging behavior by providing a custom callback func
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `cb` | [`CustomCallback`](../type-aliases/CustomCallback.md) | The custom callback function for logging. |
+| `cb` | [`CustomCallback`](/api/eventsub/type-aliases/customcallback/) | The custom callback function for logging. |
 
 #### Returns
 

@@ -7,13 +7,13 @@ title: "ChannelFollowMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.ChannelFollow`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelFollow`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelFollowEvent): ChannelFollowMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelFollow`, `K`\> |
-| `data` | [`ChannelFollowEvent`](../interfaces/ChannelFollowEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> |
+| `data` | [`ChannelFollowEvent`](/api/eventsub/interfaces/channelfollowevent/) |
 
 #### Returns
 
-[`ChannelFollowMessage`](ChannelFollowMessage.md)\<`K`\>
+[`ChannelFollowMessage`](/api/eventsub/classes/channelfollowmessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,8 +50,8 @@ data: ChannelFollowEvent): ChannelFollowMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelFollowBroadcaster`](ChannelFollowBroadcaster.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
+| `broadcaster` | `public` | [`ChannelFollowBroadcaster`](/api/eventsub/classes/channelfollowbroadcaster/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
 | `followedAt` | `public` | `Date` | - |
-| `follower` | `public` | [`ChannelFollowUser`](ChannelFollowUser.md)\<`K`\> | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelFollow`, `K`\> | [`Base`](Base.md).`subscription` |
+| `follower` | `public` | [`ChannelFollowUser`](/api/eventsub/classes/channelfollowuser/)\<`K`\> | - |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |

@@ -9,7 +9,7 @@ title: "WebhookSubscriptionCallbackManager"
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
@@ -23,11 +23,11 @@ new WebhookSubscriptionCallbackManager<T>(connection: WebhookConnection): Webhoo
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`WebhookConnection`](WebhookConnection.md) |
+| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
 
 #### Returns
 
-[`WebhookSubscriptionCallbackManager`](WebhookSubscriptionCallbackManager.md)\<`T`\>
+[`WebhookSubscriptionCallbackManager`](/api/eventsub/classes/webhooksubscriptioncallbackmanager/)\<`T`\>
 
 #### Source
 
@@ -37,7 +37,7 @@ new WebhookSubscriptionCallbackManager<T>(connection: WebhookConnection): Webhoo
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `connection` | `public` | [`WebhookConnection`](WebhookConnection.md) |
+| `connection` | `public` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
 
 ## Methods
 
@@ -51,7 +51,7 @@ add(callback: WebhookSubscriptionCallback<T>): this
 
 | Parameter | Type |
 | :------ | :------ |
-| `callback` | [`WebhookSubscriptionCallback`](../type-aliases/WebhookSubscriptionCallback.md)\<`T`\> |
+| `callback` | [`WebhookSubscriptionCallback`](/api/eventsub/type-aliases/webhooksubscriptioncallback/)\<`T`\> |
 
 #### Returns
 
@@ -73,7 +73,7 @@ execute(message: SubscriptionMessages<ConnectionTypes>[T]): void
 
 | Parameter | Type |
 | :------ | :------ |
-| `message` | [`SubscriptionMessages`](../interfaces/SubscriptionMessages.md)\<[`ConnectionTypes`](../type-aliases/ConnectionTypes.md)\>\[`T`\] |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/)\>\[`T`\] |
 
 #### Returns
 

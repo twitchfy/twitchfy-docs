@@ -15,7 +15,7 @@ Represents the settings of an automod.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -34,13 +34,13 @@ Creates a new instance of the automod settings.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
-| `automod` | [`AutoMod`](AutoMod.md)\<`T`\> | The automod whose settings are. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
+| `automod` | [`AutoMod`](/api/chatbot/classes/automod/)\<`T`\> | The automod whose settings are. |
 | `data` | `AutoModSettings` | The data of the settings returned from the API. |
 
 #### Returns
 
-[`AutoModSettings`](AutoModSettings.md)\<`T`\>
+[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>
 
 #### Overrides
 
@@ -54,8 +54,8 @@ Creates a new instance of the automod settings.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `automod` | `readonly` | [`AutoMod`](AutoMod.md)\<`T`\> | The autmod whose settings are. | - |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `automod` | `readonly` | [`AutoMod`](/api/chatbot/classes/automod/)\<`T`\> | The autmod whose settings are. | - |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 | `data` | `public` | `AutoModSettings` | The data of the settings returned from the API. | - |
 
 ## Accessors

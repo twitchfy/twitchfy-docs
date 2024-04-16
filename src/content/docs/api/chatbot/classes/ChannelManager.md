@@ -15,7 +15,7 @@ Represents the chatbot channel manager used to join to channels.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,11 +31,11 @@ Creates a new instance of the channel manager.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
 
 #### Returns
 
-[`ChannelManager`](ChannelManager.md)\<`T`\>
+[`ChannelManager`](/api/chatbot/classes/channelmanager/)\<`T`\>
 
 #### Overrides
 
@@ -49,7 +49,7 @@ Creates a new instance of the channel manager.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 
 ## Methods
 
@@ -69,9 +69,9 @@ Fetches a channel by id.
 
 #### Returns
 
-`Promise`\<[`Channel`](Channel.md)\<`T`\>\>
+`Promise`\<[`Channel`](/api/chatbot/classes/channel/)\<`T`\>\>
 
-A class representation of the channel. See [Channel](../../api/chatbot/classes/channel).
+A class representation of the channel. See [Channel](/api/chatbot/api/chatbot/classes/channel/).
 
 #### Source
 
@@ -101,9 +101,9 @@ Join a channel and listen to messages.
 
 #### Returns
 
-`Promise`\<[`ChannelProfile`](ChannelProfile.md)\<`T`\>\>
+`Promise`\<[`ChannelProfile`](/api/chatbot/classes/channelprofile/)\<`T`\>\>
 
-A class representation of the channel profile which contains the events you are subscribed with. See [ChannelProfile](../../api/chatbot/classes/channelprofile).
+A class representation of the channel profile which contains the events you are subscribed with. See [ChannelProfile](/api/chatbot/api/chatbot/classes/channelprofile/).
 
 #### Source
 

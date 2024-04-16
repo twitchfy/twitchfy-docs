@@ -15,7 +15,7 @@ Represents a ban in a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,12 +31,12 @@ Creates a new instance of the ban.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
 | `data` | `Ban` | The data of the ban returned from the API. |
 
 #### Returns
 
-[`Ban`](Ban.md)\<`T`\>
+[`Ban`](/api/chatbot/classes/ban/)\<`T`\>
 
 #### Overrides
 
@@ -50,7 +50,7 @@ Creates a new instance of the ban.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 | `moderatorID` | `readonly` | `string` | The ID of the moderator who banned the user. | - |
 | `userID` | `readonly` | `string` | The ID of the user who was banned. | - |
 

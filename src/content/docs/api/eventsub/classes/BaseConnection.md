@@ -7,14 +7,14 @@ title: "BaseConnection"
 
 ## Extends
 
-- [`EventSubEventEmitter`](EventSubEventEmitter.md)\<`U`\>
+- [`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/)\<`U`\>
 
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
-| `U` extends [`WebhookEvents`](../interfaces/WebhookEvents.md) \| [`WebSocketEvents`](../interfaces/WebSocketEvents.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `U` extends [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/) \| [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/) |
 
 ## Constructors
 
@@ -28,15 +28,15 @@ new BaseConnection<K, U>(options: BaseConnectionOptions<K>): BaseConnection<K, U
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`BaseConnectionOptions`](../type-aliases/BaseConnectionOptions.md)\<`K`\> |
+| `options` | [`BaseConnectionOptions`](/api/eventsub/type-aliases/baseconnectionoptions/)\<`K`\> |
 
 #### Returns
 
-[`BaseConnection`](BaseConnection.md)\<`K`, `U`\>
+[`BaseConnection`](/api/eventsub/classes/baseconnection/)\<`K`, `U`\>
 
 #### Overrides
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`constructor`](EventSubEventEmitter.md#constructors)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`constructor`](/api/eventsub/classes/eventsubeventemitter/#constructors)
 
 #### Source
 
@@ -50,10 +50,10 @@ new BaseConnection<K, U>(options: BaseConnectionOptions<K>): BaseConnection<K, U
 | `clientSecret` | `readonly` | `string` |
 | `debug` | `public` | `boolean` |
 | `helixClient` | `readonly` | `HelixClient` |
-| `logger` | `readonly` | [`Logger`](Logger.md) |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) |
 | `maintainSubscriptions` | `readonly` | `boolean` |
-| `storage` | `readonly` | [`StorageAdapter`](StorageAdapter.md)\<`K`\> |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](SubscriptionCollection.md)\<`K`, [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\> |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<`K`\> |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<`K`, [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> |
 
 ## Methods
 
@@ -82,7 +82,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`addListener`](EventSubEventEmitter.md#addlistener)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`addListener`](/api/eventsub/classes/eventsubeventemitter/#addlistener)
 
 #### Source
 
@@ -115,7 +115,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`emit`](EventSubEventEmitter.md#emit)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`emit`](/api/eventsub/classes/eventsubeventemitter/#emit)
 
 #### Source
 
@@ -135,7 +135,7 @@ eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof U)[]
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`eventNames`](EventSubEventEmitter.md#eventnames)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`eventNames`](/api/eventsub/classes/eventsubeventemitter/#eventnames)
 
 #### Source
 
@@ -155,7 +155,7 @@ getMaxListeners(): number
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`getMaxListeners`](EventSubEventEmitter.md#getmaxlisteners)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`getMaxListeners`](/api/eventsub/classes/eventsubeventemitter/#getmaxlisteners)
 
 #### Source
 
@@ -187,7 +187,7 @@ listenerCount<K>(eventName: K): number
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`listenerCount`](EventSubEventEmitter.md#listenercount)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`listenerCount`](/api/eventsub/classes/eventsubeventemitter/#listenercount)
 
 #### Source
 
@@ -219,7 +219,7 @@ listeners<K>(eventName: K): (...args: U[keyof U]) => Awaitable<void>[]
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`listeners`](EventSubEventEmitter.md#listeners)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`listeners`](/api/eventsub/classes/eventsubeventemitter/#listeners)
 
 #### Source
 
@@ -296,7 +296,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`off`](EventSubEventEmitter.md#off)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`off`](/api/eventsub/classes/eventsubeventemitter/#off)
 
 #### Source
 
@@ -329,7 +329,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`on`](EventSubEventEmitter.md#on)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`on`](/api/eventsub/classes/eventsubeventemitter/#on)
 
 #### Source
 
@@ -362,7 +362,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`once`](EventSubEventEmitter.md#once)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`once`](/api/eventsub/classes/eventsubeventemitter/#once)
 
 #### Source
 
@@ -395,7 +395,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`prependListener`](EventSubEventEmitter.md#prependlistener)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`prependListener`](/api/eventsub/classes/eventsubeventemitter/#prependlistener)
 
 #### Source
 
@@ -428,7 +428,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`prependOnceListener`](EventSubEventEmitter.md#prependoncelistener)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`prependOnceListener`](/api/eventsub/classes/eventsubeventemitter/#prependoncelistener)
 
 #### Source
 
@@ -460,7 +460,7 @@ rawListeners<K>(eventName: K): Listener<U[keyof U]>[]
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`rawListeners`](EventSubEventEmitter.md#rawlisteners)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`rawListeners`](/api/eventsub/classes/eventsubeventemitter/#rawlisteners)
 
 #### Source
 
@@ -492,7 +492,7 @@ removeAllListeners<K>(event?: K): this
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`removeAllListeners`](EventSubEventEmitter.md#removealllisteners)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`removeAllListeners`](/api/eventsub/classes/eventsubeventemitter/#removealllisteners)
 
 #### Source
 
@@ -525,7 +525,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`removeListener`](EventSubEventEmitter.md#removelistener)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`removeListener`](/api/eventsub/classes/eventsubeventemitter/#removelistener)
 
 #### Source
 
@@ -551,7 +551,7 @@ setMaxListeners(n: number): this
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`setMaxListeners`](EventSubEventEmitter.md#setmaxlisteners)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`setMaxListeners`](/api/eventsub/classes/eventsubeventemitter/#setmaxlisteners)
 
 #### Source
 
@@ -569,17 +569,17 @@ abstract subscribe<T>(options: SubscriptionOptions<T>): Promise<SubscriptionType
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\> |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
 
 #### Returns
 
-`Promise`\<[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>\>
+`Promise`\<[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>\>
 
 #### Source
 
@@ -597,17 +597,17 @@ abstract subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<Subscrip
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\>[] |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
 
 #### Returns
 
-`Promise`\<[`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\>[]\>
+`Promise`\<[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>[]\>
 
 #### Source
 
@@ -627,7 +627,7 @@ waitForAllListenersToComplete(): Promise<boolean>
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`waitForAllListenersToComplete`](EventSubEventEmitter.md#waitforalllistenerstocomplete)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`waitForAllListenersToComplete`](/api/eventsub/classes/eventsubeventemitter/#waitforalllistenerstocomplete)
 
 #### Source
 
@@ -662,7 +662,7 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`listenerCount`](EventSubEventEmitter.md#listenercount-1)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`listenerCount`](/api/eventsub/classes/eventsubeventemitter/#listenercount-1)
 
 #### Source
 
@@ -702,7 +702,7 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`on`](EventSubEventEmitter.md#on-1)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`on`](/api/eventsub/classes/eventsubeventemitter/#on-1)
 
 #### Source
 
@@ -742,7 +742,7 @@ options?: AbortableMethods): Promise<EventResult>
 
 #### Inherited from
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md).[`once`](EventSubEventEmitter.md#once-1)
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/).[`once`](/api/eventsub/classes/eventsubeventemitter/#once-1)
 
 #### Source
 

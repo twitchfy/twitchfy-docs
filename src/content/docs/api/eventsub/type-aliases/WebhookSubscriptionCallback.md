@@ -13,13 +13,13 @@ type WebhookSubscriptionCallback<T>: (message: SubscriptionMessages<WebhookConne
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `message` | [`SubscriptionMessages`](../interfaces/SubscriptionMessages.md)\<[`WebhookConnection`](../classes/WebhookConnection.md)\>\[`T`\] |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\>\[`T`\] |
 
 ## Returns
 

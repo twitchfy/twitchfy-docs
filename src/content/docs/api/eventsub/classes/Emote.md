@@ -17,11 +17,11 @@ new Emote(data: EmoteData): Emote
 
 | Parameter | Type |
 | :------ | :------ |
-| `data` | [`EmoteData`](../interfaces/EmoteData.md) |
+| `data` | [`EmoteData`](/api/eventsub/interfaces/emotedata/) |
 
 #### Returns
 
-[`Emote`](Emote.md)
+[`Emote`](/api/eventsub/classes/emote/)
 
 #### Source
 
@@ -31,7 +31,7 @@ new Emote(data: EmoteData): Emote
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `format` | `public` | [`EmoteFormat`](../type-aliases/EmoteFormat.md)[] |
+| `format` | `public` | [`EmoteFormat`](/api/eventsub/type-aliases/emoteformat/)[] |
 | `id` | `public` | `string` |
 | `ownerId` | `public` | `string` |
 | `setId` | `public` | `string` |

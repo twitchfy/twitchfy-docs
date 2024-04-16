@@ -14,4 +14,4 @@ title: "StreamOnlineEvent"
 | `broadcaster_user_name` | `string` |
 | `id` | `string` |
 | `started_at` | `string` |
-| `type` | [`StreamTypes`](../type-aliases/StreamTypes.md) |
+| `type` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) |

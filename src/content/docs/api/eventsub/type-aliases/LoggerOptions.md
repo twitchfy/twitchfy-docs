@@ -14,7 +14,7 @@ type LoggerOptions: Object;
 | Member | Type |
 | :------ | :------ |
 | `active` | `boolean` |
-| `logLevel` | [`LogLevels`](../enumerations/LogLevels.md) |
+| `logLevel` | [`LogLevels`](/api/eventsub/enumerations/loglevels/) |
 | `name` | `string` |
 | `saveOnFile` | `boolean` |
 

@@ -7,7 +7,7 @@ title: "WebhookConnection"
 
 ## Extends
 
-- [`BaseConnection`](BaseConnection.md)\<[`WebhookConnection`](WebhookConnection.md), [`WebhookEvents`](../interfaces/WebhookEvents.md)\>
+- [`BaseConnection`](/api/eventsub/classes/baseconnection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\>
 
 ## Constructors
 
@@ -21,16 +21,16 @@ new WebhookConnection(options: WebhookConnectionOptions, server: Express): Webho
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`WebhookConnectionOptions`](../type-aliases/WebhookConnectionOptions.md) |
+| `options` | [`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/) |
 | `server` | `Express` |
 
 #### Returns
 
-[`WebhookConnection`](WebhookConnection.md)
+[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)
 
 #### Overrides
 
-[`BaseConnection`](BaseConnection.md).[`constructor`](BaseConnection.md#constructors)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`constructor`](/api/eventsub/classes/baseconnection/#constructors)
 
 #### Source
 
@@ -41,19 +41,19 @@ new WebhookConnection(options: WebhookConnectionOptions, server: Express): Webho
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
 | `baseURL` | `readonly` | `string` | - |
-| `clientID` | `readonly` | `string` | [`BaseConnection`](BaseConnection.md).`clientID` |
-| `clientSecret` | `readonly` | `string` | [`BaseConnection`](BaseConnection.md).`clientSecret` |
-| `debug` | `public` | `boolean` | [`BaseConnection`](BaseConnection.md).`debug` |
+| `clientID` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientID` |
+| `clientSecret` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
+| `debug` | `public` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
 | `dropSubsAtStart` | `readonly` | `boolean` | - |
-| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](BaseConnection.md).`helixClient` |
-| `logger` | `readonly` | [`Logger`](Logger.md) | [`BaseConnection`](BaseConnection.md).`logger` |
-| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](BaseConnection.md).`maintainSubscriptions` |
+| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
+| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
 | `secret` | `readonly` | `string` | - |
 | `server` | `readonly` | `Express` | - |
 | `startServer` | `readonly` | `boolean` | - |
-| `storage` | `readonly` | [`StorageAdapter`](StorageAdapter.md)\<[`WebhookConnection`](WebhookConnection.md)\> | [`BaseConnection`](BaseConnection.md).`storage` |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
 | `subscriptionRoute` | `readonly` | `string` | - |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](SubscriptionCollection.md)\<[`WebhookConnection`](WebhookConnection.md), [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\> | [`BaseConnection`](BaseConnection.md).`subscriptions` |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
 
 ## Methods
 
@@ -74,7 +74,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -82,7 +82,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`addListener`](BaseConnection.md#addlistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`addListener`](/api/eventsub/classes/baseconnection/#addlistener)
 
 #### Source
 
@@ -107,7 +107,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\] |
+| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\] |
 
 #### Returns
 
@@ -115,7 +115,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`emit`](BaseConnection.md#emit)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`emit`](/api/eventsub/classes/baseconnection/#emit)
 
 #### Source
 
@@ -135,7 +135,7 @@ eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof WebhookEvents)[]
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`eventNames`](BaseConnection.md#eventnames)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`eventNames`](/api/eventsub/classes/baseconnection/#eventnames)
 
 #### Source
 
@@ -155,7 +155,7 @@ getMaxListeners(): number
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`getMaxListeners`](BaseConnection.md#getmaxlisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`getMaxListeners`](/api/eventsub/classes/baseconnection/#getmaxlisteners)
 
 #### Source
 
@@ -187,7 +187,7 @@ listenerCount<K>(eventName: K): number
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`listenerCount`](BaseConnection.md#listenercount)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`listenerCount`](/api/eventsub/classes/baseconnection/#listenercount)
 
 #### Source
 
@@ -215,11 +215,11 @@ listeners<K>(eventName: K): (...args: [WebhookConnection] | [WebhookSubscription
 
 #### Returns
 
-(...`args`: [[`WebhookConnection`](WebhookConnection.md)] \| [[`WebhookSubscription`](WebhookSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`SubscriptionMessage`](../type-aliases/SubscriptionMessage.md)\<[`WebhookConnection`](WebhookConnection.md)\>, [`WebhookSubscription`](WebhookSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`WebhookSubscription`](WebhookSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>]) => `Awaitable`\<`void`\>[]
+(...`args`: [[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)] \| [[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\>, [`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]) => `Awaitable`\<`void`\>[]
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`listeners`](BaseConnection.md#listeners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`listeners`](/api/eventsub/classes/baseconnection/#listeners)
 
 #### Source
 
@@ -245,7 +245,7 @@ makeDebug(...args: any[]): void
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`makeDebug`](BaseConnection.md#makedebug)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`makeDebug`](/api/eventsub/classes/baseconnection/#makedebug)
 
 #### Source
 
@@ -271,7 +271,7 @@ makeWarn(...args: any[]): void
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`makeWarn`](BaseConnection.md#makewarn)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`makeWarn`](/api/eventsub/classes/baseconnection/#makewarn)
 
 #### Source
 
@@ -296,7 +296,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -304,7 +304,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`off`](BaseConnection.md#off)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`off`](/api/eventsub/classes/baseconnection/#off)
 
 #### Source
 
@@ -329,7 +329,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -337,7 +337,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`on`](BaseConnection.md#on)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`on`](/api/eventsub/classes/baseconnection/#on)
 
 #### Source
 
@@ -362,7 +362,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -370,7 +370,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`once`](BaseConnection.md#once)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`once`](/api/eventsub/classes/baseconnection/#once)
 
 #### Source
 
@@ -395,7 +395,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -403,7 +403,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`prependListener`](BaseConnection.md#prependlistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`prependListener`](/api/eventsub/classes/baseconnection/#prependlistener)
 
 #### Source
 
@@ -428,7 +428,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -436,7 +436,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`prependOnceListener`](BaseConnection.md#prependoncelistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`prependOnceListener`](/api/eventsub/classes/baseconnection/#prependoncelistener)
 
 #### Source
 
@@ -464,11 +464,11 @@ rawListeners<K>(eventName: K): Listener<[WebhookConnection] | [WebhookSubscripti
 
 #### Returns
 
-`Listener`\<[[`WebhookConnection`](WebhookConnection.md)] \| [[`WebhookSubscription`](WebhookSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`SubscriptionMessage`](../type-aliases/SubscriptionMessage.md)\<[`WebhookConnection`](WebhookConnection.md)\>, [`WebhookSubscription`](WebhookSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>] \| [[`WebhookSubscription`](WebhookSubscription.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\>]\>[]
+`Listener`\<[[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)] \| [[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\>, [`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]\>[]
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`rawListeners`](BaseConnection.md#rawlisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`rawListeners`](/api/eventsub/classes/baseconnection/#rawlisteners)
 
 #### Source
 
@@ -500,7 +500,7 @@ removeAllListeners<K>(event?: K): this
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`removeAllListeners`](BaseConnection.md#removealllisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`removeAllListeners`](/api/eventsub/classes/baseconnection/#removealllisteners)
 
 #### Source
 
@@ -525,7 +525,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](../interfaces/WebhookEvents.md)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -533,7 +533,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`removeListener`](BaseConnection.md#removelistener)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`removeListener`](/api/eventsub/classes/baseconnection/#removelistener)
 
 #### Source
 
@@ -551,11 +551,11 @@ setAuth(appToken: TokenAdapter<"app", boolean>): WebhookConnection
 
 | Parameter | Type |
 | :------ | :------ |
-| `appToken` | [`TokenAdapter`](TokenAdapter.md)\<`"app"`, `boolean`\> |
+| `appToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\> |
 
 #### Returns
 
-[`WebhookConnection`](WebhookConnection.md)
+[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)
 
 #### Source
 
@@ -581,7 +581,7 @@ setMaxListeners(n: number): this
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`setMaxListeners`](BaseConnection.md#setmaxlisteners)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`setMaxListeners`](/api/eventsub/classes/baseconnection/#setmaxlisteners)
 
 #### Source
 
@@ -622,21 +622,21 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\> |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
 
 #### Returns
 
-`Promise`\<[`WebhookSubscription`](WebhookSubscription.md)\<`T`\>\>
+`Promise`\<[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<`T`\>\>
 
 #### Overrides
 
-[`BaseConnection`](BaseConnection.md).[`subscribe`](BaseConnection.md#subscribe)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`subscribe`](/api/eventsub/classes/baseconnection/#subscribe)
 
 #### Source
 
@@ -654,21 +654,21 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscripti
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\>[] |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
 
 #### Returns
 
-`Promise`\<[`WebhookSubscription`](WebhookSubscription.md)\<`T`\>[]\>
+`Promise`\<[`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)\<`T`\>[]\>
 
 #### Overrides
 
-[`BaseConnection`](BaseConnection.md).[`subscribeAll`](BaseConnection.md#subscribeall)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`subscribeAll`](/api/eventsub/classes/baseconnection/#subscribeall)
 
 #### Source
 
@@ -688,7 +688,7 @@ waitForAllListenersToComplete(): Promise<boolean>
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`waitForAllListenersToComplete`](BaseConnection.md#waitforalllistenerstocomplete)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`waitForAllListenersToComplete`](/api/eventsub/classes/baseconnection/#waitforalllistenerstocomplete)
 
 #### Source
 
@@ -723,7 +723,7 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`listenerCount`](BaseConnection.md#listenercount-1)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`listenerCount`](/api/eventsub/classes/baseconnection/#listenercount-1)
 
 #### Source
 
@@ -763,7 +763,7 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`on`](BaseConnection.md#on-1)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`on`](/api/eventsub/classes/baseconnection/#on-1)
 
 #### Source
 
@@ -803,7 +803,7 @@ options?: AbortableMethods): Promise<EventResult>
 
 #### Inherited from
 
-[`BaseConnection`](BaseConnection.md).[`once`](BaseConnection.md#once-1)
+[`BaseConnection`](/api/eventsub/classes/baseconnection/).[`once`](/api/eventsub/classes/baseconnection/#once-1)
 
 #### Source
 

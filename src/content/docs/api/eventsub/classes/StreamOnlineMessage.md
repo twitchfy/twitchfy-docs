@@ -7,13 +7,13 @@ title: "StreamOnlineMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.StreamOnline`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.StreamOnline`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: StreamOnlineEvent): StreamOnlineMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`StreamOnline`, `K`\> |
-| `data` | [`StreamOnlineEvent`](../interfaces/StreamOnlineEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> |
+| `data` | [`StreamOnlineEvent`](/api/eventsub/interfaces/streamonlineevent/) |
 
 #### Returns
 
-[`StreamOnlineMessage`](StreamOnlineMessage.md)\<`K`\>
+[`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,7 +50,7 @@ data: StreamOnlineEvent): StreamOnlineMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`StreamOnlineBroadcaster`](StreamOnlineBroadcaster.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
-| `stream` | `public` | [`StreamOnlineStream`](StreamOnlineStream.md)\<`K`\> | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`StreamOnline`, `K`\> | [`Base`](Base.md).`subscription` |
+| `broadcaster` | `public` | [`StreamOnlineBroadcaster`](/api/eventsub/classes/streamonlinebroadcaster/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `stream` | `public` | [`StreamOnlineStream`](/api/eventsub/classes/streamonlinestream/)\<`K`\> | - |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |

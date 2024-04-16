@@ -9,11 +9,11 @@ title: "BaseNotification"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Properties
 
 | Property | Type |
 | :------ | :------ |
-| `metadata` | [`BaseMetadata`](BaseMetadata.md)\<`T`\> |
-| `payload` | [`BasePayload`](BasePayload.md)\<`T`\> |
+| `metadata` | [`BaseMetadata`](/api/eventsub/interfaces/basemetadata/)\<`T`\> |
+| `payload` | [`BasePayload`](/api/eventsub/interfaces/basepayload/)\<`T`\> |

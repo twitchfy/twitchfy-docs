@@ -15,7 +15,7 @@ new Client(): Client
 
 #### Returns
 
-[`Client`](Client.md)
+[`Client`](/api/eventsub/classes/client/)
 
 #### Source
 
@@ -33,11 +33,11 @@ createWebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnect
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`WebSocketConnectionOptions`](../type-aliases/WebSocketConnectionOptions.md) |
+| `options` | [`WebSocketConnectionOptions`](/api/eventsub/type-aliases/websocketconnectionoptions/) |
 
 #### Returns
 
-[`WebSocketConnection`](WebSocketConnection.md)
+[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)
 
 #### Source
 
@@ -55,12 +55,12 @@ createWebhookConnection(options: WebhookConnectionOptions, server: Express): Web
 
 | Parameter | Type |
 | :------ | :------ |
-| `options` | [`WebhookConnectionOptions`](../type-aliases/WebhookConnectionOptions.md) |
+| `options` | [`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/) |
 | `server` | `Express` |
 
 #### Returns
 
-[`WebhookConnection`](WebhookConnection.md)
+[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)
 
 #### Source
 

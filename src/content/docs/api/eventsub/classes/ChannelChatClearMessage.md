@@ -7,13 +7,13 @@ title: "ChannelChatClearMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.ChannelChatClear`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelChatClear`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelChatClearEvent): ChannelChatClearMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatClear`, `K`\> |
-| `data` | [`ChannelChatClearEvent`](../interfaces/ChannelChatClearEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClear`, `K`\> |
+| `data` | [`ChannelChatClearEvent`](/api/eventsub/interfaces/channelchatclearevent/) |
 
 #### Returns
 
-[`ChannelChatClearMessage`](ChannelChatClearMessage.md)\<`K`\>
+[`ChannelChatClearMessage`](/api/eventsub/classes/channelchatclearmessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,6 +50,6 @@ data: ChannelChatClearEvent): ChannelChatClearMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelChatClearBroadcaster`](ChannelChatClearBroadcaster.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatClear`, `K`\> | [`Base`](Base.md).`subscription` |
+| `broadcaster` | `public` | [`ChannelChatClearBroadcaster`](/api/eventsub/classes/channelchatclearbroadcaster/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClear`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |

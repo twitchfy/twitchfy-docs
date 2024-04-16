@@ -7,13 +7,13 @@ title: "ChannelChatMessageMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.ChannelChatMessage`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelChatMessage`, `K`\>
 
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelChatMessageEvent): ChannelChatMessageMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatMessage`, `K`\> |
-| `data` | [`ChannelChatMessageEvent`](../interfaces/ChannelChatMessageEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatMessage`, `K`\> |
+| `data` | [`ChannelChatMessageEvent`](/api/eventsub/interfaces/channelchatmessageevent/) |
 
 #### Returns
 
-[`ChannelChatMessageMessage`](ChannelChatMessageMessage.md)\<`K`\>
+[`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,8 +50,8 @@ data: ChannelChatMessageEvent): ChannelChatMessageMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelChatMessageMessageBroadcaster`](ChannelChatMessageMessageBroadcaster.md)\<`K`\> | - |
-| `chatter` | `public` | [`ChannelChatMessageMessageChatter`](ChannelChatMessageMessageChatter.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
-| `message` | `public` | [`ChannelMessage`](ChannelMessage.md)\<`K`\> | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatMessage`, `K`\> | [`Base`](Base.md).`subscription` |
+| `broadcaster` | `public` | [`ChannelChatMessageMessageBroadcaster`](/api/eventsub/classes/channelchatmessagemessagebroadcaster/)\<`K`\> | - |
+| `chatter` | `public` | [`ChannelChatMessageMessageChatter`](/api/eventsub/classes/channelchatmessagemessagechatter/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `message` | `public` | [`ChannelMessage`](/api/eventsub/classes/channelmessage/)\<`K`\> | - |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatMessage`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |

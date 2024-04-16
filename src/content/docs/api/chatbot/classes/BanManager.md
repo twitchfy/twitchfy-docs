@@ -15,7 +15,7 @@ The ban manager of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,12 +31,12 @@ Creates a new instance of the badge manager.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
-| `chatroom` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom which includes this manager. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
+| `chatroom` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom which includes this manager. |
 
 #### Returns
 
-[`BanManager`](BanManager.md)\<`T`\>
+[`BanManager`](/api/chatbot/classes/banmanager/)\<`T`\>
 
 #### Overrides
 
@@ -50,8 +50,8 @@ Creates a new instance of the badge manager.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
-| `chatroom` | `readonly` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom which includes this manager. | - |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatroom` | `readonly` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom which includes this manager. | - |
 
 ## Methods
 
@@ -67,13 +67,13 @@ Ban a specific user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `options` | [`BanOptions`](../interfaces/BanOptions.md) | The options required for banning an user. See [BanOptions](../../api/chatbot/interfaces/banoptions). |
+| `options` | [`BanOptions`](/api/chatbot/interfaces/banoptions/) | The options required for banning an user. See [BanOptions](../../api/chatbot/interfaces/banoptions). |
 
 #### Returns
 
-`Promise`\<[`Ban`](Ban.md)\<`T`\>\>
+`Promise`\<[`Ban`](/api/chatbot/classes/ban/)\<`T`\>\>
 
-A class representation of the ban. See [Ban](../../api/chatbot/classes/ban).
+A class representation of the ban. See [Ban](/api/chatbot/api/chatbot/classes/ban/).
 
 #### Source
 

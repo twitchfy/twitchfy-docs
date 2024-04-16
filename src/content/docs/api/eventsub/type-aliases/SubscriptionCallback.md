@@ -13,14 +13,14 @@ type SubscriptionCallback<T, K>: (message: SubscriptionMessages<K>[T]) => any | 
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | - |
-| `K` extends [`ConnectionTypes`](ConnectionTypes.md) | [`ConnectionTypes`](ConnectionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | - |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `message` | [`SubscriptionMessages`](../interfaces/SubscriptionMessages.md)\<`K`\>\[`T`\] |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<`K`\>\[`T`\] |
 
 ## Returns
 

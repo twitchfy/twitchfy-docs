@@ -15,7 +15,7 @@ Represents the manager for the settings of the autmod.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,12 +31,12 @@ Creates a new instance of the automod settings manager.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
-| `automod` | [`AutoMod`](AutoMod.md)\<`T`\> | The automod instance. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
+| `automod` | [`AutoMod`](/api/chatbot/classes/automod/)\<`T`\> | The automod instance. |
 
 #### Returns
 
-[`AutoModSettingsManager`](AutoModSettingsManager.md)\<`T`\>
+[`AutoModSettingsManager`](/api/chatbot/classes/automodsettingsmanager/)\<`T`\>
 
 #### Overrides
 
@@ -50,8 +50,8 @@ Creates a new instance of the automod settings manager.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `automod` | `public` | [`AutoMod`](AutoMod.md)\<`T`\> | The automod instance. | - |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `automod` | `public` | [`AutoMod`](/api/chatbot/classes/automod/)\<`T`\> | The automod instance. | - |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 
 ## Methods
 
@@ -71,7 +71,7 @@ Edits the automod settings.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The new settings of the automod.
 
@@ -91,7 +91,7 @@ Fetches the current settings of the automod from the API.
 
 #### Returns
 
-`Promise`\<[`AutoModSettings`](AutoModSettings.md)\<`T`\>\>
+`Promise`\<[`AutoModSettings`](/api/chatbot/classes/automodsettings/)\<`T`\>\>
 
 The current settings of the automod.
 

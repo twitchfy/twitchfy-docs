@@ -26,7 +26,7 @@ new UncompleteUser(
 
 #### Returns
 
-[`UncompleteUser`](UncompleteUser.md)
+[`UncompleteUser`](/api/eventsub/classes/uncompleteuser/)
 
 #### Source
 

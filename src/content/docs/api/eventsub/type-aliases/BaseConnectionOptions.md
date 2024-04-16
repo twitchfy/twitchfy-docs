@@ -13,7 +13,7 @@ type BaseConnectionOptions<K>: Object | Object;
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Source
 

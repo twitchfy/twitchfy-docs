@@ -7,13 +7,13 @@ title: "StreamOnlineStream"
 
 ## Extends
 
-- [`BaseStream`](BaseStream.md)\<`SubscriptionTypes.StreamOnline`, `K`\>
+- [`BaseStream`](/api/eventsub/classes/basestream/)\<`SubscriptionTypes.StreamOnline`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -33,18 +33,18 @@ started_at: string): StreamOnlineStream<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`StreamOnline`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> |
 | `id` | `string` |
-| `type` | [`StreamTypes`](../type-aliases/StreamTypes.md) |
+| `type` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) |
 | `started_at` | `string` |
 
 #### Returns
 
-[`StreamOnlineStream`](StreamOnlineStream.md)\<`K`\>
+[`StreamOnlineStream`](/api/eventsub/classes/streamonlinestream/)\<`K`\>
 
 #### Overrides
 
-[`BaseStream`](BaseStream.md).[`constructor`](BaseStream.md#constructors)
+[`BaseStream`](/api/eventsub/classes/basestream/).[`constructor`](/api/eventsub/classes/basestream/#constructors)
 
 #### Source
 
@@ -54,8 +54,8 @@ started_at: string): StreamOnlineStream<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`BaseStream`](BaseStream.md).`connection` |
-| `id` | `public` | `string` | [`BaseStream`](BaseStream.md).`id` |
-| `startedAt` | `public` | `Date` | [`BaseStream`](BaseStream.md).`startedAt` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`StreamOnline`, `K`\> | [`BaseStream`](BaseStream.md).`subscription` |
-| `type` | `public` | [`StreamTypes`](../type-aliases/StreamTypes.md) | [`BaseStream`](BaseStream.md).`type` |
+| `connection` | `public` | `K` | [`BaseStream`](/api/eventsub/classes/basestream/).`connection` |
+| `id` | `public` | `string` | [`BaseStream`](/api/eventsub/classes/basestream/).`id` |
+| `startedAt` | `public` | `Date` | [`BaseStream`](/api/eventsub/classes/basestream/).`startedAt` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> | [`BaseStream`](/api/eventsub/classes/basestream/).`subscription` |
+| `type` | `public` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) | [`BaseStream`](/api/eventsub/classes/basestream/).`type` |

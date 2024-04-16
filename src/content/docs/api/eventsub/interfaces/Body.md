@@ -9,7 +9,7 @@ title: "Body"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`BodyTypes`](../type-aliases/BodyTypes.md) | [`BodyTypes`](../type-aliases/BodyTypes.md) |
+| `T` extends [`BodyTypes`](/api/eventsub/type-aliases/bodytypes/) | [`BodyTypes`](/api/eventsub/type-aliases/bodytypes/) |
 
 ## Properties
 
@@ -17,4 +17,4 @@ title: "Body"
 | :------ | :------ |
 | `challenge` | `T` extends `"webhook_callback_verification"` ? `string` : `never` |
 | `event` | `T` extends `"notification"` ? `object` : `never` |
-| `subscription` | [`BodySubscription`](BodySubscription.md) |
+| `subscription` | [`BodySubscription`](/api/eventsub/interfaces/bodysubscription/) |

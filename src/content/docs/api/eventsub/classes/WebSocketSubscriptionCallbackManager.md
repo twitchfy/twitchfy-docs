@@ -9,7 +9,7 @@ title: "WebSocketSubscriptionCallbackManager"
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
@@ -23,11 +23,11 @@ new WebSocketSubscriptionCallbackManager<T>(connection: WebSocketConnection): We
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`WebSocketConnection`](WebSocketConnection.md) |
+| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
 
 #### Returns
 
-[`WebSocketSubscriptionCallbackManager`](WebSocketSubscriptionCallbackManager.md)\<`T`\>
+[`WebSocketSubscriptionCallbackManager`](/api/eventsub/classes/websocketsubscriptioncallbackmanager/)\<`T`\>
 
 #### Source
 
@@ -37,7 +37,7 @@ new WebSocketSubscriptionCallbackManager<T>(connection: WebSocketConnection): We
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `connection` | `public` | [`WebSocketConnection`](WebSocketConnection.md) |
+| `connection` | `public` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
 
 ## Methods
 
@@ -51,7 +51,7 @@ add(callback: WebSocketSubscriptionCallback<T>): this
 
 | Parameter | Type |
 | :------ | :------ |
-| `callback` | [`WebSocketSubscriptionCallback`](../type-aliases/WebSocketSubscriptionCallback.md)\<`T`\> |
+| `callback` | [`WebSocketSubscriptionCallback`](/api/eventsub/type-aliases/websocketsubscriptioncallback/)\<`T`\> |
 
 #### Returns
 
@@ -73,7 +73,7 @@ execute(message: SubscriptionMessages<WebSocketConnection>[T]): Promise<void>
 
 | Parameter | Type |
 | :------ | :------ |
-| `message` | [`SubscriptionMessages`](../interfaces/SubscriptionMessages.md)\<[`WebSocketConnection`](WebSocketConnection.md)\>\[`T`\] |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>\[`T`\] |
 
 #### Returns
 

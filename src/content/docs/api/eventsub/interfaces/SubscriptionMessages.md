@@ -9,16 +9,16 @@ title: "SubscriptionMessages"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Properties
 
 | Property | Type |
 | :------ | :------ |
-| `channel.ad_break.begin` | [`ChannelAdBreakBeginMessage`](../classes/ChannelAdBreakBeginMessage.md)\<`K`\> |
-| `channel.chat.clear` | [`ChannelChatClearMessage`](../classes/ChannelChatClearMessage.md)\<`K`\> |
-| `channel.chat.clear_user_messages` | [`ChannelChatClearUserMessagesMessage`](../classes/ChannelChatClearUserMessagesMessage.md)\<`K`\> |
-| `channel.chat.message` | [`ChannelChatMessageMessage`](../classes/ChannelChatMessageMessage.md)\<`K`\> |
-| `channel.follow` | [`ChannelFollowMessage`](../classes/ChannelFollowMessage.md)\<`K`\> |
-| `channel.update` | [`ChannelUpdateMessage`](../classes/ChannelUpdateMessage.md)\<`K`\> |
-| `stream.online` | [`StreamOnlineMessage`](../classes/StreamOnlineMessage.md)\<`K`\> |
+| `channel.ad_break.begin` | [`ChannelAdBreakBeginMessage`](/api/eventsub/classes/channeladbreakbeginmessage/)\<`K`\> |
+| `channel.chat.clear` | [`ChannelChatClearMessage`](/api/eventsub/classes/channelchatclearmessage/)\<`K`\> |
+| `channel.chat.clear_user_messages` | [`ChannelChatClearUserMessagesMessage`](/api/eventsub/classes/channelchatclearusermessagesmessage/)\<`K`\> |
+| `channel.chat.message` | [`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)\<`K`\> |
+| `channel.follow` | [`ChannelFollowMessage`](/api/eventsub/classes/channelfollowmessage/)\<`K`\> |
+| `channel.update` | [`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)\<`K`\> |
+| `stream.online` | [`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)\<`K`\> |

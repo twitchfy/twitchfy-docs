@@ -7,13 +7,13 @@ title: "ChannelChatClearUserMessagesMessage"
 
 ## Extends
 
-- [`Base`](Base.md)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelChatClearUserMessagesEvent): ChannelChatClearUserMessagesMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatClearUserMessages`, `K`\> |
-| `data` | [`ChannelChatClearUserMessagesEvent`](../interfaces/ChannelChatClearUserMessagesEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> |
+| `data` | [`ChannelChatClearUserMessagesEvent`](/api/eventsub/interfaces/channelchatclearusermessagesevent/) |
 
 #### Returns
 
-[`ChannelChatClearUserMessagesMessage`](ChannelChatClearUserMessagesMessage.md)\<`K`\>
+[`ChannelChatClearUserMessagesMessage`](/api/eventsub/classes/channelchatclearusermessagesmessage/)\<`K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -50,7 +50,7 @@ data: ChannelChatClearUserMessagesEvent): ChannelChatClearUserMessagesMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelChatClearUserMessagesBroadcaster`](ChannelChatClearUserMessagesBroadcaster.md)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatClearUserMessages`, `K`\> | [`Base`](Base.md).`subscription` |
-| `user` | `public` | [`ChannelChatClearUserMessagesUser`](ChannelChatClearUserMessagesUser.md)\<`K`\> | - |
+| `broadcaster` | `public` | [`ChannelChatClearUserMessagesBroadcaster`](/api/eventsub/classes/channelchatclearusermessagesbroadcaster/)\<`K`\> | - |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| `user` | `public` | [`ChannelChatClearUserMessagesUser`](/api/eventsub/classes/channelchatclearusermessagesuser/)\<`K`\> | - |

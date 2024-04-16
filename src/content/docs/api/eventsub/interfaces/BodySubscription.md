@@ -9,11 +9,11 @@ title: "BodySubscription"
 
 | Property | Type |
 | :------ | :------ |
-| `condition` | [`Condition`](Condition.md) |
+| `condition` | [`Condition`](/api/eventsub/interfaces/condition/) |
 | `cost` | `number` |
 | `created_at` | `string` |
 | `id` | `string` |
 | `status` | `string` |
-| `transport` | [`Transport`](Transport.md) |
+| `transport` | [`Transport`](/api/eventsub/interfaces/transport/) |
 | `type` | `string` |
 | `version` | `string` |

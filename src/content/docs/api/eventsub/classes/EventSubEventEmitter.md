@@ -13,7 +13,7 @@ title: "EventSubEventEmitter"
 
 | Type parameter |
 | :------ |
-| `U` extends [`WebhookEvents`](../interfaces/WebhookEvents.md) \| [`WebSocketEvents`](../interfaces/WebSocketEvents.md) |
+| `U` extends [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/) \| [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/) |
 
 ## Constructors
 
@@ -25,7 +25,7 @@ new EventSubEventEmitter<U>(): EventSubEventEmitter<U>
 
 #### Returns
 
-[`EventSubEventEmitter`](EventSubEventEmitter.md)\<`U`\>
+[`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/)\<`U`\>
 
 #### Overrides
 

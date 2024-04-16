@@ -9,11 +9,11 @@ title: "BasePayload"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Properties
 
 | Property | Type |
 | :------ | :------ |
-| `event` | [`SubscriptionEvents`](SubscriptionEvents.md)\[`T`\] |
-| `subscription` | [`BaseSubscription`](BaseSubscription.md)\<`T`\> |
+| `event` | [`SubscriptionEvents`](/api/eventsub/interfaces/subscriptionevents/)\[`T`\] |
+| `subscription` | [`BaseSubscription`](/api/eventsub/interfaces/basesubscription/)\<`T`\> |

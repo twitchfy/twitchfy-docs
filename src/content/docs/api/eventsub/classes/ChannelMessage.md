@@ -7,13 +7,13 @@ title: "ChannelMessage"
 
 ## Extends
 
-- [`BaseMessage`](BaseMessage.md)\<`SubscriptionTypes.ChannelChatMessage`, `K`\>
+- [`BaseMessage`](/api/eventsub/classes/basemessage/)\<`SubscriptionTypes.ChannelChatMessage`, `K`\>
 
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ data: ChannelChatMessageEvent): ChannelMessage<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatMessage`, `K`\> |
-| `data` | [`ChannelChatMessageEvent`](../interfaces/ChannelChatMessageEvent.md) |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatMessage`, `K`\> |
+| `data` | [`ChannelChatMessageEvent`](/api/eventsub/interfaces/channelchatmessageevent/) |
 
 #### Returns
 
-[`ChannelMessage`](ChannelMessage.md)\<`K`\>
+[`ChannelMessage`](/api/eventsub/classes/channelmessage/)\<`K`\>
 
 #### Overrides
 
-[`BaseMessage`](BaseMessage.md).[`constructor`](BaseMessage.md#constructors)
+[`BaseMessage`](/api/eventsub/classes/basemessage/).[`constructor`](/api/eventsub/classes/basemessage/#constructors)
 
 #### Source
 
@@ -50,12 +50,12 @@ data: ChannelChatMessageEvent): ChannelMessage<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `bits` | `public` | `number` | [`BaseMessage`](BaseMessage.md).`bits` |
-| `channelRewardId` | `public` | `string` | [`BaseMessage`](BaseMessage.md).`channelRewardId` |
-| `connection` | `public` | `K` | [`BaseMessage`](BaseMessage.md).`connection` |
-| `content` | `public` | `string` | [`BaseMessage`](BaseMessage.md).`content` |
-| `fragments` | `public` | [`Fragment`](Fragment.md)\<[`FragmentTypes`](../type-aliases/FragmentTypes.md)\>[] | [`BaseMessage`](BaseMessage.md).`fragments` |
-| `id` | `public` | `string` | [`BaseMessage`](BaseMessage.md).`id` |
-| `reply` | `public` | [`MessageReply`](MessageReply.md) | [`BaseMessage`](BaseMessage.md).`reply` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatMessage`, `K`\> | [`BaseMessage`](BaseMessage.md).`subscription` |
-| `type` | `public` | [`MessageTypes`](../type-aliases/MessageTypes.md) | [`BaseMessage`](BaseMessage.md).`type` |
+| `bits` | `public` | `number` | [`BaseMessage`](/api/eventsub/classes/basemessage/).`bits` |
+| `channelRewardId` | `public` | `string` | [`BaseMessage`](/api/eventsub/classes/basemessage/).`channelRewardId` |
+| `connection` | `public` | `K` | [`BaseMessage`](/api/eventsub/classes/basemessage/).`connection` |
+| `content` | `public` | `string` | [`BaseMessage`](/api/eventsub/classes/basemessage/).`content` |
+| `fragments` | `public` | [`Fragment`](/api/eventsub/classes/fragment/)\<[`FragmentTypes`](/api/eventsub/type-aliases/fragmenttypes/)\>[] | [`BaseMessage`](/api/eventsub/classes/basemessage/).`fragments` |
+| `id` | `public` | `string` | [`BaseMessage`](/api/eventsub/classes/basemessage/).`id` |
+| `reply` | `public` | [`MessageReply`](/api/eventsub/classes/messagereply/) | [`BaseMessage`](/api/eventsub/classes/basemessage/).`reply` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatMessage`, `K`\> | [`BaseMessage`](/api/eventsub/classes/basemessage/).`subscription` |
+| `type` | `public` | [`MessageTypes`](/api/eventsub/type-aliases/messagetypes/) | [`BaseMessage`](/api/eventsub/classes/basemessage/).`type` |

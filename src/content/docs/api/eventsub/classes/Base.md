@@ -7,26 +7,26 @@ title: "Base"
 
 ## Extended by
 
-- [`ChannelAdBreakBeginMessage`](ChannelAdBreakBeginMessage.md)
-- [`ChannelChatClearMessage`](ChannelChatClearMessage.md)
-- [`ChannelChatClearUserMessagesMessage`](ChannelChatClearUserMessagesMessage.md)
-- [`ChannelFollowMessage`](ChannelFollowMessage.md)
-- [`ChannelUpdateCategory`](ChannelUpdateCategory.md)
-- [`ChannelUpdateMessage`](ChannelUpdateMessage.md)
-- [`ChannelChatMessageMessage`](ChannelChatMessageMessage.md)
-- [`StreamOnlineMessage`](StreamOnlineMessage.md)
-- [`BaseBroadcaster`](BaseBroadcaster.md)
-- [`BaseRequester`](BaseRequester.md)
-- [`BaseStream`](BaseStream.md)
-- [`BaseUser`](BaseUser.md)
-- [`BaseMessage`](BaseMessage.md)
+- [`ChannelAdBreakBeginMessage`](/api/eventsub/classes/channeladbreakbeginmessage/)
+- [`ChannelChatClearMessage`](/api/eventsub/classes/channelchatclearmessage/)
+- [`ChannelChatClearUserMessagesMessage`](/api/eventsub/classes/channelchatclearusermessagesmessage/)
+- [`ChannelFollowMessage`](/api/eventsub/classes/channelfollowmessage/)
+- [`ChannelUpdateCategory`](/api/eventsub/classes/channelupdatecategory/)
+- [`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)
+- [`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)
+- [`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)
+- [`BaseBroadcaster`](/api/eventsub/classes/basebroadcaster/)
+- [`BaseRequester`](/api/eventsub/classes/baserequester/)
+- [`BaseStream`](/api/eventsub/classes/basestream/)
+- [`BaseUser`](/api/eventsub/classes/baseuser/)
+- [`BaseMessage`](/api/eventsub/classes/basemessage/)
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | - |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | - |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -41,11 +41,11 @@ new Base<T, K>(connection: K, subscription: SubscriptionType<T, K>): Base<T, K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
 
 #### Returns
 
-[`Base`](Base.md)\<`T`, `K`\>
+[`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
 
 #### Source
 
@@ -56,4 +56,4 @@ new Base<T, K>(connection: K, subscription: SubscriptionType<T, K>): Base<T, K>
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
 | `connection` | `public` | `K` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |

@@ -9,7 +9,7 @@ title: "BaseMetadata"
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Properties
 
@@ -19,4 +19,4 @@ title: "BaseMetadata"
 | `message_timestamp` | `string` |
 | `message_type` | `"notification"` |
 | `subscription_type` | `T` |
-| `subscription_version` | [`SubscriptionVersions`](SubscriptionVersions.md)\[`T`\] |
+| `subscription_version` | [`SubscriptionVersions`](/api/eventsub/interfaces/subscriptionversions/)\[`T`\] |

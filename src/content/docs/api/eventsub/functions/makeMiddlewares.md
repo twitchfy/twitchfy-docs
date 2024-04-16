@@ -13,7 +13,7 @@ makeMiddlewares(connection: WebhookConnection, server: Express): void
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`WebhookConnection`](../classes/WebhookConnection.md) |
+| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
 | `server` | `Express` |
 
 ## Returns

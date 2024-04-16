@@ -9,17 +9,17 @@ title: "BaseSubscription"
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Properties
 
 | Property | Type |
 | :------ | :------ |
-| `condition` | [`SubscriptionTypeOptions`](SubscriptionTypeOptions.md)\[`T`\] |
+| `condition` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`T`\] |
 | `cost` | `number` |
 | `created_at` | `string` |
 | `id` | `string` |
 | `status` | `"enabled"` |
-| `transport` | [`BaseTransport`](BaseTransport.md) |
+| `transport` | [`BaseTransport`](/api/eventsub/interfaces/basetransport/) |
 | `type` | `T` |
-| `version` | [`SubscriptionVersions`](SubscriptionVersions.md)\[`T`\] |
+| `version` | [`SubscriptionVersions`](/api/eventsub/interfaces/subscriptionversions/)\[`T`\] |

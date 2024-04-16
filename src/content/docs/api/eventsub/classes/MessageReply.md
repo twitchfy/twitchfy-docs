@@ -17,11 +17,11 @@ new MessageReply(data: ReplyData): MessageReply
 
 | Parameter | Type |
 | :------ | :------ |
-| `data` | [`ReplyData`](../interfaces/ReplyData.md) |
+| `data` | [`ReplyData`](/api/eventsub/interfaces/replydata/) |
 
 #### Returns
 
-[`MessageReply`](MessageReply.md)
+[`MessageReply`](/api/eventsub/classes/messagereply/)
 
 #### Source
 
@@ -31,5 +31,5 @@ new MessageReply(data: ReplyData): MessageReply
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `parent` | `public` | [`Parent`](Parent.md) |
-| `thread` | `public` | [`Thread`](Thread.md) |
+| `parent` | `public` | [`Parent`](/api/eventsub/classes/parent/) |
+| `thread` | `public` | [`Thread`](/api/eventsub/classes/thread/) |

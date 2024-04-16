@@ -13,13 +13,13 @@ type WebSocketSubscriptionCallback<T>: (message: SubscriptionMessages<WebSocketC
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `message` | [`SubscriptionMessages`](../interfaces/SubscriptionMessages.md)\<[`WebSocketConnection`](../classes/WebSocketConnection.md)\>\[`T`\] |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>\[`T`\] |
 
 ## Returns
 

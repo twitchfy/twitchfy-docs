@@ -17,11 +17,11 @@ new Mention(data: MentionData): Mention
 
 | Parameter | Type |
 | :------ | :------ |
-| `data` | [`MentionData`](../interfaces/MentionData.md) |
+| `data` | [`MentionData`](/api/eventsub/interfaces/mentiondata/) |
 
 #### Returns
 
-[`Mention`](Mention.md)
+[`Mention`](/api/eventsub/classes/mention/)
 
 #### Source
 
@@ -31,4 +31,4 @@ new Mention(data: MentionData): Mention
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `user` | `public` | [`MentionUser`](MentionUser.md) |
+| `user` | `public` | [`MentionUser`](/api/eventsub/classes/mentionuser/) |

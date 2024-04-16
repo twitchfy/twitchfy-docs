@@ -9,5 +9,5 @@ title: "MessageData"
 
 | Property | Type |
 | :------ | :------ |
-| `fragments` | [`FragmentData`](FragmentData.md)\<`string`\>[] |
+| `fragments` | [`FragmentData`](/api/eventsub/interfaces/fragmentdata/)\<`string`\>[] |
 | `text` | `string` |

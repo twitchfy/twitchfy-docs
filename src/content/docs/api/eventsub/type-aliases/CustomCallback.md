@@ -13,8 +13,8 @@ type CustomCallback: (self: Logger, level: LogLevels, args: unknown[]) => unknow
 
 | Parameter | Type |
 | :------ | :------ |
-| `self` | [`Logger`](../classes/Logger.md) |
-| `level` | [`LogLevels`](../enumerations/LogLevels.md) |
+| `self` | [`Logger`](/api/eventsub/classes/logger/) |
+| `level` | [`LogLevels`](/api/eventsub/enumerations/loglevels/) |
 | `args` | `unknown`[] |
 
 ## Returns

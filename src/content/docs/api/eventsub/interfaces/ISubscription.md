@@ -13,7 +13,7 @@ title: "ISubscription"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Properties
 
@@ -31,7 +31,7 @@ title: "ISubscription"
 | `id` | `string` | - | `Document.id` | `Document.id` |
 | `isNew` | `boolean` | Boolean flag specifying if the document is new. | `Document.isNew` | `Document.isNew` |
 | `nonce?` | `string` | - | - | - |
-| `options` | [`SubscriptionTypeOptions`](SubscriptionTypeOptions.md)\[`T`\] | - | - | - |
+| `options` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`T`\] | - | - | - |
 | `schema` | `Schema`\<`any`, `Model`\<`any`, `any`, `any`, `any`, `any`, `any`\>, `Object`, `Object`, `Object`, `Object`, `DefaultSchemaOptions`, `Object`, `Document`\<`unknown`, `Object`, `FlatRecord`\<`Object`\>\> & `FlatRecord`\<`Object`\> & `Required`\<`Object`\>\> | The document's schema. | `Document.schema` | `Document.schema` |
 | `secret?` | `string` | - | - | - |
 | `type` | `T` | - | - | - |
@@ -61,7 +61,7 @@ Assert that a given path or paths is populated. Throws an error if not populated
 
 #### Returns
 
-`Omit`\<[`ISubscription`](ISubscription.md)\<`T`\>, keyof `Paths`\> & `Paths`
+`Omit`\<[`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, keyof `Paths`\> & `Paths`
 
 #### Inherited from
 
@@ -735,7 +735,7 @@ in the format that will be sent to MongoDB.
 
 #### Returns
 
-`UpdateQuery`\<[`ISubscription`](ISubscription.md)\<`T`\>\>
+`UpdateQuery`\<[`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>\>
 
 #### Inherited from
 
@@ -1384,7 +1384,7 @@ Populates document references.
 
 ##### Returns
 
-`Promise`\<`MergeType`\<[`ISubscription`](ISubscription.md)\<`T`\>, `Paths`\>\>
+`Promise`\<`MergeType`\<[`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, `Paths`\>\>
 
 ##### Inherited from
 
@@ -1423,7 +1423,7 @@ options?: PopulateOptions): Promise<MergeType<ISubscription<T>, Paths>>
 
 ##### Returns
 
-`Promise`\<`MergeType`\<[`ISubscription`](ISubscription.md)\<`T`\>, `Paths`\>\>
+`Promise`\<`MergeType`\<[`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, `Paths`\>\>
 
 ##### Inherited from
 
@@ -1480,7 +1480,7 @@ Sends a replaceOne command with this document `_id` as the query selector.
 
 #### Returns
 
-`Query`\<`any`, [`ISubscription`](ISubscription.md)\<`T`\>, `Object`, [`ISubscription`](ISubscription.md)\<`T`\>, `"find"`\>
+`Query`\<`any`, [`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, `Object`, [`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, `"find"`\>
 
 #### Inherited from
 
@@ -1508,7 +1508,7 @@ Saves this document by inserting a new document into the database if [document.i
 
 #### Returns
 
-`Promise`\<[`ISubscription`](ISubscription.md)\<`T`\>\>
+`Promise`\<[`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>\>
 
 #### Inherited from
 
@@ -1819,12 +1819,12 @@ Sends an updateOne command with this document `_id` as the query selector.
 
 | Parameter | Type |
 | :------ | :------ |
-| `update`? | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<[`ISubscription`](ISubscription.md)\<`T`\>\> |
+| `update`? | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<[`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>\> |
 | `options`? | `QueryOptions`\<`unknown`\> |
 
 #### Returns
 
-`Query`\<`any`, [`ISubscription`](ISubscription.md)\<`T`\>, `Object`, [`ISubscription`](ISubscription.md)\<`T`\>, `"find"`\>
+`Query`\<`any`, [`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, `Object`, [`ISubscription`](/api/eventsub/interfaces/isubscription/)\<`T`\>, `"find"`\>
 
 #### Inherited from
 

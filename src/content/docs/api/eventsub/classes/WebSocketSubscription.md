@@ -7,13 +7,13 @@ title: "WebSocketSubscription"
 
 ## Extends
 
-- [`Subscription`](Subscription.md)\<`T`\>
+- [`Subscription`](/api/eventsub/classes/subscription/)\<`T`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
@@ -30,17 +30,17 @@ data: PostEventSubSubscription): WebSocketSubscription<T>
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`WebSocketConnection`](WebSocketConnection.md) |
-| `options` | [`SubscriptionOptions`](../type-aliases/SubscriptionOptions.md)\<`T`\> |
+| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
 | `data` | `PostEventSubSubscription` |
 
 #### Returns
 
-[`WebSocketSubscription`](WebSocketSubscription.md)\<`T`\>
+[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<`T`\>
 
 #### Overrides
 
-[`Subscription`](Subscription.md).[`constructor`](Subscription.md#constructors)
+[`Subscription`](/api/eventsub/classes/subscription/).[`constructor`](/api/eventsub/classes/subscription/#constructors)
 
 #### Source
 
@@ -50,16 +50,16 @@ data: PostEventSubSubscription): WebSocketSubscription<T>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `callbacks` | `public` | [`WebSocketSubscriptionCallbackManager`](WebSocketSubscriptionCallbackManager.md)\<`T`\> | - |
-| `connection` | `readonly` | [`WebSocketConnection`](WebSocketConnection.md) | - |
-| `cost` | `readonly` | `number` | [`Subscription`](Subscription.md).`cost` |
-| `createdAt` | `readonly` | `Date` | [`Subscription`](Subscription.md).`createdAt` |
-| `id` | `readonly` | `string` | [`Subscription`](Subscription.md).`id` |
-| `nonce` | `public` | `string` | [`Subscription`](Subscription.md).`nonce` |
-| `options` | `readonly` | [`SubscriptionTypeOptions`](../interfaces/SubscriptionTypeOptions.md)\[`T`\] | [`Subscription`](Subscription.md).`options` |
-| `status` | `public` | `string` | [`Subscription`](Subscription.md).`status` |
-| `type` | `readonly` | `T` | [`Subscription`](Subscription.md).`type` |
-| `version` | `readonly` | `string` | [`Subscription`](Subscription.md).`version` |
+| `callbacks` | `public` | [`WebSocketSubscriptionCallbackManager`](/api/eventsub/classes/websocketsubscriptioncallbackmanager/)\<`T`\> | - |
+| `connection` | `readonly` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | - |
+| `cost` | `readonly` | `number` | [`Subscription`](/api/eventsub/classes/subscription/).`cost` |
+| `createdAt` | `readonly` | `Date` | [`Subscription`](/api/eventsub/classes/subscription/).`createdAt` |
+| `id` | `readonly` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`id` |
+| `nonce` | `public` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`nonce` |
+| `options` | `readonly` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`T`\] | [`Subscription`](/api/eventsub/classes/subscription/).`options` |
+| `status` | `public` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`status` |
+| `type` | `readonly` | `T` | [`Subscription`](/api/eventsub/classes/subscription/).`type` |
+| `version` | `readonly` | `string` | [`Subscription`](/api/eventsub/classes/subscription/).`version` |
 
 ## Methods
 
@@ -73,7 +73,7 @@ checkSubscriptionType<U>(type: U): this is WebSocketSubscription<U>
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -117,7 +117,7 @@ onMessage(callback: WebSocketSubscriptionCallback<T>): void
 
 | Parameter | Type |
 | :------ | :------ |
-| `callback` | [`WebSocketSubscriptionCallback`](../type-aliases/WebSocketSubscriptionCallback.md)\<`T`\> |
+| `callback` | [`WebSocketSubscriptionCallback`](/api/eventsub/type-aliases/websocketsubscriptioncallback/)\<`T`\> |
 
 #### Returns
 

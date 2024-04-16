@@ -17,11 +17,11 @@ new Thread(data: ReplyData): Thread
 
 | Parameter | Type |
 | :------ | :------ |
-| `data` | [`ReplyData`](../interfaces/ReplyData.md) |
+| `data` | [`ReplyData`](/api/eventsub/interfaces/replydata/) |
 
 #### Returns
 
-[`Thread`](Thread.md)
+[`Thread`](/api/eventsub/classes/thread/)
 
 #### Source
 
@@ -32,4 +32,4 @@ new Thread(data: ReplyData): Thread
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
 | `messageID` | `public` | `string` |
-| `user` | `public` | [`UncompleteUser`](UncompleteUser.md) |
+| `user` | `public` | [`UncompleteUser`](/api/eventsub/classes/uncompleteuser/) |

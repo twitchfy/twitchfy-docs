@@ -7,14 +7,14 @@ title: "BaseStream"
 
 ## Extends
 
-- [`Base`](Base.md)\<`T`, `K`\>
+- [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](../enumerations/SubscriptionTypes.md) | - |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | - |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -34,18 +34,18 @@ started_at: string): BaseStream<T, K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
 | `id` | `string` |
-| `type` | [`StreamTypes`](../type-aliases/StreamTypes.md) |
+| `type` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) |
 | `started_at` | `string` |
 
 #### Returns
 
-[`BaseStream`](BaseStream.md)\<`T`, `K`\>
+[`BaseStream`](/api/eventsub/classes/basestream/)\<`T`, `K`\>
 
 #### Overrides
 
-[`Base`](Base.md).[`constructor`](Base.md#constructors)
+[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
 
 #### Source
 
@@ -55,8 +55,8 @@ started_at: string): BaseStream<T, K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`Base`](Base.md).`connection` |
+| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
 | `id` | `public` | `string` | - |
 | `startedAt` | `public` | `Date` | - |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`T`, `K`\> | [`Base`](Base.md).`subscription` |
-| `type` | `public` | [`StreamTypes`](../type-aliases/StreamTypes.md) | - |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| `type` | `public` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) | - |

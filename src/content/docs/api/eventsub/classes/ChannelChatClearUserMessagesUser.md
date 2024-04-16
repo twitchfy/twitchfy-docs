@@ -7,13 +7,13 @@ title: "ChannelChatClearUserMessagesUser"
 
 ## Extends
 
-- [`BaseUser`](BaseUser.md)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
+- [`BaseUser`](/api/eventsub/classes/baseuser/)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
 
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
+| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
@@ -33,18 +33,18 @@ dislayName: string): ChannelChatClearUserMessagesUser<K>
 | Parameter | Type |
 | :------ | :------ |
 | `connection` | `K` |
-| `subscription` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatClearUserMessages`, `K`\> |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> |
 | `id` | `string` |
 | `login` | `string` |
 | `dislayName` | `string` |
 
 #### Returns
 
-[`ChannelChatClearUserMessagesUser`](ChannelChatClearUserMessagesUser.md)\<`K`\>
+[`ChannelChatClearUserMessagesUser`](/api/eventsub/classes/channelchatclearusermessagesuser/)\<`K`\>
 
 #### Overrides
 
-[`BaseUser`](BaseUser.md).[`constructor`](BaseUser.md#constructors)
+[`BaseUser`](/api/eventsub/classes/baseuser/).[`constructor`](/api/eventsub/classes/baseuser/#constructors)
 
 #### Source
 
@@ -54,8 +54,8 @@ dislayName: string): ChannelChatClearUserMessagesUser<K>
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`BaseUser`](BaseUser.md).`connection` |
-| `displayName` | `public` | `string` | [`BaseUser`](BaseUser.md).`displayName` |
-| `id` | `public` | `string` | [`BaseUser`](BaseUser.md).`id` |
-| `login` | `public` | `string` | [`BaseUser`](BaseUser.md).`login` |
-| `subscription` | `public` | [`SubscriptionType`](../type-aliases/SubscriptionType.md)\<`ChannelChatClearUserMessages`, `K`\> | [`BaseUser`](BaseUser.md).`subscription` |
+| `connection` | `public` | `K` | [`BaseUser`](/api/eventsub/classes/baseuser/).`connection` |
+| `displayName` | `public` | `string` | [`BaseUser`](/api/eventsub/classes/baseuser/).`displayName` |
+| `id` | `public` | `string` | [`BaseUser`](/api/eventsub/classes/baseuser/).`id` |
+| `login` | `public` | `string` | [`BaseUser`](/api/eventsub/classes/baseuser/).`login` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | [`BaseUser`](/api/eventsub/classes/baseuser/).`subscription` |

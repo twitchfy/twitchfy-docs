@@ -13,7 +13,7 @@ messageHandler(this: WebSocket, message: Message): Promise<void>
 
 | Parameter | Type |
 | :------ | :------ |
-| `this` | [`WebSocket`](../classes/WebSocket.md) |
+| `this` | [`WebSocket`](/api/eventsub/classes/websocket/) |
 | `message` | `Message` |
 
 ## Returns

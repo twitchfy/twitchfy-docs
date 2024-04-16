@@ -15,7 +15,7 @@ Represents a Twitch channel.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,12 +31,12 @@ Creates a new instance of the channel.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
 | `data` | `Channel` | The data of the channel returned from the API. |
 
 #### Returns
 
-[`Channel`](Channel.md)\<`T`\>
+[`Channel`](/api/chatbot/classes/channel/)\<`T`\>
 
 #### Overrides
 
@@ -50,11 +50,11 @@ Creates a new instance of the channel.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `broadcaster` | `readonly` | [`BaseUser`](BaseUser.md)\<`T`\> | The broadcaster of the channel. | - |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
-| `chatroom` | `readonly` | [`ChatRoom`](ChatRoom.md)\<`T`\> | The chatroom of the channel. | - |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/chatbot/classes/baseuser/)\<`T`\> | The broadcaster of the channel. | - |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
+| `chatroom` | `readonly` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom of the channel. | - |
 | `classificationLabels` | `readonly` | `string`[] | The classification labels of the channel. | - |
-| `game` | `readonly` | [`Game`](../interfaces/Game.md) | The game which was currently set into the channel. | - |
+| `game` | `readonly` | [`Game`](/api/chatbot/interfaces/game/) | The game which was currently set into the channel. | - |
 | `isBrandedContent` | `readonly` | `boolean` | Whether the channel has branded content. | - |
 | `tags` | `readonly` | `string`[] | The tags of the channel. | - |
 
@@ -70,7 +70,7 @@ The chatroom bans manager. See [BanManager](../../api/chatbot/classes/banmanager
 
 #### Returns
 
-[`BanManager`](BanManager.md)\<`T`\>
+[`BanManager`](/api/chatbot/classes/banmanager/)\<`T`\>
 
 #### Source
 
@@ -142,7 +142,7 @@ The chatroom messages manager. See [MessageManager](../../api/chatbot/classes/me
 
 #### Returns
 
-[`MessageManager`](MessageManager.md)\<`T`\>
+[`MessageManager`](/api/chatbot/classes/messagemanager/)\<`T`\>
 
 #### Source
 
@@ -160,7 +160,7 @@ The chatroom timeouts manager. See [TimeoutManager](../../api/chatbot/classes/ti
 
 #### Returns
 
-[`TimeoutManager`](TimeoutManager.md)\<`T`\>
+[`TimeoutManager`](/api/chatbot/classes/timeoutmanager/)\<`T`\>
 
 #### Source
 
@@ -202,7 +202,7 @@ Fetches the clips of the channel from the API.
 
 #### Returns
 
-`Promise`\<`null` \| [`Clip`](Clip.md)\<`T`\>[]\>
+`Promise`\<`null` \| [`Clip`](/api/chatbot/classes/clip/)\<`T`\>[]\>
 
 An array containing the clips of the channel.
 
@@ -222,7 +222,7 @@ Fetches all the emotes of this channel.
 
 #### Returns
 
-`Promise`\<[`Collection`](Collection.md)\<`string`, [`ChannelEmote`](ChannelEmote.md)\<`T`\>\>\>
+`Promise`\<[`Collection`](/api/chatbot/classes/collection/)\<`string`, [`ChannelEmote`](/api/chatbot/classes/channelemote/)\<`T`\>\>\>
 
 The a Collection containing all the emotes of the channel.
 
@@ -242,7 +242,7 @@ Fetches the current channel from the API.
 
 #### Returns
 
-`Promise`\<[`Channel`](Channel.md)\<`T`\>\>
+`Promise`\<[`Channel`](/api/chatbot/classes/channel/)\<`T`\>\>
 
 The fetched channel from the API.
 
@@ -262,7 +262,7 @@ Fetches the current stream of the channel from the API.
 
 #### Returns
 
-`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>\>
+`Promise`\<`null` \| [`Stream`](/api/chatbot/classes/stream/)\<`T`\>\>
 
 The current stream or null if the stream is offline.
 

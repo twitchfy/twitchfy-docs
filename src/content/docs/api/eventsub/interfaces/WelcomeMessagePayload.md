@@ -9,4 +9,4 @@ title: "WelcomeMessagePayload"
 
 | Property | Type |
 | :------ | :------ |
-| `session` | [`WelcomeMessageSession`](WelcomeMessageSession.md) |
+| `session` | [`WelcomeMessageSession`](/api/eventsub/interfaces/welcomemessagesession/) |

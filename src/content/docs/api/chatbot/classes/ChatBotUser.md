@@ -9,13 +9,13 @@ Represents a Twitch chatbot user.
 
 ## Extends
 
-- [`User`](User.md)\<`T`\>
+- [`User`](/api/chatbot/classes/user/)\<`T`\>
 
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](../enumerations/EventSubConnection.md) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -31,16 +31,16 @@ Creates a new instance of the chatbot user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatbot` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. |
+| `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
 | `data` | `User` | The data of the user returned from the API. |
 
 #### Returns
 
-[`ChatBotUser`](ChatBotUser.md)\<`T`\>
+[`ChatBotUser`](/api/chatbot/classes/chatbotuser/)\<`T`\>
 
 #### Overrides
 
-[`User`](User.md).[`constructor`](User.md#constructors)
+[`User`](/api/chatbot/classes/user/).[`constructor`](/api/chatbot/classes/user/#constructors)
 
 #### Source
 
@@ -50,12 +50,12 @@ Creates a new instance of the chatbot user.
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `chatbot` | `readonly` | [`ChatBot`](ChatBot.md)\<`T`\> | The current instance of the chatbot. | [`User`](User.md).`chatbot` |
-| `description` | `readonly` | `string` | The description of the user. | [`User`](User.md).`description` |
-| `displayName` | `readonly` | `string` | The display name of the user. | [`User`](User.md).`displayName` |
-| `id` | `readonly` | `string` | The id of the user. | [`User`](User.md).`id` |
-| `profileImage` | `readonly` | `string` | The profile image URL of the user. | [`User`](User.md).`profileImage` |
-| `username` | `readonly` | `string` | The username of the user. | [`User`](User.md).`username` |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | [`User`](/api/chatbot/classes/user/).`chatbot` |
+| `description` | `readonly` | `string` | The description of the user. | [`User`](/api/chatbot/classes/user/).`description` |
+| `displayName` | `readonly` | `string` | The display name of the user. | [`User`](/api/chatbot/classes/user/).`displayName` |
+| `id` | `readonly` | `string` | The id of the user. | [`User`](/api/chatbot/classes/user/).`id` |
+| `profileImage` | `readonly` | `string` | The profile image URL of the user. | [`User`](/api/chatbot/classes/user/).`profileImage` |
+| `username` | `readonly` | `string` | The username of the user. | [`User`](/api/chatbot/classes/user/).`username` |
 
 ## Accessors
 
@@ -141,13 +141,13 @@ Gets the chatroom of the user.
 
 #### Returns
 
-`Promise`\<[`ChatRoom`](ChatRoom.md)\<`T`\>\>
+`Promise`\<[`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\>\>
 
 The chatroom of the user.
 
 #### Inherited from
 
-[`User`](User.md).[`chatroom`](User.md#chatroom)
+[`User`](/api/chatbot/classes/user/).[`chatroom`](/api/chatbot/classes/user/#chatroom)
 
 #### Source
 
@@ -165,13 +165,13 @@ Fetches the current user from the API.
 
 #### Returns
 
-`Promise`\<[`User`](User.md)\<`T`\>\>
+`Promise`\<[`User`](/api/chatbot/classes/user/)\<`T`\>\>
 
 The fetched user from the API.
 
 #### Inherited from
 
-[`User`](User.md).[`fetch`](User.md#fetch)
+[`User`](/api/chatbot/classes/user/).[`fetch`](/api/chatbot/classes/user/#fetch)
 
 #### Source
 
@@ -195,7 +195,7 @@ A boolean indicating whether the user is currently streaming.
 
 #### Inherited from
 
-[`User`](User.md).[`inStream`](User.md#instream)
+[`User`](/api/chatbot/classes/user/).[`inStream`](/api/chatbot/classes/user/#instream)
 
 #### Source
 
@@ -237,13 +237,13 @@ Fetches the current stream of the user from the API.
 
 #### Returns
 
-`Promise`\<`null` \| [`Stream`](Stream.md)\<`T`\>\>
+`Promise`\<`null` \| [`Stream`](/api/chatbot/classes/stream/)\<`T`\>\>
 
 The current stream or null if the stream is offline.
 
 #### Inherited from
 
-[`User`](User.md).[`stream`](User.md#stream)
+[`User`](/api/chatbot/classes/user/).[`stream`](/api/chatbot/classes/user/#stream)
 
 #### Source
 
@@ -265,7 +265,7 @@ Returns the mention of the user.
 
 #### Inherited from
 
-[`User`](User.md).[`toString`](User.md#tostring)
+[`User`](/api/chatbot/classes/user/).[`toString`](/api/chatbot/classes/user/#tostring)
 
 #### Source
 
@@ -293,7 +293,7 @@ Sends a whisper to the user.
 
 #### Inherited from
 
-[`User`](User.md).[`whisper`](User.md#whisper)
+[`User`](/api/chatbot/classes/user/).[`whisper`](/api/chatbot/classes/user/#whisper)
 
 #### Source
 

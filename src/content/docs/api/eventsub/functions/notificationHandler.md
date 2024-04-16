@@ -13,8 +13,8 @@ notificationHandler(connection: ConnectionTypes, payload: BasePayload<Subscripti
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`ConnectionTypes`](../type-aliases/ConnectionTypes.md) |
-| `payload` | [`BasePayload`](../interfaces/BasePayload.md)\<[`SubscriptionTypes`](../enumerations/SubscriptionTypes.md)\> |
+| `connection` | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `payload` | [`BasePayload`](/api/eventsub/interfaces/basepayload/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> |
 
 ## Returns
 
