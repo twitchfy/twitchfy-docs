@@ -17,12 +17,15 @@ dependencies:
   '@twitchapi/api-types':
     specifier: ^1.1.19
     version: 1.1.19
+  '@twitchapi/chatbot':
+    specifier: ^2.0.3
+    version: 2.0.3
   '@twitchapi/eventsub':
-    specifier: 1.0.0
-    version: 1.0.0
+    specifier: 1.0.1
+    version: 1.0.1
   '@twitchapi/helix':
-    specifier: ^1.5.4
-    version: 1.5.4
+    specifier: ^1.5.5
+    version: 1.5.5
   '@types/node':
     specifier: ^20.12.7
     version: 20.12.7
@@ -1219,11 +1222,28 @@ packages:
     resolution: {integrity: sha512-WdxCzKMqv/ih7aAz6eyCvX2mh/47q6D2yjkghEmdlZwbEGrqs1+JJhDqyClI57NZxQcRLadwSbDUs+90G6PvJQ==}
     dev: false
 
-  /@twitchapi/eventsub@1.0.0:
-    resolution: {integrity: sha512-ml5zIghl0Cj8/Z5qMLP5zfzPfoHZ32HDhmqIL3gHdCg9eq3O3yFs5SiNcWaTWoit6xlyi0+Em3UmqOi0sAAoqA==}
+  /@twitchapi/chatbot@2.0.3:
+    resolution: {integrity: sha512-9eUscVTCyiaxceGZDccnC1k1sdpKYeAEz2/BppJn5Plk46HotACfwLYb0hhxq0aHdh1tOaz14GXYz7t8cWmblA==}
     dependencies:
       '@twitchapi/api-types': 1.1.19
-      '@twitchapi/helix': 1.5.4
+      '@twitchapi/eventsub': 1.0.1
+      '@twitchapi/helix': 1.5.5
+    transitivePeerDependencies:
+      - '@aws-sdk/credential-providers'
+      - '@mongodb-js/zstd'
+      - gcp-metadata
+      - kerberos
+      - mongodb-client-encryption
+      - snappy
+      - socks
+      - supports-color
+    dev: false
+
+  /@twitchapi/eventsub@1.0.1:
+    resolution: {integrity: sha512-bYI+v6x0T8FfXyBo2FtlKbMoODCOIqK7fN449vQSWqRf7tH6GmvdDyxbnANPkSGmdm9FMgkYmaHa7t1Fb0cwzQ==}
+    dependencies:
+      '@twitchapi/api-types': 1.1.19
+      '@twitchapi/helix': 1.5.5
       '@vladfrangu/async_event_emitter': 2.2.4
       express: 4.19.2
       websocket: 1.0.34
@@ -1241,8 +1261,8 @@ packages:
       - supports-color
     dev: false
 
-  /@twitchapi/helix@1.5.4:
-    resolution: {integrity: sha512-tXYH93Azz1Q/dr2kDxnIPWtnudSfU4R5zo/g8AEhX60i+y+l7e/2TCKujYq/izvP/CReiCiR7vc0z3+YU9hWKA==}
+  /@twitchapi/helix@1.5.5:
+    resolution: {integrity: sha512-KJXNckjYkC3iUoJDn/TZIpDv8WHx1HYFY//wYQuLFHCWjfHWnD+dDm7f4u7N7eDW0EeeF0/qdUkkB82pffvsjw==}
     dependencies:
       '@twitchapi/api-types': 1.1.19
     dev: false
