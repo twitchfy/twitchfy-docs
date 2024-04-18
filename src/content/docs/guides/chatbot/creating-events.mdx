@@ -1,0 +1,142 @@
+---
+title: Creating events
+sidebar:
+  order: 6
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+Within this package you can create event listeners to listen to eventsub events.
+
+:::note
+The possible events you can listen are in [Events](/api/chatbot/type-aliases/events/).
+
+You can only listen events which your chatbot is authorize with. Normally, the broadcaster doesn't need to authorize within your app as your chatbot has moderator status.
+:::
+
+## Listening to events
+
+By default, when you join to a channel you won't listen any event except of `ChannelChatMessage`. To listen to the other events you will need to specify them when joining to a channel.
+
+```js showLineNumbers copy 
+chatbot.channels.join("channelId", ["ChannelUpdate", "ChannelFollow"]);
+```
+
+As you can see in the example above the chatbot is joining to a channel and then listening to the `ChannelUpdate` and `ChannelFollow` events.
+
+You may notice that you can only subscribe to events at joining a channel, but, for your luck, you can subscribe to events whenever you want.
+
+When you join to a channel a [ChannelProfile](/api/chatbot/classes/ChannelProfile) class is created and stored in the profiles collection within the chatbot instance.
+
+With this class you can either unlisten events or subscribe to one or more events.
+
+Here is an example of how get that channel profile and subscribe manage its events:
+
+```js showLineNumbers copy
+
+const profile = chatbot.profiles.get("channelId");
+
+//could be undefined if is not found
+if (profile) {
+  //adding one event
+  await profile.addEvent("StreamOnline");
+  //adding more than one event
+  await profile.addEvent(["ChannelChatClear", "ChannelFollow"]);
+  //removing event
+  await profile.removeEvent("StreamOnline");
+}
+````
+
+## Create your first event
+
+Before creating our first event listener we must set our events directory in the `paths` option of [ChatBotOptions](/api/chatbot/interfaces/chatbotoptions), where all the events are going to be located.
+
+<Tabs>
+<TabItem label="TypeScript">
+```ts ins={9}
+import { ChatBot } from '@twitchapi/chatbot';
+
+const chatbot = new ChatBot({
+    //rest of options
+    ...opts,
+    paths: {
+        output: 'dist',
+        commands: 'commands',
+        events: 'events'
+    }
+})
+
+````
+
+</TabItem>
+<TabItem label="JavaScript">
+
+```js ins={9}
+const { ChatBot } = require('@twitchapi/chatbot')
+
+const chatbot = new ChatBot({
+    //rest of options
+    ...opts,
+    paths: {
+        output: 'src',
+        commands: 'commands',
+        event: 'events'
+    }
+})
+````
+
+</TabItem>
+</Tabs>
+
+Now that we have set up our events base directory we are going to create our first event with [createEvent](/api/chatbot/functions/createevent) function to listen to streams which go online.
+
+<Tabs>
+<TabItem label="TypeScript">
+
+```ts title="events/StreamOnline.ts"
+import { createEvent } from "@twitchapi/chatbot";
+
+export default createEvent({
+  event: "StreamOnline",
+  //data received by each event. See in the docs
+  async run(chatbot, data) {
+    const stream = await data.broadcaster.stream();
+    //could be null because api internal caching.
+    if (stream) {
+      return await chatbot.messages.send(
+        data.chatroomID,
+        `${data.broadcaster.toString()} is currently streaming ${
+          stream.game.name
+        }`
+      );
+    } else
+      return await chatbot.messages.send(
+        data.chatroomID,
+        `${data.broadcaster.toString()} is currently streaming.`
+      );
+  },
+});
+```
+
+</TabItem>
+<TabItem label="JavaScript">
+```js title="events/StreamOnline.js"
+
+const { createEvent } = require('@twitchapi/chatbot');
+
+module.exports = createEvent({
+event: 'StreamOnline',
+//data received by each event. See in the docs
+async run(chatbot, data){
+const stream = await data.broadcaster.stream();
+//could be null because api internal caching.
+if(stream){
+return await chatbot.messages.send(data.chatroomID, `${data.broadcaster.toString()} is currently streaming ${stream.game.name}`)
+} else return await chatbot.messages.send(data.chatroomID, `${data.broadcaster.toString()} is currently streaming.`)
+}
+})
+
+```
+</TabItem>
+</Tabs>
+```

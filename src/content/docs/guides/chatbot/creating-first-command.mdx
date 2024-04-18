@@ -1,0 +1,124 @@
+---
+title: Creating your first Command
+sidebar:
+    order: 4
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components"
+
+Having created and started your first chabot it's time to create your first command.
+
+Commands are created within files which are located in the `commands` directory defined in the `paths` option when creating the chatbot.
+
+For creating a command you will have to simply create a class and export it. The class has to extend a pre-defined class called [Command](/api/chatbot/classes/command). 
+
+
+<Tabs>
+<TabItem label="TypeScript">
+
+```ts showLineNumbers copy title="commands/hello.ts"
+import { Command } from '@twitchapi/chatbot';
+
+export default class HelloCommand extends Command {}
+```
+</TabItem>
+
+<TabItem label="JavaScript">
+
+```ts showLineNumbers copy title="commands/hello.js"
+const { Command } = require('@twitchapi/chatbot'); //using cjs
+
+module.exports = class HelloCommand extends Command {};
+```
+</TabItem>
+</Tabs>
+
+## Command Name
+
+Now that be have created a command we need to set it's name that will be used by any chatter to execute the command.
+
+To set the name of the command we simply set the name property inside our command class to the command's name.
+
+:::tip
+Using TypeScript, you can use [SetCommand](/api/chatbot/functions/setcommand) decorator for setting the diffrent command options.
+:::
+
+<Tabs>
+<TabItem label="TypeScript">
+
+```ts showLineNumbers copy title="commands/hello.ts"
+import { Command, SetCommand } from '@twitchapi/chatbot';
+
+@SetCommand({
+    name: 'hello'
+})
+export default class HelloCommand extends Command {};
+```
+</TabItem>
+<TabItem label="JavaScript">
+
+```ts showLineNumbers copy title="commands/hello.js"
+const { Command } = require('@twitchapi/chatbot');
+
+module.exports = class HelloCommand extends Command {
+    name: 'hello'
+};
+```
+</TabItem>
+</Tabs>
+
+## Running Commands
+
+Once you have set the name of the command it's time to run the command logic. When an user runs the command the package will try to execute the `run` method from the command. 
+
+Here is a detailed example of a simple hello world command:
+
+<Tabs>
+<TabItem label="TypeScript">
+
+```ts showLineNumbers copy title="commands/hello.ts"
+import { Command, SetCommand, type CommandContext } from '@twitchapi/chatbot';
+
+@SetCommand({
+    name: 'hello'
+})
+export default class HelloCommand extends Command {
+    async run(ctx: CommandContext){
+        return await ctx.reply(`Hello, ${ctx.author.toString()}`);
+    }
+};
+```
+</TabItem>
+<TabItem label="JavaScript">
+
+```ts showLineNumbers copy title="commands/hello.js"
+const { Command } = require('@twitchapi/chatbot')
+
+module.exports = class HelloCommand extends Command {
+    name: 'hello',
+    async run(ctx){
+        return await ctx.reply(`Hello, ${ctx.author.toString()}`);
+    }
+};
+```
+
+Now when any user sends the command as `!hello` the chatbot will reply to the user's message, mentioning the user.
+
+</TabItem>
+</Tabs>
+
+:::tip
+
+You can customize the prefix of the command by setting `prefix` option when creating the chatbot. This option is a callback which expects an array containing the possible prefix of the command.
+
+```ts showLineNumbers copy wrap
+
+import { ChatBot } from '@twitchapi/chatbot'
+
+const chatbot = new ChatBot({
+    //rest of options
+    ...options
+    prefix: (_ctx) => ['?', '.', '/'] //in the callback you are given the context of the possible command so you can customize it in the current context.
+})
+```
+:::

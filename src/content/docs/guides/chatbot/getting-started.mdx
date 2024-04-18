@@ -1,0 +1,240 @@
+---
+title: Getting Started
+sidebar:
+    order: 3
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Setting up our project
+
+Having authorized and created your chatbot account within Twitch it's time to build our first chatbot.
+
+First of all we have to do is installing `@twitchapi/chatbot` with our Node package manager.
+
+<Tabs>
+  <TabItem label="pnpm">
+    ```bash title='pnpm'
+    pnpm add @twitchapi/chatbot
+    ```
+  </TabItem>
+  <TabItem label="npm">
+    ```bash title='npm'
+    npm i @twitchapi/chatbot
+    ```
+  </TabItem>
+</Tabs>
+
+## Building the chatbot
+
+Having set up our project it's time to start building our first chatbot.
+
+For building the chatbot we have to create a new instance of the [ChatBot](/api/chatbot/classes/chatbot) class.
+
+Here is a brief example of how be build a basic chatbot using webhooks or websocket.
+
+<Tabs>
+<TabItem label="webhook/index.ts">
+
+```ts showLineNumbers copy wrap
+import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
+import { RedisAdapter, WebhookConnection } from "@twitchapi/eventsub";
+import { TokenAdapter } from "@twitchapi/helix";
+import express from "express";
+
+const appToken = new TokenAdapter({
+  type: "app",
+  token: "myAppToken",
+});
+
+//app tokens couldn't be refreshed within Twitch but for mocking that refresh the package regenerate the app token. App tokens are only used when setting the connection type to webhooks.
+
+const userToken = new TokenAdapter({
+  type: "code",
+  token: "myUserToken",
+  refreshToken: "myRefreshToken",
+});
+
+const chatbot = new ChatBot({
+  userToken,
+  connectionType: EventSubConnection.Webhook,
+  eventsub: {
+    secret: "itsasecretshhhh",
+    appToken,
+    server: express(),
+    baseURL: "https://eventsub-subscriptions.com",
+    storage: { adapter: new RedisAdapter<WebhookConnection>() },
+    startServer: true, //the package will start the server. Otherwise you will have to start it.
+  },
+  paths: {
+    output: "dist", //the directory where your source code will be located (from current working directory). Using TypeScript it will be the output directory defined in the ts config file.
+    commands: "commands" //the directory where your commands will be located (from output directory).
+  },
+});
+```
+
+To build up a chatbot using Webhooks we need to start a server and bound it with express.
+
+The `secret` field is a kind of authorization against malicious attacks.
+
+</TabItem>
+<TabItem label="websocket/index.ts">
+
+```ts showLineNumbers copy wrap
+import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
+import { RedisAdapter, WebSocketConnection } from "@twitchapi/eventsub";
+import { TokenAdapter } from "@twitchapi/helix";
+
+const userToken = new TokenAdapter({
+  type: "code",
+  token: "myUserToken",
+  refreshToken: "myRefreshToken",
+});
+
+const chatbot = new ChatBot({
+  userToken,
+  connectionType: EventSubConnection.WebSocket,
+  eventsub: {
+    storage: { adapter: new RedisAdapter<WebSocketConnection>() },
+  },
+  paths: {
+    output: "dist", //the directory where your source code will be located (from current working directory). Using TypeScript it will be the output directory defined in the ts config file.
+    commands: "commands" //the directory where your commands will be located (from output directory).
+  },
+});
+```
+</TabItem>
+</Tabs>
+
+:::info
+
+`Storage` option within eventsub options is used for saving the subscriptions and reloading them everytime you start of your application.
+
+In the example above [RedisAdapter](/api/eventsub/classes/redisadapter) is used for storing the subscriptions within a Redis server. However you can customize your storage adapter by extending [StorageAdapter](/api/eventsub/classes/storageadapter) class. 
+
+Additionally, there is a [MongoAdapter](/api/eventsub/classes/mongoadapter) class for storing subscriptions in MongoDB.
+:::
+
+## Start your chatbot
+
+Once you've created your chatbot, the next step is to get it online. Simply call the `start` method, which returns a Promise that resolves when the chatbot is fully operational.
+
+<Tabs>
+
+<TabItem label="webhook/index.ts">
+
+```ts showLineNumbers ins={33} copy wrap
+import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
+import { RedisAdapter, WebhookConnection } from "@twitchapi/eventsub";
+import { TokenAdapter } from "@twitchapi/helix";
+import express from "express";
+
+const appToken = new TokenAdapter({
+  type: "app",
+  token: "myAppToken",
+});
+
+const userToken = new TokenAdapter({
+  type: "code",
+  token: "myUserToken",
+  refreshToken: "myRefreshToken",
+});
+
+const chatbot = new ChatBot({
+  userToken,
+  connectionType: EventSubConnection.Webhook,
+  eventsub: {
+    secret: "itsasecretshhhh",
+    appToken,
+    server: express(),
+    baseURL: "https://eventsub-subscriptions.com",
+    storage: { adapter: new RedisAdapter<WebhookConnection>() },
+    startServer: true, 
+  paths: {
+    output: "dist",
+    commands: 'commands'
+  },
+});
+
+chatbot.start(3333).then(() => console.log('ChatBot is fully operational')) //as we set the startServer option into true we have to set the port which will be listened.
+```
+
+</TabItem>
+<TabItem label="websocket/index.ts">
+
+```ts showLineNumbers ins={23} copy wrap
+import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
+import { RedisAdapter, WebSocketConnection } from "@twitchapi/eventsub";
+import { TokenAdapter } from "@twitchapi/helix";
+
+const userToken = new TokenAdapter({
+  type: "code",
+  token: "myUserToken",
+  refreshToken: "myRefreshToken",
+});
+
+const chatbot = new ChatBot({
+  userToken,
+  connectionType: EventSubConnection.WebSocket,
+  eventsub: {
+    storage: { adapter: new RedisAdapter<WebSocketConnection>() },
+  },
+  paths: {
+    output: "dist",
+    commands: 'commands'
+  },
+});
+
+chatbot.start().then(() => console.log('ChatBot fully operational'))
+```
+</TabItem>
+</Tabs>
+
+## Joining Channels
+
+Once you have set up your chatbot it's time to join to a broadcaster channel and listen to the broadcaster chatroom messages.
+
+To join a channel you have to call `join` method in the chatbot [ChannelManager](/api/chatbot/classes/channelmanager) with the channel's id you want to join to. 
+
+:::warning
+
+It's recommended to join channels after the chatbot has fully been started. If not it could led to an exception.
+:::
+
+```ts showLineNumbers copy ins={27}
+
+import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
+import { RedisAdapter, WebSocketConnection } from "@twitchapi/eventsub";
+import { TokenAdapter } from "@twitchapi/helix";
+
+const userToken = new TokenAdapter({
+  type: "code",
+  token: "myUserToken",
+  refreshToken: "myRefreshToken",
+});
+
+const chatbot = new ChatBot({
+  userToken,
+  connectionType: EventSubConnection.WebSocket,
+  eventsub: {
+    storage: { adapter: new RedisAdapter<WebSocketConnection>() },
+  },
+  paths: {
+    output: "dist",
+    commands: 'commands'
+  },
+});
+
+chatbot.start().then(() => {
+
+  console.log('ChatBot fully operational')
+
+  chatbot.channels.join('channelId').then(() => console.log('Joined'))
+
+});
+
+```
+
+:::note
+To be able to join to channels you need either `channel:bot` scope from broadcaster or your chatbot to be a moderator of that channel.
+:::

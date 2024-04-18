@@ -1,0 +1,180 @@
+---
+title: Command options 
+sidebar: 
+    order: 5
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Options can be declared within a command, with four types available:
+
+* [StringOption](/api/chatbot/classes/stringoption): Returns a string.
+* [NumberOption](/api/chatbot/classes/numberoption): Returns a number.
+* [BooleanOption](/api/chatbot/classes/booleanoption): Returns a boolean.
+* [MentionOption](/api/chatbot/classes/mentionoption): Returns the [BaseUser](/api/chatbot/classes/baseuser) who was mentioned.
+
+:::note
+As command options are received as strings, in number options, that string is parsed into a number. If it couldn't be parsed (for example, if the string isn't a valid number representation), it will return `NaN`.
+:::
+
+:::note
+Boolean options return a boolean. They return true if the option was specified without a value. If a value is specified, it will attempt to parse it into a boolean. If there isn't any defaultValue and the value couldn't be parsed, it will return null.
+:::
+
+:::tip
+Mention options return a [BaseUser](/api/chatbot/classes/baseuser). If multiple users were specified, it will return null. If only one user was mentioned, but there is another character before or after it, it will also return null.
+
+You can use grouped options to get an array of users mentioned in that option if you want the user to specify more than one user in the command.
+
+```ts showLineNumbers copy
+import { MentionOption } from '@twitchapi/chatbot';
+
+const option = new MentionOption({ grouped: true });
+```
+:::
+Command options works with this template:
+
+```txt
+
+!command -option1 value1 -option2 value2
+```
+
+:::tip
+
+You can change your option operator within [ChatBotOptions](/api/chatbot/interfaces/chatbotoptions) `optionOperator` option.
+:::
+
+## Attach options into commands
+
+To attach options to commands, the only thing we must do is set the `options` field within our command class.
+
+<Tabs>
+<TabItem label="TypeScript">
+
+```ts title="commands/dice.ts" showLineNumbers copy
+
+import { 
+    Command,
+    SetCommand,
+    NumberOption
+} from '@twitchapi/chatbot';
+
+const options = {
+    min: new NumberOption({ defaultValue: 1 }),
+    max: new NumberOption({ defaultValue: 6 })
+};
+
+@SetCommand({
+    name: 'dice',
+    options
+})
+
+export default class DiceCommand extends Command {};
+
+```
+</TabItem>
+<TabItem label="JavaScript">
+
+```js title="commands/dice.js" showLineNumbers copy
+
+const { 
+    Command,
+    NumberOption
+} = require('@twitchapi/chatbot');
+
+const options = {
+    min: new NumberOption({ defaultValue: 1 }),
+    max: new NumberOption({ defaultValue: 6 })
+};
+
+module.exports = class DiceCommand extends Command {
+    name = 'dice';
+    options = options;
+};
+
+```
+</TabItem>
+</Tabs>
+
+As seen in the example above, we are defining the options as an object whose keys are the option names. We are setting a defaultValue to the option, which will be returned if the option is not specified. If there isn't a default value and the option isn't specified, it will return `null`.
+
+## Running commands with options
+
+Running commands with options is similar to running a normal command, but the [CommandContext](/api/chatbot/classes/commandcontext) includes an options object containing all of the options defined for the command.
+
+:::note
+In TypeScript you will have to set the first generic type of CommandContext with the typeof your options for the context to be typed.
+:::
+
+<Tabs>
+<TabItem label="TypeScript">
+
+```ts title="commands/dice.ts" showLineNumbers copy
+
+import { 
+    Command,
+    SetCommand,
+    NumberOption,
+    type CommandContext
+} from '@twitchapi/chatbot';
+
+const options = {
+    min: new NumberOption({ defaultValue: 1 }),
+    max: new NumberOption({ defaultValue: 6 })
+};
+
+@SetCommand({
+    name: 'dice',
+    options
+})
+
+export default class DiceCommand extends Command {
+    async run(ctx: CommandContext<typeof options>){
+
+        const { min, max } = ctx.options;
+
+        return await ctx.reply(`The dice has rolled. And the number is... ${this.generateValue(min, max)}`)
+
+    }
+
+    generateValue(min: number, max: number){
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+};
+
+```
+</TabItem>
+<TabItem label="JavaScript">
+
+```js title="commands/dice.js" showLineNumbers copy
+
+const { 
+    Command,
+    NumberOption
+} = require('@twitchapi/chatbot');
+
+const options = {
+    min: new NumberOption({ defaultValue: 1 }),
+    max: new NumberOption({ defaultValue: 6 })
+};
+
+module.exports = class DiceCommand extends Command {
+    name = 'dice';
+    options = options;
+    async run(ctx){
+
+        const { min, max } = ctx.options;
+
+        return await ctx.reply(`The dice has rolled. And the number is... ${this.generateValue(min, max)}`)
+
+    }
+
+    generateValue(min, max){
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+};
+
+```
+</TabItem>
+</Tabs>
