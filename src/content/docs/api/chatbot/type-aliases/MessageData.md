@@ -20,4 +20,4 @@ The data of a message.
 
 ## Source
 
-[twitchapi/packages/chatbot/src/types/MessageData.ts:13](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/types/MessageData.ts#L13)
+[twitchapi/packages/chatbot/src/types/MessageData.ts:13](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/types/MessageData.ts#L13)

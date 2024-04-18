@@ -44,7 +44,7 @@ data: PostEventSubSubscription): WebSocketSubscription<T>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:17](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L17)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:17](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L17)
 
 ## Properties
 
@@ -87,7 +87,7 @@ checkSubscriptionType<U>(type: U): this is WebSocketSubscription<U>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:37](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L37)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:37](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L37)
 
 ***
 
@@ -103,7 +103,7 @@ delete(): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:41](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L41)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:41](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L41)
 
 ***
 
@@ -125,4 +125,4 @@ onMessage(callback: WebSocketSubscriptionCallback<T>): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:31](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L31)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscription.ts:31](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscription.ts#L31)

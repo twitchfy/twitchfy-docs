@@ -44,7 +44,7 @@ Creates a new instance of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:27](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L27)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:27](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L27)
 
 ## Properties
 
@@ -78,7 +78,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:58](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L58)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L58)
 
 ***
 
@@ -104,7 +104,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:91](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L91)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:91](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L91)
 
 ***
 
@@ -130,7 +130,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:47](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L47)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:47](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L47)
 
 ***
 
@@ -156,7 +156,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:80](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L80)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:80](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L80)
 
 ***
 
@@ -182,7 +182,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:38](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L38)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:38](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L38)
 
 ***
 
@@ -208,7 +208,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:113](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L113)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:113](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L113)
 
 ***
 
@@ -234,7 +234,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:124](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L124)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:124](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L124)
 
 ***
 
@@ -260,7 +260,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:69](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L69)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:69](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L69)
 
 ***
 
@@ -286,4 +286,4 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoMod.ts:102](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/AutoMod.ts#L102)
+[twitchapi/packages/chatbot/src/structures/AutoMod.ts:102](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/AutoMod.ts#L102)

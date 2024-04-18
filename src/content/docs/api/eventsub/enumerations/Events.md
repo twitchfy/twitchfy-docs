@@ -10,6 +10,7 @@ title: "Events"
 | Enumeration Member | Value |
 | :------ | :------ |
 | `ConnectionReady` | `"connectionReady"` |
+| `ConnectionReconnect` | `"reconnect"` |
 | `SubscriptionCreate` | `"subscriptionCreate"` |
 | `SubscriptionMessage` | `"subscriptionMessage"` |
 | `SubscriptionReload` | `"subscriptionReload"` |

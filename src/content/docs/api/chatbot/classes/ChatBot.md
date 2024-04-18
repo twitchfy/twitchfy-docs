@@ -35,7 +35,7 @@ Creates a new instance of the chatbot.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:131](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L131)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:133](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L133)
 
 ## Properties
 
@@ -75,7 +75,7 @@ The app token of the Twitch application. The value is null if the chatbot is usi
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:321](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L321)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:347](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L347)
 
 ***
 
@@ -93,7 +93,7 @@ The user token of the chatbot Twitch account to make requests.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:314](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L314)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:340](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L340)
 
 ## Methods
 
@@ -119,7 +119,7 @@ The clip fetched from the API or null if the clip wasn't founded.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:305](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L305)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:309](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L309)
 
 ***
 
@@ -145,7 +145,53 @@ An array containing the clips fetched from the API. If there isn't any clip foun
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:294](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L294)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:298](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L298)
+
+***
+
+### isModerator()
+
+```ts
+isModerator(channelID: string): Promise<boolean>
+```
+
+Checks whether the chatbot is moderator in a specific channel.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `channelID` | `string` | The ID of the channel to check. |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+A boolean indicating whether the chatbot is moderator in the channel.
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:320](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L320)
+
+***
+
+### moderatedChannels()
+
+```ts
+moderatedChannels(): Promise<BaseChannel<T>[]>
+```
+
+Get the moderated channels of the chatbot.
+
+#### Returns
+
+`Promise`\<[`BaseChannel`](/api/chatbot/classes/basechannel/)\<`T`\>[]\>
+
+An array containing the moderated channels of the chatbot.
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:330](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L330)
 
 ***
 
@@ -171,7 +217,7 @@ The current instance of the chatbot. When the promise is resolved the chatbot ha
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:205](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L205)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:208](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L208)
 
 ***
 
@@ -197,7 +243,7 @@ A stream fetched from the API or null if the stream wasn't founded.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:284](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L284)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:288](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L288)
 
 ***
 
@@ -219,7 +265,7 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:253](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L253)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:257](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L257)
 
 #### streams(number)
 
@@ -243,7 +289,7 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:254](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L254)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:258](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L258)
 
 #### streams(options, number)
 
@@ -268,4 +314,4 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:255](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatBot.ts#L255)
+[twitchapi/packages/chatbot/src/structures/ChatBot.ts:259](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBot.ts#L259)

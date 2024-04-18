@@ -44,7 +44,7 @@ Creates a new instance of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:54](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L54)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:60](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L60)
 
 ## Properties
 
@@ -53,6 +53,7 @@ Creates a new instance of the chatroom.
 | `automod` | `readonly` | [`AutoMod`](/api/chatbot/classes/automod/)\<`T`\> | The automod manager of the chatroom. | - |
 | `bans` | `readonly` | [`BanManager`](/api/chatbot/classes/banmanager/)\<`T`\> | The ban manager of the chatroom. | - |
 | `broadcaster` | `readonly` | [`BaseUser`](/api/chatbot/classes/baseuser/)\<`T`\> | The broadcaster who owns the chatroom. | - |
+| `channel` | `readonly` | [`BaseChannel`](/api/chatbot/classes/basechannel/)\<`T`\> | The channel of the chatroom. | - |
 | `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 | `messages` | `readonly` | [`MessageManager`](/api/chatbot/classes/messagemanager/)\<`T`\> | The message manager of the chatroom. | - |
 | `settings` | `readonly` | [`ChatRoomSettingsManager`](/api/chatbot/classes/chatroomsettingsmanager/)\<`T`\> | The settings manager of the chatroom. | - |
@@ -74,7 +75,7 @@ The ID of the chatroom. Its id is the same as the broadcaster id.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:68](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L68)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:75](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L75)
 
 ## Methods
 
@@ -100,27 +101,7 @@ The announcement that was sent.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:148](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L148)
-
-***
-
-### channel()
-
-```ts
-channel(): Promise<Channel<T>>
-```
-
-Fetches the channel of the chatroom.
-
-#### Returns
-
-`Promise`\<[`Channel`](/api/chatbot/classes/channel/)\<`T`\>\>
-
-The channel of the chatroom.
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:76](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L76)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:147](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L147)
 
 ***
 
@@ -146,7 +127,7 @@ The message that was sent. See [BaseMessage](/api/chatbot/api/chatbot/classes/ba
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:85](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L85)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:84](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L84)
 
 ***
 
@@ -172,7 +153,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:130](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L130)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:129](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L129)
 
 ***
 
@@ -198,7 +179,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:139](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L139)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:138](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L138)
 
 ***
 
@@ -224,7 +205,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:103](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L103)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:102](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L102)
 
 ***
 
@@ -250,7 +231,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:94](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L94)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:93](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L93)
 
 ***
 
@@ -276,7 +257,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:112](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L112)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:111](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L111)
 
 ***
 
@@ -302,7 +283,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:121](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L121)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:120](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L120)
 
 ***
 
@@ -328,4 +309,4 @@ The shoutout that was sent.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:157](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChatRoom.ts#L157)
+[twitchapi/packages/chatbot/src/structures/ChatRoom.ts:156](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatRoom.ts#L156)

@@ -44,7 +44,7 @@ Creates a new instance of the clip.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Clip.ts:78](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Clip.ts#L78)
+[twitchapi/packages/chatbot/src/structures/Clip.ts:78](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Clip.ts#L78)
 
 ## Properties
 
@@ -81,7 +81,7 @@ When the clip was created. Returns a JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Clip.ts:97](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Clip.ts#L97)
+[twitchapi/packages/chatbot/src/structures/Clip.ts:97](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Clip.ts#L97)
 
 ***
 
@@ -99,7 +99,7 @@ The ID of the video of the clip.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Clip.ts:104](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Clip.ts#L104)
+[twitchapi/packages/chatbot/src/structures/Clip.ts:104](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Clip.ts#L104)
 
 ## Methods
 
@@ -123,7 +123,7 @@ The fetched clip. Returns null if the clip was not found (probably because it wa
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseClip.ts:47](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseClip.ts#L47)
+[twitchapi/packages/chatbot/src/structures/BaseClip.ts:47](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseClip.ts#L47)
 
 ***
 
@@ -143,7 +143,7 @@ The stream of the broadcaster of the clip. If the stream is offline, it will ret
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Clip.ts:121](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Clip.ts#L121)
+[twitchapi/packages/chatbot/src/structures/Clip.ts:121](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Clip.ts#L121)
 
 ***
 
@@ -165,7 +165,7 @@ The url of the clip.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseClip.ts:39](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseClip.ts#L39)
+[twitchapi/packages/chatbot/src/structures/BaseClip.ts:39](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseClip.ts#L39)
 
 ***
 
@@ -185,4 +185,4 @@ The video of the clip. Returns null if the video doesn't exist.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Clip.ts:112](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Clip.ts#L112)
+[twitchapi/packages/chatbot/src/structures/Clip.ts:112](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Clip.ts#L112)

@@ -44,7 +44,7 @@ Creates a new instance of the channel profile.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:28](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChannelProfile.ts#L28)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:28](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L28)
 
 ## Properties
 
@@ -86,7 +86,7 @@ Checks if one event is being listened.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:68](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChannelProfile.ts#L68)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:68](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L68)
 
 ## Methods
 
@@ -117,7 +117,7 @@ Adds an event or events to the channel profile and listen to it. If the event is
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:34](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChannelProfile.ts#L34)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:34](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L34)
 
 #### addEvent(event)
 
@@ -144,7 +144,7 @@ Adds an event or events to the channel profile and listen to it. If the event is
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:35](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChannelProfile.ts#L35)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:35](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L35)
 
 ***
 
@@ -164,7 +164,7 @@ The fetched channel from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:76](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChannelProfile.ts#L76)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:76](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L76)
 
 ***
 
@@ -193,4 +193,4 @@ Removes an event from the channel profile and stop listening to it. If the event
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:57](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/ChannelProfile.ts#L57)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:57](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L57)

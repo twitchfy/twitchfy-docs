@@ -44,7 +44,7 @@ Creates a new instance of the author.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:29](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L29)
+[twitchapi/packages/chatbot/src/structures/Author.ts:29](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L29)
 
 ## Properties
 
@@ -73,7 +73,7 @@ Checks if the author is the broadcaster of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:37](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L37)
+[twitchapi/packages/chatbot/src/structures/Author.ts:37](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L37)
 
 ***
 
@@ -91,7 +91,7 @@ Checks if the author is a moderator of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:44](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L44)
+[twitchapi/packages/chatbot/src/structures/Author.ts:44](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L44)
 
 ***
 
@@ -109,7 +109,7 @@ Checks if the author is a subscriber of the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:58](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L58)
+[twitchapi/packages/chatbot/src/structures/Author.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L58)
 
 ***
 
@@ -127,7 +127,7 @@ Gets the subscription months of the author. If the author is not a subscriber, i
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:74](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L74)
+[twitchapi/packages/chatbot/src/structures/Author.ts:74](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L74)
 
 ***
 
@@ -145,7 +145,7 @@ Gets the subscription tier of the author. If the author is not a subscriber, it 
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L65)
+[twitchapi/packages/chatbot/src/structures/Author.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L65)
 
 ***
 
@@ -163,9 +163,29 @@ Checks if the author is a VIP of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Author.ts:51](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Author.ts#L51)
+[twitchapi/packages/chatbot/src/structures/Author.ts:51](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Author.ts#L51)
 
 ## Methods
+
+### channel()
+
+```ts
+channel(): Promise<Channel<T>>
+```
+
+#### Returns
+
+`Promise`\<[`Channel`](/api/chatbot/classes/channel/)\<`T`\>\>
+
+#### Inherited from
+
+[`BaseUser`](/api/chatbot/classes/baseuser/).[`channel`](/api/chatbot/classes/baseuser/#channel)
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:79](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L79)
+
+***
 
 ### chatroom()
 
@@ -187,7 +207,7 @@ The chatroom of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:41](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUser.ts#L41)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:42](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L42)
 
 ***
 
@@ -211,7 +231,7 @@ The fetched user from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:50](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUser.ts#L50)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:51](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L51)
 
 ***
 
@@ -235,7 +255,7 @@ A boolean indicating whether the user is currently streaming.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:73](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUser.ts#L73)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:74](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L74)
 
 ***
 
@@ -259,7 +279,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUser.ts#L65)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:66](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L66)
 
 ***
 
@@ -281,7 +301,7 @@ Returns the mention of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:57](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUser.ts#L57)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L58)
 
 ***
 
@@ -309,4 +329,4 @@ Sends a whisper to the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:83](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUser.ts#L83)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:88](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L88)

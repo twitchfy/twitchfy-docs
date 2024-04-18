@@ -33,7 +33,7 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L22)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L22)
 
 ## Properties
 
@@ -98,7 +98,7 @@ connect(): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L50)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L50)
 
 ***
 
@@ -210,7 +210,12 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
 ### listeners()
 
 ```ts
-listeners<K>(eventName: K): (...args: [WebSocketConnection] | [WebSocketSubscription<SubscriptionTypes>] | [SubscriptionMessage<WebSocketConnection>, WebSocketSubscription<SubscriptionTypes>] | [WebSocketSubscription<SubscriptionTypes>]) => Awaitable<void>[]
+listeners<K>(eventName: K): (...args: 
+  | [WebSocketConnection]
+  | [WebSocketConnection, string]
+  | [WebSocketSubscription<SubscriptionTypes>]
+  | [SubscriptionMessage<WebSocketConnection>, WebSocketSubscription<SubscriptionTypes>]
+  | [WebSocketSubscription<SubscriptionTypes>]) => Awaitable<void>[]
 ```
 
 #### Type parameters
@@ -227,7 +232,12 @@ listeners<K>(eventName: K): (...args: [WebSocketConnection] | [WebSocketSubscrip
 
 #### Returns
 
-(...`args`: [[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>, [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]) => `Awaitable`\<`void`\>[]
+(...`args`: 
+  \| [[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)]
+  \| [[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), `string`]
+  \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]
+  \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>, [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]
+  \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]) => `Awaitable`\<`void`\>[]
 
 #### Inherited from
 
@@ -261,7 +271,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L65)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L65)
 
 ***
 
@@ -287,7 +297,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L71)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L71)
 
 ***
 
@@ -459,7 +469,12 @@ twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
 ### rawListeners()
 
 ```ts
-rawListeners<K>(eventName: K): Listener<[WebSocketConnection] | [WebSocketSubscription<SubscriptionTypes>] | [SubscriptionMessage<WebSocketConnection>, WebSocketSubscription<SubscriptionTypes>] | [WebSocketSubscription<SubscriptionTypes>]>[]
+rawListeners<K>(eventName: K): Listener<
+  | [WebSocketConnection]
+  | [WebSocketConnection, string]
+  | [WebSocketSubscription<SubscriptionTypes>]
+  | [SubscriptionMessage<WebSocketConnection>, WebSocketSubscription<SubscriptionTypes>]
+  | [WebSocketSubscription<SubscriptionTypes>]>[]
 ```
 
 #### Type parameters
@@ -476,7 +491,12 @@ rawListeners<K>(eventName: K): Listener<[WebSocketConnection] | [WebSocketSubscr
 
 #### Returns
 
-`Listener`\<[[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>, [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>] \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]\>[]
+`Listener`\<
+  \| [[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)]
+  \| [[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), `string`]
+  \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]
+  \| [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>, [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]
+  \| [[`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\>]\>[]
 
 #### Inherited from
 
@@ -571,7 +591,7 @@ setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnect
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L105)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L105)
 
 ***
 
@@ -629,7 +649,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L56)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L56)
 
 ***
 
@@ -661,7 +681,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L77)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L77)
 
 ***
 

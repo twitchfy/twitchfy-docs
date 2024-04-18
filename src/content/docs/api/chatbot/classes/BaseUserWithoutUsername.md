@@ -44,7 +44,7 @@ Creates a new instance of the base user without an username.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:28](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L28)
+[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:28](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L28)
 
 ## Properties
 
@@ -72,7 +72,7 @@ The fetched user from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:38](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L38)
+[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:38](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L38)
 
 ***
 
@@ -92,7 +92,7 @@ A boolean indicating whether the user is currently streaming.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:64](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L64)
+[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:64](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L64)
 
 ***
 
@@ -112,7 +112,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:53](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L53)
+[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:53](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L53)
 
 ***
 
@@ -130,7 +130,7 @@ Returns the mention of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:45](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L45)
+[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:45](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L45)
 
 ***
 
@@ -154,4 +154,4 @@ Sends a whisper to the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:74](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L74)
+[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:74](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L74)

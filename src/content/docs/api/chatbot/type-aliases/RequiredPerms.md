@@ -13,4 +13,4 @@ The required permissions for the command returned on the onPermissionsFallback f
 
 ## Source
 
-[twitchapi/packages/chatbot/src/types/RequiredPerms.ts:6](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/types/RequiredPerms.ts#L6)
+[twitchapi/packages/chatbot/src/types/RequiredPerms.ts:6](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/types/RequiredPerms.ts#L6)

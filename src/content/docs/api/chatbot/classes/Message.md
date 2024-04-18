@@ -48,7 +48,7 @@ Creates a new instance of the message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:76](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L76)
+[twitchapi/packages/chatbot/src/structures/Message.ts:76](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L76)
 
 ## Properties
 
@@ -83,7 +83,7 @@ The ID of the author of the message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:93](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L93)
+[twitchapi/packages/chatbot/src/structures/Message.ts:93](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L93)
 
 ***
 
@@ -101,7 +101,7 @@ The ID of the chatroom where the message was sent.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:64](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseMessage.ts#L64)
+[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:64](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseMessage.ts#L64)
 
 ***
 
@@ -119,7 +119,7 @@ Whether the message has a reward reedemption.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:142](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L142)
+[twitchapi/packages/chatbot/src/structures/Message.ts:142](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L142)
 
 ***
 
@@ -137,7 +137,7 @@ Whether the message was sent by the send in subscriber mode reward.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:114](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L114)
+[twitchapi/packages/chatbot/src/structures/Message.ts:114](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L114)
 
 ***
 
@@ -155,7 +155,7 @@ Whether the message was highlighted by the highlight message reward.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:107](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L107)
+[twitchapi/packages/chatbot/src/structures/Message.ts:107](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L107)
 
 ***
 
@@ -173,7 +173,7 @@ Whether the message is a normal text message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:100](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L100)
+[twitchapi/packages/chatbot/src/structures/Message.ts:100](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L100)
 
 ***
 
@@ -191,7 +191,7 @@ Whether the message is an user intro message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:121](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L121)
+[twitchapi/packages/chatbot/src/structures/Message.ts:121](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L121)
 
 ***
 
@@ -209,7 +209,7 @@ The message which was replied by this message. Null if the message doesn't have 
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:128](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L128)
+[twitchapi/packages/chatbot/src/structures/Message.ts:128](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L128)
 
 ***
 
@@ -227,7 +227,7 @@ Whether the message was sent by the chatbot.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseMessage.ts#L71)
+[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:71](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseMessage.ts#L71)
 
 ***
 
@@ -245,7 +245,7 @@ The start message of the thread where this message is part of. Null if the messa
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Message.ts:135](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Message.ts#L135)
+[twitchapi/packages/chatbot/src/structures/Message.ts:135](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Message.ts#L135)
 
 ## Methods
 
@@ -267,7 +267,7 @@ Deletes the message from the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:48](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseMessage.ts#L48)
+[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:48](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseMessage.ts#L48)
 
 ***
 
@@ -297,4 +297,4 @@ The message that was sent as a reply.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:57](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseMessage.ts#L57)
+[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:57](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseMessage.ts#L57)

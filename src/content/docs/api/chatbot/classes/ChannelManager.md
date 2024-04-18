@@ -43,7 +43,7 @@ Creates a new instance of the channel manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:19](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/ChannelManager.ts#L19)
+[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:19](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/ChannelManager.ts#L19)
 
 ## Properties
 
@@ -75,7 +75,7 @@ A class representation of the channel. See [Channel](/api/chatbot/api/chatbot/cl
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:104](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/ChannelManager.ts#L104)
+[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:104](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/ChannelManager.ts#L104)
 
 ***
 
@@ -107,7 +107,7 @@ A class representation of the channel profile which contains the events you are 
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:29](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/ChannelManager.ts#L29)
+[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:29](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/ChannelManager.ts#L29)
 
 ***
 
@@ -131,4 +131,4 @@ Leave a channel. You will no longer listen to messages and the other events you'
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:70](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/ChannelManager.ts#L70)
+[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:70](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/ChannelManager.ts#L70)

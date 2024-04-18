@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import { createStarlightTypeDocPlugin } from 'starlight-typedoc'
 
 const [chatbotTypeDoc, chatbotSidebar] = createStarlightTypeDocPlugin()
@@ -67,7 +68,10 @@ export default defineConfig({
 						expandParameters: true
 					}
 				})
-			]
+			],
+			expressiveCode: {
+				plugins: [pluginLineNumbers()]
+			}
 		}),
 	],
 });

@@ -34,7 +34,7 @@ new WebhookConnection(options: WebhookConnectionOptions, server: Express): Webho
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L34)
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L34)
 
 ## Properties
 
@@ -249,7 +249,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L65)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L65)
 
 ***
 
@@ -275,7 +275,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/structures/BaseConnection.ts#L71)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L71)
 
 ***
 
@@ -559,7 +559,7 @@ setAuth(appToken: TokenAdapter<"app", boolean>): WebhookConnection
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:123](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L123)
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:123](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L123)
 
 ***
 
@@ -608,7 +608,7 @@ start(port?: number, callback?: () => void): Promise<boolean>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:113](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L113)
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:113](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L113)
 
 ***
 
@@ -640,7 +640,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:65](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L65)
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L65)
 
 ***
 
@@ -672,7 +672,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscripti
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:86](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L86)
+[twitchapi/packages/eventsub/src/webhook/structures/WebhookConnection.ts:86](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/webhook/structures/WebhookConnection.ts#L86)
 
 ***
 

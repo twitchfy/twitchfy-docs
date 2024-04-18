@@ -44,7 +44,7 @@ Creates a new instance of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Stream.ts:49](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Stream.ts#L49)
+[twitchapi/packages/chatbot/src/structures/Stream.ts:49](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Stream.ts#L49)
 
 ## Properties
 
@@ -76,7 +76,7 @@ When the stream has started. Returns a JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseStream.ts:67](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseStream.ts#L67)
+[twitchapi/packages/chatbot/src/structures/BaseStream.ts:67](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseStream.ts#L67)
 
 ***
 
@@ -94,7 +94,7 @@ The title of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Stream.ts:62](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Stream.ts#L62)
+[twitchapi/packages/chatbot/src/structures/Stream.ts:62](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Stream.ts#L62)
 
 ## Methods
 
@@ -122,7 +122,7 @@ Creates a new clip of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseStream.ts:49](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseStream.ts#L49)
+[twitchapi/packages/chatbot/src/structures/BaseStream.ts:49](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseStream.ts#L49)
 
 ***
 
@@ -146,7 +146,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseStream.ts:57](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/BaseStream.ts#L57)
+[twitchapi/packages/chatbot/src/structures/BaseStream.ts:57](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseStream.ts#L57)
 
 ***
 
@@ -170,4 +170,4 @@ The thumbnail URL of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Stream.ts:70](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Stream.ts#L70)
+[twitchapi/packages/chatbot/src/structures/Stream.ts:70](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Stream.ts#L70)

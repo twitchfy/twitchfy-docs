@@ -44,7 +44,7 @@ Creates a new instance of the message manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:22](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/MessageManager.ts#L22)
+[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:22](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/MessageManager.ts#L22)
 
 ## Properties
 
@@ -75,7 +75,7 @@ Deletes a message from the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:32](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/MessageManager.ts#L32)
+[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:32](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/MessageManager.ts#L32)
 
 ***
 
@@ -101,4 +101,4 @@ The message fetched.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:41](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/managers/MessageManager.ts#L41)
+[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:41](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/MessageManager.ts#L41)

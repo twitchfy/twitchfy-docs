@@ -33,13 +33,14 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:14](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocket.ts#L14)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:16](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocket.ts#L16)
 
 ## Properties
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
 | `connection` | `public` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | - | - |
+| `connectionURL` | `public` | `string` | - | - |
 | `wsConnection` | `public` | `connection` | - | - |
 | `captureRejectionSymbol` | `readonly` | *typeof* `captureRejectionSymbol` | Value: `Symbol.for('nodejs.rejection')`<br /><br />See how to write a custom `rejection handler`.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejectionSymbol` |
 | `captureRejections` | `static` | `boolean` | Value: [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)<br /><br />Change the default `captureRejections` option on all new `EventEmitter` objects.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejections` |
@@ -203,7 +204,7 @@ connect(url?: string): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:25](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/eventsub/src/ws/structures/WebSocket.ts#L25)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:29](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocket.ts#L29)
 
 ***
 

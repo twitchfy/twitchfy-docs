@@ -9,7 +9,7 @@ Represents a Twitch channel.
 
 ## Extends
 
-- `Base`\<`T`\>
+- [`BaseChannel`](/api/chatbot/classes/basechannel/)\<`T`\>
 
 ## Type parameters
 
@@ -40,21 +40,22 @@ Creates a new instance of the channel.
 
 #### Overrides
 
-`Base<T>.constructor`
+[`BaseChannel`](/api/chatbot/classes/basechannel/).[`constructor`](/api/chatbot/classes/basechannel/#constructors)
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:57](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L57)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:43](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Channel.ts#L43)
 
 ## Properties
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `broadcaster` | `readonly` | [`BaseUser`](/api/chatbot/classes/baseuser/)\<`T`\> | The broadcaster of the channel. | - |
-| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
-| `chatroom` | `readonly` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom of the channel. | - |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/chatbot/classes/baseuser/)\<`T`\> | The broadcaster of the channel. | [`BaseChannel`](/api/chatbot/classes/basechannel/).`broadcaster` |
+| `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | [`BaseChannel`](/api/chatbot/classes/basechannel/).`chatbot` |
+| `chatroom` | `readonly` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom of the channel. | [`BaseChannel`](/api/chatbot/classes/basechannel/).`chatroom` |
 | `classificationLabels` | `readonly` | `string`[] | The classification labels of the channel. | - |
 | `game` | `readonly` | [`Game`](/api/chatbot/interfaces/game/) | The game which was currently set into the channel. | - |
+| `id` | `readonly` | `string` | The id of the channel. | [`BaseChannel`](/api/chatbot/classes/basechannel/).`id` |
 | `isBrandedContent` | `readonly` | `boolean` | Whether the channel has branded content. | - |
 | `tags` | `readonly` | `string`[] | The tags of the channel. | - |
 
@@ -74,7 +75,7 @@ The chatroom bans manager. See [BanManager](../../api/chatbot/classes/banmanager
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:99](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L99)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:51](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L51)
 
 ***
 
@@ -92,7 +93,7 @@ The id of the broadcaster who owns the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:71](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L71)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:37](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L37)
 
 ***
 
@@ -110,7 +111,7 @@ The id of the chatroom of the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:78](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L78)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:44](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L44)
 
 ***
 
@@ -128,7 +129,7 @@ The language that was set to the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:92](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L92)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:63](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Channel.ts#L63)
 
 ***
 
@@ -146,7 +147,7 @@ The chatroom messages manager. See [MessageManager](../../api/chatbot/classes/me
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:113](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L113)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L65)
 
 ***
 
@@ -164,7 +165,7 @@ The chatroom timeouts manager. See [TimeoutManager](../../api/chatbot/classes/ti
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:106](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L106)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L58)
 
 ***
 
@@ -182,7 +183,7 @@ The title of the channel. If it was never set, it will return a nullish value.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:85](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L85)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:56](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Channel.ts#L56)
 
 ## Methods
 
@@ -206,9 +207,13 @@ Fetches the clips of the channel from the API.
 
 An array containing the clips of the channel.
 
+#### Inherited from
+
+[`BaseChannel`](/api/chatbot/classes/basechannel/).[`clips`](/api/chatbot/classes/basechannel/#clips)
+
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:139](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L139)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:91](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L91)
 
 ***
 
@@ -226,9 +231,13 @@ Fetches all the emotes of this channel.
 
 The a Collection containing all the emotes of the channel.
 
+#### Inherited from
+
+[`BaseChannel`](/api/chatbot/classes/basechannel/).[`emotes`](/api/chatbot/classes/basechannel/#emotes)
+
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:121](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L121)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:73](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L73)
 
 ***
 
@@ -246,9 +255,33 @@ Fetches the current channel from the API.
 
 The fetched channel from the API.
 
+#### Inherited from
+
+[`BaseChannel`](/api/chatbot/classes/basechannel/).[`fetch`](/api/chatbot/classes/basechannel/#fetch)
+
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:148](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L148)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:104](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L104)
+
+***
+
+### isModerator()
+
+```ts
+isModerator(): Promise<boolean>
+```
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Inherited from
+
+[`BaseChannel`](/api/chatbot/classes/basechannel/).[`isModerator`](/api/chatbot/classes/basechannel/#ismoderator)
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:96](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L96)
 
 ***
 
@@ -266,6 +299,10 @@ Fetches the current stream of the channel from the API.
 
 The current stream or null if the stream is offline.
 
+#### Inherited from
+
+[`BaseChannel`](/api/chatbot/classes/basechannel/).[`stream`](/api/chatbot/classes/basechannel/#stream)
+
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:130](https://github.com/pablornc/twitchapi//blob/f8a75ccd701e54db4c91e2b0128974da23f25d14/packages/chatbot/src/structures/Channel.ts#L130)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:82](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L82)

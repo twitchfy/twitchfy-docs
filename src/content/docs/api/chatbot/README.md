@@ -23,6 +23,7 @@ title: "@twitchapi/chatbot"
 | [BadgeManager](/api/chatbot/classes/badgemanager/) | Represents an user badge's manager. |
 | [Ban](/api/chatbot/classes/ban/) | Represents a ban in a chatroom. |
 | [BanManager](/api/chatbot/classes/banmanager/) | The ban manager of a chatroom. |
+| [BaseChannel](/api/chatbot/classes/basechannel/) | - |
 | [BaseCheermote](/api/chatbot/classes/basecheermote/) | Represents a base cheermote returned by the EventSub. |
 | [BaseClip](/api/chatbot/classes/baseclip/) | Represents the base class for all clips. |
 | [BaseEmote](/api/chatbot/classes/baseemote/) | The base emote class. |
@@ -77,6 +78,7 @@ title: "@twitchapi/chatbot"
 | Interface | Description |
 | :------ | :------ |
 | [BanOptions](/api/chatbot/interfaces/banoptions/) | The options to ban an user. |
+| [BaseChannelData](/api/chatbot/interfaces/basechanneldata/) | - |
 | [BaseClipData](/api/chatbot/interfaces/baseclipdata/) | The base data of a clip. |
 | [BaseEmoteData](/api/chatbot/interfaces/baseemotedata/) | The data of the base emote. |
 | [BaseMessageData](/api/chatbot/interfaces/basemessagedata/) | The base data for a message. |
