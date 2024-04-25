@@ -43,7 +43,7 @@ Creates a new instance of the channel manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:19](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChannelManager.ts#L19)
+twitchfy/packages/chatbot/src/structures/managers/ChannelManager.ts:19
 
 ## Properties
 
@@ -75,7 +75,7 @@ A class representation of the channel. See [Channel](/api/chatbot/api/chatbot/cl
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:104](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChannelManager.ts#L104)
+twitchfy/packages/chatbot/src/structures/managers/ChannelManager.ts:104
 
 ***
 
@@ -107,7 +107,7 @@ A class representation of the channel profile which contains the events you are 
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:29](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChannelManager.ts#L29)
+twitchfy/packages/chatbot/src/structures/managers/ChannelManager.ts:29
 
 ***
 
@@ -131,4 +131,4 @@ Leave a channel. You will no longer listen to messages and the other events you'
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChannelManager.ts:70](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChannelManager.ts#L70)
+twitchfy/packages/chatbot/src/structures/managers/ChannelManager.ts:70

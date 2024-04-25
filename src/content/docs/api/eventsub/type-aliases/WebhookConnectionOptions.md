@@ -22,4 +22,4 @@ type WebhookConnectionOptions: BaseConnectionOptions<WebhookConnection> & Object
 
 ## Source
 
-[twitchapi/packages/eventsub/src/webhook/types/WebhookConnectionOptions.ts:7](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/webhook/types/WebhookConnectionOptions.ts#L7)
+twitchfy/packages/eventsub/src/webhook/types/WebhookConnectionOptions.ts:7

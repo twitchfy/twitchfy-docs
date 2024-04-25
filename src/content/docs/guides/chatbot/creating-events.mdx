@@ -54,7 +54,7 @@ Before creating our first event listener we must set our events directory in the
 <Tabs>
 <TabItem label="TypeScript">
 ```ts ins={9}
-import { ChatBot } from '@twitchapi/chatbot';
+import { ChatBot } from '@twitchfy/chatbot';
 
 const chatbot = new ChatBot({
     //rest of options
@@ -72,7 +72,7 @@ const chatbot = new ChatBot({
 <TabItem label="JavaScript">
 
 ```js ins={9}
-const { ChatBot } = require('@twitchapi/chatbot')
+const { ChatBot } = require('@twitchfy/chatbot')
 
 const chatbot = new ChatBot({
     //rest of options
@@ -94,7 +94,7 @@ Now that we have set up our events base directory we are going to create our fir
 <TabItem label="TypeScript">
 
 ```ts title="events/StreamOnline.ts"
-import { createEvent } from "@twitchapi/chatbot";
+import { createEvent } from "@twitchfy/chatbot";
 
 export default createEvent({
   event: "StreamOnline",
@@ -122,7 +122,7 @@ export default createEvent({
 <TabItem label="JavaScript">
 ```js title="events/StreamOnline.js"
 
-const { createEvent } = require('@twitchapi/chatbot');
+const { createEvent } = require('@twitchfy/chatbot');
 
 module.exports = createEvent({
 event: 'StreamOnline',

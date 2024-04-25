@@ -48,7 +48,7 @@ displayName: string): ChannelChatClearUserMessagesBroadcaster<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessagesBroadcaster.ts:8](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessagesBroadcaster.ts#L8)
+twitchfy/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessagesBroadcaster.ts:8
 
 ## Properties
 

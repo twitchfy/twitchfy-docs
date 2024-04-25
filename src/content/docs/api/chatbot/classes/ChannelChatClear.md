@@ -44,7 +44,7 @@ Creates a new instance of the channel chat clear event.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelChatClear.ts:28](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelChatClear.ts#L28)
+twitchfy/packages/chatbot/src/structures/ChannelChatClear.ts:28
 
 ## Properties
 
@@ -69,7 +69,7 @@ The ID of the broadcaster whose chat was cleared.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelChatClear.ts:37](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelChatClear.ts#L37)
+twitchfy/packages/chatbot/src/structures/ChannelChatClear.ts:37
 
 ***
 
@@ -87,4 +87,4 @@ The ID of the chatroom where the chat was cleared.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelChatClear.ts:44](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelChatClear.ts#L44)
+twitchfy/packages/chatbot/src/structures/ChannelChatClear.ts:44

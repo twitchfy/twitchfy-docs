@@ -43,7 +43,7 @@ Creates a new instance of the message manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:15](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts#L15)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:15
 
 ## Properties
 
@@ -74,7 +74,7 @@ Deletes a specific message from a chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:25](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts#L25)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:25
 
 ***
 
@@ -103,4 +103,4 @@ A class representation of the message. See [BaseMessage](/api/chatbot/api/chatbo
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:36](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts#L36)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:36

@@ -48,7 +48,7 @@ Creates a new instance of the automod settings.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:30](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L30)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:30
 
 ## Properties
 
@@ -74,7 +74,7 @@ The aggression level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:53](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L53)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:53
 
 ***
 
@@ -92,7 +92,7 @@ The bullying level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:74](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L74)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:74
 
 ***
 
@@ -110,7 +110,7 @@ The disability level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:46](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L46)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:46
 
 ***
 
@@ -128,7 +128,7 @@ The misogyny level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:67](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L67)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:67
 
 ***
 
@@ -146,7 +146,7 @@ The overall level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:39](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L39)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:39
 
 ***
 
@@ -164,7 +164,7 @@ The racism level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:88](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L88)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:88
 
 ***
 
@@ -182,7 +182,7 @@ The level of sex based terms of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:95](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L95)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:95
 
 ***
 
@@ -200,7 +200,7 @@ The sexuality level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:60](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L60)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:60
 
 ***
 
@@ -218,4 +218,4 @@ The harassment level of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/AutoModSettings.ts:81](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/AutoModSettings.ts#L81)
+twitchfy/packages/chatbot/src/structures/AutoModSettings.ts:81

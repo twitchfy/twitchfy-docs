@@ -17,7 +17,7 @@ For creating a command you will have to simply create a class and export it. The
 <TabItem label="TypeScript">
 
 ```ts showLineNumbers copy title="commands/hello.ts"
-import { ChatCommand } from '@twitchapi/chatbot';
+import { ChatCommand } from '@twitchfy/chatbot';
 
 export default class HelloCommand extends ChatCommand {}
 ```
@@ -26,7 +26,7 @@ export default class HelloCommand extends ChatCommand {}
 <TabItem label="JavaScript">
 
 ```ts showLineNumbers copy title="commands/hello.js"
-const { ChatCommand } = require('@twitchapi/chatbot'); //using cjs
+const { ChatCommand } = require('@twitchfy/chatbot'); //using cjs
 
 module.exports = class HelloCommand extends ChatCommand {};
 ```
@@ -47,7 +47,7 @@ Using TypeScript, you can use [SetCommand](/api/chatbot/functions/setcommand) de
 <TabItem label="TypeScript">
 
 ```ts showLineNumbers copy title="commands/hello.ts"
-import { ChatCommand, SetCommand } from '@twitchapi/chatbot';
+import { ChatCommand, SetCommand } from '@twitchfy/chatbot';
 
 @SetCommand({
     name: 'hello'
@@ -58,7 +58,7 @@ export default class HelloCommand extends ChatCommand {};
 <TabItem label="JavaScript">
 
 ```ts showLineNumbers copy title="commands/hello.js"
-const { ChatCommand } = require('@twitchapi/chatbot');
+const { ChatCommand } = require('@twitchfy/chatbot');
 
 module.exports = class HelloCommand extends ChatCommand {
     name: 'hello'
@@ -77,7 +77,7 @@ Here is a detailed example of a simple hello world command:
 <TabItem label="TypeScript">
 
 ```ts showLineNumbers copy title="commands/hello.ts"
-import { ChatCommand, SetCommand, type TwitchContext } from '@twitchapi/chatbot';
+import { ChatCommand, SetCommand, type TwitchContext } from '@twitchfy/chatbot';
 
 @SetCommand({
     name: 'hello'
@@ -92,7 +92,7 @@ export default class HelloCommand extends ChatCommand {
 <TabItem label="JavaScript">
 
 ```ts showLineNumbers copy title="commands/hello.js"
-const { ChatCommand } = require('@twitchapi/chatbot')
+const { ChatCommand } = require('@twitchfy/chatbot')
 
 module.exports = class HelloCommand extends ChatCommand {
     name: 'hello',
@@ -113,7 +113,7 @@ You can customize the prefix of the command by setting `prefix` option when crea
 
 ```ts showLineNumbers copy wrap
 
-import { ChatBot } from '@twitchapi/chatbot'
+import { ChatBot } from '@twitchfy/chatbot'
 
 const chatbot = new ChatBot({
     //rest of options

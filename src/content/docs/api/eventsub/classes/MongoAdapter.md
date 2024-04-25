@@ -33,7 +33,7 @@ new MongoAdapter<K>(): MongoAdapter<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/MongoAdapter.ts:10](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/storage/adapters/MongoAdapter.ts#L10)
+twitchfy/packages/eventsub/src/storage/adapters/MongoAdapter.ts:10
 
 ## Methods
 
@@ -59,7 +59,7 @@ delete(id: string): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/MongoAdapter.ts:52](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/storage/adapters/MongoAdapter.ts#L52)
+twitchfy/packages/eventsub/src/storage/adapters/MongoAdapter.ts:52
 
 ***
 
@@ -91,7 +91,7 @@ get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/MongoAdapter.ts:46](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/storage/adapters/MongoAdapter.ts#L46)
+twitchfy/packages/eventsub/src/storage/adapters/MongoAdapter.ts:46
 
 ***
 
@@ -111,7 +111,7 @@ getAll(): Promise<StorageAdapterGet<K, SubscriptionTypes>[]>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/MongoAdapter.ts:60](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/storage/adapters/MongoAdapter.ts#L60)
+twitchfy/packages/eventsub/src/storage/adapters/MongoAdapter.ts:60
 
 ***
 
@@ -144,4 +144,4 @@ set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/MongoAdapter.ts:14](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/storage/adapters/MongoAdapter.ts#L14)
+twitchfy/packages/eventsub/src/storage/adapters/MongoAdapter.ts:14

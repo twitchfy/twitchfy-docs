@@ -27,7 +27,7 @@ Mention options return a [BaseUser](/api/chatbot/classes/baseuser). If multiple 
 You can use grouped options to get an array of users mentioned in that option if you want the user to specify more than one user in the command.
 
 ```ts showLineNumbers copy
-import { MentionOption } from '@twitchapi/chatbot';
+import { MentionOption } from '@twitchfy/chatbot';
 
 const option = new MentionOption({ grouped: true });
 ```
@@ -57,7 +57,7 @@ import {
     ChatCommand,
     SetCommand,
     NumberOption
-} from '@twitchapi/chatbot';
+} from '@twitchfy/chatbot';
 
 const options = {
     min: new NumberOption({ defaultValue: 1 }),
@@ -80,7 +80,7 @@ export default class DiceCommand extends ChatCommand {};
 const { 
     ChatCommand,
     NumberOption
-} = require('@twitchapi/chatbot');
+} = require('@twitchfy/chatbot');
 
 const options = {
     min: new NumberOption({ defaultValue: 1 }),
@@ -116,7 +116,7 @@ import {
     SetCommand,
     NumberOption,
     type TwitchContext
-} from '@twitchapi/chatbot';
+} from '@twitchfy/chatbot';
 
 const options = {
     min: new NumberOption({ defaultValue: 1 }),
@@ -151,7 +151,7 @@ export default class DiceCommand extends ChatCommand {
 const { 
     ChatCommand,
     NumberOption
-} = require('@twitchapi/chatbot');
+} = require('@twitchfy/chatbot');
 
 const options = {
     min: new NumberOption({ defaultValue: 1 }),

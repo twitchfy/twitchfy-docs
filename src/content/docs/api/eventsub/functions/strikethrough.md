@@ -23,4 +23,4 @@ Put horizontal line through the center of the text.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:113](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/logger/colors.ts#L113)
+twitchfy/packages/eventsub/src/logger/colors.ts:113

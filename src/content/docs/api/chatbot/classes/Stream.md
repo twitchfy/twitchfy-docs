@@ -44,7 +44,7 @@ Creates a new instance of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Stream.ts:49](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Stream.ts#L49)
+twitchfy/packages/chatbot/src/structures/Stream.ts:49
 
 ## Properties
 
@@ -76,7 +76,7 @@ When the stream has started. Returns a JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseStream.ts:67](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseStream.ts#L67)
+twitchfy/packages/chatbot/src/structures/BaseStream.ts:67
 
 ***
 
@@ -94,7 +94,7 @@ The title of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Stream.ts:62](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Stream.ts#L62)
+twitchfy/packages/chatbot/src/structures/Stream.ts:62
 
 ## Methods
 
@@ -122,7 +122,7 @@ Creates a new clip of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseStream.ts:49](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseStream.ts#L49)
+twitchfy/packages/chatbot/src/structures/BaseStream.ts:49
 
 ***
 
@@ -146,7 +146,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseStream.ts:57](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseStream.ts#L57)
+twitchfy/packages/chatbot/src/structures/BaseStream.ts:57
 
 ***
 
@@ -170,4 +170,4 @@ The thumbnail URL of the stream.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Stream.ts:70](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Stream.ts#L70)
+twitchfy/packages/chatbot/src/structures/Stream.ts:70

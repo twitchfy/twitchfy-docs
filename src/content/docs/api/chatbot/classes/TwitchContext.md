@@ -45,7 +45,7 @@ Creates a new instance of the command context.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:59](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L59)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:59
 
 ## Properties
 
@@ -75,7 +75,7 @@ The ID of the author of the command.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:103](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L103)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:103
 
 ***
 
@@ -93,7 +93,7 @@ The bits cheered in the context's message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:152](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L152)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:152
 
 ***
 
@@ -111,7 +111,7 @@ The context's broadcaster.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:124](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L124)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:124
 
 ***
 
@@ -129,7 +129,7 @@ Fetches channel of the context's chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:159](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L159)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:159
 
 ***
 
@@ -147,7 +147,7 @@ The ID of the context's chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:117](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L117)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:117
 
 ***
 
@@ -165,7 +165,7 @@ The cheermotes of the context's message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:145](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L145)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:145
 
 ***
 
@@ -183,7 +183,7 @@ The content of the context's message. This message is parsed so it will return t
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:110](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L110)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:110
 
 ***
 
@@ -201,7 +201,7 @@ The emotes of the context's message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:138](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L138)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:138
 
 ***
 
@@ -219,7 +219,7 @@ The mentions of the context's message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:131](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L131)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:131
 
 ## Methods
 
@@ -237,7 +237,7 @@ Checks whether the author is a moderator in the context.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:96](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L96)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:96
 
 ***
 
@@ -257,7 +257,7 @@ A boolean indicating whether the bot is moderator.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:82](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L82)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:82
 
 ***
 
@@ -281,7 +281,7 @@ Replies to the message of the command.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:74](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L74)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:74
 
 ***
 
@@ -299,4 +299,4 @@ Fetches the stream which is currently live in the context. If the stream is offl
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/TwitchContext.ts:89](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/TwitchContext.ts#L89)
+twitchfy/packages/chatbot/src/structures/TwitchContext.ts:89

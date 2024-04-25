@@ -18,4 +18,4 @@ type StorageAdapterGet<K, T>: K extends WebhookConnection ? Pick<WebhookSubscrip
 
 ## Source
 
-[twitchapi/packages/eventsub/src/types/StorageAdapterGet.ts:8](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/types/StorageAdapterGet.ts#L8)
+twitchfy/packages/eventsub/src/types/StorageAdapterGet.ts:8

@@ -44,7 +44,7 @@ Creates a new instance of the badge manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BadgeManager.ts:22](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/BadgeManager.ts#L22)
+twitchfy/packages/chatbot/src/structures/managers/BadgeManager.ts:22
 
 ## Properties
 
@@ -74,7 +74,7 @@ Gets a user's badge.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BadgeManager.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/BadgeManager.ts#L41)
+twitchfy/packages/chatbot/src/structures/managers/BadgeManager.ts:41
 
 ***
 
@@ -100,4 +100,4 @@ A boolean determining whether the user has the badge.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BadgeManager.ts:32](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/BadgeManager.ts#L32)
+twitchfy/packages/chatbot/src/structures/managers/BadgeManager.ts:32

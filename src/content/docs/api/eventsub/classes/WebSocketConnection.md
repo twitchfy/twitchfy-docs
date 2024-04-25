@@ -33,7 +33,7 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L22)
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22
 
 ## Properties
 
@@ -82,7 +82,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
 
 ***
 
@@ -98,7 +98,7 @@ connect(): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L50)
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50
 
 ***
 
@@ -131,7 +131,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:17
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:17
 
 ***
 
@@ -151,7 +151,7 @@ eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof WebSocketEvents)[
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:21
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:21
 
 ***
 
@@ -171,7 +171,7 @@ getMaxListeners(): number
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:14
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:14
 
 ***
 
@@ -203,7 +203,7 @@ listenerCount<K>(eventName: K): number
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
 
 ***
 
@@ -245,7 +245,7 @@ listeners<K>(eventName: K): (...args:
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:15
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:15
 
 ***
 
@@ -271,7 +271,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L65)
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:65
 
 ***
 
@@ -297,7 +297,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L71)
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:71
 
 ***
 
@@ -330,7 +330,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
 
 ***
 
@@ -363,7 +363,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
 
 ***
 
@@ -396,7 +396,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
 
 ***
 
@@ -429,7 +429,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
 
 ***
 
@@ -462,7 +462,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
 
 ***
 
@@ -504,7 +504,7 @@ rawListeners<K>(eventName: K): Listener<
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:16
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:16
 
 ***
 
@@ -536,7 +536,7 @@ removeAllListeners<K>(event?: K): this
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
 
 ***
 
@@ -569,7 +569,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:10
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:10
 
 ***
 
@@ -591,7 +591,7 @@ setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnect
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L105)
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105
 
 ***
 
@@ -617,7 +617,7 @@ setMaxListeners(n: number): this
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:13
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:13
 
 ***
 
@@ -649,7 +649,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L56)
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56
 
 ***
 
@@ -681,7 +681,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L77)
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77
 
 ***
 
@@ -701,7 +701,7 @@ waitForAllListenersToComplete(): Promise<boolean>
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:22
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:22
 
 ***
 
@@ -736,7 +736,7 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:25
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:25
 
 ***
 
@@ -776,7 +776,7 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:29
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:29
 
 ***
 
@@ -816,4 +816,4 @@ options?: AbortableMethods): Promise<EventResult>
 
 #### Source
 
-twitchapi/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:27
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:27

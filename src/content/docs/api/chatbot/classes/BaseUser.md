@@ -44,7 +44,7 @@ Creates a new instance of the base user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:31](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L31)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:31
 
 ## Properties
 
@@ -69,7 +69,7 @@ channel(): Promise<Channel<T>>
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:79](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L79)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:79
 
 ***
 
@@ -89,7 +89,7 @@ The chatroom of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:42](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L42)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:42
 
 ***
 
@@ -109,7 +109,7 @@ The fetched user from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:51](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L51)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:51
 
 ***
 
@@ -129,7 +129,7 @@ A boolean indicating whether the user is currently streaming.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:74](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L74)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:74
 
 ***
 
@@ -149,7 +149,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:66](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L66)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:66
 
 ***
 
@@ -167,7 +167,7 @@ Returns the mention of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:58](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L58)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:58
 
 ***
 
@@ -191,4 +191,4 @@ Sends a whisper to the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:88](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L88)
+twitchfy/packages/chatbot/src/structures/BaseUser.ts:88

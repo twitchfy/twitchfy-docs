@@ -42,4 +42,4 @@ The decorator function.
 
 ## Source
 
-[twitchapi/packages/chatbot/src/decorators/SetPermissions.ts:10](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/decorators/SetPermissions.ts#L10)
+twitchfy/packages/chatbot/src/decorators/SetPermissions.ts:10

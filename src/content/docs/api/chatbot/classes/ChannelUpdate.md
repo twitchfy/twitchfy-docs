@@ -44,7 +44,7 @@ Creates a new instance of the channel update event.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelUpdate.ts:48](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelUpdate.ts#L48)
+twitchfy/packages/chatbot/src/structures/ChannelUpdate.ts:48
 
 ## Properties
 
@@ -73,7 +73,7 @@ The ID of the broadcaster who was updated.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelUpdate.ts:61](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelUpdate.ts#L61)
+twitchfy/packages/chatbot/src/structures/ChannelUpdate.ts:61
 
 ## Methods
 
@@ -93,4 +93,4 @@ The fetched channel from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelUpdate.ts:69](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelUpdate.ts#L69)
+twitchfy/packages/chatbot/src/structures/ChannelUpdate.ts:69

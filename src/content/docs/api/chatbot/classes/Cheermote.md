@@ -44,7 +44,7 @@ Creates a new instance of the cheermote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Cheermote.ts:43](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Cheermote.ts#L43)
+twitchfy/packages/chatbot/src/structures/Cheermote.ts:43
 
 ## Properties
 
@@ -72,7 +72,7 @@ Returns the last updated date of the cheermote in a JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Cheermote.ts:55](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Cheermote.ts#L55)
+twitchfy/packages/chatbot/src/structures/Cheermote.ts:55
 
 ## Methods
 
@@ -98,4 +98,4 @@ The URL of the image of the cheermote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Cheermote.ts:64](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Cheermote.ts#L64)
+twitchfy/packages/chatbot/src/structures/Cheermote.ts:64

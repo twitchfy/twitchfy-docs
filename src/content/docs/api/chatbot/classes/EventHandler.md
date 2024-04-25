@@ -29,7 +29,7 @@ Creates a new instance of the event handler.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/EventHandler.ts:18](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/EventHandler.ts#L18)
+twitchfy/packages/chatbot/src/structures/EventHandler.ts:18
 
 ## Properties
 
@@ -67,4 +67,4 @@ The loaded events.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/EventHandler.ts:26](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/EventHandler.ts#L26)
+twitchfy/packages/chatbot/src/structures/EventHandler.ts:26

@@ -44,7 +44,7 @@ Creates a new collection.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:11](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L11)
+twitchfy/packages/chatbot/src/structures/Collection.ts:11
 
 ## Properties
 
@@ -170,7 +170,7 @@ Whether every value satisfies the condition.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:76](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L76)
+twitchfy/packages/chatbot/src/structures/Collection.ts:76
 
 ***
 
@@ -196,7 +196,7 @@ The filtered collection.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:34](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L34)
+twitchfy/packages/chatbot/src/structures/Collection.ts:34
 
 ***
 
@@ -222,7 +222,7 @@ Returns the value if found, otherwise undefined.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:20](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L20)
+twitchfy/packages/chatbot/src/structures/Collection.ts:20
 
 ***
 
@@ -242,7 +242,7 @@ The first value of the collection.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:103](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L103)
+twitchfy/packages/chatbot/src/structures/Collection.ts:103
 
 ***
 
@@ -383,7 +383,7 @@ The mapped collection.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:49](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L49)
+twitchfy/packages/chatbot/src/structures/Collection.ts:49
 
 ***
 
@@ -416,7 +416,7 @@ The reduced value.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:91](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L91)
+twitchfy/packages/chatbot/src/structures/Collection.ts:91
 
 ***
 
@@ -471,7 +471,7 @@ Whether any value satisfies the condition.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:62](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L62)
+twitchfy/packages/chatbot/src/structures/Collection.ts:62
 
 ***
 
@@ -491,7 +491,7 @@ The array containing the values of the collection.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Collection.ts:111](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Collection.ts#L111)
+twitchfy/packages/chatbot/src/structures/Collection.ts:111
 
 ***
 

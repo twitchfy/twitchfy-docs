@@ -10,17 +10,17 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 Having authorized and created your chatbot account within Twitch it's time to build our first chatbot.
 
-First of all we have to do is installing `@twitchapi/chatbot` with our Node package manager.
+First of all we have to do is installing `@twitchfy/chatbot` with our Node package manager.
 
 <Tabs>
   <TabItem label="pnpm">
     ```bash title='pnpm'
-    pnpm add @twitchapi/chatbot
+    pnpm add @twitchfy/chatbot
     ```
   </TabItem>
   <TabItem label="npm">
     ```bash title='npm'
-    npm i @twitchapi/chatbot
+    npm i @twitchfy/chatbot
     ```
   </TabItem>
 </Tabs>
@@ -37,9 +37,9 @@ Here is a brief example of how be build a basic chatbot using webhooks or websoc
 <TabItem label="webhook/index.ts">
 
 ```ts showLineNumbers copy wrap
-import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
-import { RedisAdapter, WebhookConnection } from "@twitchapi/eventsub";
-import { TokenAdapter } from "@twitchapi/helix";
+import { ChatBot, EventSubConnection } from "@twitchfy/chatbot";
+import { RedisAdapter, WebhookConnection } from "@twitchfy/eventsub";
+import { TokenAdapter } from "@twitchfy/helix";
 import express from "express";
 
 const appToken = new TokenAdapter({
@@ -81,9 +81,9 @@ The `secret` field is a kind of authorization against malicious attacks.
 <TabItem label="websocket/index.ts">
 
 ```ts showLineNumbers copy wrap
-import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
-import { RedisAdapter, WebSocketConnection } from "@twitchapi/eventsub";
-import { TokenAdapter } from "@twitchapi/helix";
+import { ChatBot, EventSubConnection } from "@twitchfy/chatbot";
+import { RedisAdapter, WebSocketConnection } from "@twitchfy/eventsub";
+import { TokenAdapter } from "@twitchfy/helix";
 
 const userToken = new TokenAdapter({
   type: "code",
@@ -124,9 +124,9 @@ Once you've created your chatbot, the next step is to get it online. Simply call
 <TabItem label="webhook/index.ts">
 
 ```ts showLineNumbers ins={33} copy wrap
-import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
-import { RedisAdapter, WebhookConnection } from "@twitchapi/eventsub";
-import { TokenAdapter } from "@twitchapi/helix";
+import { ChatBot, EventSubConnection } from "@twitchfy/chatbot";
+import { RedisAdapter, WebhookConnection } from "@twitchfy/eventsub";
+import { TokenAdapter } from "@twitchfy/helix";
 import express from "express";
 
 const appToken = new TokenAdapter({
@@ -163,9 +163,9 @@ chatbot.start(3333).then(() => console.log('ChatBot is fully operational')) //as
 <TabItem label="websocket/index.ts">
 
 ```ts showLineNumbers ins={23} copy wrap
-import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
-import { RedisAdapter, WebSocketConnection } from "@twitchapi/eventsub";
-import { TokenAdapter } from "@twitchapi/helix";
+import { ChatBot, EventSubConnection } from "@twitchfy/chatbot";
+import { RedisAdapter, WebSocketConnection } from "@twitchfy/eventsub";
+import { TokenAdapter } from "@twitchfy/helix";
 
 const userToken = new TokenAdapter({
   type: "code",
@@ -203,9 +203,9 @@ It's recommended to join channels after the chatbot has fully been started. If n
 
 ```ts showLineNumbers copy ins={27}
 
-import { ChatBot, EventSubConnection } from "@twitchapi/chatbot";
-import { RedisAdapter, WebSocketConnection } from "@twitchapi/eventsub";
-import { TokenAdapter } from "@twitchapi/helix";
+import { ChatBot, EventSubConnection } from "@twitchfy/chatbot";
+import { RedisAdapter, WebSocketConnection } from "@twitchfy/eventsub";
+import { TokenAdapter } from "@twitchfy/helix";
 
 const userToken = new TokenAdapter({
   type: "code",

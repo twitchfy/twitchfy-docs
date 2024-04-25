@@ -48,7 +48,7 @@ Creates a new instance of the cheermote tier.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CheermoteTier.ts:49](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CheermoteTier.ts#L49)
+twitchfy/packages/chatbot/src/structures/CheermoteTier.ts:49
 
 ## Properties
 
@@ -77,7 +77,7 @@ The ID of the cheermote tier.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CheermoteTier.ts:62](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CheermoteTier.ts#L62)
+twitchfy/packages/chatbot/src/structures/CheermoteTier.ts:62
 
 ## Methods
 
@@ -103,4 +103,4 @@ The URL of the image of the cheermote tier.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CheermoteTier.ts:72](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CheermoteTier.ts#L72)
+twitchfy/packages/chatbot/src/structures/CheermoteTier.ts:72

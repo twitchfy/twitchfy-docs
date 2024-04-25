@@ -10,10 +10,14 @@ const [eventsubTypeDoc, eventsubSidebar] = createStarlightTypeDocPlugin()
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Twitch API',
+			title: 'Twitchfy',
 			social: {
-				github: 'https://github.com/pablornc/twitchapi',
+				github: 'https://github.com/twitchfy/twitchfy',
 			},
+			logo: {
+				src: './src/assets/twitchfy.png'
+			},
+			favicon: './src/assets/twitchfy.png',
 			sidebar: [
 				{
 					label: 'Guide',
@@ -41,8 +45,8 @@ export default defineConfig({
 			],
 			plugins: [
 				chatbotTypeDoc({
-					entryPoints: ['./twitchapi/packages/chatbot/src/index.ts'],
-					tsconfig: './twitchapi/packages/chatbot/tsconfig.json',
+					entryPoints: ['./twitchfy/packages/chatbot/src/index.ts'],
+					tsconfig: './twitchfy/packages/chatbot/tsconfig.json',
 					output: 'api/chatbot',
 					typeDoc: {
 						useCodeBlocks: true,
@@ -55,8 +59,8 @@ export default defineConfig({
 					}
 				}),
 				eventsubTypeDoc({
-					entryPoints: ['./twitchapi/packages/eventsub/src/index.ts'],
-					tsconfig: './twitchapi/packages/eventsub/tsconfig.json',
+					entryPoints: ['./twitchfy/packages/eventsub/src/index.ts'],
+					tsconfig: './twitchfy/packages/eventsub/tsconfig.json',
 					output: 'api/eventsub',
 					typeDoc: {
 						useCodeBlocks: true,

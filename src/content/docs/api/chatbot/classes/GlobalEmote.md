@@ -44,7 +44,7 @@ Creates a new instance of the global emote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/GlobalEmote.ts:16](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/GlobalEmote.ts#L16)
+twitchfy/packages/chatbot/src/structures/GlobalEmote.ts:16
 
 ## Properties
 
@@ -70,7 +70,7 @@ Whether the emote is animated.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseEmote.ts:62](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseEmote.ts#L62)
+twitchfy/packages/chatbot/src/structures/BaseEmote.ts:62
 
 ***
 
@@ -88,7 +88,7 @@ Checks whether the emote is dark theme.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Emote.ts:37](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Emote.ts#L37)
+twitchfy/packages/chatbot/src/structures/Emote.ts:37
 
 ***
 
@@ -106,7 +106,7 @@ Checks whether the emote is light theme.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Emote.ts:30](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Emote.ts#L30)
+twitchfy/packages/chatbot/src/structures/Emote.ts:30
 
 ***
 
@@ -124,7 +124,7 @@ The ID of the owner of the emote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseEmote.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseEmote.ts#L41)
+twitchfy/packages/chatbot/src/structures/BaseEmote.ts:41
 
 ***
 
@@ -142,7 +142,7 @@ The ID of the emote set.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseEmote.ts:48](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseEmote.ts#L48)
+twitchfy/packages/chatbot/src/structures/BaseEmote.ts:48
 
 ***
 
@@ -160,7 +160,7 @@ Whether the emote is static.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseEmote.ts:55](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseEmote.ts#L55)
+twitchfy/packages/chatbot/src/structures/BaseEmote.ts:55
 
 ## Methods
 
@@ -184,7 +184,7 @@ The fetched emote. Returns null if the emote was not found.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseEmote.ts:86](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseEmote.ts#L86)
+twitchfy/packages/chatbot/src/structures/BaseEmote.ts:86
 
 ***
 
@@ -214,7 +214,7 @@ Returns the URL of the emote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Emote.ts:46](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Emote.ts#L46)
+twitchfy/packages/chatbot/src/structures/Emote.ts:46
 
 ***
 
@@ -238,7 +238,7 @@ A boolean indicating whether the emote is a channel emote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseEmote.ts:78](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseEmote.ts#L78)
+twitchfy/packages/chatbot/src/structures/BaseEmote.ts:78
 
 ***
 
@@ -262,4 +262,4 @@ Whether the emote is a global emote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/GlobalEmote.ts:24](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/GlobalEmote.ts#L24)
+twitchfy/packages/chatbot/src/structures/GlobalEmote.ts:24

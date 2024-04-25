@@ -49,7 +49,7 @@ new Base<T, K>(connection: K, subscription: SubscriptionType<T, K>): Base<T, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/Base.ts:12](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/messages/Base.ts#L12)
+twitchfy/packages/eventsub/src/structures/messages/Base.ts:12
 
 ## Properties
 

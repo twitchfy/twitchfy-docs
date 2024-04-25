@@ -33,7 +33,7 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:16](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocket.ts#L16)
+twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:16
 
 ## Properties
 
@@ -52,19 +52,25 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 ### `[captureRejectionSymbol]`()?
 
 ```ts
-optional [captureRejectionSymbol](
+optional [captureRejectionSymbol]<K>(
    error: Error, 
-   event: string, ...
-   args: any[]): void
+   event: string | symbol, ...
+   args: AnyRest): void
 ```
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `error` | `Error` |
-| `event` | `string` |
-| ...`args` | `any`[] |
+| `event` | `string` \| `symbol` |
+| ...`args` | `AnyRest` |
 
 #### Returns
 
@@ -76,7 +82,7 @@ optional [captureRejectionSymbol](
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:112
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:125
 
 ***
 
@@ -99,7 +105,7 @@ If the `connect` or `connectFailed` event has already been emitted, calling `abo
 
 #### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:642
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:642
 
 ***
 
@@ -128,7 +134,7 @@ addListener(event: "connect", cb: (connection: connection) => void): this
 
 ##### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:648
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:648
 
 #### addListener(event, cb)
 
@@ -153,7 +159,7 @@ addListener(event: "connectFailed", cb: (err: Error) => void): this
 
 ##### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:649
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:649
 
 #### addListener(event, cb)
 
@@ -178,7 +184,7 @@ addListener(event: "httpResponse", cb: (response: IncomingMessage, client: clien
 
 ##### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:650
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:650
 
 ***
 
@@ -204,14 +210,14 @@ connect(url?: string): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocket.ts:29](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocket.ts#L29)
+twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:29
 
 ***
 
 ### emit()
 
 ```ts
-emit(eventName: string | symbol, ...args: any[]): boolean
+emit<K>(eventName: string | symbol, ...args: AnyRest): boolean
 ```
 
 Synchronously calls each of the listeners registered for the event named`eventName`, in the order they were registered, passing the supplied arguments
@@ -252,12 +258,18 @@ myEmitter.emit('event', 1, 2, 3, 4, 5);
 // event with parameters 1, 2, 3, 4, 5 in third listener
 ```
 
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
+
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `string` \| `symbol` |
-| ...`args` | `any`[] |
+| ...`args` | `AnyRest` |
 
 #### Returns
 
@@ -273,7 +285,7 @@ v0.1.26
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:807
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:820
 
 ***
 
@@ -314,7 +326,7 @@ v6.0.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:870
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:883
 
 ***
 
@@ -341,19 +353,25 @@ v1.0.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:722
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:735
 
 ***
 
 ### listenerCount()
 
 ```ts
-listenerCount(eventName: string | symbol, listener?: Function): number
+listenerCount<K>(eventName: string | symbol, listener?: Function): number
 ```
 
 Returns the number of listeners listening for the event named `eventName`.
 If `listener` is provided, it will return how many times the listener is found
 in the list of the listeners of the event.
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
 
 #### Parameters
 
@@ -376,14 +394,14 @@ v3.2.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:816
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:829
 
 ***
 
 ### listeners()
 
 ```ts
-listeners(eventName: string | symbol): Function[]
+listeners<K>(eventName: string | symbol): Function[]
 ```
 
 Returns a copy of the array of listeners for the event named `eventName`.
@@ -395,6 +413,12 @@ server.on('connection', (stream) => {
 console.log(util.inspect(server.listeners('connection')));
 // Prints: [ [Function] ]
 ```
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
 
 #### Parameters
 
@@ -416,17 +440,23 @@ v0.1.26
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:735
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:748
 
 ***
 
 ### off()
 
 ```ts
-off(eventName: string | symbol, listener: (...args: any[]) => void): this
+off<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
 Alias for `emitter.removeListener()`.
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
 
 #### Parameters
 
@@ -449,7 +479,7 @@ v10.0.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:695
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:708
 
 ***
 
@@ -478,7 +508,7 @@ on(event: "connect", cb: (connection: connection) => void): this
 
 ##### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:645
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:645
 
 #### on(event, cb)
 
@@ -503,7 +533,7 @@ on(event: "connectFailed", cb: (err: Error) => void): this
 
 ##### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:646
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:646
 
 #### on(event, cb)
 
@@ -528,14 +558,14 @@ on(event: "httpResponse", cb: (response: IncomingMessage, client: client) => voi
 
 ##### Source
 
-twitchapi/node\_modules/@types/websocket/index.d.ts:647
+node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index.d.ts:647
 
 ***
 
 ### once()
 
 ```ts
-once(eventName: string | symbol, listener: (...args: any[]) => void): this
+once<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
@@ -563,6 +593,12 @@ myEE.emit('foo');
 //   a
 ```
 
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
+
 #### Parameters
 
 | Parameter | Type | Description |
@@ -584,14 +620,14 @@ v0.3.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:607
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:620
 
 ***
 
 ### prependListener()
 
 ```ts
-prependListener(eventName: string | symbol, listener: (...args: any[]) => void): this
+prependListener<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
@@ -606,6 +642,12 @@ server.prependListener('connection', (stream) => {
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
 
 #### Parameters
 
@@ -628,14 +670,14 @@ v6.0.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:834
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:847
 
 ***
 
 ### prependOnceListener()
 
 ```ts
-prependOnceListener(eventName: string | symbol, listener: (...args: any[]) => void): this
+prependOnceListener<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
@@ -648,6 +690,12 @@ server.prependOnceListener('connection', (stream) => {
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
 
 #### Parameters
 
@@ -670,14 +718,14 @@ v6.0.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:850
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:863
 
 ***
 
 ### rawListeners()
 
 ```ts
-rawListeners(eventName: string | symbol): Function[]
+rawListeners<K>(eventName: string | symbol): Function[]
 ```
 
 Returns a copy of the array of listeners for the event named `eventName`,
@@ -708,6 +756,12 @@ newListeners[0]();
 emitter.emit('log');
 ```
 
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
+
 #### Parameters
 
 | Parameter | Type |
@@ -728,14 +782,14 @@ v9.4.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:766
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:779
 
 ***
 
 ### removeAllListeners()
 
 ```ts
-removeAllListeners(event?: string | symbol): this
+removeAllListeners(eventName?: string | symbol): this
 ```
 
 Removes all listeners, or those of the specified `eventName`.
@@ -750,7 +804,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 | Parameter | Type |
 | :------ | :------ |
-| `event`? | `string` \| `symbol` |
+| `eventName`? | `string` \| `symbol` |
 
 #### Returns
 
@@ -766,14 +820,14 @@ v0.1.26
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:706
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:719
 
 ***
 
 ### removeListener()
 
 ```ts
-removeListener(eventName: string | symbol, listener: (...args: any[]) => void): this
+removeListener<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
@@ -856,6 +910,12 @@ ee.emit('ping');
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
+
 #### Parameters
 
 | Parameter | Type |
@@ -877,7 +937,7 @@ v0.1.26
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:690
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:703
 
 ***
 
@@ -914,7 +974,7 @@ v0.3.5
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:716
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:729
 
 ***
 
@@ -983,14 +1043,14 @@ v20.5.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:387
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:400
 
 ***
 
 ### getEventListeners()
 
 ```ts
-static getEventListeners(emitter: EventEmitter | _DOMEventTarget, name: string | symbol): Function[]
+static getEventListeners(emitter: EventEmitter<DefaultEventMap> | _DOMEventTarget, name: string | symbol): Function[]
 ```
 
 Returns a copy of the array of listeners for the event named `eventName`.
@@ -1022,7 +1082,7 @@ import { getEventListeners, EventEmitter } from 'node:events';
 
 | Parameter | Type |
 | :------ | :------ |
-| `emitter` | `EventEmitter` \| `_DOMEventTarget` |
+| `emitter` | `EventEmitter`\<`DefaultEventMap`\> \| `_DOMEventTarget` |
 | `name` | `string` \| `symbol` |
 
 #### Returns
@@ -1039,14 +1099,14 @@ v15.2.0, v14.17.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:308
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:321
 
 ***
 
 ### getMaxListeners()
 
 ```ts
-static getMaxListeners(emitter: EventEmitter | _DOMEventTarget): number
+static getMaxListeners(emitter: EventEmitter<DefaultEventMap> | _DOMEventTarget): number
 ```
 
 Returns the currently set max amount of listeners.
@@ -1079,7 +1139,7 @@ import { getMaxListeners, setMaxListeners, EventEmitter } from 'node:events';
 
 | Parameter | Type |
 | :------ | :------ |
-| `emitter` | `EventEmitter` \| `_DOMEventTarget` |
+| `emitter` | `EventEmitter`\<`DefaultEventMap`\> \| `_DOMEventTarget` |
 
 #### Returns
 
@@ -1095,14 +1155,14 @@ v19.9.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:337
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:350
 
 ***
 
 ### ~~listenerCount()~~
 
 ```ts
-static listenerCount(emitter: EventEmitter, eventName: string | symbol): number
+static listenerCount(emitter: EventEmitter<DefaultEventMap>, eventName: string | symbol): number
 ```
 
 A class method that returns the number of listeners for the given `eventName`registered on the given `emitter`.
@@ -1125,7 +1185,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `emitter` | `EventEmitter` | The emitter to query |
+| `emitter` | `EventEmitter`\<`DefaultEventMap`\> | The emitter to query |
 | `eventName` | `string` \| `symbol` | The event name |
 
 #### Returns
@@ -1142,7 +1202,7 @@ v0.9.12
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:280
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:293
 
 ***
 
@@ -1150,7 +1210,7 @@ twitchapi/node\_modules/@types/node/events.d.ts:280
 
 ```ts
 static on(
-   emitter: EventEmitter, 
+   emitter: EventEmitter<DefaultEventMap>, 
    eventName: string, 
 options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
 ```
@@ -1214,7 +1274,7 @@ process.nextTick(() => ac.abort());
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `emitter` | `EventEmitter` | - |
+| `emitter` | `EventEmitter`\<`DefaultEventMap`\> | - |
 | `eventName` | `string` | The name of the event being listened for |
 | `options`? | `StaticEventEmitterOptions` | - |
 
@@ -1234,7 +1294,7 @@ v13.6.0, v12.16.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:258
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:271
 
 ***
 
@@ -1244,7 +1304,7 @@ twitchapi/node\_modules/@types/node/events.d.ts:258
 
 ```ts
 static once(
-   emitter: _NodeEventTarget, 
+   emitter: EventEmitter<DefaultEventMap>, 
    eventName: string | symbol, 
 options?: StaticEventEmitterOptions): Promise<any[]>
 ```
@@ -1330,7 +1390,7 @@ ee.emit('foo'); // Prints: Waiting for the event was canceled!
 
 | Parameter | Type |
 | :------ | :------ |
-| `emitter` | `_NodeEventTarget` |
+| `emitter` | `EventEmitter`\<`DefaultEventMap`\> |
 | `eventName` | `string` \| `symbol` |
 | `options`? | `StaticEventEmitterOptions` |
 
@@ -1348,7 +1408,7 @@ v11.13.0, v10.16.0
 
 ##### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:193
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:206
 
 #### once(emitter, eventName, options)
 
@@ -1377,14 +1437,14 @@ options?: StaticEventEmitterOptions): Promise<any[]>
 
 ##### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:198
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:211
 
 ***
 
 ### setMaxListeners()
 
 ```ts
-static setMaxListeners(n?: number, ...eventTargets?: (EventEmitter | _DOMEventTarget)[]): void
+static setMaxListeners(n?: number, ...eventTargets?: (EventEmitter<DefaultEventMap> | _DOMEventTarget)[]): void
 ```
 
 ```js
@@ -1401,7 +1461,7 @@ setMaxListeners(5, target, emitter);
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `n`? | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| ...`eventTargets`? | (`EventEmitter` \| `_DOMEventTarget`)[] | - |
+| ...`eventTargets`? | (`EventEmitter`\<`DefaultEventMap`\> \| `_DOMEventTarget`)[] | - |
 
 #### Returns
 
@@ -1417,4 +1477,4 @@ v15.4.0
 
 #### Source
 
-twitchapi/node\_modules/@types/node/events.d.ts:352
+node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:365

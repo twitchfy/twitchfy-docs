@@ -27,4 +27,4 @@ A callback to execute when the chatbot is started. Only required if the chatbot 
 
 ## Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBot.ts:358](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatBot.ts#L358)
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:358

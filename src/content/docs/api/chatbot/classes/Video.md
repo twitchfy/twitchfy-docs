@@ -42,7 +42,7 @@ new Video<T>(chatbot: ChatBot<T>, data: Video): Video<T>
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Video.ts:72](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Video.ts#L72)
+twitchfy/packages/chatbot/src/structures/Video.ts:72
 
 ## Properties
 
@@ -76,7 +76,7 @@ The creation date of the video in JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Video.ts:90](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Video.ts#L90)
+twitchfy/packages/chatbot/src/structures/Video.ts:90
 
 ***
 
@@ -94,7 +94,7 @@ The duration of the video in seconds.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Video.ts:113](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Video.ts#L113)
+twitchfy/packages/chatbot/src/structures/Video.ts:113
 
 ***
 
@@ -112,7 +112,7 @@ The publish date of the video in JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Video.ts:97](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Video.ts#L97)
+twitchfy/packages/chatbot/src/structures/Video.ts:97
 
 ## Methods
 
@@ -138,4 +138,4 @@ The thumbnail URL of the video.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Video.ts:106](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Video.ts#L106)
+twitchfy/packages/chatbot/src/structures/Video.ts:106

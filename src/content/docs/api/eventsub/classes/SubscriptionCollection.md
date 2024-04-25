@@ -193,7 +193,7 @@ exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<T, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:18](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/SubscriptionCollection.ts#L18)
+twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:18
 
 ***
 
@@ -254,7 +254,7 @@ get<U>(key: string): SubscriptionType<U, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:10](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/SubscriptionCollection.ts#L10)
+twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:10
 
 ***
 
@@ -337,7 +337,7 @@ set<U>(key: string, value: SubscriptionType<U, K>): this
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/SubscriptionCollection.ts:14](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/SubscriptionCollection.ts#L14)
+twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:14
 
 ***
 

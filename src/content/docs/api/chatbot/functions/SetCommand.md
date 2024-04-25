@@ -42,4 +42,4 @@ The decorator function.
 
 ## Source
 
-[twitchapi/packages/chatbot/src/decorators/Command.ts:24](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/decorators/Command.ts#L24)
+twitchfy/packages/chatbot/src/decorators/Command.ts:24

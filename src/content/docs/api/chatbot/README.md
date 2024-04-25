@@ -2,7 +2,7 @@
 editUrl: false
 next: false
 prev: false
-title: "@twitchapi/chatbot"
+title: "@twitchfy/chatbot"
 ---
 
 ## Enumerations

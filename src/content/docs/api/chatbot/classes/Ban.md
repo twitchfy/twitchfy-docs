@@ -44,7 +44,7 @@ Creates a new instance of the ban.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:31](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Ban.ts#L31)
+twitchfy/packages/chatbot/src/structures/Ban.ts:31
 
 ## Properties
 
@@ -70,7 +70,7 @@ The ID of the chatroom where the ban was made.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:49](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Ban.ts#L49)
+twitchfy/packages/chatbot/src/structures/Ban.ts:49
 
 ***
 
@@ -88,7 +88,7 @@ The Date when the ban was created. Returns a JavaScript Date object.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:56](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Ban.ts#L56)
+twitchfy/packages/chatbot/src/structures/Ban.ts:56
 
 ***
 
@@ -106,7 +106,7 @@ If the ban is a timeout this will return the end time of the timeout in a JavaSc
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:63](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Ban.ts#L63)
+twitchfy/packages/chatbot/src/structures/Ban.ts:63
 
 ## Methods
 
@@ -124,4 +124,4 @@ Deletes the ban from the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Ban.ts:42](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Ban.ts#L42)
+twitchfy/packages/chatbot/src/structures/Ban.ts:42

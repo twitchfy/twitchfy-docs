@@ -11,4 +11,4 @@ const SubscriptionSchema: Schema<ISubscription<SubscriptionTypes>, Model<ISubscr
 
 ## Source
 
-[twitchapi/packages/eventsub/src/storage/adapters/MongoAdapterSchema.ts:15](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/storage/adapters/MongoAdapterSchema.ts#L15)
+twitchfy/packages/eventsub/src/storage/adapters/MongoAdapterSchema.ts:15

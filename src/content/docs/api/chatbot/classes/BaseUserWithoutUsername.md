@@ -44,7 +44,7 @@ Creates a new instance of the base user without an username.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:28](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L28)
+twitchfy/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:28
 
 ## Properties
 
@@ -72,7 +72,7 @@ The fetched user from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:38](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L38)
+twitchfy/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:38
 
 ***
 
@@ -92,7 +92,7 @@ A boolean indicating whether the user is currently streaming.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:64](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L64)
+twitchfy/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:64
 
 ***
 
@@ -112,7 +112,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:53](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L53)
+twitchfy/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:53
 
 ***
 
@@ -130,7 +130,7 @@ Returns the mention of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:45](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L45)
+twitchfy/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:45
 
 ***
 
@@ -154,4 +154,4 @@ Sends a whisper to the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:74](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUserWithoutUsername.ts#L74)
+twitchfy/packages/chatbot/src/structures/BaseUserWithoutUsername.ts:74

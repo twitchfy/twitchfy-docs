@@ -43,7 +43,7 @@ Creates a new instance of the ban manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:16](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotBanManager.ts#L16)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:16
 
 ## Properties
 
@@ -76,7 +76,7 @@ A class representation of the ban. See [Ban](/api/chatbot/api/chatbot/classes/ba
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:26](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotBanManager.ts#L26)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:26
 
 ***
 
@@ -101,4 +101,4 @@ Deletes the ban of a specific user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:36](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotBanManager.ts#L36)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:36

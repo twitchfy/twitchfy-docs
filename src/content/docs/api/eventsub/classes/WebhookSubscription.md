@@ -46,7 +46,7 @@ secret: string): WebhookSubscription<T>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:19](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/webhook/structures/WebhookSubscription.ts#L19)
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:19
 
 ## Properties
 
@@ -90,7 +90,7 @@ checkSubscriptionType<U>(type: U): this is WebhookSubscription<U>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/webhook/structures/WebhookSubscription.ts#L41)
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:41
 
 ***
 
@@ -106,7 +106,7 @@ delete(): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:45](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/webhook/structures/WebhookSubscription.ts#L45)
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:45
 
 ***
 
@@ -128,4 +128,4 @@ onMessage(callback: WebhookSubscriptionCallback<T>): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:35](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/webhook/structures/WebhookSubscription.ts#L35)
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscription.ts:35

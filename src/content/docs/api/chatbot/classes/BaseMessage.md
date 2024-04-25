@@ -44,7 +44,7 @@ Creates a new instance of the base message.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:36](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseMessage.ts#L36)
+twitchfy/packages/chatbot/src/structures/BaseMessage.ts:36
 
 ## Properties
 
@@ -71,7 +71,7 @@ The ID of the chatroom where the message was sent.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:64](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseMessage.ts#L64)
+twitchfy/packages/chatbot/src/structures/BaseMessage.ts:64
 
 ***
 
@@ -89,7 +89,7 @@ Whether the message was sent by the chatbot.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:71](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseMessage.ts#L71)
+twitchfy/packages/chatbot/src/structures/BaseMessage.ts:71
 
 ## Methods
 
@@ -107,7 +107,7 @@ Deletes the message from the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:48](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseMessage.ts#L48)
+twitchfy/packages/chatbot/src/structures/BaseMessage.ts:48
 
 ***
 
@@ -133,4 +133,4 @@ The message that was sent as a reply.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseMessage.ts:57](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseMessage.ts#L57)
+twitchfy/packages/chatbot/src/structures/BaseMessage.ts:57

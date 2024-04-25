@@ -44,7 +44,7 @@ data: ChannelFollowEvent): ChannelFollowMessage<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowMessage.ts:16](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowMessage.ts#L16)
+twitchfy/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowMessage.ts:16
 
 ## Properties
 

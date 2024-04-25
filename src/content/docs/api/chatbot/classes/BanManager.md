@@ -44,7 +44,7 @@ Creates a new instance of the badge manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:22](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/BanManager.ts#L22)
+twitchfy/packages/chatbot/src/structures/managers/BanManager.ts:22
 
 ## Properties
 
@@ -77,7 +77,7 @@ A class representation of the ban. See [Ban](/api/chatbot/api/chatbot/classes/ba
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:32](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/BanManager.ts#L32)
+twitchfy/packages/chatbot/src/structures/managers/BanManager.ts:32
 
 ***
 
@@ -101,4 +101,4 @@ Deletes the ban of a specific user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/BanManager.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/BanManager.ts#L41)
+twitchfy/packages/chatbot/src/structures/managers/BanManager.ts:41

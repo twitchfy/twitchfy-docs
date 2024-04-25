@@ -44,7 +44,7 @@ Creates a new instance of the base cheermote.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseCheermote.ts:37](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseCheermote.ts#L37)
+twitchfy/packages/chatbot/src/structures/BaseCheermote.ts:37
 
 ## Properties
 
@@ -71,7 +71,7 @@ The content of the cheermote. This is the prefix followed by the bits cheered.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseCheermote.ts:48](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseCheermote.ts#L48)
+twitchfy/packages/chatbot/src/structures/BaseCheermote.ts:48
 
 ## Methods
 
@@ -91,4 +91,4 @@ The cheermote if it exists. If not it will return `null` (basically this is 99.9
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseCheermote.ts:56](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseCheermote.ts#L56)
+twitchfy/packages/chatbot/src/structures/BaseCheermote.ts:56

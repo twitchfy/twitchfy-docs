@@ -11,4 +11,4 @@ type MessageTypes: "text" | "channel_points_highlighted" | "channel_points_sub_o
 
 ## Source
 
-twitchapi/packages/eventsub/dist/types/MessageTypes.d.ts:1
+node\_modules/.pnpm/@twitchfy+eventsub@1.0.0/node\_modules/@twitchfy/eventsub/dist/types/MessageTypes.d.ts:1

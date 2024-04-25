@@ -29,7 +29,7 @@ Creates a new instance of the command handler.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CommandHandler.ts:18](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CommandHandler.ts#L18)
+twitchfy/packages/chatbot/src/structures/CommandHandler.ts:18
 
 ## Properties
 
@@ -55,4 +55,4 @@ The loaded commands.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CommandHandler.ts:26](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CommandHandler.ts#L26)
+twitchfy/packages/chatbot/src/structures/CommandHandler.ts:26

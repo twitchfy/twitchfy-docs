@@ -23,4 +23,4 @@ Make the text bold.
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:65](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/logger/colors.ts#L65)
+twitchfy/packages/eventsub/src/logger/colors.ts:65

@@ -43,7 +43,7 @@ Creates a new instance of the user manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotUserManager.ts:15](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotUserManager.ts#L15)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotUserManager.ts:15
 
 ## Properties
 
@@ -75,4 +75,4 @@ A class representation of the user. See [User](/api/chatbot/api/chatbot/classes/
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/ChatBotUserManager.ts:24](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/ChatBotUserManager.ts#L24)
+twitchfy/packages/chatbot/src/structures/managers/ChatBotUserManager.ts:24

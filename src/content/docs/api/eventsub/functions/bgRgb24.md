@@ -34,4 +34,4 @@ To produce the color magenta:
 
 ## Source
 
-[twitchapi/packages/eventsub/src/logger/colors.ts:450](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/logger/colors.ts#L450)
+twitchfy/packages/eventsub/src/logger/colors.ts:450

@@ -44,7 +44,7 @@ Creates a new instance of the channel follow event.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelFollow.ts:38](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelFollow.ts#L38)
+twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:38
 
 ## Properties
 
@@ -71,7 +71,7 @@ The ID of the broadcaster who was followed.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelFollow.ts:49](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelFollow.ts#L49)
+twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:49
 
 ***
 
@@ -89,7 +89,7 @@ The ID of the chatroom where the follow event occurred.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelFollow.ts:63](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelFollow.ts#L63)
+twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:63
 
 ***
 
@@ -107,4 +107,4 @@ The ID of the follower who followed the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelFollow.ts:56](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelFollow.ts#L56)
+twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:56

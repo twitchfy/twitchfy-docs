@@ -48,7 +48,7 @@ displayName: string): ChannelAdBreakBeginBroadcaster<K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/ChannelAdBreakBegin/ChannelAdBreakBeginBroadcaster.ts:7](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/messages/ChannelAdBreakBegin/ChannelAdBreakBeginBroadcaster.ts#L7)
+twitchfy/packages/eventsub/src/structures/messages/ChannelAdBreakBegin/ChannelAdBreakBeginBroadcaster.ts:7
 
 ## Properties
 

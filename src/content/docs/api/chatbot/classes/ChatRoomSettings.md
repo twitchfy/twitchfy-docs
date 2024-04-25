@@ -48,7 +48,7 @@ Creates a new instance of the chatroom settings.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:28](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L28)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:28
 
 ## Properties
 
@@ -73,7 +73,7 @@ The duration of the chat delay in seconds. If chat delay is disabled, this will 
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:88](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L88)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:88
 
 ***
 
@@ -91,7 +91,7 @@ The ID of the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:46](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L46)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:46
 
 ***
 
@@ -109,7 +109,7 @@ Whether the chatroom is in emote only mode.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:53](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L53)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:53
 
 ***
 
@@ -127,7 +127,7 @@ The number of seconds a follower has to be following to be able to write. If the
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:60](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L60)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:60
 
 ***
 
@@ -145,7 +145,7 @@ The slow mode duration of the chatroom in seconds. If slow mode is disabled, thi
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:81](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L81)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:81
 
 ***
 
@@ -163,7 +163,7 @@ Whether the chatroom is in subscriber mode.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:67](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L67)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:67
 
 ***
 
@@ -181,7 +181,7 @@ Whether the chatroom is in unique messages mode.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:74](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L74)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:74
 
 ## Methods
 
@@ -207,4 +207,4 @@ The updated chatroom settings.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatRoomSettings.ts:39](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatRoomSettings.ts#L39)
+twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:39

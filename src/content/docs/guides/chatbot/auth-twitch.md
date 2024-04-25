@@ -32,7 +32,7 @@ With Twitch API you can generate the token with few steps.
 
 ```ts showLineNumbers copy wrap
 
-import { HelixClient } from '@twitchapi/helix';
+import { HelixClient } from '@twitchfy/helix';
 
 const userToken = await HelixClient.generateUserToken({
   clientID: 'myClientID',
