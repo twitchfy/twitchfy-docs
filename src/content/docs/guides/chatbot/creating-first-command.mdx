@@ -10,25 +10,25 @@ Having created and started your first chabot it's time to create your first comm
 
 Commands are created within files which are located in the `commands` directory defined in the `paths` option when creating the chatbot.
 
-For creating a command you will have to simply create a class and export it. The class has to extend a pre-defined class called [Command](/api/chatbot/classes/command). 
+For creating a command you will have to simply create a class and export it. The class has to extend a pre-defined class called [ChatCommand](/api/chatbot/classes/chatcommand). 
 
 
 <Tabs>
 <TabItem label="TypeScript">
 
 ```ts showLineNumbers copy title="commands/hello.ts"
-import { Command } from '@twitchapi/chatbot';
+import { ChatCommand } from '@twitchapi/chatbot';
 
-export default class HelloCommand extends Command {}
+export default class HelloCommand extends ChatCommand {}
 ```
 </TabItem>
 
 <TabItem label="JavaScript">
 
 ```ts showLineNumbers copy title="commands/hello.js"
-const { Command } = require('@twitchapi/chatbot'); //using cjs
+const { ChatCommand } = require('@twitchapi/chatbot'); //using cjs
 
-module.exports = class HelloCommand extends Command {};
+module.exports = class HelloCommand extends ChatCommand {};
 ```
 </TabItem>
 </Tabs>
@@ -47,20 +47,20 @@ Using TypeScript, you can use [SetCommand](/api/chatbot/functions/setcommand) de
 <TabItem label="TypeScript">
 
 ```ts showLineNumbers copy title="commands/hello.ts"
-import { Command, SetCommand } from '@twitchapi/chatbot';
+import { ChatCommand, SetCommand } from '@twitchapi/chatbot';
 
 @SetCommand({
     name: 'hello'
 })
-export default class HelloCommand extends Command {};
+export default class HelloCommand extends ChatCommand {};
 ```
 </TabItem>
 <TabItem label="JavaScript">
 
 ```ts showLineNumbers copy title="commands/hello.js"
-const { Command } = require('@twitchapi/chatbot');
+const { ChatCommand } = require('@twitchapi/chatbot');
 
-module.exports = class HelloCommand extends Command {
+module.exports = class HelloCommand extends ChatCommand {
     name: 'hello'
 };
 ```
@@ -69,7 +69,7 @@ module.exports = class HelloCommand extends Command {
 
 ## Running Commands
 
-Once you have set the name of the command it's time to run the command logic. When an user runs the command the package will try to execute the `run` method from the command. 
+Once you have set the name of the command it's time to run the command logic. When an user runs a command, the package will try to execute the `run` method from the command with a [TwitchContext](/api/chatbot/classes/twitchcontext). 
 
 Here is a detailed example of a simple hello world command:
 
@@ -77,13 +77,13 @@ Here is a detailed example of a simple hello world command:
 <TabItem label="TypeScript">
 
 ```ts showLineNumbers copy title="commands/hello.ts"
-import { Command, SetCommand, type CommandContext } from '@twitchapi/chatbot';
+import { ChatCommand, SetCommand, type TwitchContext } from '@twitchapi/chatbot';
 
 @SetCommand({
     name: 'hello'
 })
-export default class HelloCommand extends Command {
-    async run(ctx: CommandContext){
+export default class HelloCommand extends ChatCommand {
+    async run(ctx: TwitchContext){
         return await ctx.reply(`Hello, ${ctx.author.toString()}`);
     }
 };
@@ -92,9 +92,9 @@ export default class HelloCommand extends Command {
 <TabItem label="JavaScript">
 
 ```ts showLineNumbers copy title="commands/hello.js"
-const { Command } = require('@twitchapi/chatbot')
+const { ChatCommand } = require('@twitchapi/chatbot')
 
-module.exports = class HelloCommand extends Command {
+module.exports = class HelloCommand extends ChatCommand {
     name: 'hello',
     async run(ctx){
         return await ctx.reply(`Hello, ${ctx.author.toString()}`);

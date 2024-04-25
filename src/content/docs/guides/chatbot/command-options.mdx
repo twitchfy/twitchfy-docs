@@ -54,7 +54,7 @@ To attach options to commands, the only thing we must do is set the `options` fi
 ```ts title="commands/dice.ts" showLineNumbers copy
 
 import { 
-    Command,
+    ChatCommand,
     SetCommand,
     NumberOption
 } from '@twitchapi/chatbot';
@@ -69,7 +69,7 @@ const options = {
     options
 })
 
-export default class DiceCommand extends Command {};
+export default class DiceCommand extends ChatCommand {};
 
 ```
 </TabItem>
@@ -78,7 +78,7 @@ export default class DiceCommand extends Command {};
 ```js title="commands/dice.js" showLineNumbers copy
 
 const { 
-    Command,
+    ChatCommand,
     NumberOption
 } = require('@twitchapi/chatbot');
 
@@ -87,7 +87,7 @@ const options = {
     max: new NumberOption({ defaultValue: 6 })
 };
 
-module.exports = class DiceCommand extends Command {
+module.exports = class DiceCommand extends ChatCommand {
     name = 'dice';
     options = options;
 };
@@ -112,10 +112,10 @@ In TypeScript you will have to set the first generic type of CommandContext with
 ```ts title="commands/dice.ts" showLineNumbers copy
 
 import { 
-    Command,
+    ChatCommand,
     SetCommand,
     NumberOption,
-    type CommandContext
+    type TwitchContext
 } from '@twitchapi/chatbot';
 
 const options = {
@@ -128,8 +128,8 @@ const options = {
     options
 })
 
-export default class DiceCommand extends Command {
-    async run(ctx: CommandContext<typeof options>){
+export default class DiceCommand extends ChatCommand {
+    async run(ctx: TwitchContext<typeof options>){
 
         const { min, max } = ctx.options;
 
@@ -149,7 +149,7 @@ export default class DiceCommand extends Command {
 ```js title="commands/dice.js" showLineNumbers copy
 
 const { 
-    Command,
+    ChatCommand,
     NumberOption
 } = require('@twitchapi/chatbot');
 
@@ -158,7 +158,7 @@ const options = {
     max: new NumberOption({ defaultValue: 6 })
 };
 
-module.exports = class DiceCommand extends Command {
+module.exports = class DiceCommand extends ChatCommand {
     name = 'dice';
     options = options;
     async run(ctx){
