@@ -28,7 +28,7 @@ To get the user access token you will need the `Client-Id` and `Client Secret` y
 
 :::tip
 If you are using the `Authorization Code Grant Flow` you will receive a `code` field for later generating the user token with a request.
-Within Twitchfy you can generate rapidly generate the token.
+Within Twitchfy you can rapidly generate the token.
 
 ```ts showLineNumbers copy wrap
 
