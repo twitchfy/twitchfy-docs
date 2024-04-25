@@ -44,7 +44,7 @@ Creates a new instance of the automod settings manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts:23](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts#L23)
+[twitchapi/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts:23](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts#L23)
 
 ## Properties
 
@@ -77,7 +77,7 @@ The new settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts:33](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts#L33)
+[twitchapi/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts:33](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts#L33)
 
 ***
 
@@ -97,4 +97,4 @@ The current settings of the automod.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts:41](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts#L41)
+[twitchapi/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/AutoModSettingsManager.ts#L41)

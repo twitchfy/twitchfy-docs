@@ -44,7 +44,7 @@ Creates a new instance of the clip.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseClip.ts:28](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseClip.ts#L28)
+[twitchapi/packages/chatbot/src/structures/BaseClip.ts:28](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseClip.ts#L28)
 
 ## Properties
 
@@ -72,7 +72,7 @@ The fetched clip. Returns null if the clip was not found (probably because it wa
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseClip.ts:47](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseClip.ts#L47)
+[twitchapi/packages/chatbot/src/structures/BaseClip.ts:47](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseClip.ts#L47)
 
 ***
 
@@ -90,4 +90,4 @@ The url of the clip.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseClip.ts:39](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseClip.ts#L39)
+[twitchapi/packages/chatbot/src/structures/BaseClip.ts:39](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseClip.ts#L39)

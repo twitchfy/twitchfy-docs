@@ -40,7 +40,7 @@ new BaseConnection<K, U>(options: BaseConnectionOptions<K>): BaseConnection<K, U
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:39](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L39)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:39](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L39)
 
 ## Properties
 
@@ -245,7 +245,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L65)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L65)
 
 ***
 
@@ -267,7 +267,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L71)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L71)
 
 ***
 
@@ -583,7 +583,7 @@ abstract subscribe<T>(options: SubscriptionOptions<T>): Promise<SubscriptionType
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:61](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L61)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:61](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L61)
 
 ***
 
@@ -611,7 +611,7 @@ abstract subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<Subscrip
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:63](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L63)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:63](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L63)
 
 ***
 

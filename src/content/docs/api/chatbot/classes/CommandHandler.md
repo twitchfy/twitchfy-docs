@@ -29,7 +29,7 @@ Creates a new instance of the command handler.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CommandHandler.ts:18](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/CommandHandler.ts#L18)
+[twitchapi/packages/chatbot/src/structures/CommandHandler.ts:18](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CommandHandler.ts#L18)
 
 ## Properties
 
@@ -42,17 +42,17 @@ Creates a new instance of the command handler.
 ### load()
 
 ```ts
-load(): Promise<typeof Command[]>
+load(): Promise<typeof ChatCommand[]>
 ```
 
 Load the commands.
 
 #### Returns
 
-`Promise`\<*typeof* [`Command`](/api/chatbot/classes/command/)[]\>
+`Promise`\<*typeof* [`ChatCommand`](/api/chatbot/classes/chatcommand/)[]\>
 
 The loaded commands.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/CommandHandler.ts:26](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/CommandHandler.ts#L26)
+[twitchapi/packages/chatbot/src/structures/CommandHandler.ts:26](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/CommandHandler.ts#L26)

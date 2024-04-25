@@ -44,7 +44,7 @@ Creates a new instance of the chatbot user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBotUser.ts:16](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBotUser.ts#L16)
+[twitchapi/packages/chatbot/src/structures/ChatBotUser.ts:16](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatBotUser.ts#L16)
 
 ## Properties
 
@@ -73,7 +73,7 @@ The user's broadcaster type. Possible values are 'partner', 'affiliate' and 'nor
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/User.ts:55](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/User.ts#L55)
+[twitchapi/packages/chatbot/src/structures/User.ts:55](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/User.ts#L55)
 
 ***
 
@@ -91,7 +91,7 @@ When the user was created. A JavaScript Date object is returned.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/User.ts:41](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/User.ts#L41)
+[twitchapi/packages/chatbot/src/structures/User.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/User.ts#L41)
 
 ***
 
@@ -109,7 +109,7 @@ The user's offline image url. Returns null if the user has no offline image set
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/User.ts:62](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/User.ts#L62)
+[twitchapi/packages/chatbot/src/structures/User.ts:62](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/User.ts#L62)
 
 ***
 
@@ -127,7 +127,7 @@ The user's type.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/User.ts:48](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/User.ts#L48)
+[twitchapi/packages/chatbot/src/structures/User.ts:48](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/User.ts#L48)
 
 ## Methods
 
@@ -147,7 +147,7 @@ channel(): Promise<Channel<T>>
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:79](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L79)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:79](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L79)
 
 ***
 
@@ -171,7 +171,7 @@ The chatroom of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:42](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L42)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:42](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L42)
 
 ***
 
@@ -195,7 +195,7 @@ The fetched user from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:51](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L51)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:51](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L51)
 
 ***
 
@@ -219,7 +219,7 @@ A boolean indicating whether the user is currently streaming.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:74](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L74)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:74](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L74)
 
 ***
 
@@ -243,7 +243,7 @@ Sets the name color of the chatbot user which will be visible in the chat.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChatBotUser.ts:25](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChatBotUser.ts#L25)
+[twitchapi/packages/chatbot/src/structures/ChatBotUser.ts:25](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChatBotUser.ts#L25)
 
 ***
 
@@ -267,7 +267,7 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:66](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L66)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:66](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L66)
 
 ***
 
@@ -289,7 +289,7 @@ Returns the mention of the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L58)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:58](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L58)
 
 ***
 
@@ -317,4 +317,4 @@ Sends a whisper to the user.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseUser.ts:88](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseUser.ts#L88)
+[twitchapi/packages/chatbot/src/structures/BaseUser.ts:88](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseUser.ts#L88)

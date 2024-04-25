@@ -44,7 +44,7 @@ Creates a new instance of the stream online event.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:34](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/StreamOnline.ts#L34)
+[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:34](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/StreamOnline.ts#L34)
 
 ## Properties
 
@@ -70,7 +70,7 @@ The ID of the broadcaster whose stream went online.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:44](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/StreamOnline.ts#L44)
+[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:44](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/StreamOnline.ts#L44)
 
 ***
 
@@ -88,7 +88,7 @@ The ID of the chatroom where the stream went online.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:51](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/StreamOnline.ts#L51)
+[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:51](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/StreamOnline.ts#L51)
 
 ***
 
@@ -106,4 +106,4 @@ Returns the time when the stream went online. A JavaScript Date object is return
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/StreamOnline.ts#L58)
+[twitchapi/packages/chatbot/src/structures/StreamOnline.ts:58](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/StreamOnline.ts#L58)

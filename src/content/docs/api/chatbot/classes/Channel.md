@@ -44,7 +44,7 @@ Creates a new instance of the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:43](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Channel.ts#L43)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:43](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Channel.ts#L43)
 
 ## Properties
 
@@ -75,7 +75,7 @@ The chatroom bans manager. See [BanManager](../../api/chatbot/classes/banmanager
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:51](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L51)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:51](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L51)
 
 ***
 
@@ -93,7 +93,7 @@ The id of the broadcaster who owns the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:37](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L37)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:37](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L37)
 
 ***
 
@@ -111,7 +111,7 @@ The id of the chatroom of the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:44](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L44)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:44](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L44)
 
 ***
 
@@ -129,7 +129,7 @@ The language that was set to the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:63](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Channel.ts#L63)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:63](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Channel.ts#L63)
 
 ***
 
@@ -147,7 +147,7 @@ The chatroom messages manager. See [MessageManager](../../api/chatbot/classes/me
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L65)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:65](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L65)
 
 ***
 
@@ -165,7 +165,7 @@ The chatroom timeouts manager. See [TimeoutManager](../../api/chatbot/classes/ti
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:58](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L58)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:58](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L58)
 
 ***
 
@@ -183,7 +183,7 @@ The title of the channel. If it was never set, it will return a nullish value.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/Channel.ts:56](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/Channel.ts#L56)
+[twitchapi/packages/chatbot/src/structures/Channel.ts:56](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/Channel.ts#L56)
 
 ## Methods
 
@@ -213,7 +213,7 @@ An array containing the clips of the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:91](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L91)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:91](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L91)
 
 ***
 
@@ -237,7 +237,7 @@ The a Collection containing all the emotes of the channel.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:73](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L73)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:73](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L73)
 
 ***
 
@@ -261,7 +261,7 @@ The fetched channel from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:104](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L104)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:104](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L104)
 
 ***
 
@@ -281,7 +281,7 @@ isModerator(): Promise<boolean>
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:96](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L96)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:96](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L96)
 
 ***
 
@@ -305,4 +305,4 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:82](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BaseChannel.ts#L82)
+[twitchapi/packages/chatbot/src/structures/BaseChannel.ts:82](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BaseChannel.ts#L82)

@@ -31,7 +31,7 @@ new WebSocketSubscriptionCallbackManager<T>(connection: WebSocketConnection): We
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:15](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts#L15)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:15](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts#L15)
 
 ## Properties
 
@@ -59,7 +59,7 @@ add(callback: WebSocketSubscriptionCallback<T>): this
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:22](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts#L22)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:22](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts#L22)
 
 ***
 
@@ -81,4 +81,4 @@ execute(message: SubscriptionMessages<WebSocketConnection>[T]): Promise<void>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:30](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts#L30)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:30](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts#L30)

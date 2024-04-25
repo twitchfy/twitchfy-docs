@@ -49,7 +49,7 @@ displayName: string): BaseBroadcaster<T, K>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/messages/BaseBroadcaster.ts:13](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/messages/BaseBroadcaster.ts#L13)
+[twitchapi/packages/eventsub/src/structures/messages/BaseBroadcaster.ts:13](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/messages/BaseBroadcaster.ts#L13)
 
 ## Properties
 

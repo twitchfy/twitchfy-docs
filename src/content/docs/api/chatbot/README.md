@@ -46,6 +46,7 @@ title: "@twitchapi/chatbot"
 | [ChatBotTimeoutManager](/api/chatbot/classes/chatbottimeoutmanager/) | The timeout manager of the chatbot. |
 | [ChatBotUser](/api/chatbot/classes/chatbotuser/) | Represents a Twitch chatbot user. |
 | [ChatBotUserManager](/api/chatbot/classes/chatbotusermanager/) | The user manager of the chatbot. |
+| [ChatCommand](/api/chatbot/classes/chatcommand/) | The command structure. |
 | [ChatRoom](/api/chatbot/classes/chatroom/) | Represents a Twitch chatroom of a channel. |
 | [ChatRoomSettings](/api/chatbot/classes/chatroomsettings/) | Represents the settings of a chatroom. |
 | [ChatRoomSettingsManager](/api/chatbot/classes/chatroomsettingsmanager/) | Represents the manager for the settings of a chatroom. |
@@ -53,8 +54,6 @@ title: "@twitchapi/chatbot"
 | [CheermoteTier](/api/chatbot/classes/cheermotetier/) | Represents a Twitch cheermote tier. |
 | [Clip](/api/chatbot/classes/clip/) | Represents a Twitch clip. |
 | [Collection](/api/chatbot/classes/collection/) | A collection of key-value pairs. |
-| [Command](/api/chatbot/classes/command/) | The command structure. |
-| [CommandContext](/api/chatbot/classes/commandcontext/) | The context of the command. |
 | [CommandHandler](/api/chatbot/classes/commandhandler/) | The command handler. |
 | [Emote](/api/chatbot/classes/emote/) | Represents a Twitch emote. It could be either a global emote or a channel emote. |
 | [EventHandler](/api/chatbot/classes/eventhandler/) | The event handler. |
@@ -70,6 +69,7 @@ title: "@twitchapi/chatbot"
 | [StreamOnline](/api/chatbot/classes/streamonline/) | Represents a stream online event. |
 | [StringOption](/api/chatbot/classes/stringoption/) | Represents a string option. |
 | [TimeoutManager](/api/chatbot/classes/timeoutmanager/) | The timeout manager of a chatroom. |
+| [TwitchContext](/api/chatbot/classes/twitchcontext/) | The context of the command. |
 | [User](/api/chatbot/classes/user/) | Represents a Twitch user. |
 | [Video](/api/chatbot/classes/video/) | Represents a Twitch video. |
 

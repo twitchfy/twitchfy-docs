@@ -44,7 +44,7 @@ Creates a new instance of the channel profile.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:28](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L28)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:28](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelProfile.ts#L28)
 
 ## Properties
 
@@ -53,40 +53,6 @@ Creates a new instance of the channel profile.
 | `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 | `events` | `readonly` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"`)[] | The events from the channel that the chatbot is subscribed to. | - |
 | `id` | `readonly` | `string` | The ID of the channel. | - |
-
-## Accessors
-
-### hasEvent
-
-```ts
-get hasEvent(): (event: 
-  | "ChannelChatClear"
-  | "ChannelFollow"
-  | "ChannelUpdate"
-  | "StreamOnline"
-  | "ChannelChatMessage") => boolean
-```
-
-Checks if one event is being listened.
-
-#### Returns
-
-`Function`
-
-> ##### Parameters
->
-> | Parameter | Type |
-> | :------ | :------ |
-> | `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` |
->
-> ##### Returns
->
-> `boolean`
->
-
-#### Source
-
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:68](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L68)
 
 ## Methods
 
@@ -117,7 +83,7 @@ Adds an event or events to the channel profile and listen to it. If the event is
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:34](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L34)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:34](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelProfile.ts#L34)
 
 #### addEvent(event)
 
@@ -144,7 +110,7 @@ Adds an event or events to the channel profile and listen to it. If the event is
 
 ##### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:35](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L35)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:35](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelProfile.ts#L35)
 
 ***
 
@@ -164,7 +130,36 @@ The fetched channel from the API.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:76](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L76)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:76](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelProfile.ts#L76)
+
+***
+
+### hasEvent()
+
+```ts
+hasEvent(event: 
+  | "ChannelChatClear"
+  | "ChannelFollow"
+  | "ChannelUpdate"
+  | "StreamOnline"
+  | "ChannelChatMessage"): boolean
+```
+
+Checks if one event is being listened.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` | The event to check. |
+
+#### Returns
+
+`boolean`
+
+#### Source
+
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:68](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelProfile.ts#L68)
 
 ***
 
@@ -193,4 +188,4 @@ Removes an event from the channel profile and stop listening to it. If the event
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:57](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/ChannelProfile.ts#L57)
+[twitchapi/packages/chatbot/src/structures/ChannelProfile.ts:57](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/ChannelProfile.ts#L57)

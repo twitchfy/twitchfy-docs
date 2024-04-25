@@ -33,7 +33,7 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L22)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L22)
 
 ## Properties
 
@@ -98,7 +98,7 @@ connect(): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L50)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L50)
 
 ***
 
@@ -271,7 +271,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L65)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:65](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L65)
 
 ***
 
@@ -297,7 +297,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/structures/BaseConnection.ts#L71)
+[twitchapi/packages/eventsub/src/structures/BaseConnection.ts:71](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/structures/BaseConnection.ts#L71)
 
 ***
 
@@ -591,7 +591,7 @@ setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnect
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L105)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L105)
 
 ***
 
@@ -649,7 +649,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L56)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L56)
 
 ***
 
@@ -681,7 +681,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Source
 
-[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L77)
+[twitchapi/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/eventsub/src/ws/structures/WebSocketConnection.ts#L77)
 
 ***
 

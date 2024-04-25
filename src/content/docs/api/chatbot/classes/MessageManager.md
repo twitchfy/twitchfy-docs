@@ -44,7 +44,7 @@ Creates a new instance of the message manager.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:22](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/MessageManager.ts#L22)
+[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:22](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/MessageManager.ts#L22)
 
 ## Properties
 
@@ -75,7 +75,7 @@ Deletes a message from the chatroom.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:32](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/MessageManager.ts#L32)
+[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:32](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/MessageManager.ts#L32)
 
 ***
 
@@ -85,20 +85,20 @@ Deletes a message from the chatroom.
 send(message: string): Promise<BaseMessage<T>>
 ```
 
-Fetches a message from the chatroom.
+Sends a message to the chatroom.
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `message` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `message` | `string` | The message to send. |
 
 #### Returns
 
 `Promise`\<[`BaseMessage`](/api/chatbot/classes/basemessage/)\<`T`\>\>
 
-The message fetched.
+The message which was sent.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:41](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/managers/MessageManager.ts#L41)
+[twitchapi/packages/chatbot/src/structures/managers/MessageManager.ts:41](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/managers/MessageManager.ts#L41)

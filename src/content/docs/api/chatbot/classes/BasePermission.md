@@ -29,14 +29,14 @@ new BasePermission<T>(): BasePermission<T>
 
 | Property | Modifier | Type | Description |
 | :------ | :------ | :------ | :------ |
-| `value` | `abstract` | `string` | The value or identifier of the custom permission returned in `onPermissionsFallback`. See [Command](../../api/chatbot/classes/command). |
+| `value` | `abstract` | `string` | The value or identifier of the custom permission returned in `onPermissionsFallback`. See Command. |
 
 ## Methods
 
 ### check()
 
 ```ts
-abstract check(ctx: CommandContext<Object, T>): boolean | Promise<boolean>
+abstract check(ctx: TwitchContext<Object, T>): boolean | Promise<boolean>
 ```
 
 Check if the user has the custom permission to run the command.
@@ -45,7 +45,7 @@ Check if the user has the custom permission to run the command.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `ctx` | [`CommandContext`](/api/chatbot/classes/commandcontext/)\<`Object`, `T`\> | The context of the command which was run. |
+| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`Object`, `T`\> | The context of the command which was run. |
 
 #### Returns
 
@@ -55,4 +55,4 @@ If the user has the custom permission to run the command.
 
 #### Source
 
-[twitchapi/packages/chatbot/src/structures/BasePermission.ts:15](https://github.com/pablornc/twitchapi//blob/8695acad106a836c1f0fc4c57a113f17adce41f0/packages/chatbot/src/structures/BasePermission.ts#L15)
+[twitchapi/packages/chatbot/src/structures/BasePermission.ts:15](https://github.com/pablornc/twitchapi//blob/3baa008ac8be1133cbb9253985d5d4cd48b4e780/packages/chatbot/src/structures/BasePermission.ts#L15)
