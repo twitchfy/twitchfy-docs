@@ -27,8 +27,8 @@ To get the user access token you will need the `Client-Id` and `Client Secret` y
 :::
 
 :::tip
-If you use the `Authorization Code Grant Flow` you will receive a `code` field. With this code you have to generate the `user token`.
-With Twitch API you can generate the token with few steps.
+If you are using the `Authorization Code Grant Flow` you will receive a `code` field for later generating the user token with a request.
+Within Twitchfy you can generate rapidly generate the token.
 
 ```ts showLineNumbers copy wrap
 
@@ -40,7 +40,7 @@ const userToken = await HelixClient.generateUserToken({
   code: 'mycode',
   redirectURI: 'redirectURI'
 });
-//returns a TokenAdapter which is used when declaring the chatbot, if you want raw data change raw option into true, default is false.
+//returns a TokenAdapter which is used when declaring the chatbot, if you want the raw data change raw option into true, default is false.
 ```
 :::
 s
