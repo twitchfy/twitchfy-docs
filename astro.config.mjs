@@ -15,9 +15,10 @@ export default defineConfig({
 				github: 'https://github.com/twitchfy/twitchfy',
 			},
 			logo: {
-				src: './src/assets/twitchfy.png'
+				src: './public/favicon.png',
+				dark: './public/favicon.png'
 			},
-			favicon: './src/assets/twitchfy.png',
+			favicon: 'favicon.png',
 			sidebar: [
 				{
 					label: 'Guide',
