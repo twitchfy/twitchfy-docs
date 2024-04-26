@@ -14,7 +14,7 @@ Having created a Twitch Application you will have to get and save the `Client-Id
 
 Chatbots on Twitch are essentially user accounts designed to execute actions programmatically. Its recommended to create an unique account for running your chatbot. 
 
-After creating your chatbot account you will need to authorize and get an `user access token` to perform bot actions and join to diffrent chatrooms over Twitch. It's highly recommended to get an user access token from the `Authorization Code Grant Flow` as tokens generated with this flows could be refreshed and this library handle that automatically. For further information about generating user access tokens see the official [Twitch API documentation](https://dev.twitch.tv/docs/authentication/).
+After creating your chatbot account you will need to authorize within your app and get an `user access token` to perform bot actions and join diffrent chatrooms over Twitch. It's highly recommended to get an user access token from the `Authorization Code Grant Flow` as tokens generated within this flow can be refreshed, this library handle this refresh automatically. For further information about generating user access tokens see the official [Twitch API documentation](https://dev.twitch.tv/docs/authentication/).
 
 :::danger
 The basic scope which the user token needs for joining channels is `user:read:chat`. If you are building your chatbot using Webhooks, for the EventSub connection, it adittionally requires `user:bot` scope.
@@ -43,7 +43,6 @@ const userToken = await HelixClient.generateUserToken({
 //returns a TokenAdapter which is used when declaring the chatbot, if you want the raw data change raw option into true, default is false.
 ```
 :::
-s
 :::tip
 
 After generating your user token, it's crucial to store it securely, whether in a database or a file. It's important to note that tokens expire, but if you're using a user access token generated with the Authorization Code Grant Flow, it will be automatically refreshed by the package. However, you still need to persist it to retrieve it at the beginning of your application in case it stops functioning suddenly.

@@ -10,7 +10,7 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 Having authorized and created your chatbot account within Twitch it's time to build our first chatbot.
 
-First of all we have to do is installing `@twitchfy/chatbot` with our Node package manager.
+First of all we have to install `@twitchfy/chatbot` package with our custom Node Package Manager.
 
 <Tabs>
   <TabItem label="pnpm">
@@ -31,7 +31,7 @@ Having set up our project it's time to start building our first chatbot.
 
 For building the chatbot we have to create a new instance of the [ChatBot](/api/chatbot/classes/chatbot) class.
 
-Here is a brief example of how be build a basic chatbot using webhooks or websocket.
+Here is a brief example of how to build a basic chatbot using webhooks or websocket connection.
 
 <Tabs>
 <TabItem label="webhook/index.ts">
@@ -117,10 +117,9 @@ Additionally, there is a [MongoAdapter](/api/eventsub/classes/mongoadapter) clas
 
 ## Start your chatbot
 
-Once you've created your chatbot, the next step is to get it online. Simply call the `start` method, which returns a Promise that resolves when the chatbot is fully operational.
+Once you've created your chatbot, the next step is to get it online. Simply call the `start` method, which returns a Promise which will be resolved when the chatbot is fully operational.
 
 <Tabs>
-
 <TabItem label="webhook/index.ts">
 
 ```ts showLineNumbers ins={33} copy wrap
@@ -198,7 +197,7 @@ To join a channel you have to call `join` method in the chatbot [ChannelManager]
 
 :::warning
 
-It's recommended to join channels after the chatbot has fully been started. If not it could led to an exception.
+It's recommended to join channels after the chatbot has fully started. If not it could led to anytype of errors.
 :::
 
 ```ts showLineNumbers copy ins={27}
@@ -236,5 +235,5 @@ chatbot.start().then(() => {
 ```
 
 :::note
-To be able to join to channels you need either `channel:bot` scope from broadcaster or your chatbot to be a moderator of that channel.
+To be able to join to channels you need either `channel:bot` scope from broadcaster or your chatbot to be a moderator of the channel you will join.
 :::

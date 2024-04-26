@@ -32,7 +32,7 @@ import { MentionOption } from '@twitchfy/chatbot';
 const option = new MentionOption({ grouped: true });
 ```
 :::
-Command options works with this template:
+Command options work with this template:
 
 ```txt
 
@@ -103,7 +103,7 @@ As seen in the example above, we are defining the options as an object whose key
 Running commands with options is similar to running a normal command, but the [CommandContext](/api/chatbot/classes/commandcontext) includes an options object containing all of the options defined for the command.
 
 :::note
-In TypeScript you will have to set the first generic type of CommandContext with the typeof your options for the context to be typed.
+In TypeScript you will have to set the first generic type of TwitchContext with the typeof your options for the context to be typed.
 :::
 
 <Tabs>

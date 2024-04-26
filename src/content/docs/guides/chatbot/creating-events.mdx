@@ -16,7 +16,7 @@ You can only listen events which your chatbot is authorize with. Normally, the b
 
 ## Listening to events
 
-By default, when you join to a channel you won't listen any event except of `ChannelChatMessage`. To listen to the other events you will need to specify them when joining to a channel.
+By default, when you join to a channel you will listen only `ChannelChatMessage` event. To listen to the other events you will need to specify them when joining to a channel.
 
 ```js showLineNumbers copy 
 chatbot.channels.join("channelId", ["ChannelUpdate", "ChannelFollow"]);
@@ -30,7 +30,7 @@ When you join to a channel a [ChannelProfile](/api/chatbot/classes/ChannelProfil
 
 With this class you can either unlisten events or subscribe to one or more events.
 
-Here is an example of how get that channel profile and subscribe manage its events:
+Here is an example of how get that channel profile and manage its events:
 
 ```js showLineNumbers copy
 
