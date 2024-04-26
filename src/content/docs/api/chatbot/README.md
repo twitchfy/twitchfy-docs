@@ -94,6 +94,7 @@ title: "@twitchfy/chatbot"
 | [Game](/api/chatbot/interfaces/game/) | Represents a game played in a Twitch's stream. |
 | [MessageOptions](/api/chatbot/interfaces/messageoptions/) | The options to send a message. |
 | [OptionOptions](/api/chatbot/interfaces/optionoptions/) | The options to build up a basic option. |
+| [Options](/api/chatbot/interfaces/options/) | The options to be declared in TypeScript |
 | [Paths](/api/chatbot/interfaces/paths/) | The paths of the diffrent resources of the chatbot. |
 | [ThumbailOptions](/api/chatbot/interfaces/thumbailoptions/) | The options for the thumbnail. |
 | [TimeoutOptions](/api/chatbot/interfaces/timeoutoptions/) | The options to timeout an user. |
@@ -104,6 +105,7 @@ title: "@twitchfy/chatbot"
 | :------ | :------ |
 | [ChannelEvents](/api/chatbot/type-aliases/channelevents/) | The EventSub events which the chatbot could listen. |
 | [CommandOptionsAux](/api/chatbot/type-aliases/commandoptionsaux/) | Auxiliary type to define the options of a command. |
+| [DefaultConnection](/api/chatbot/type-aliases/defaultconnection/) | An infer type which will be used to determine the default connection type using TypeScript. |
 | [EmoteType](/api/chatbot/type-aliases/emotetype/) | - |
 | [EventData](/api/chatbot/type-aliases/eventdata/) | The data of the event. |
 | [EventDataForConnection](/api/chatbot/type-aliases/eventdataforconnection/) | The data received from an event. |

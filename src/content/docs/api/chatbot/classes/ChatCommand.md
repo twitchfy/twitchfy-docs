@@ -11,7 +11,7 @@ The command structure.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`DefaultConnection`](/api/chatbot/type-aliases/defaultconnection/) |
 
 ## Constructors
 
@@ -56,7 +56,7 @@ The fallback function of the command if the permissions aren't satisfied.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatCommand.ts:35
+twitchfy/packages/chatbot/src/structures/ChatCommand.ts:37
 
 ***
 
@@ -80,4 +80,4 @@ The run function of the command.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatCommand.ts:30
+twitchfy/packages/chatbot/src/structures/ChatCommand.ts:32

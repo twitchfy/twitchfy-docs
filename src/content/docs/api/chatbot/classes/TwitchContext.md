@@ -16,7 +16,7 @@ The context of the command.
 | Type parameter | Value |
 | :------ | :------ |
 | `K` extends [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `Object` |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`DefaultConnection`](/api/chatbot/type-aliases/defaultconnection/) |
 
 ## Constructors
 

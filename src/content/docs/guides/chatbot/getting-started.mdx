@@ -106,8 +106,7 @@ const chatbot = new ChatBot({
 </TabItem>
 </Tabs>
 
-:::info
-
+:::note
 `Storage` option within eventsub options is used for saving the subscriptions and reloading them everytime you start of your application.
 
 In the example above [RedisAdapter](/api/eventsub/classes/redisadapter) is used for storing the subscriptions within a Redis server. However you can customize your storage adapter by extending [StorageAdapter](/api/eventsub/classes/storageadapter) class. 
@@ -115,6 +114,20 @@ In the example above [RedisAdapter](/api/eventsub/classes/redisadapter) is used 
 Additionally, there is a [MongoAdapter](/api/eventsub/classes/mongoadapter) class for storing subscriptions in MongoDB.
 :::
 
+:::note
+Using TypeScript is highly recommended to declare twitchfy module for setting the default eventsub connection type as when creating events and commands you may specify the connection type always something which is not practical.
+
+```ts showLineNumbers copy
+
+import type { EventSubConnection } from '@twitchfy/chatbot';
+
+declare module '@twitchfy/chatbot' {
+  interface Options {
+    connection: EventSubConnection.Webhook // or WebSocket if you are using websocket
+  }
+}
+```
+:::
 ## Start your chatbot
 
 Once you've created your chatbot, the next step is to get it online. Simply call the `start` method, which returns a Promise which will be resolved when the chatbot is fully operational.
