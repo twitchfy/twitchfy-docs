@@ -64,7 +64,7 @@ const chatbot = new ChatBot({
     server: express(),
     baseURL: "https://eventsub-subscriptions.com",
     storage: { adapter: new RedisAdapter<WebhookConnection>() },
-    startServer: true, //the package will start the server. Otherwise you will have to start it.
+    startServer: true, //the package will start the server by default. Otherwise you will have to start it.
   },
   paths: {
     output: "dist", //the directory where your source code will be located (from current working directory). Using TypeScript it will be the output directory defined in the ts config file.
