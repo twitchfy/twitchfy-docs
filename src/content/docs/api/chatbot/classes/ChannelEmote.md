@@ -49,7 +49,7 @@ twitchfy/packages/chatbot/src/structures/ChannelEmote.ts:21
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
 | `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | [`Emote`](/api/chatbot/classes/emote/).`chatbot` |
-| `emoteSetID` | `readonly` | `string` | The ID of the emote set. | - |
+| `emoteSetId` | `readonly` | `string` | The Id of the emote set. | - |
 | `id` | `readonly` | `string` | The id of the emote. | [`Emote`](/api/chatbot/classes/emote/).`id` |
 | `name` | `readonly` | `string` | The name of the emote. | [`Emote`](/api/chatbot/classes/emote/).`name` |
 | `type` | `readonly` | `EmoteType` | The type of the emote. | - |
@@ -110,13 +110,13 @@ twitchfy/packages/chatbot/src/structures/Emote.ts:30
 
 ***
 
-### ownerID
+### ownerId
 
 ```ts
-get ownerID(): null | string
+get ownerId(): null | string
 ```
 
-The ID of the owner of the emote.
+The Id of the owner of the emote.
 
 #### Returns
 
@@ -128,13 +128,13 @@ twitchfy/packages/chatbot/src/structures/BaseEmote.ts:41
 
 ***
 
-### setID
+### setId
 
 ```ts
-get setID(): null | string
+get setId(): null | string
 ```
 
-The ID of the emote set.
+The Id of the emote set.
 
 #### Returns
 

@@ -55,7 +55,7 @@ twitchfy/packages/chatbot/src/structures/Clip.ts:78
 | `creator` | `readonly` | [`BaseUserWithoutUsername`](/api/chatbot/classes/baseuserwithoutusername/)\<`T`\> | The user who created the clip. The user will not have an username because Twitch limitations. | - |
 | `duration` | `readonly` | `number` | The duration of the clip in seconds. | - |
 | `embedURL` | `readonly` | `string` | The URL to embed the clip in a frame. | - |
-| `gameID` | `readonly` | `string` | The ID of the game which was played in the clip. | - |
+| `gameId` | `readonly` | `string` | The Id of the game which was played in the clip. | - |
 | `id` | `readonly` | `string` | The id of the clip. | [`BaseClip`](/api/chatbot/classes/baseclip/).`id` |
 | `isFeatured` | `readonly` | `boolean` | Whether the clip is featured. | - |
 | `language` | `readonly` | `string` | The language of the clip. | - |
@@ -85,13 +85,13 @@ twitchfy/packages/chatbot/src/structures/Clip.ts:97
 
 ***
 
-### videoID
+### videoId
 
 ```ts
-get videoID(): null | string
+get videoId(): null | string
 ```
 
-The ID of the video of the clip.
+The Id of the video of the clip.
 
 #### Returns
 

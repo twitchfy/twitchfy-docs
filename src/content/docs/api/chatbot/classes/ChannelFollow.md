@@ -57,13 +57,13 @@ twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:38
 
 ## Accessors
 
-### broadcasterID
+### broadcasterId
 
 ```ts
-get broadcasterID(): string
+get broadcasterId(): string
 ```
 
-The ID of the broadcaster who was followed.
+The Id of the broadcaster who was followed.
 
 #### Returns
 
@@ -75,13 +75,13 @@ twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:49
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom where the follow event occurred.
+The Id of the chatroom where the follow event occurred.
 
 #### Returns
 
@@ -93,13 +93,13 @@ twitchfy/packages/chatbot/src/structures/ChannelFollow.ts:63
 
 ***
 
-### followerID
+### followerId
 
 ```ts
-get followerID(): string
+get followerId(): string
 ```
 
-The ID of the follower who followed the channel.
+The Id of the follower who followed the channel.
 
 #### Returns
 

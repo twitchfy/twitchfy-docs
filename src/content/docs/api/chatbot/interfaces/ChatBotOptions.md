@@ -17,7 +17,7 @@ The options to build up a chatbot.
 
 | Property | Type | Description |
 | :------ | :------ | :------ |
-| `clientID` | `string` | The client ID of the Twitch's application. |
+| `clientId` | `string` | The client Id of the Twitch's application. |
 | `clientSecret` | `string` | The client secret of the Twitch's application. |
 | `connectionType` | `T` | The eventsub connection type of the chatbot. See [EventSubConnection](../../api/chatbot/enumerations/eventsubconnection). |
 | `eventsub` | [`EventSubOptions`](/api/chatbot/type-aliases/eventsuboptions/)\<`T`\> | The options to build up the eventsub connection. See [EventSubOptions](../../api/chatbot/type-aliases/eventsuboptions). |

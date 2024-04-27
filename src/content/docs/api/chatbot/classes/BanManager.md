@@ -84,7 +84,7 @@ twitchfy/packages/chatbot/src/structures/managers/BanManager.ts:32
 ### delete()
 
 ```ts
-delete(userID: string): Promise<void>
+delete(userId: string): Promise<void>
 ```
 
 Deletes the ban of a specific user.
@@ -93,7 +93,7 @@ Deletes the ban of a specific user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `userID` | `string` | The id of the user to unban. |
+| `userId` | `string` | The id of the user to unban. |
 
 #### Returns
 

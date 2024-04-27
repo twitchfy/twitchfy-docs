@@ -79,10 +79,10 @@ twitchfy/packages/chatbot/src/structures/BaseChannel.ts:51
 
 ***
 
-### broadcasterID
+### broadcasterId
 
 ```ts
-get broadcasterID(): string
+get broadcasterId(): string
 ```
 
 The id of the broadcaster who owns the channel.
@@ -97,10 +97,10 @@ twitchfy/packages/chatbot/src/structures/BaseChannel.ts:37
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
 The id of the chatroom of the channel.

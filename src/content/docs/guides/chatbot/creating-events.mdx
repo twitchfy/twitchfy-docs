@@ -104,14 +104,14 @@ export default createEvent({
     //could be null because api internal caching.
     if (stream) {
       return await chatbot.messages.send(
-        data.chatroomID,
+        data.chatroomId,
         `${data.broadcaster.toString()} is currently streaming ${
           stream.game.name
         }`
       );
     } else
       return await chatbot.messages.send(
-        data.chatroomID,
+        data.chatroomId,
         `${data.broadcaster.toString()} is currently streaming.`
       );
   },
@@ -131,8 +131,8 @@ async run(chatbot, data){
 const stream = await data.broadcaster.stream();
 //could be null because api internal caching.
 if(stream){
-return await chatbot.messages.send(data.chatroomID, `${data.broadcaster.toString()} is currently streaming ${stream.game.name}`)
-} else return await chatbot.messages.send(data.chatroomID, `${data.broadcaster.toString()} is currently streaming.`)
+return await chatbot.messages.send(data.chatroomId, `${data.broadcaster.toString()} is currently streaming ${stream.game.name}`)
+} else return await chatbot.messages.send(data.chatroomId, `${data.broadcaster.toString()} is currently streaming.`)
 }
 })
 

@@ -52,7 +52,7 @@ twitchfy/packages/chatbot/src/structures/ChannelProfile.ts:28
 | :------ | :------ | :------ | :------ | :------ |
 | `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
 | `events` | `readonly` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"`)[] | The events from the channel that the chatbot is subscribed to. | - |
-| `id` | `readonly` | `string` | The ID of the channel. | - |
+| `id` | `readonly` | `string` | The Id of the channel. | - |
 
 ## Methods
 

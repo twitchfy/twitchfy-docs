@@ -41,7 +41,7 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
 | `baseURL` | `readonly` | `string` | - |
-| `clientID` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientID` |
+| `clientId` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
 | `clientSecret` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
 | `debug` | `public` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
 | `dropSubsAtStart` | `readonly` | `boolean` | - |

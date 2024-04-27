@@ -11,4 +11,4 @@ The options to send a message.
 
 | Property | Type | Description |
 | :------ | :------ | :------ |
-| `replyMessageID?` | `string` | The id of the message to reply. |
+| `replyMessageId?` | `string` | The id of the message to reply. |

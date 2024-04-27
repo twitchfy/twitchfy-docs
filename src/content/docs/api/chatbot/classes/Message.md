@@ -64,18 +64,18 @@ twitchfy/packages/chatbot/src/structures/Message.ts:76
 | `id` | `readonly` | `string` | The id of the message. | [`BaseMessage`](/api/chatbot/classes/basemessage/).`id` | [`BaseMessage`](/api/chatbot/classes/basemessage/).`id` |
 | `mentions` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<`string`, [`BaseUser`](/api/chatbot/classes/baseuser/)\<`T`\>\> | The mentions in the message. | - | - |
 | `messageReply` | `readonly` | `null` \| [`MessageReply`](/api/chatbot/classes/messagereply/)\<`T`\> | The message reply of the message. Null if the message doesn't have a reply. | - | - |
-| `rewardID` | `readonly` | `null` \| `string` | The reward ID of the message. Null if the message doesn't have a reward redemption. | - | - |
+| `rewardId` | `readonly` | `null` \| `string` | The reward Id of the message. Null if the message doesn't have a reward redemption. | - | - |
 | `type` | `readonly` | [`MessageTypes`](/api/chatbot/type-aliases/messagetypes/) | The type of the message. | - | - |
 
 ## Accessors
 
-### authorID
+### authorId
 
 ```ts
-get authorID(): string
+get authorId(): string
 ```
 
-The ID of the author of the message.
+The Id of the author of the message.
 
 #### Returns
 
@@ -87,13 +87,13 @@ twitchfy/packages/chatbot/src/structures/Message.ts:93
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom where the message was sent.
+The Id of the chatroom where the message was sent.
 
 #### Returns
 

@@ -56,7 +56,7 @@ twitchfy/packages/chatbot/src/structures/managers/ChatBotTimeoutManager.ts:16
 ### add()
 
 ```ts
-add(chatroomID: string, options: TimeoutOptions): Promise<void>
+add(chatroomId: string, options: TimeoutOptions): Promise<void>
 ```
 
 Timeout a specific user.
@@ -65,7 +65,7 @@ Timeout a specific user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatroomID` | `string` | The id of the chatroom where the user will be sent into a timeout. |
+| `chatroomId` | `string` | The id of the chatroom where the user will be sent into a timeout. |
 | `options` | [`TimeoutOptions`](/api/chatbot/interfaces/timeoutoptions/) | The options required for send an user into a timeout. See Timeout. |
 
 #### Returns
@@ -83,7 +83,7 @@ twitchfy/packages/chatbot/src/structures/managers/ChatBotTimeoutManager.ts:26
 ### delete()
 
 ```ts
-delete(chatroomID: string, userID: string): Promise<void>
+delete(chatroomId: string, userId: string): Promise<void>
 ```
 
 Deletes the timeout of a specific user.
@@ -92,8 +92,8 @@ Deletes the timeout of a specific user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatroomID` | `string` | The id of the chatroom where the user will be removed from the timeout. |
-| `userID` | `string` | The id of the user to remove from the timeout. |
+| `chatroomId` | `string` | The id of the chatroom where the user will be removed from the timeout. |
+| `userId` | `string` | The id of the user to remove from the timeout. |
 
 #### Returns
 

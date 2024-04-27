@@ -67,7 +67,7 @@ twitchfy/packages/chatbot/src/structures/ChatRoom.ts:60
 get id(): string
 ```
 
-The ID of the chatroom. Its id is the same as the broadcaster id.
+The Id of the chatroom. Its id is the same as the broadcaster id.
 
 #### Returns
 
@@ -290,7 +290,7 @@ twitchfy/packages/chatbot/src/structures/ChatRoom.ts:120
 ### shoutout()
 
 ```ts
-shoutout(receiverID: string): Promise<void>
+shoutout(receiverId: string): Promise<void>
 ```
 
 Sends a shoutout to a user in the chatroom.
@@ -299,7 +299,7 @@ Sends a shoutout to a user in the chatroom.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `receiverID` | `string` | The ID of the user to shoutout. |
+| `receiverId` | `string` | The Id of the user to shoutout. |
 
 #### Returns
 

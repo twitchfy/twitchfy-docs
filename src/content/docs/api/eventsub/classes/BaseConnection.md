@@ -46,7 +46,7 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:39
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `clientID` | `readonly` | `string` |
+| `clientId` | `readonly` | `string` |
 | `clientSecret` | `readonly` | `string` |
 | `debug` | `public` | `boolean` |
 | `helixClient` | `readonly` | `HelixClient` |

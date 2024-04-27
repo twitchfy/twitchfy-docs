@@ -69,7 +69,7 @@ twitchfy/packages/chatbot/src/structures/CheermoteTier.ts:49
 get id(): number
 ```
 
-The ID of the cheermote tier.
+The Id of the cheermote tier.
 
 #### Returns
 

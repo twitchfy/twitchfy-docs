@@ -43,7 +43,7 @@ twitchfy/packages/chatbot/src/structures/ChatBot.ts:133
 | :------ | :------ | :------ | :------ |
 | `bans` | `readonly` | [`ChatBotBanManager`](/api/chatbot/classes/chatbotbanmanager/)\<`T`\> | The ban manager of the chatbot. |
 | `channels` | `readonly` | [`ChannelManager`](/api/chatbot/classes/channelmanager/)\<`T`\> | The manager of the chatbot channels. |
-| `clientID` | `readonly` | `string` | The client ID of the Twitch's application. |
+| `clientId` | `readonly` | `string` | The client Id of the Twitch's application. |
 | `clientSecret` | `readonly` | `string` | The client secret of the Twitch's application. |
 | `commands` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<`string`, [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\>\> | A Collection of the chatbot commands. |
 | `connectionType` | `readonly` | `T` | The EventSub connection type used by the chatbot. |
@@ -56,7 +56,7 @@ twitchfy/packages/chatbot/src/structures/ChatBot.ts:133
 | `profiles` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<`string`, [`ChannelProfile`](/api/chatbot/classes/channelprofile/)\<`T`\>\> | A Collection of the profiles of the joined channels. |
 | `timeouts` | `readonly` | [`ChatBotTimeoutManager`](/api/chatbot/classes/chatbottimeoutmanager/)\<`T`\> | The timeout manager of the chatbot. |
 | `user` | `public` | [`ChatBotUser`](/api/chatbot/classes/chatbotuser/)\<`T`\> | The Twitch user of the chatbot. |
-| `userID` | `public` | `string` | The user ID of the chatbot. |
+| `userId` | `public` | `string` | The user Id of the chatbot. |
 | `users` | `readonly` | [`ChatBotUserManager`](/api/chatbot/classes/chatbotusermanager/)\<`T`\> | The user manager of the chatbot. |
 
 ## Accessors
@@ -152,7 +152,7 @@ twitchfy/packages/chatbot/src/structures/ChatBot.ts:298
 ### isModerator()
 
 ```ts
-isModerator(channelID: string): Promise<boolean>
+isModerator(channelId: string): Promise<boolean>
 ```
 
 Checks whether the chatbot is moderator in a specific channel.
@@ -161,7 +161,7 @@ Checks whether the chatbot is moderator in a specific channel.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `channelID` | `string` | The ID of the channel to check. |
+| `channelId` | `string` | The Id of the channel to check. |
 
 #### Returns
 

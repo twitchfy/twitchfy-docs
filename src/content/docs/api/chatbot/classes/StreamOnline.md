@@ -56,13 +56,13 @@ twitchfy/packages/chatbot/src/structures/StreamOnline.ts:34
 
 ## Accessors
 
-### broadcasterID
+### broadcasterId
 
 ```ts
-get broadcasterID(): string
+get broadcasterId(): string
 ```
 
-The ID of the broadcaster whose stream went online.
+The Id of the broadcaster whose stream went online.
 
 #### Returns
 
@@ -74,13 +74,13 @@ twitchfy/packages/chatbot/src/structures/StreamOnline.ts:44
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom where the stream went online.
+The Id of the chatroom where the stream went online.
 
 #### Returns
 

@@ -59,13 +59,13 @@ twitchfy/packages/chatbot/src/structures/ChannelUpdate.ts:48
 
 ## Accessors
 
-### broadcasterID
+### broadcasterId
 
 ```ts
-get broadcasterID(): string
+get broadcasterId(): string
 ```
 
-The ID of the broadcaster who was updated.
+The Id of the broadcaster who was updated.
 
 #### Returns
 

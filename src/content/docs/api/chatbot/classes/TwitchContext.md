@@ -61,13 +61,13 @@ twitchfy/packages/chatbot/src/structures/TwitchContext.ts:59
 
 ## Accessors
 
-### authorID
+### authorId
 
 ```ts
-get authorID(): string
+get authorId(): string
 ```
 
-The ID of the author of the command.
+The Id of the author of the command.
 
 #### Returns
 
@@ -133,13 +133,13 @@ twitchfy/packages/chatbot/src/structures/TwitchContext.ts:159
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the context's chatroom.
+The Id of the context's chatroom.
 
 #### Returns
 

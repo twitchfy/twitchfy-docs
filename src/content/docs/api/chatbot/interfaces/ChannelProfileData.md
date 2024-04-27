@@ -9,7 +9,7 @@ The data of the channel profile.
 
 ## Param
 
-The ID of the channel.
+The Id of the channel.
 
 ## Param
 

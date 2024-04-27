@@ -56,7 +56,7 @@ twitchfy/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:16
 ### add()
 
 ```ts
-add(chatroomID: string, options: BanOptions): Promise<Ban<T>>
+add(chatroomId: string, options: BanOptions): Promise<Ban<T>>
 ```
 
 Ban a specific user.
@@ -65,7 +65,7 @@ Ban a specific user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatroomID` | `string` | The id of the chatroom where the user will be banned. |
+| `chatroomId` | `string` | The id of the chatroom where the user will be banned. |
 | `options` | [`BanOptions`](/api/chatbot/interfaces/banoptions/) | The options required for banning an user. See [BanOptions](../../api/chatbot/interfaces/banoptions). |
 
 #### Returns
@@ -83,7 +83,7 @@ twitchfy/packages/chatbot/src/structures/managers/ChatBotBanManager.ts:26
 ### delete()
 
 ```ts
-delete(chatroomID: string, userID: string): Promise<void>
+delete(chatroomId: string, userId: string): Promise<void>
 ```
 
 Deletes the ban of a specific user.
@@ -92,8 +92,8 @@ Deletes the ban of a specific user.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatroomID` | `string` | The id of the chatroom where the user will be unbanned. |
-| `userID` | `string` | The id of the user to unban. |
+| `chatroomId` | `string` | The id of the chatroom where the user will be unbanned. |
+| `userId` | `string` | The id of the user to unban. |
 
 #### Returns
 

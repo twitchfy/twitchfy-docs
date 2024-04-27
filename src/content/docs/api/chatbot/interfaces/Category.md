@@ -11,5 +11,5 @@ Represents a stream's category.
 
 | Property | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | The category ID. |
+| `id` | `string` | The category Id. |
 | `name` | `string` | The category name. |

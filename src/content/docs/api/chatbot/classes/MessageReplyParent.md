@@ -62,13 +62,13 @@ twitchfy/packages/chatbot/src/structures/MessageReplyParent.ts:23
 
 ## Accessors
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom where the message was sent.
+The Id of the chatroom where the message was sent.
 
 #### Returns
 

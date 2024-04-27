@@ -9,7 +9,7 @@ The data of the chatroom.
 
 ## Param
 
-The ID of the broadcaster.
+The Id of the broadcaster.
 
 ## Param
 

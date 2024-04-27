@@ -55,13 +55,13 @@ twitchfy/packages/chatbot/src/structures/ChannelChatClear.ts:28
 
 ## Accessors
 
-### broadcasterID
+### broadcasterId
 
 ```ts
-get broadcasterID(): string
+get broadcasterId(): string
 ```
 
-The ID of the broadcaster whose chat was cleared.
+The Id of the broadcaster whose chat was cleared.
 
 #### Returns
 
@@ -73,13 +73,13 @@ twitchfy/packages/chatbot/src/structures/ChannelChatClear.ts:37
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom where the chat was cleared.
+The Id of the chatroom where the chat was cleared.
 
 #### Returns
 

@@ -53,7 +53,7 @@ twitchfy/packages/chatbot/src/structures/Video.ts:72
 | `id` | `readonly` | `string` | The id of the video. | - |
 | `language` | `readonly` | `string` | The language of the video. | - |
 | `mutedSegments` | `readonly` | `null` \| `MutedSegment`[] | The muted segments of the video. | - |
-| `streamID` | `readonly` | `null` \| `string` | The id of the stream the video was created from. If the stream was ended this will be null. | - |
+| `streamId` | `readonly` | `null` \| `string` | The id of the stream the video was created from. If the stream was ended this will be null. | - |
 | `title` | `readonly` | `string` | The title of the video. | - |
 | `type` | `readonly` | `VideoType` | The type of the video. | - |
 | `url` | `readonly` | `string` | The video's url. | - |

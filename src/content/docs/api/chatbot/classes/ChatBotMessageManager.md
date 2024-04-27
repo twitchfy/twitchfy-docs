@@ -56,7 +56,7 @@ twitchfy/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:15
 ### delete()
 
 ```ts
-delete(chatroomID: string, id: string): Promise<void>
+delete(chatroomId: string, id: string): Promise<void>
 ```
 
 Deletes a specific message from a chatroom.
@@ -65,7 +65,7 @@ Deletes a specific message from a chatroom.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatroomID` | `string` | The id of the chatroom where the message will be deleted. |
+| `chatroomId` | `string` | The id of the chatroom where the message will be deleted. |
 | `id` | `string` | The id of the message to delete. |
 
 #### Returns
@@ -82,7 +82,7 @@ twitchfy/packages/chatbot/src/structures/managers/ChatBotMessageManager.ts:25
 
 ```ts
 send(
-   chatroomID: string, 
+   chatroomId: string, 
    message: string, 
 options?: MessageOptions): Promise<BaseMessage<T>>
 ```
@@ -91,7 +91,7 @@ options?: MessageOptions): Promise<BaseMessage<T>>
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `chatroomID` | `string` | The id of the chatroom where the message will be sent. |
+| `chatroomId` | `string` | The id of the chatroom where the message will be sent. |
 | `message` | `string` | The message to send. |
 | `options`? | [`MessageOptions`](/api/chatbot/interfaces/messageoptions/) | The options to send the message. See [MessageOptions](../../api/chatbot/interfaces/messageoptions). |
 

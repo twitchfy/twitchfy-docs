@@ -82,7 +82,7 @@ twitchfy/packages/chatbot/src/structures/managers/TimeoutManager.ts:32
 ### delete()
 
 ```ts
-delete(userID: string): Promise<void>
+delete(userId: string): Promise<void>
 ```
 
 Deletes the timeout of a specific user within the chatroom.
@@ -91,7 +91,7 @@ Deletes the timeout of a specific user within the chatroom.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `userID` | `string` | The id of the user to remove from the timeout. |
+| `userId` | `string` | The id of the user to remove from the timeout. |
 
 #### Returns
 

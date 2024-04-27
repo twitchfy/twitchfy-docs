@@ -11,5 +11,5 @@ Represents a game played in a Twitch's stream.
 
 | Property | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | The game ID. |
+| `id` | `string` | The game Id. |
 | `name` | `string` | The game name. |

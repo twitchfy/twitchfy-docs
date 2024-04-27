@@ -17,4 +17,4 @@ The options to timeout an user.
 | :------ | :------ | :------ | :------ |
 | `duration` | `number` | The duration of the timeout in seconds. | - |
 | `reason?` | `string` | - | `BanOptions.reason` |
-| `userID` | `string` | - | `BanOptions.userID` |
+| `userId` | `string` | - | `BanOptions.userId` |

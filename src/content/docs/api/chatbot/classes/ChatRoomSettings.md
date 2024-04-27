@@ -77,13 +77,13 @@ twitchfy/packages/chatbot/src/structures/ChatRoomSettings.ts:88
 
 ***
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom.
+The Id of the chatroom.
 
 #### Returns
 

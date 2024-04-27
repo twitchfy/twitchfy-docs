@@ -31,5 +31,5 @@ twitchfy/packages/eventsub/src/structures/messages/Thread.ts:10
 
 | Property | Modifier | Type |
 | :------ | :------ | :------ |
-| `messageID` | `public` | `string` |
+| `messageId` | `public` | `string` |
 | `user` | `public` | [`UncompleteUser`](/api/eventsub/classes/uncompleteuser/) |

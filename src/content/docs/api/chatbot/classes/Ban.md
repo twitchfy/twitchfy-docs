@@ -51,18 +51,18 @@ twitchfy/packages/chatbot/src/structures/Ban.ts:31
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
 | `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
-| `moderatorID` | `readonly` | `string` | The ID of the moderator who banned the user. | - |
-| `userID` | `readonly` | `string` | The ID of the user who was banned. | - |
+| `moderatorId` | `readonly` | `string` | The Id of the moderator who banned the user. | - |
+| `userId` | `readonly` | `string` | The Id of the user who was banned. | - |
 
 ## Accessors
 
-### chatroomID
+### chatroomId
 
 ```ts
-get chatroomID(): string
+get chatroomId(): string
 ```
 
-The ID of the chatroom where the ban was made.
+The Id of the chatroom where the ban was made.
 
 #### Returns
 

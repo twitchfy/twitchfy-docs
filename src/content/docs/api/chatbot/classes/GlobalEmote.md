@@ -110,13 +110,13 @@ twitchfy/packages/chatbot/src/structures/Emote.ts:30
 
 ***
 
-### ownerID
+### ownerId
 
 ```ts
-get ownerID(): null | string
+get ownerId(): null | string
 ```
 
-The ID of the owner of the emote.
+The Id of the owner of the emote.
 
 #### Returns
 
@@ -128,13 +128,13 @@ twitchfy/packages/chatbot/src/structures/BaseEmote.ts:41
 
 ***
 
-### setID
+### setId
 
 ```ts
-get setID(): null | string
+get setId(): null | string
 ```
 
-The ID of the emote set.
+The Id of the emote set.
 
 #### Returns
 
