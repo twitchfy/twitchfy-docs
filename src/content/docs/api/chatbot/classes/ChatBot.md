@@ -75,7 +75,7 @@ The app token of the Twitch application. The value is null if the chatbot is usi
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:347
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:359
 
 ***
 
@@ -93,7 +93,7 @@ The user token of the chatbot Twitch account to make requests.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:340
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:352
 
 ## Methods
 
@@ -119,7 +119,7 @@ The clip fetched from the API or null if the clip wasn't founded.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:309
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:321
 
 ***
 
@@ -145,7 +145,7 @@ An array containing the clips fetched from the API. If there isn't any clip foun
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:298
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:310
 
 ***
 
@@ -171,7 +171,7 @@ A boolean indicating whether the chatbot is moderator in the channel.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:320
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:332
 
 ***
 
@@ -191,7 +191,7 @@ An array containing the moderated channels of the chatbot.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:330
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:342
 
 ***
 
@@ -217,7 +217,7 @@ The current instance of the chatbot. When the promise is resolved the chatbot ha
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:208
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:220
 
 ***
 
@@ -243,7 +243,7 @@ A stream fetched from the API or null if the stream wasn't founded.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:288
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:300
 
 ***
 
@@ -265,7 +265,7 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:257
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:269
 
 #### streams(number)
 
@@ -289,7 +289,7 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:258
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:270
 
 #### streams(options, number)
 
@@ -314,4 +314,4 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:259
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:271

@@ -171,7 +171,7 @@ node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.ite
 ### exist()
 
 ```ts
-exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<T, K>
+exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<U, K>
 ```
 
 #### Type parameters
@@ -189,7 +189,7 @@ exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<T, K>
 
 #### Returns
 
-[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>
+[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\>
 
 #### Source
 

@@ -6,14 +6,14 @@ title: "notificationHandler"
 ---
 
 ```ts
-notificationHandler(connection: ConnectionTypes, payload: BasePayload<SubscriptionTypes>): Promise<void>
+notificationHandler(connection: WebhookConnection | WebSocketConnection, payload: BasePayload<SubscriptionTypes>): Promise<void>
 ```
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `connection` | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) \| [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
 | `payload` | [`BasePayload`](/api/eventsub/interfaces/basepayload/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> |
 
 ## Returns
@@ -22,4 +22,4 @@ notificationHandler(connection: ConnectionTypes, payload: BasePayload<Subscripti
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/notificationHandler.ts:7
+twitchfy/packages/eventsub/src/util/notificationHandler.ts:8

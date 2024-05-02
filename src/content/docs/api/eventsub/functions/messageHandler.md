@@ -6,14 +6,16 @@ title: "messageHandler"
 ---
 
 ```ts
-messageHandler(this: WebSocket, message: Message): Promise<void>
+messageHandler(this: Object, message: Message): Promise<void>
 ```
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `this` | [`WebSocket`](/api/eventsub/classes/websocket/) |
+| `this` | `Object` |
+| `this.connector` | [`WebSocket`](/api/eventsub/classes/websocket/) |
+| `this.resolve` | () => `any` |
 | `message` | `Message` |
 
 ## Returns
@@ -22,4 +24,4 @@ messageHandler(this: WebSocket, message: Message): Promise<void>
 
 ## Source
 
-twitchfy/packages/eventsub/src/ws/util/messageHandler.ts:11
+twitchfy/packages/eventsub/src/ws/util/messageHandler.ts:12

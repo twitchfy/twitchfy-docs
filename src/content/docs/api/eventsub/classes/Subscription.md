@@ -7,6 +7,7 @@ title: "Subscription"
 
 ## Extended by
 
+- [`ConduitSubscription`](/api/eventsub/classes/conduitsubscription/)
 - [`WebhookSubscription`](/api/eventsub/classes/webhooksubscription/)
 - [`WebSocketSubscription`](/api/eventsub/classes/websocketsubscription/)
 

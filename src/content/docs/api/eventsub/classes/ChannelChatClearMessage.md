@@ -7,7 +7,7 @@ title: "ChannelChatClearMessage"
 
 ## Extends
 
-- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelChatClear`, `K`\>
+- [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.ChannelChatClear`, `K`\>
 
 ## Type parameters
 
@@ -40,7 +40,7 @@ data: ChannelChatClearEvent): ChannelChatClearMessage<K>
 
 #### Overrides
 
-[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`constructor`](/api/eventsub/classes/basesubscriptionmessage/#constructors)
 
 #### Source
 
@@ -50,6 +50,38 @@ twitchfy/packages/eventsub/src/structures/messages/ChannelChatClear/ChannelChatC
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelChatClearBroadcaster`](/api/eventsub/classes/channelchatclearbroadcaster/)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClear`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClear`, `K`\> | - |
+| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClear`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+
+## Methods
+
+### checkSubscriptionType()
+
+```ts
+checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+```
+
+#### Type parameters
+
+| Type parameter | Value |
+| :------ | :------ |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+
+#### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `type` | `U` |
+
+#### Returns
+
+`this is SubscriptionMessages<K>[U]`
+
+#### Inherited from
+
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+
+#### Source
+
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11

@@ -33,7 +33,7 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:20
 
 ## Properties
 
@@ -50,6 +50,22 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:22
 | `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
 | `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
 | `ws` | `public` | [`WebSocket`](/api/eventsub/classes/websocket/) | - |
+
+## Accessors
+
+### userToken
+
+```ts
+get userToken(): UserTokenAdapter<boolean>
+```
+
+#### Returns
+
+`UserTokenAdapter`\<`boolean`\>
+
+#### Source
+
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:99
 
 ## Methods
 
@@ -89,16 +105,16 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 ### connect()
 
 ```ts
-connect(): void
+connect(): Promise<void>
 ```
 
 #### Returns
 
-`void`
+`Promise`\<`void`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:50
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:37
 
 ***
 
@@ -271,7 +287,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:65
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 
 ***
 
@@ -297,7 +313,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:71
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
 
 ***
 
@@ -576,14 +592,14 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 ### setAuth()
 
 ```ts
-setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnection
+setAuth(userToken: TokenAdapter<"implicit" | "code", boolean>): WebSocketConnection
 ```
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `userToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"code"` \| `"implicit"`, `boolean`\> |
+| `userToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"implicit"` \| `"code"`, `boolean`\> |
 
 #### Returns
 
@@ -591,7 +607,7 @@ setAuth(userToken: TokenAdapter<"code" | "implicit", boolean>): WebSocketConnect
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:105
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:92
 
 ***
 
@@ -649,7 +665,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:56
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:43
 
 ***
 
@@ -681,7 +697,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:77
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:64
 
 ***
 

@@ -7,7 +7,7 @@ title: "ChannelChatClearUserMessagesMessage"
 
 ## Extends
 
-- [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
+- [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
 
 ## Type parameters
 
@@ -40,17 +40,49 @@ data: ChannelChatClearUserMessagesEvent): ChannelChatClearUserMessagesMessage<K>
 
 #### Overrides
 
-[`Base`](/api/eventsub/classes/base/).[`constructor`](/api/eventsub/classes/base/#constructors)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`constructor`](/api/eventsub/classes/basesubscriptionmessage/#constructors)
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessages.ts:14
+twitchfy/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessages.ts:13
 
 ## Properties
 
 | Property | Modifier | Type | Inherited from |
 | :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`ChannelChatClearUserMessagesBroadcaster`](/api/eventsub/classes/channelchatclearusermessagesbroadcaster/)\<`K`\> | - |
-| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
-| `user` | `public` | [`ChannelChatClearUserMessagesUser`](/api/eventsub/classes/channelchatclearusermessagesuser/)\<`K`\> | - |
+| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClearUserMessages`, `K`\> | - |
+| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+| `user` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClearUserMessages`, `K`\> | - |
+
+## Methods
+
+### checkSubscriptionType()
+
+```ts
+checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+```
+
+#### Type parameters
+
+| Type parameter | Value |
+| :------ | :------ |
+| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+
+#### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `type` | `U` |
+
+#### Returns
+
+`this is SubscriptionMessages<K>[U]`
+
+#### Inherited from
+
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+
+#### Source
+
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11

@@ -22,4 +22,4 @@ makeMiddlewares(connection: WebhookConnection, server: Express): void
 
 ## Source
 
-twitchfy/packages/eventsub/src/webhook/util/makeMiddlewares.ts:8
+twitchfy/packages/eventsub/src/webhook/util/makeMiddlewares.ts:9

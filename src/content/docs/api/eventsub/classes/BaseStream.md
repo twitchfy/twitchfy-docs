@@ -18,15 +18,13 @@ title: "BaseStream"
 
 ## Constructors
 
-### new BaseStream(connection, subscription, id, type, started_at)
+### new BaseStream(connection, subscription, data)
 
 ```ts
 new BaseStream<T, K>(
    connection: K, 
    subscription: SubscriptionType<T, K>, 
-   id: string, 
-   type: StreamTypes, 
-started_at: string): BaseStream<T, K>
+data: BaseStreamData): BaseStream<T, K>
 ```
 
 #### Parameters
@@ -35,9 +33,7 @@ started_at: string): BaseStream<T, K>
 | :------ | :------ |
 | `connection` | `K` |
 | `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
-| `id` | `string` |
-| `type` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) |
-| `started_at` | `string` |
+| `data` | [`BaseStreamData`](/api/eventsub/interfaces/basestreamdata/) |
 
 #### Returns
 

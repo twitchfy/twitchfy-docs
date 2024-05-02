@@ -11,14 +11,6 @@ type EventData<T, K>: Object;
 
 The data of the event.
 
-## Param
-
-The event to run.
-
-## Param
-
-The function to run the event.
-
 ## Type parameters
 
 | Type parameter |
@@ -28,11 +20,11 @@ The function to run the event.
 
 ## Type declaration
 
-| Member | Type |
-| :------ | :------ |
-| `event` | `K` |
-| `run` | (`chatbot`: [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\>, `data`: `EventsMap`\<`T`\>\[`K`\]) => `any` |
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `event` | `K` | The event to run. |
+| `run` | (`chatbot`: [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\>, `data`: `EventsMap`\<`T`\>\[`K`\]) => `any` | The function which will be run when the event is triggered.<br /><br /> |
 
 ## Source
 
-twitchfy/packages/chatbot/src/types/EventData.ts:14
+twitchfy/packages/chatbot/src/types/EventData.ts:12

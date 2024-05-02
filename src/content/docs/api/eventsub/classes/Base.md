@@ -7,19 +7,11 @@ title: "Base"
 
 ## Extended by
 
-- [`ChannelAdBreakBeginMessage`](/api/eventsub/classes/channeladbreakbeginmessage/)
-- [`ChannelChatClearMessage`](/api/eventsub/classes/channelchatclearmessage/)
-- [`ChannelChatClearUserMessagesMessage`](/api/eventsub/classes/channelchatclearusermessagesmessage/)
-- [`ChannelFollowMessage`](/api/eventsub/classes/channelfollowmessage/)
 - [`ChannelUpdateCategory`](/api/eventsub/classes/channelupdatecategory/)
-- [`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)
-- [`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)
-- [`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)
-- [`BaseBroadcaster`](/api/eventsub/classes/basebroadcaster/)
-- [`BaseRequester`](/api/eventsub/classes/baserequester/)
 - [`BaseStream`](/api/eventsub/classes/basestream/)
 - [`BaseUser`](/api/eventsub/classes/baseuser/)
 - [`BaseMessage`](/api/eventsub/classes/basemessage/)
+- [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)
 
 ## Type parameters
 

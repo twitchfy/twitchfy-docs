@@ -14,7 +14,7 @@ title: "BaseConnection"
 | Type parameter |
 | :------ |
 | `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
-| `U` extends [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/) \| [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/) |
+| `U` extends [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/) \| [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/) \| [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/) |
 
 ## Constructors
 
@@ -40,7 +40,7 @@ new BaseConnection<K, U>(options: BaseConnectionOptions<K>): BaseConnection<K, U
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:39
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:37
 
 ## Properties
 
@@ -245,7 +245,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:65
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 
 ***
 
@@ -267,7 +267,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:71
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
 
 ***
 
@@ -583,7 +583,7 @@ abstract subscribe<T>(options: SubscriptionOptions<T>): Promise<SubscriptionType
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:61
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:59
 
 ***
 
@@ -611,7 +611,7 @@ abstract subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<Subscrip
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:61
 
 ***
 

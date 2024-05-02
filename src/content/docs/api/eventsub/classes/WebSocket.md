@@ -39,13 +39,14 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:16
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
+| `_oldConnection` | `public` | [`WebSocket`](/api/eventsub/classes/websocket/) | - | - |
 | `connection` | `public` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | - | - |
 | `connectionURL` | `public` | `string` | - | - |
 | `wsConnection` | `public` | `connection` | - | - |
 | `captureRejectionSymbol` | `readonly` | *typeof* `captureRejectionSymbol` | Value: `Symbol.for('nodejs.rejection')`<br /><br />See how to write a custom `rejection handler`.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejectionSymbol` |
 | `captureRejections` | `static` | `boolean` | Value: [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)<br /><br />Change the default `captureRejections` option on all new `EventEmitter` objects.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejections` |
-| `defaultMaxListeners` | `static` | `number` | By default, a maximum of `10` listeners can be registered for any single<br />event. This limit can be changed for individual `EventEmitter` instances<br />using the `emitter.setMaxListeners(n)` method. To change the default<br />for _all_`EventEmitter` instances, the `events.defaultMaxListeners`property can be used. If this value is not a positive number, a `RangeError`is thrown.<br /><br />Take caution when setting the `events.defaultMaxListeners` because the<br />change affects _all_`EventEmitter` instances, including those created before<br />the change is made. However, calling `emitter.setMaxListeners(n)` still has<br />precedence over `events.defaultMaxListeners`.<br /><br />This is not a hard limit. The `EventEmitter` instance will allow<br />more listeners to be added but will output a trace warning to stderr indicating<br />that a "possible EventEmitter memory leak" has been detected. For any single`EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()`methods can be used to<br />temporarily avoid this warning:<br /><br />`js import { EventEmitter } from 'node:events'; const emitter = new EventEmitter(); emitter.setMaxListeners(emitter.getMaxListeners() + 1); emitter.once('event', () => {   // do stuff   emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0)); }); `<br /><br />The `--trace-warnings` command-line flag can be used to display the<br />stack trace for such warnings.<br /><br />The emitted warning can be inspected with `process.on('warning')` and will<br />have the additional `emitter`, `type`, and `count` properties, referring to<br />the event emitter instance, the event's name and the number of attached<br />listeners, respectively.<br />Its `name` property is set to `'MaxListenersExceededWarning'`.<br /><br />**Since**<br />v0.11.2 | `client.defaultMaxListeners` |
-| `errorMonitor` | `readonly` | *typeof* `errorMonitor` | This symbol shall be used to install a listener for only monitoring `'error'`events. Listeners installed using this symbol are called before the regular`'error'` listeners are called.<br /><br />Installing a listener using this symbol does not change the behavior once an`'error'` event is emitted. Therefore, the process will still crash if no<br />regular `'error'` listener is installed.<br /><br />**Since**<br />v13.6.0, v12.17.0 | `client.errorMonitor` |
+| `defaultMaxListeners` | `static` | `number` | By default, a maximum of `10` listeners can be registered for any single<br />event. This limit can be changed for individual `EventEmitter` instances<br />using the `emitter.setMaxListeners(n)` method. To change the default<br />for _all_`EventEmitter` instances, the `events.defaultMaxListeners` property<br />can be used. If this value is not a positive number, a `RangeError` is thrown.<br /><br />Take caution when setting the `events.defaultMaxListeners` because the<br />change affects _all_ `EventEmitter` instances, including those created before<br />the change is made. However, calling `emitter.setMaxListeners(n)` still has<br />precedence over `events.defaultMaxListeners`.<br /><br />This is not a hard limit. The `EventEmitter` instance will allow<br />more listeners to be added but will output a trace warning to stderr indicating<br />that a "possible EventEmitter memory leak" has been detected. For any single<br />`EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()` methods can be used to<br />temporarily avoid this warning:<br /><br />`js import { EventEmitter } from 'node:events'; const emitter = new EventEmitter(); emitter.setMaxListeners(emitter.getMaxListeners() + 1); emitter.once('event', () => {   // do stuff   emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0)); }); `<br /><br />The `--trace-warnings` command-line flag can be used to display the<br />stack trace for such warnings.<br /><br />The emitted warning can be inspected with `process.on('warning')` and will<br />have the additional `emitter`, `type`, and `count` properties, referring to<br />the event emitter instance, the event's name and the number of attached<br />listeners, respectively.<br />Its `name` property is set to `'MaxListenersExceededWarning'`.<br /><br />**Since**<br />v0.11.2 | `client.defaultMaxListeners` |
+| `errorMonitor` | `readonly` | *typeof* `errorMonitor` | This symbol shall be used to install a listener for only monitoring `'error'` events. Listeners installed using this symbol are called before the regular `'error'` listeners are called.<br /><br />Installing a listener using this symbol does not change the behavior once an `'error'` event is emitted. Therefore, the process will still crash if no<br />regular `'error'` listener is installed.<br /><br />**Since**<br />v13.6.0, v12.17.0 | `client.errorMonitor` |
 
 ## Methods
 
@@ -82,7 +83,7 @@ optional [captureRejectionSymbol]<K>(
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:125
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:125
 
 ***
 
@@ -191,7 +192,7 @@ node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index
 ### connect()
 
 ```ts
-connect(url?: string): void
+connect(url?: string): Promise<void>
 ```
 
 #### Parameters
@@ -202,7 +203,7 @@ connect(url?: string): void
 
 #### Returns
 
-`void`
+`Promise`\<`void`\>
 
 #### Overrides
 
@@ -220,7 +221,7 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:29
 emit<K>(eventName: string | symbol, ...args: AnyRest): boolean
 ```
 
-Synchronously calls each of the listeners registered for the event named`eventName`, in the order they were registered, passing the supplied arguments
+Synchronously calls each of the listeners registered for the event named `eventName`, in the order they were registered, passing the supplied arguments
 to each.
 
 Returns `true` if the event had listeners, `false` otherwise.
@@ -285,7 +286,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:820
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:822
 
 ***
 
@@ -326,7 +327,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:883
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:885
 
 ***
 
@@ -353,7 +354,7 @@ v1.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:735
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:737
 
 ***
 
@@ -394,7 +395,7 @@ v3.2.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:829
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:831
 
 ***
 
@@ -440,7 +441,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:748
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:750
 
 ***
 
@@ -479,7 +480,7 @@ v10.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:708
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:710
 
 ***
 
@@ -568,7 +569,7 @@ node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index
 once<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
-Adds a **one-time**`listener` function for the event named `eventName`. The
+Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
 
 ```js
@@ -579,7 +580,7 @@ server.once('connection', (stream) => {
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
-By default, event listeners are invoked in the order they are added. The`emitter.prependOnceListener()` method can be used as an alternative to add the
+By default, event listeners are invoked in the order they are added. The `emitter.prependOnceListener()` method can be used as an alternative to add the
 event listener to the beginning of the listeners array.
 
 ```js
@@ -620,7 +621,7 @@ v0.3.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:620
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:622
 
 ***
 
@@ -632,8 +633,8 @@ prependListener<K>(eventName: string | symbol, listener: (...args: any[]) => voi
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
-already been added. Multiple calls passing the same combination of `eventName`and `listener` will result in the `listener` being added, and called, multiple
-times.
+already been added. Multiple calls passing the same combination of `eventName`
+and `listener` will result in the `listener` being added, and called, multiple times.
 
 ```js
 server.prependListener('connection', (stream) => {
@@ -670,7 +671,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:847
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:849
 
 ***
 
@@ -718,7 +719,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:863
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:865
 
 ***
 
@@ -782,7 +783,7 @@ v9.4.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:779
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:781
 
 ***
 
@@ -820,7 +821,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:719
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:721
 
 ***
 
@@ -830,7 +831,7 @@ node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:71
 removeListener<K>(eventName: string | symbol, listener: (...args: any[]) => void): this
 ```
 
-Removes the specified `listener` from the listener array for the event named`eventName`.
+Removes the specified `listener` from the listener array for the event named `eventName`.
 
 ```js
 const callback = (stream) => {
@@ -847,7 +848,7 @@ listener array for the specified `eventName`, then `removeListener()` must be
 called multiple times to remove each instance.
 
 Once an event is emitted, all listeners attached to it at the
-time of emitting are called in order. This implies that any`removeListener()` or `removeAllListeners()` calls _after_ emitting and _before_ the last listener finishes execution
+time of emitting are called in order. This implies that any `removeListener()` or `removeAllListeners()` calls _after_ emitting and _before_ the last listener finishes execution
 will not remove them from`emit()` in progress. Subsequent events behave as expected.
 
 ```js
@@ -890,7 +891,7 @@ the `emitter.listeners()` method will need to be recreated.
 
 When a single function has been added as a handler multiple times for a single
 event (as in the example below), `removeListener()` will remove the most
-recently added instance. In the example the `once('ping')`listener is removed:
+recently added instance. In the example the `once('ping')` listener is removed:
 
 ```js
 import { EventEmitter } from 'node:events';
@@ -937,7 +938,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:703
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:705
 
 ***
 
@@ -950,7 +951,7 @@ setMaxListeners(n: number): this
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
 memory leaks. The `emitter.setMaxListeners()` method allows the limit to be
-modified for this specific `EventEmitter` instance. The value can be set to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+modified for this specific `EventEmitter` instance. The value can be set to `Infinity` (or `0`) to indicate an unlimited number of listeners.
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
 
@@ -974,7 +975,7 @@ v0.3.5
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:729
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:731
 
 ***
 
@@ -1043,7 +1044,7 @@ v20.5.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:400
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:400
 
 ***
 
@@ -1099,7 +1100,7 @@ v15.2.0, v14.17.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:321
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:321
 
 ***
 
@@ -1155,7 +1156,7 @@ v19.9.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:350
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:350
 
 ***
 
@@ -1165,7 +1166,7 @@ node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:35
 static listenerCount(emitter: EventEmitter<DefaultEventMap>, eventName: string | symbol): number
 ```
 
-A class method that returns the number of listeners for the given `eventName`registered on the given `emitter`.
+A class method that returns the number of listeners for the given `eventName` registered on the given `emitter`.
 
 ```js
 import { EventEmitter, listenerCount } from 'node:events';
@@ -1202,7 +1203,7 @@ v0.9.12
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:293
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:293
 
 ***
 
@@ -1282,7 +1283,7 @@ process.nextTick(() => ac.abort());
 
 `AsyncIterableIterator`\<`any`\>
 
-that iterates `eventName` events emitted by the `emitter`
+An `AsyncIterator` that iterates `eventName` events emitted by the `emitter`
 
 #### Inherited from
 
@@ -1294,7 +1295,7 @@ v13.6.0, v12.16.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:271
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:271
 
 ***
 
@@ -1342,7 +1343,7 @@ try {
 }
 ```
 
-The special handling of the `'error'` event is only used when `events.once()`is used to wait for another event. If `events.once()` is used to wait for the
+The special handling of the `'error'` event is only used when `events.once()` is used to wait for another event. If `events.once()` is used to wait for the
 '`error'` event itself, then it is treated as any other kind of event without
 special handling:
 
@@ -1408,7 +1409,7 @@ v11.13.0, v10.16.0
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:206
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:206
 
 #### once(emitter, eventName, options)
 
@@ -1437,7 +1438,7 @@ options?: StaticEventEmitterOptions): Promise<any[]>
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:211
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:211
 
 ***
 
@@ -1477,4 +1478,4 @@ v15.4.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.12.7/node\_modules/@types/node/events.d.ts:365
+node\_modules/.pnpm/@types+node@20.12.8/node\_modules/@types/node/events.d.ts:365

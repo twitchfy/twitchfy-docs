@@ -6,7 +6,7 @@ title: "EventSubOptions"
 ---
 
 ```ts
-type EventSubOptions<T>: T extends EventSubConnection.WebSocket ? OmitClientProps<WebSocketConnectionOptions> : OmitClientProps<WebhookConnectionOptions> & Object;
+type EventSubOptions<T>: T extends EventSubConnection.WebSocket ? OmitClientProps<WebSocketConnectionOptions> : T extends EventSubConnection.Webhook ? OmitClientProps<WebhookConnectionOptions> & Object : OmitClientProps<ConduitOptions>;
 ```
 
 The options for the EventSub connection.

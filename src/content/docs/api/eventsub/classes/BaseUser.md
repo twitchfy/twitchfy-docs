@@ -18,15 +18,13 @@ title: "BaseUser"
 
 ## Constructors
 
-### new BaseUser(connection, subscription, id, login, displayName)
+### new BaseUser(connection, subscription, data)
 
 ```ts
 new BaseUser<T, K>(
    connection: K, 
    subscription: SubscriptionType<T, K>, 
-   id: string, 
-   login: string, 
-displayName: string): BaseUser<T, K>
+data: BaseUserData): BaseUser<T, K>
 ```
 
 #### Parameters
@@ -35,9 +33,7 @@ displayName: string): BaseUser<T, K>
 | :------ | :------ |
 | `connection` | `K` |
 | `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
-| `id` | `string` |
-| `login` | `string` |
-| `displayName` | `string` |
+| `data` | [`BaseUserData`](/api/eventsub/interfaces/baseuserdata/) |
 
 #### Returns
 

@@ -6,7 +6,7 @@ title: "SubscriptionType"
 ---
 
 ```ts
-type SubscriptionType<U, K>: K extends WebhookConnection ? WebhookSubscription<U> : K extends WebSocketConnection ? WebSocketSubscription<U> : WebSocketSubscription<U> & WebhookSubscription<U>;
+type SubscriptionType<U, K>: K extends WebhookConnection ? WebhookSubscription<U> : K extends WebSocketConnection ? WebSocketSubscription<U> : K extends Conduit ? ConduitSubscription<U> : WebSocketSubscription<U> & WebhookSubscription<U>;
 ```
 
 ## Type parameters
@@ -18,4 +18,4 @@ type SubscriptionType<U, K>: K extends WebhookConnection ? WebhookSubscription<U
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/SubscriptionType.ts:6
+twitchfy/packages/eventsub/src/types/SubscriptionType.ts:7

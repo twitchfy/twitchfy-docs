@@ -34,7 +34,7 @@ new WebhookConnection(options: WebhookConnectionOptions, server: Express): Webho
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:32
 
 ## Properties
 
@@ -54,6 +54,22 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:34
 | `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
 | `subscriptionRoute` | `readonly` | `string` | - |
 | `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
+
+## Accessors
+
+### appToken
+
+```ts
+get appToken(): TokenAdapter<"app", boolean>
+```
+
+#### Returns
+
+[`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\>
+
+#### Source
+
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:116
 
 ## Methods
 
@@ -249,7 +265,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:65
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 
 ***
 
@@ -275,7 +291,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:71
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
 
 ***
 
@@ -559,7 +575,7 @@ setAuth(appToken: TokenAdapter<"app", boolean>): WebhookConnection
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:123
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:108
 
 ***
 
@@ -608,7 +624,7 @@ start(port?: number, callback?: () => void): Promise<boolean>
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:113
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:98
 
 ***
 
@@ -640,7 +656,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:65
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:50
 
 ***
 
@@ -672,7 +688,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscripti
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:86
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:71
 
 ***
 

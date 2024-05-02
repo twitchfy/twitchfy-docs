@@ -11,5 +11,6 @@ The diffrent types of connections for the Twitch EventSub.
 
 | Enumeration Member | Value |
 | :------ | :------ |
+| `Conduit` | `2` |
 | `WebSocket` | `0` |
 | `Webhook` | `1` |

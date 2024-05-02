@@ -19,32 +19,23 @@ title: "@twitchfy/eventsub"
 | :------ | :------ |
 | [Badge](/api/eventsub/classes/badge/) | - |
 | [Base](/api/eventsub/classes/base/) | - |
-| [BaseBroadcaster](/api/eventsub/classes/basebroadcaster/) | - |
 | [BaseConnection](/api/eventsub/classes/baseconnection/) | - |
 | [BaseMessage](/api/eventsub/classes/basemessage/) | - |
-| [BaseRequester](/api/eventsub/classes/baserequester/) | - |
 | [BaseStream](/api/eventsub/classes/basestream/) | - |
+| [BaseSubscriptionMessage](/api/eventsub/classes/basesubscriptionmessage/) | - |
 | [BaseUser](/api/eventsub/classes/baseuser/) | - |
-| [ChannelAdBreakBeginBroadcaster](/api/eventsub/classes/channeladbreakbeginbroadcaster/) | - |
 | [ChannelAdBreakBeginMessage](/api/eventsub/classes/channeladbreakbeginmessage/) | - |
-| [ChannelAdBreakBeginRequester](/api/eventsub/classes/channeladbreakbeginrequester/) | - |
-| [ChannelChatClearBroadcaster](/api/eventsub/classes/channelchatclearbroadcaster/) | - |
 | [ChannelChatClearMessage](/api/eventsub/classes/channelchatclearmessage/) | - |
-| [ChannelChatClearUserMessagesBroadcaster](/api/eventsub/classes/channelchatclearusermessagesbroadcaster/) | - |
 | [ChannelChatClearUserMessagesMessage](/api/eventsub/classes/channelchatclearusermessagesmessage/) | - |
-| [ChannelChatClearUserMessagesUser](/api/eventsub/classes/channelchatclearusermessagesuser/) | - |
 | [ChannelChatMessageMessage](/api/eventsub/classes/channelchatmessagemessage/) | - |
-| [ChannelChatMessageMessageBroadcaster](/api/eventsub/classes/channelchatmessagemessagebroadcaster/) | - |
-| [ChannelChatMessageMessageChatter](/api/eventsub/classes/channelchatmessagemessagechatter/) | - |
-| [ChannelFollowBroadcaster](/api/eventsub/classes/channelfollowbroadcaster/) | - |
 | [ChannelFollowMessage](/api/eventsub/classes/channelfollowmessage/) | - |
-| [ChannelFollowUser](/api/eventsub/classes/channelfollowuser/) | - |
-| [ChannelMessage](/api/eventsub/classes/channelmessage/) | - |
-| [ChannelUpdateBroadcaster](/api/eventsub/classes/channelupdatebroadcaster/) | - |
 | [ChannelUpdateCategory](/api/eventsub/classes/channelupdatecategory/) | - |
 | [ChannelUpdateMessage](/api/eventsub/classes/channelupdatemessage/) | - |
 | [Cheermote](/api/eventsub/classes/cheermote/) | - |
 | [Client](/api/eventsub/classes/client/) | - |
+| [Conduit](/api/eventsub/classes/conduit/) | - |
+| [ConduitSubscription](/api/eventsub/classes/conduitsubscription/) | - |
+| [ConduitSubscriptionCallbackManager](/api/eventsub/classes/conduitsubscriptioncallbackmanager/) | - |
 | [Emote](/api/eventsub/classes/emote/) | - |
 | [EventSubEventEmitter](/api/eventsub/classes/eventsubeventemitter/) | - |
 | [Fragment](/api/eventsub/classes/fragment/) | - |
@@ -55,10 +46,9 @@ title: "@twitchfy/eventsub"
 | [MongoAdapter](/api/eventsub/classes/mongoadapter/) | - |
 | [Parent](/api/eventsub/classes/parent/) | - |
 | [RedisAdapter](/api/eventsub/classes/redisadapter/) | - |
+| [Shard](/api/eventsub/classes/shard/) | - |
 | [StorageAdapter](/api/eventsub/classes/storageadapter/) | - |
-| [StreamOnlineBroadcaster](/api/eventsub/classes/streamonlinebroadcaster/) | - |
 | [StreamOnlineMessage](/api/eventsub/classes/streamonlinemessage/) | - |
-| [StreamOnlineStream](/api/eventsub/classes/streamonlinestream/) | - |
 | [Subscription](/api/eventsub/classes/subscription/) | - |
 | [SubscriptionCollection](/api/eventsub/classes/subscriptioncollection/) | - |
 | [Thread](/api/eventsub/classes/thread/) | - |
@@ -66,9 +56,12 @@ title: "@twitchfy/eventsub"
 | [UncompleteMessage](/api/eventsub/classes/uncompletemessage/) | - |
 | [UncompleteUser](/api/eventsub/classes/uncompleteuser/) | - |
 | [WebSocket](/api/eventsub/classes/websocket/) | - |
+| [WebSocketConduit](/api/eventsub/classes/websocketconduit/) | - |
+| [WebSocketConduitConnector](/api/eventsub/classes/websocketconduitconnector/) | - |
 | [WebSocketConnection](/api/eventsub/classes/websocketconnection/) | - |
 | [WebSocketSubscription](/api/eventsub/classes/websocketsubscription/) | - |
 | [WebSocketSubscriptionCallbackManager](/api/eventsub/classes/websocketsubscriptioncallbackmanager/) | - |
+| [WebhookConduit](/api/eventsub/classes/webhookconduit/) | - |
 | [WebhookConnection](/api/eventsub/classes/webhookconnection/) | - |
 | [WebhookSubscription](/api/eventsub/classes/webhooksubscription/) | - |
 | [WebhookSubscriptionCallbackManager](/api/eventsub/classes/webhooksubscriptioncallbackmanager/) | - |
@@ -81,8 +74,10 @@ title: "@twitchfy/eventsub"
 | [BaseMetadata](/api/eventsub/interfaces/basemetadata/) | - |
 | [BaseNotification](/api/eventsub/interfaces/basenotification/) | - |
 | [BasePayload](/api/eventsub/interfaces/basepayload/) | - |
+| [BaseStreamData](/api/eventsub/interfaces/basestreamdata/) | - |
 | [BaseSubscription](/api/eventsub/interfaces/basesubscription/) | - |
 | [BaseTransport](/api/eventsub/interfaces/basetransport/) | - |
+| [BaseUserData](/api/eventsub/interfaces/baseuserdata/) | - |
 | [Body](/api/eventsub/interfaces/body/) | - |
 | [BodySubscription](/api/eventsub/interfaces/bodysubscription/) | - |
 | [ChannelAdBreakBeginEvent](/api/eventsub/interfaces/channeladbreakbeginevent/) | - |
@@ -101,6 +96,8 @@ title: "@twitchfy/eventsub"
 | [CheermoteData](/api/eventsub/interfaces/cheermotedata/) | - |
 | [Code](/api/eventsub/interfaces/code/) | - |
 | [Condition](/api/eventsub/interfaces/condition/) | - |
+| [ConduitEvents](/api/eventsub/interfaces/conduitevents/) | - |
+| [Debug](/api/eventsub/interfaces/debug/) | - |
 | [EmoteData](/api/eventsub/interfaces/emotedata/) | - |
 | [EventSubEvents](/api/eventsub/interfaces/eventsubevents/) | - |
 | [FragmentData](/api/eventsub/interfaces/fragmentdata/) | - |
@@ -113,6 +110,7 @@ title: "@twitchfy/eventsub"
 | [ReconnectMessageSession](/api/eventsub/interfaces/reconnectmessagesession/) | - |
 | [ReplyData](/api/eventsub/interfaces/replydata/) | - |
 | [Rgb](/api/eventsub/interfaces/rgb/) | RGB 8-bits per channel. Each in range `0->255` or `0x00->0xff` |
+| [ShardIdReplace](/api/eventsub/interfaces/shardidreplace/) | - |
 | [StorageOptions](/api/eventsub/interfaces/storageoptions/) | - |
 | [StreamOnlineEvent](/api/eventsub/interfaces/streamonlineevent/) | - |
 | [StreamOnlineOptions](/api/eventsub/interfaces/streamonlineoptions/) | - |
@@ -122,7 +120,9 @@ title: "@twitchfy/eventsub"
 | [SubscriptionVersions](/api/eventsub/interfaces/subscriptionversions/) | - |
 | [Transport](/api/eventsub/interfaces/transport/) | - |
 | [WebSocketEvents](/api/eventsub/interfaces/websocketevents/) | - |
+| [WebSocketShardStart](/api/eventsub/interfaces/websocketshardstart/) | - |
 | [WebhookEvents](/api/eventsub/interfaces/webhookevents/) | - |
+| [WebhookShardStart](/api/eventsub/interfaces/webhookshardstart/) | - |
 | [WelcomeMessage](/api/eventsub/interfaces/welcomemessage/) | - |
 | [WelcomeMessageMetadata](/api/eventsub/interfaces/welcomemessagemetadata/) | - |
 | [WelcomeMessagePayload](/api/eventsub/interfaces/welcomemessagepayload/) | - |
@@ -134,6 +134,8 @@ title: "@twitchfy/eventsub"
 | :------ | :------ |
 | [BaseConnectionOptions](/api/eventsub/type-aliases/baseconnectionoptions/) | - |
 | [BodyTypes](/api/eventsub/type-aliases/bodytypes/) | - |
+| [ConduitOptions](/api/eventsub/type-aliases/conduitoptions/) | - |
+| [ConduitSubscriptionCallback](/api/eventsub/type-aliases/conduitsubscriptioncallback/) | - |
 | [ConnectionTypes](/api/eventsub/type-aliases/connectiontypes/) | - |
 | [CustomCallback](/api/eventsub/type-aliases/customcallback/) | - |
 | [EmoteFormat](/api/eventsub/type-aliases/emoteformat/) | - |
@@ -141,10 +143,13 @@ title: "@twitchfy/eventsub"
 | [LoggerOptions](/api/eventsub/type-aliases/loggeroptions/) | - |
 | [Message](/api/eventsub/type-aliases/message/) | - |
 | [MessageTypes](/api/eventsub/type-aliases/messagetypes/) | - |
+| [ParentMessages](/api/eventsub/type-aliases/parentmessages/) | - |
+| [ShardMessages](/api/eventsub/type-aliases/shardmessages/) | - |
 | [StorageAdapterGet](/api/eventsub/type-aliases/storageadapterget/) | - |
 | [StreamTypes](/api/eventsub/type-aliases/streamtypes/) | - |
 | [SubscriptionCallback](/api/eventsub/type-aliases/subscriptioncallback/) | - |
 | [SubscriptionMessage](/api/eventsub/type-aliases/subscriptionmessage/) | - |
+| [SubscriptionNotification](/api/eventsub/type-aliases/subscriptionnotification/) | - |
 | [SubscriptionOptions](/api/eventsub/type-aliases/subscriptionoptions/) | - |
 | [SubscriptionType](/api/eventsub/type-aliases/subscriptiontype/) | - |
 | [WebSocketConnectionOptions](/api/eventsub/type-aliases/websocketconnectionoptions/) | - |
@@ -164,6 +169,7 @@ title: "@twitchfy/eventsub"
 
 | Function | Description |
 | :------ | :------ |
+| [ConduitSubscriptionRouter](/api/eventsub/functions/conduitsubscriptionrouter/) | - |
 | [MergeOptions](/api/eventsub/functions/mergeoptions/) | - |
 | [SubscriptionRouter](/api/eventsub/functions/subscriptionrouter/) | - |
 | [bgBlack](/api/eventsub/functions/bgblack/) | Set background color to black. |
@@ -195,16 +201,23 @@ title: "@twitchfy/eventsub"
 | [brightRed](/api/eventsub/functions/brightred/) | Set text color to bright red. |
 | [brightWhite](/api/eventsub/functions/brightwhite/) | Set text color to bright white. |
 | [brightYellow](/api/eventsub/functions/brightyellow/) | Set text color to bright yellow. |
+| [conduitMakeMiddlewares](/api/eventsub/functions/conduitmakemiddlewares/) | - |
+| [conduitMessageHandler](/api/eventsub/functions/conduitmessagehandler/) | - |
+| [conduitNotificationHandler](/api/eventsub/functions/conduitnotificationhandler/) | - |
 | [cyan](/api/eventsub/functions/cyan/) | Set text color to cyan. |
 | [dim](/api/eventsub/functions/dim/) | The text emits only a small amount of light. |
+| [findFirstMissingId](/api/eventsub/functions/findfirstmissingid/) | - |
 | [generateSecret](/api/eventsub/functions/generatesecret/) | - |
 | [getColorEnabled](/api/eventsub/functions/getcolorenabled/) | Get whether text color change is enabled or disabled. |
 | [gray](/api/eventsub/functions/gray/) | Set text color to gray. |
 | [green](/api/eventsub/functions/green/) | Set text color to green. |
+| [handleParentMessage](/api/eventsub/functions/handleparentmessage/) | - |
+| [handleShardMessage](/api/eventsub/functions/handleshardmessage/) | - |
 | [hidden](/api/eventsub/functions/hidden/) | Make the text hidden. |
 | [inverse](/api/eventsub/functions/inverse/) | Invert background color and text color. |
 | [isObject](/api/eventsub/functions/isobject/) | - |
 | [italic](/api/eventsub/functions/italic/) | Make the text italic. |
+| [loadShards](/api/eventsub/functions/loadshards/) | - |
 | [magenta](/api/eventsub/functions/magenta/) | Set text color to magenta. |
 | [makeMiddlewares](/api/eventsub/functions/makemiddlewares/) | - |
 | [messageHandler](/api/eventsub/functions/messagehandler/) | - |

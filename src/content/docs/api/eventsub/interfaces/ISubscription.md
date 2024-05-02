@@ -69,7 +69,7 @@ Assert that a given path or paths is populated. Throws an error if not populated
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:29
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:29
 
 ***
 
@@ -91,7 +91,7 @@ Returns a deep clone of this document
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:32
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:32
 
 ***
 
@@ -111,7 +111,7 @@ $getAllSubdocs(): Document<any, any, any>[]
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:35
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:35
 
 ***
 
@@ -133,7 +133,7 @@ Returns an array of all populated documents associated with the query
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:47
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:47
 
 ***
 
@@ -161,7 +161,7 @@ Don't run validation on this path or persist changes to this path.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:38
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:38
 
 ***
 
@@ -192,7 +192,7 @@ When you call `save()` on this document, Mongoose will send a
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:54
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:54
 
 ***
 
@@ -220,7 +220,7 @@ Checks if a path is set to its default.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:41
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:41
 
 ***
 
@@ -248,7 +248,7 @@ Getter/setter, determines whether the document was removed or not.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:44
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:44
 
 ***
 
@@ -278,7 +278,7 @@ Useful for determining whether this subdoc will get stripped out by the
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:61
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:61
 
 ***
 
@@ -306,7 +306,7 @@ Checks if a path is invalid
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:64
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:64
 
 ***
 
@@ -334,7 +334,7 @@ Marks a path as valid, removing existing validation errors.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:74
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:74
 
 ***
 
@@ -370,7 +370,7 @@ Returns the model with the given name on this document's associated connection.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:77
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:77
 
 #### $model()
 
@@ -394,7 +394,7 @@ $model<ModelType>(): ModelType
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:78
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:78
 
 ***
 
@@ -417,7 +417,7 @@ document's parent. Returns undefined otherwise.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:219
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:219
 
 ***
 
@@ -447,7 +447,7 @@ query with an associated session.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:91
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:91
 
 ***
 
@@ -484,7 +484,7 @@ Alias for `set()`, used internally to avoid conflicts
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:94
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:94
 
 #### $set(path, val, options)
 
@@ -513,7 +513,7 @@ $set(
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:95
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:95
 
 #### $set(value)
 
@@ -537,7 +537,7 @@ $set(value: string | Record<string, any>): this
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:96
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:96
 
 ***
 
@@ -565,7 +565,7 @@ Removes this document from the db.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:111
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:111
 
 ***
 
@@ -594,7 +594,7 @@ no arguments, then all populated fields are returned to their unpopulated state.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:123
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:123
 
 ***
 
@@ -618,7 +618,7 @@ modified path is a path that you explicitly set, whether via `doc.foo = 'bar'`,
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:130
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:130
 
 ***
 
@@ -650,7 +650,7 @@ document has an `_id`, in which case this function falls back to using
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:139
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:139
 
 ***
 
@@ -691,7 +691,7 @@ Returns the value of a path.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:145
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:145
 
 #### get(path, type, options)
 
@@ -720,7 +720,7 @@ get(
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:146
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:146
 
 ***
 
@@ -743,7 +743,7 @@ in the format that will be sent to MongoDB.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:152
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:152
 
 ***
 
@@ -765,7 +765,7 @@ Signal that we desire an increment of this documents version.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:158
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:158
 
 ***
 
@@ -796,7 +796,7 @@ you do **not** need to call this function on your own.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:165
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:165
 
 ***
 
@@ -839,7 +839,7 @@ Marks a path as invalid, causing validation to fail.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:168
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:168
 
 #### invalidate(path, errorMsg, value, kind)
 
@@ -870,7 +870,7 @@ invalidate(
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:169
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:169
 
 ***
 
@@ -906,7 +906,7 @@ Returns true if `path` was directly set and modified, else false.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:172
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:172
 
 #### isDirectModified(path)
 
@@ -930,7 +930,7 @@ isDirectModified(path: string | string[]): boolean
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:173
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:173
 
 ***
 
@@ -966,7 +966,7 @@ Checks if `path` was explicitly selected. If no projection, always returns true.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:176
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:176
 
 #### isDirectSelected(path)
 
@@ -990,7 +990,7 @@ isDirectSelected(path: string): boolean
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:177
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:177
 
 ***
 
@@ -1026,7 +1026,7 @@ Checks if `path` is in the `init` state, that is, it was set by `Document#init()
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:180
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:180
 
 #### isInit(path)
 
@@ -1050,7 +1050,7 @@ isInit(path: string): boolean
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:181
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:181
 
 ***
 
@@ -1089,7 +1089,7 @@ in this document is modified.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:187
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:187
 
 #### isModified(path, options)
 
@@ -1115,7 +1115,7 @@ isModified(path?: string | string[], options?: Object): boolean
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:188
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:188
 
 ***
 
@@ -1151,7 +1151,7 @@ Checks if `path` was selected in the source query which initialized this documen
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:194
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:194
 
 #### isSelected(path)
 
@@ -1175,7 +1175,7 @@ isSelected(path: string): boolean
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:195
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:195
 
 ***
 
@@ -1212,7 +1212,7 @@ Marks the path as having pending changes to write to the db.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:198
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:198
 
 #### markModified(path, scope)
 
@@ -1237,7 +1237,7 @@ markModified(path: string, scope?: any): void
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:199
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:199
 
 ***
 
@@ -1273,7 +1273,7 @@ Returns the model with the given name on this document's associated connection.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:202
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:202
 
 #### model()
 
@@ -1297,7 +1297,7 @@ model<ModelType>(): ModelType
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:203
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:203
 
 ***
 
@@ -1326,7 +1326,7 @@ Returns the list of paths that have been modified.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:206
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:206
 
 ***
 
@@ -1356,7 +1356,7 @@ unsets all properties that aren't in `obj`.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:213
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:213
 
 ***
 
@@ -1392,7 +1392,7 @@ Populates document references.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:222
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:222
 
 #### populate(path, select, model, match, options)
 
@@ -1431,7 +1431,7 @@ options?: PopulateOptions): Promise<MergeType<ISubscription<T>, Paths>>
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:223
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:223
 
 ***
 
@@ -1459,7 +1459,7 @@ Gets _id(s) used during population of the given `path`. If the path was not popu
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:226
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:226
 
 ***
 
@@ -1488,7 +1488,7 @@ Sends a replaceOne command with this document `_id` as the query selector.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:229
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:229
 
 ***
 
@@ -1516,7 +1516,7 @@ Saves this document by inserting a new document into the database if [document.i
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:232
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:232
 
 ***
 
@@ -1559,7 +1559,7 @@ Sets the value of a path, or many paths.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:238
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:238
 
 #### set(path, val, type, options)
 
@@ -1590,7 +1590,7 @@ set(
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:239
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:239
 
 #### set(path, val, options)
 
@@ -1619,7 +1619,7 @@ set(
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:240
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:240
 
 #### set(value)
 
@@ -1643,7 +1643,7 @@ set(value: string | Record<string, any>): this
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:241
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:241
 
 ***
 
@@ -1679,7 +1679,7 @@ The return value of this method is used in calls to JSON.stringify(doc).
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:244
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:244
 
 #### toJSON(options)
 
@@ -1709,7 +1709,7 @@ toJSON<T>(options: ToObjectOptions<Document<unknown, Object, unknown> & Required
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:245
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:245
 
 ***
 
@@ -1743,7 +1743,7 @@ Converts this document into a plain-old JavaScript object ([POJO](https://master
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:248
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:248
 
 ***
 
@@ -1779,7 +1779,7 @@ Clears the modified state on the specified path.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:251
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:251
 
 #### unmarkModified(path)
 
@@ -1803,7 +1803,7 @@ unmarkModified(path: string): void
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:252
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:252
 
 ***
 
@@ -1832,7 +1832,7 @@ Sends an updateOne command with this document `_id` as the query selector.
 
 #### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:255
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:255
 
 ***
 
@@ -1869,7 +1869,7 @@ Executes registered validation rules for this document.
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:258
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:258
 
 #### validate(pathsToValidate, options)
 
@@ -1894,7 +1894,7 @@ validate(pathsToValidate?: PathsToValidate, options?: AnyObject): Promise<void>
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:259
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:259
 
 #### validate(options)
 
@@ -1919,7 +1919,7 @@ validate(options: Object): Promise<void>
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:260
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:260
 
 ***
 
@@ -1950,7 +1950,7 @@ Executes registered validation rules (skipping asynchronous validators) for this
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:263
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:263
 
 #### validateSync(pathsToValidate, options)
 
@@ -1981,7 +1981,7 @@ validateSync<T>(pathsToValidate?: T | T[], options?: AnyObject): ValidationError
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:264
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:264
 
 #### validateSync(pathsToValidate, options)
 
@@ -2006,4 +2006,4 @@ validateSync(pathsToValidate?: PathsToValidate, options?: AnyObject): Validation
 
 ##### Source
 
-node\_modules/.pnpm/mongoose@8.3.2/node\_modules/mongoose/types/document.d.ts:265
+node\_modules/.pnpm/mongoose@8.3.3/node\_modules/mongoose/types/document.d.ts:265

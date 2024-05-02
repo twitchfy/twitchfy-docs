@@ -6,9 +6,9 @@ title: "ConnectionTypes"
 ---
 
 ```ts
-type ConnectionTypes: WebSocketConnection | WebhookConnection;
+type ConnectionTypes: WebSocketConnection | WebhookConnection | Conduit;
 ```
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/ConnectionTypes.ts:4
+twitchfy/packages/eventsub/src/types/ConnectionTypes.ts:5

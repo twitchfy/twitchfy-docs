@@ -9,6 +9,7 @@ title: "EventSubEvents"
 
 - [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)
 - [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)
+- [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)
 
 ## Type parameters
 

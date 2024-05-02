@@ -11,6 +11,7 @@ title: "Events"
 | :------ | :------ |
 | `ConnectionReady` | `"connectionReady"` |
 | `ConnectionReconnect` | `"reconnect"` |
+| `ShardConnect` | `"shardConnect"` |
 | `SubscriptionCreate` | `"subscriptionCreate"` |
 | `SubscriptionMessage` | `"subscriptionMessage"` |
 | `SubscriptionReload` | `"subscriptionReload"` |
