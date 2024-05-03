@@ -9,14 +9,16 @@ title: "conduitMessageHandler"
 conduitMessageHandler(this: Object, message: Message): Promise<void>
 ```
 
+Handles the messages received from the conduit.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `this` | `Object` |
-| `this.connector` | [`WebSocketConduitConnector`](/api/eventsub/classes/websocketconduitconnector/) |
-| `this.resolve` | () => `any` |
-| `message` | `Message` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `this` | `Object` | - |
+| `this.connector` | [`WebSocketShardConnector`](/api/eventsub/classes/websocketshardconnector/) | - |
+| `this.resolve` | () => `any` | - |
+| `message` | `Message` | The message received from the conduit. |
 
 ## Returns
 
@@ -24,4 +26,4 @@ conduitMessageHandler(this: Object, message: Message): Promise<void>
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/conduitMessageHandler.ts:10
+twitchfy/packages/eventsub/src/util/conduitMessageHandler.ts:14

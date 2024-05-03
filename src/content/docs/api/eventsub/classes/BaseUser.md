@@ -5,6 +5,8 @@ prev: false
 title: "BaseUser"
 ---
 
+The base class representing an user structure.
+
 ## Extends
 
 - [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
@@ -27,13 +29,15 @@ new BaseUser<T, K>(
 data: BaseUserData): BaseUser<T, K>
 ```
 
+Builds up a BaseUser.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
-| `data` | [`BaseUserData`](/api/eventsub/interfaces/baseuserdata/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. |
+| `data` | [`BaseUserData`](/api/eventsub/interfaces/baseuserdata/) | The event data received with the subscription. |
 
 #### Returns
 
@@ -45,14 +49,14 @@ data: BaseUserData): BaseUser<T, K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseUser.ts:13
+twitchfy/packages/eventsub/src/structures/messages/BaseUser.ts:31
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
-| `displayName` | `public` | `string` | - |
-| `id` | `public` | `string` | - |
-| `login` | `public` | `string` | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `displayName` | `readonly` | `string` | The display name of the user. | - |
+| `id` | `readonly` | `string` | The ID of the user. | - |
+| `login` | `readonly` | `string` | The login name of the user. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. | [`Base`](/api/eventsub/classes/base/).`subscription` |

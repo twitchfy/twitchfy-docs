@@ -21,11 +21,11 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
       '@twitchfy/chatbot':
+        specifier: ^1.0.5
+        version: 1.0.5
+      '@twitchfy/eventsub':
         specifier: ^1.0.4
         version: 1.0.4
-      '@twitchfy/eventsub':
-        specifier: ^1.0.2
-        version: 1.0.2
       '@twitchfy/helix':
         specifier: ^1.0.3
         version: 1.0.3
@@ -548,8 +548,8 @@ packages:
   '@mdx-js/mdx@3.0.1':
     resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}
 
-  '@mongodb-js/saslprep@1.1.5':
-    resolution: {integrity: sha512-XLNOMH66KhJzUJNwT/qlMnS4WsNDWD5ASdyaSH3EtK+F4r/CFGa3jT4GNi4mfOitGvWXtdLgQJkQjxSVrio+jA==}
+  '@mongodb-js/saslprep@1.1.6':
+    resolution: {integrity: sha512-jqTTXQ46H8cAxmXBu8wm1HTSIMBMrIcoVrsjdQkKdMBj3il/fSCgWyya4P2I1xjPBl69mw+nRphrPlcIqBd20Q==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -677,11 +677,11 @@ packages:
   '@twitchfy/api-types@1.0.1':
     resolution: {integrity: sha512-4raZ9umrbYrMhdssP4yyPuTB5xcwcLZhZIiza+GsJUE+ui+xPMizYLZEBkiX20T+Akdkfd2iaBk3MPkNluM3dg==}
 
-  '@twitchfy/chatbot@1.0.4':
-    resolution: {integrity: sha512-Eo+oPXwAZ/7jhXrr0/95/XsAfNp22J3bW09AZmMRgByVpnWo02f3iWV2xNOnkfQ/Huab9xLKAzpZhKYMASrwXQ==}
+  '@twitchfy/chatbot@1.0.5':
+    resolution: {integrity: sha512-l+nVS9fZ9qyFG9NPPFbLJY9kogTkd9ZaZBm3f2llmPpOm6UJc71+U44Gs4MS5X7v2LCc49lpE7asyZINn3jBuQ==}
 
-  '@twitchfy/eventsub@1.0.2':
-    resolution: {integrity: sha512-W99kp3GD7K1+8yFeuPwwYMBofcHsLzYnydcEV9z5EaW5gmxYHABazEesx16VXhbPE6FKThPr6r4ETSGYwAAXqQ==}
+  '@twitchfy/eventsub@1.0.4':
+    resolution: {integrity: sha512-o1qLB6lukEFPMxpNSG2znnUJz2Px52WkDjR69Cem4xucfr7EY3gGoBqiUqSCgbe58FpF+5SHysbJ/7dsBiMRYg==}
 
   '@twitchfy/helix@1.0.3':
     resolution: {integrity: sha512-xOsGkAPqqK/fi5M4DUB1N9Eer03h1XlFdVD7kG+8AjfHzCuwhr2lK1+lc0WX7dOBSeHe2ZEkpDybJdaf469p0g==}
@@ -972,8 +972,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
-  bson@6.6.0:
-    resolution: {integrity: sha512-BVINv2SgcMjL4oYbBuCQTpE3/VKOSxrOA8Cj/wQP7izSzlBGVomdm+TcUd0Pzy0ytLSSDweCKQ6X3f5veM5LQA==}
+  bson@6.7.0:
+    resolution: {integrity: sha512-w2IquM5mYzYZv6rs3uN2DZTOBe2a0zXLj53TGDqwF4l6Sz/XsISrisXOJihArF9+BZ6Cq/GjVht7Sjfmri7ytQ==}
     engines: {node: '>=16.20.1'}
 
   buffer@5.7.1:
@@ -1202,8 +1202,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.4.754:
-    resolution: {integrity: sha512-7Kr5jUdns5rL/M9wFFmMZAgFDuL2YOnanFH4OI4iFzUqyh3XOL7nAGbSlSMZdzKMIyyTpNSbqZsWG9odwLeKvA==}
+  electron-to-chromium@1.4.755:
+    resolution: {integrity: sha512-9nop+3jZxSHIxe1EzEUcjDXzK+3qOv3fY5w0sE88nIZUntbv1aXWmoxGWlklX5XSO4txCpLssWkUSh8RQPovBg==}
 
   emmet@2.4.7:
     resolution: {integrity: sha512-O5O5QNqtdlnQM2bmKHtJgyChcrFMgQuulI+WdiOw2NArzprUqqxUW6bgYtKvzKgrsYpuLWalOkdhNP+1jluhCA==}
@@ -2933,8 +2933,8 @@ packages:
     peerDependencies:
       zod: ^3.23.3
 
-  zod@3.23.5:
-    resolution: {integrity: sha512-fkwiq0VIQTksNNA131rDOsVJcns0pfVUjHzLrNBiF/O/Xxb5lQyEXkhZWcJ7npWsYlvs+h0jFWXXy4X46Em1JA==}
+  zod@3.23.6:
+    resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -3035,7 +3035,7 @@ snapshots:
     dependencies:
       sitemap: 7.1.1
       stream-replace-string: 2.0.0
-      zod: 3.23.5
+      zod: 3.23.6
 
   '@astrojs/starlight@0.21.5(astro@4.7.1(@types/node@20.12.8)(typescript@5.4.5))':
     dependencies:
@@ -3470,7 +3470,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mongodb-js/saslprep@1.1.5':
+  '@mongodb-js/saslprep@1.1.6':
     dependencies:
       sparse-bitfield: 3.0.3
 
@@ -3555,10 +3555,10 @@ snapshots:
 
   '@twitchfy/api-types@1.0.1': {}
 
-  '@twitchfy/chatbot@1.0.4':
+  '@twitchfy/chatbot@1.0.5':
     dependencies:
       '@twitchfy/api-types': 1.0.1
-      '@twitchfy/eventsub': 1.0.2
+      '@twitchfy/eventsub': 1.0.4
       '@twitchfy/helix': 1.0.3
     transitivePeerDependencies:
       - '@aws-sdk/credential-providers'
@@ -3570,7 +3570,7 @@ snapshots:
       - socks
       - supports-color
 
-  '@twitchfy/eventsub@1.0.2':
+  '@twitchfy/eventsub@1.0.4':
     dependencies:
       '@twitchfy/api-types': 1.0.1
       '@twitchfy/helix': 1.0.3
@@ -3905,8 +3905,8 @@ snapshots:
       vitefu: 0.2.5(vite@5.2.11(@types/node@20.12.8))
       which-pm: 2.1.1
       yargs-parser: 21.1.1
-      zod: 3.23.5
-      zod-to-json-schema: 3.23.0(zod@3.23.5)
+      zod: 3.23.6
+      zod-to-json-schema: 3.23.0(zod@3.23.6)
     optionalDependencies:
       sharp: 0.33.3
     transitivePeerDependencies:
@@ -4014,11 +4014,11 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001615
-      electron-to-chromium: 1.4.754
+      electron-to-chromium: 1.4.755
       node-releases: 2.0.14
       update-browserslist-db: 1.0.14(browserslist@4.23.0)
 
-  bson@6.6.0: {}
+  bson@6.7.0: {}
 
   buffer@5.7.1:
     dependencies:
@@ -4206,7 +4206,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.4.754: {}
+  electron-to-chromium@1.4.755: {}
 
   emmet@2.4.7:
     dependencies:
@@ -5424,13 +5424,13 @@ snapshots:
 
   mongodb@6.5.0:
     dependencies:
-      '@mongodb-js/saslprep': 1.1.5
-      bson: 6.6.0
+      '@mongodb-js/saslprep': 1.1.6
+      bson: 6.7.0
       mongodb-connection-string-url: 3.0.0
 
   mongoose@8.3.3:
     dependencies:
-      bson: 6.6.0
+      bson: 6.7.0
       kareem: 2.6.3
       mongodb: 6.5.0
       mpath: 0.9.0
@@ -6519,10 +6519,10 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-to-json-schema@3.23.0(zod@3.23.5):
+  zod-to-json-schema@3.23.0(zod@3.23.6):
     dependencies:
-      zod: 3.23.5
+      zod: 3.23.6
 
-  zod@3.23.5: {}
+  zod@3.23.6: {}
 
   zwitch@2.0.4: {}

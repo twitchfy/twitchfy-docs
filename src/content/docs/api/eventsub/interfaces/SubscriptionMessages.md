@@ -5,6 +5,8 @@ prev: false
 title: "SubscriptionMessages"
 ---
 
+The messages from every EventSub event.
+
 ## Type parameters
 
 | Type parameter | Value |

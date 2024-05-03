@@ -5,6 +5,8 @@ prev: false
 title: "Conduit"
 ---
 
+Represents a Conduit connection.
+
 ## Extends
 
 - [`BaseConnection`](/api/eventsub/classes/baseconnection/)\<[`Conduit`](/api/eventsub/classes/conduit/), [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\>
@@ -17,11 +19,13 @@ title: "Conduit"
 new Conduit(options: ConduitOptions): Conduit
 ```
 
+Builds up a new Conduit.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`ConduitOptions`](/api/eventsub/type-aliases/conduitoptions/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`ConduitOptions`](/api/eventsub/type-aliases/conduitoptions/) | The options of the conduit. |
 
 #### Returns
 
@@ -33,25 +37,25 @@ new Conduit(options: ConduitOptions): Conduit
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:32
+twitchfy/packages/eventsub/src/structures/Conduit.ts:62
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `clientId` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
-| `clientSecret` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
-| `conduitCleanup` | `readonly` | `boolean` | - |
-| `debug` | `public` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
-| `deleteConduitOnNoShards` | `readonly` | `boolean` | - |
-| `dropSubsAtStart` | `readonly` | `boolean` | - |
-| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
-| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
-| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
-| `shards` | `readonly` | `Map`\<`string`, [`Shard`](/api/eventsub/classes/shard/)\> | - |
-| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`Conduit`](/api/eventsub/classes/conduit/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`Conduit`](/api/eventsub/classes/conduit/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
-| `workers` | `readonly` | `Map`\<`string`, `Worker`\> | - |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `clientId` | `readonly` | `string` | The client ID of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
+| `clientSecret` | `readonly` | `string` | The client secret of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
+| `conduitCleanup` | `readonly` | `boolean` | Whether to cleanup the conduit shards at start avoiding duplicate shards. Default is true. | - |
+| `debug` | `public` | `boolean` | Whether the connection is in debug mode or not. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
+| `deleteConduitOnNoShards` | `readonly` | `boolean` | Whether to delete the conduit when you are going to delete the last shard of the conduit. Default is false. | - |
+| `dropSubsAtStart` | `readonly` | `boolean` | Whether drop all subscriptions of the current conduit at start or not. Default is false. | - |
+| `helixClient` | `readonly` | `HelixClient` | The Helix client used by the connection for making API Requests. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | The logger of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
+| `maintainSubscriptions` | `readonly` | `boolean` | Whether the connection should maintain the subscriptions or not between each start. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
+| `shards` | `readonly` | `Map`\<`string`, [`Shard`](/api/eventsub/classes/shard/)\> | The shards of the conduit. | - |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`Conduit`](/api/eventsub/classes/conduit/)\> | The storage adapter used by the connection for storing subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`Conduit`](/api/eventsub/classes/conduit/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | The subscriptions of the connection. You will only receive events for this subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
+| `workers` | `readonly` | `Map`\<`string`, `Worker`\> | The workers of the conduit. | - |
 
 ## Accessors
 
@@ -61,13 +65,15 @@ twitchfy/packages/eventsub/src/structures/Conduit.ts:32
 get appToken(): TokenAdapter<"app", boolean>
 ```
 
+The app token used to manage the conduit and its subscriptions.
+
 #### Returns
 
 [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:53
+twitchfy/packages/eventsub/src/structures/Conduit.ts:86
 
 ***
 
@@ -77,13 +83,15 @@ twitchfy/packages/eventsub/src/structures/Conduit.ts:53
 get id(): string
 ```
 
+The id of the conduit.
+
 #### Returns
 
 `string`
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:57
+twitchfy/packages/eventsub/src/structures/Conduit.ts:93
 
 ***
 
@@ -93,13 +101,15 @@ twitchfy/packages/eventsub/src/structures/Conduit.ts:57
 get shardCount(): number
 ```
 
+The number of shards of the conduit created by this process. This number is not synchronized with the API.
+
 #### Returns
 
 `number`
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:61
+twitchfy/packages/eventsub/src/structures/Conduit.ts:100
 
 ## Methods
 
@@ -142,6 +152,8 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 addShard(shard: string): Promise<void>
 ```
 
+Adds a shard to the conduit.
+
 #### Parameters
 
 | Parameter | Type |
@@ -154,7 +166,7 @@ addShard(shard: string): Promise<void>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:282
+twitchfy/packages/eventsub/src/structures/Conduit.ts:339
 
 ***
 
@@ -163,6 +175,8 @@ twitchfy/packages/eventsub/src/structures/Conduit.ts:282
 ```ts
 deleteShard(shardId: string): Promise<Shard[]>
 ```
+
+Deletes a shard of a conduit. This operation is not recommended as it could result in an error unless all the shards of the conduit are being created within the same process.
 
 #### Parameters
 
@@ -176,7 +190,7 @@ deleteShard(shardId: string): Promise<Shard[]>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:219
+twitchfy/packages/eventsub/src/structures/Conduit.ts:270
 
 ***
 
@@ -333,11 +347,13 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 makeDebug(...args: any[]): void
 ```
 
+Makes a debug log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -349,7 +365,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:113
 
 ***
 
@@ -359,11 +375,13 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 makeWarn(...args: any[]): void
 ```
 
+Makes a warn log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -375,7 +393,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:124
 
 ***
 
@@ -651,6 +669,32 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 
 ***
 
+### setAuth()
+
+```ts
+setAuth(appToken: TokenAdapter<"app", true>): Conduit
+```
+
+Sets a new app token for the conduit.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `appToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `true`\> | The new app token. |
+
+#### Returns
+
+[`Conduit`](/api/eventsub/classes/conduit/)
+
+The conduit.
+
+#### Source
+
+twitchfy/packages/eventsub/src/structures/Conduit.ts:358
+
+***
+
 ### setMaxListeners()
 
 ```ts
@@ -683,13 +727,15 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 start(): Promise<void>
 ```
 
+Starts the conduit and all the shards in the Conduit's options. The promise will resolve when all the shards are fully enabled within the API.
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:65
+twitchfy/packages/eventsub/src/structures/Conduit.ts:108
 
 ***
 
@@ -699,6 +745,8 @@ twitchfy/packages/eventsub/src/structures/Conduit.ts:65
 subscribe<T>(options: SubscriptionOptions<T>): Promise<ConduitSubscription<T>>
 ```
 
+Subscribe to an EventSub event.
+
 #### Type parameters
 
 | Type parameter |
@@ -707,9 +755,9 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<ConduitSubscription<T>>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> | The options of the subscription. |
 
 #### Returns
 
@@ -721,7 +769,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<ConduitSubscription<T>>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:69
+twitchfy/packages/eventsub/src/structures/Conduit.ts:112
 
 ***
 
@@ -731,6 +779,8 @@ twitchfy/packages/eventsub/src/structures/Conduit.ts:69
 subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<ConduitSubscription<T>[]>
 ```
 
+Subscribe to multiple EventSub events.
+
 #### Type parameters
 
 | Type parameter |
@@ -739,9 +789,9 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<ConduitSubscripti
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] | The options of the subscriptions. |
 
 #### Returns
 
@@ -753,7 +803,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<ConduitSubscripti
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Conduit.ts:93
+twitchfy/packages/eventsub/src/structures/Conduit.ts:136
 
 ***
 

@@ -5,6 +5,8 @@ prev: false
 title: "Mention"
 ---
 
+A mention sent into the fragments of a ChannelChatMessage event .
+
 ## Constructors
 
 ### new Mention(data)
@@ -13,11 +15,13 @@ title: "Mention"
 new Mention(data: MentionData): Mention
 ```
 
+Builds up a mention.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `data` | [`MentionData`](/api/eventsub/interfaces/mentiondata/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `data` | [`MentionData`](/api/eventsub/interfaces/mentiondata/) | The data of the mention. |
 
 #### Returns
 
@@ -25,10 +29,10 @@ new Mention(data: MentionData): Mention
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/Mention.ts:8
+twitchfy/packages/eventsub/src/structures/messages/Mention.ts:18
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `user` | `public` | [`MentionUser`](/api/eventsub/classes/mentionuser/) |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `user` | `readonly` | [`MentionUser`](/api/eventsub/classes/mentionuser/) | The user which was mentioned. |

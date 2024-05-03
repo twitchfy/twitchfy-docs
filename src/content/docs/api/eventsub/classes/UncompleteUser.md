@@ -5,24 +5,23 @@ prev: false
 title: "UncompleteUser"
 ---
 
+Represents a user that is not fully completed as it doesn't have connection and subscription fields from BaseUser.
+
 ## Constructors
 
-### new UncompleteUser(id, login, displayName)
+### new UncompleteUser(data)
 
 ```ts
-new UncompleteUser(
-   id: string, 
-   login: string, 
-   displayName: string): UncompleteUser
+new UncompleteUser(data: BaseUserData): UncompleteUser
 ```
+
+Builds up a user that is not fully complete.
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `id` | `string` |
-| `login` | `string` |
-| `displayName` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `data` | [`BaseUserData`](/api/eventsub/interfaces/baseuserdata/) | The data of the user. |
 
 #### Returns
 
@@ -30,12 +29,12 @@ new UncompleteUser(
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/UncompleteUser.ts:9
+twitchfy/packages/eventsub/src/structures/messages/UncompleteUser.ts:28
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `displayName` | `public` | `string` |
-| `id` | `public` | `string` |
-| `login` | `public` | `string` |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `displayName` | `readonly` | `string` | The display name of the user. |
+| `id` | `readonly` | `string` | The ID of the user. |
+| `login` | `readonly` | `string` | The login name of the user. |

@@ -9,15 +9,17 @@ title: "handleShardMessage"
 handleShardMessage(this: Object, message: ShardMessages): Promise<void>
 ```
 
+Handles a shard message received by the parent process.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `this` | `Object` |
-| `this.conduit` | [`Conduit`](/api/eventsub/classes/conduit/) |
-| `this.resolve` | () => `void` |
-| `this.worker` | `Worker` |
-| `message` | [`ShardMessages`](/api/eventsub/type-aliases/shardmessages/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `this` | `Object` | - |
+| `this.conduit` | [`Conduit`](/api/eventsub/classes/conduit/) | - |
+| `this.resolve` | () => `void` | - |
+| `this.worker` | `Worker` | - |
+| `message` | [`ShardMessages`](/api/eventsub/type-aliases/shardmessages/) | The message to handle. |
 
 ## Returns
 
@@ -25,4 +27,4 @@ handleShardMessage(this: Object, message: ShardMessages): Promise<void>
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/handleShardMessage.ts:9
+twitchfy/packages/eventsub/src/util/handleShardMessage.ts:14

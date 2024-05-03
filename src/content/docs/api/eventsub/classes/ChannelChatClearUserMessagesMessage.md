@@ -5,6 +5,8 @@ prev: false
 title: "ChannelChatClearUserMessagesMessage"
 ---
 
+The message received by the ChannelChatClearUserMessages event.
+
 ## Extends
 
 - [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.ChannelChatClearUserMessages`, `K`\>
@@ -26,13 +28,15 @@ new ChannelChatClearUserMessagesMessage<K>(
 data: ChannelChatClearUserMessagesEvent): ChannelChatClearUserMessagesMessage<K>
 ```
 
+Builds up a ChannelChatClearUserMessages message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> |
-| `data` | [`ChannelChatClearUserMessagesEvent`](/api/eventsub/interfaces/channelchatclearusermessagesevent/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | The subscription which trigger this message. |
+| `data` | `ChannelChatClearUserMessagesEvent` | The event data received with the subscription. |
 
 #### Returns
 
@@ -44,24 +48,26 @@ data: ChannelChatClearUserMessagesEvent): ChannelChatClearUserMessagesMessage<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessages.ts:13
+twitchfy/packages/eventsub/src/structures/messages/ChannelChatClearUserMessages/ChannelChatClearUserMessages.ts:28
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClearUserMessages`, `K`\> | - |
-| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
-| `user` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClearUserMessages`, `K`\> | - |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClearUserMessages`, `K`\> | The broadcaster of the channel where the user chat messages were cleared. | - |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelChatClearUserMessages`, `K`\> | The subscription which trigger this message. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+| `user` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelChatClearUserMessages`, `K`\> | The user whose messages were cleared. | - |
 
 ## Methods
 
-### checkSubscriptionType()
+### checkMessageType()
 
 ```ts
-checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+checkMessageType<U>(type: U): this is SubscriptionMessages<K>[U]
 ```
+
+Checks whether the message is of a certain type.
 
 #### Type parameters
 
@@ -71,18 +77,20 @@ checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type to check. |
 
 #### Returns
 
 `this is SubscriptionMessages<K>[U]`
 
+Whether the message is of the type.
+
 #### Inherited from
 
-[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkMessageType`](/api/eventsub/classes/basesubscriptionmessage/#checkmessagetype)
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:24

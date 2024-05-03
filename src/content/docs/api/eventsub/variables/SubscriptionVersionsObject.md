@@ -9,6 +9,8 @@ title: "SubscriptionVersionsObject"
 const SubscriptionVersionsObject: Object;
 ```
 
+A helper for determining the latest version of a subscription type.
+
 ## Type declaration
 
 | Member | Type | Value |
@@ -23,4 +25,4 @@ const SubscriptionVersionsObject: Object;
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/SubscriptionVersionsObject.ts:1
+twitchfy/packages/eventsub/src/util/SubscriptionVersionsObject.ts:4

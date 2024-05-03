@@ -6,15 +6,17 @@ title: "conduitMakeMiddlewares"
 ---
 
 ```ts
-conduitMakeMiddlewares(this: WebhookConduit, server: Express): void
+conduitMakeMiddlewares(this: WebhookShard, server: Express): void
 ```
+
+Makes the middlewares for the webhook server.
 
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `this` | [`WebhookConduit`](/api/eventsub/classes/webhookconduit/) |
-| `server` | `Express` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `this` | [`WebhookShard`](/api/eventsub/classes/webhookshard/) | - |
+| `server` | `Express` | The server to make the middlewares for. |
 
 ## Returns
 
@@ -22,4 +24,4 @@ conduitMakeMiddlewares(this: WebhookConduit, server: Express): void
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/conduitMakeMiddlewares.ts:7
+twitchfy/packages/eventsub/src/util/conduitMakeMiddlewares.ts:13

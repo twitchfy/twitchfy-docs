@@ -5,6 +5,8 @@ prev: false
 title: "WebSocketShardStart"
 ---
 
+Message emitted when a shard is starting with a websocket transport.
+
 ## Properties
 
 | Property | Type |

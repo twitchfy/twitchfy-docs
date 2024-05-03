@@ -5,6 +5,8 @@ prev: false
 title: "BaseStream"
 ---
 
+The base class representing an stream structure.
+
 ## Extends
 
 - [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
@@ -27,13 +29,15 @@ new BaseStream<T, K>(
 data: BaseStreamData): BaseStream<T, K>
 ```
 
+Builds up a BaseStream.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
-| `data` | [`BaseStreamData`](/api/eventsub/interfaces/basestreamdata/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. |
+| `data` | [`BaseStreamData`](/api/eventsub/interfaces/basestreamdata/) | The event data received with the subscription. |
 
 #### Returns
 
@@ -45,14 +49,14 @@ data: BaseStreamData): BaseStream<T, K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseStream.ts:14
+twitchfy/packages/eventsub/src/structures/messages/BaseStream.ts:32
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
-| `id` | `public` | `string` | - |
-| `startedAt` | `public` | `Date` | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
-| `type` | `public` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) | - |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `id` | `readonly` | `string` | The ID of the stream. | - |
+| `startedAt` | `readonly` | `Date` | The Date object when the stream started. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| `type` | `readonly` | [`StreamTypes`](/api/eventsub/type-aliases/streamtypes/) | The type of the stream. Currently, it can only be 'live'. | - |

@@ -9,6 +9,8 @@ title: "SubscriptionNotification"
 type SubscriptionNotification<T>: Object;
 ```
 
+Message emitted when a shard has received a subscription notification.
+
 ## Type parameters
 
 | Type parameter | Value |
@@ -24,4 +26,4 @@ type SubscriptionNotification<T>: Object;
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/ShardMessages.ts:31
+twitchfy/packages/eventsub/src/types/ShardMessages.ts:43

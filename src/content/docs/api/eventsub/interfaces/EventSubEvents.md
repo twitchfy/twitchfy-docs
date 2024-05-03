@@ -5,6 +5,8 @@ prev: false
 title: "EventSubEvents"
 ---
 
+The events that can be emitted by any specific EventSub connection.
+
 ## Extended by
 
 - [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)
@@ -19,9 +21,9 @@ title: "EventSubEvents"
 
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `connectionReady` | [`K`] |
-| `subscriptionCreate` | [[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] |
-| `subscriptionMessage` | [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<`K`\>, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] |
-| `subscriptionReload` | [[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] |
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| `connectionReady` | [`K`] | Emitted when the EventSub connection is ready and fully integrated within Twitch. |
+| `subscriptionCreate` | [[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] | Emitted when a subscription is created in the first time. |
+| `subscriptionMessage` | [[`SubscriptionMessage`](/api/eventsub/type-aliases/subscriptionmessage/)\<`K`\>, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] | Emitted when a message from a subscription is received. |
+| `subscriptionReload` | [[`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<[`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/), `K`\>] | Emitted when a subscription is reloaded from the storage. |

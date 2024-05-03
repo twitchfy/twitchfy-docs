@@ -5,6 +5,8 @@ prev: false
 title: "EventSubEventEmitter"
 ---
 
+The EventSub Event Emitter of any type of connection.
+
 ## Extends
 
 - `AsyncEventEmitter`\<`U`\>
@@ -23,6 +25,8 @@ title: "EventSubEventEmitter"
 new EventSubEventEmitter<U>(): EventSubEventEmitter<U>
 ```
 
+Builds up a EventSub Event Emitter.
+
 #### Returns
 
 [`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/)\<`U`\>
@@ -33,7 +37,7 @@ new EventSubEventEmitter<U>(): EventSubEventEmitter<U>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:14
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:20
 
 ## Methods
 

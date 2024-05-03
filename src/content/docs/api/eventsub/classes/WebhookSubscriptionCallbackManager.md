@@ -5,6 +5,8 @@ prev: false
 title: "WebhookSubscriptionCallbackManager"
 ---
 
+The Webhook Subscription Callback Manager.
+
 ## Type parameters
 
 | Type parameter |
@@ -19,11 +21,13 @@ title: "WebhookSubscriptionCallbackManager"
 new WebhookSubscriptionCallbackManager<T>(connection: WebhookConnection): WebhookSubscriptionCallbackManager<T>
 ```
 
+Builds up a new WebhookSubscriptionCallbackManager.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) | The connection used for this subscription. |
 
 #### Returns
 
@@ -31,13 +35,13 @@ new WebhookSubscriptionCallbackManager<T>(connection: WebhookConnection): Webhoo
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:17
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:30
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `connection` | `public` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) | The connection used for this subscription. |
 
 ## Methods
 
@@ -47,38 +51,44 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackMan
 add(callback: WebhookSubscriptionCallback<T>): this
 ```
 
+Adds a new callback to the subscription. This callback will be executed when a message within this subscription is received.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `callback` | [`WebhookSubscriptionCallback`](/api/eventsub/type-aliases/webhooksubscriptioncallback/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | [`WebhookSubscriptionCallback`](/api/eventsub/type-aliases/webhooksubscriptioncallback/)\<`T`\> | The callback to add. |
 
 #### Returns
 
 `this`
 
+The manager.
+
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:24
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:42
 
 ***
 
 ### execute()
 
 ```ts
-execute(message: SubscriptionMessages<ConnectionTypes>[T]): void
+execute(message: SubscriptionMessages<ConnectionTypes>[T]): Promise<void>
 ```
+
+Executes all the callbacks of the subscription.
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/)\>\[`T`\] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/)\>\[`T`\] | The message to execute the callbacks with. |
 
 #### Returns
 
-`void`
+`Promise`\<`void`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:32
+twitchfy/packages/eventsub/src/webhook/structures/WebhookSubscriptionCallbackManager.ts:55

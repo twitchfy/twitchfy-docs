@@ -5,6 +5,8 @@ prev: false
 title: "StorageOptions"
 ---
 
+The options for the storage of subscriptions.
+
 ## Type parameters
 
 | Type parameter |

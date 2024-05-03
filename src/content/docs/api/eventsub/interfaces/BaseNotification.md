@@ -5,6 +5,8 @@ prev: false
 title: "BaseNotification"
 ---
 
+The base notification for all notification messages.
+
 ## Type parameters
 
 | Type parameter | Value |

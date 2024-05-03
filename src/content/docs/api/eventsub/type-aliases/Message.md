@@ -9,6 +9,8 @@ title: "Message"
 type Message: WelcomeMessage | BaseNotification | ReconnectMessage;
 ```
 
+The message types that can be received by the WebSocket connection.
+
 ## Source
 
-twitchfy/packages/eventsub/src/types/Message.ts:4
+twitchfy/packages/eventsub/src/types/Message.ts:7

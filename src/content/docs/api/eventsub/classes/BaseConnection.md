@@ -5,6 +5,8 @@ prev: false
 title: "BaseConnection"
 ---
 
+The base class for all the connections.
+
 ## Extends
 
 - [`EventSubEventEmitter`](/api/eventsub/classes/eventsubeventemitter/)\<`U`\>
@@ -24,11 +26,13 @@ title: "BaseConnection"
 new BaseConnection<K, U>(options: BaseConnectionOptions<K>): BaseConnection<K, U>
 ```
 
+Builds up a BaseConnection.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`BaseConnectionOptions`](/api/eventsub/type-aliases/baseconnectionoptions/)\<`K`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`BaseConnectionOptions`](/api/eventsub/type-aliases/baseconnectionoptions/)\<`K`\> | The options of the connection. |
 
 #### Returns
 
@@ -40,20 +44,20 @@ new BaseConnection<K, U>(options: BaseConnectionOptions<K>): BaseConnection<K, U
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:37
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:74
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `clientId` | `readonly` | `string` |
-| `clientSecret` | `readonly` | `string` |
-| `debug` | `public` | `boolean` |
-| `helixClient` | `readonly` | `HelixClient` |
-| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) |
-| `maintainSubscriptions` | `readonly` | `boolean` |
-| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<`K`\> |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<`K`, [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `clientId` | `readonly` | `string` | The client ID of the connection. |
+| `clientSecret` | `readonly` | `string` | The client secret of the connection. |
+| `debug` | `public` | `boolean` | Whether the connection is in debug mode or not. |
+| `helixClient` | `readonly` | `HelixClient` | The Helix client used by the connection for making API Requests. |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | The logger of the connection. |
+| `maintainSubscriptions` | `readonly` | `boolean` | Whether the connection should maintain the subscriptions or not between each start. |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<`K`\> | The storage adapter used by the connection for storing subscriptions. |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<`K`, [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | The subscriptions of the connection. You will only receive events for this subscriptions. |
 
 ## Methods
 
@@ -233,11 +237,13 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 makeDebug(...args: any[]): void
 ```
 
+Makes a debug log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -245,7 +251,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:113
 
 ***
 
@@ -255,11 +261,13 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 makeWarn(...args: any[]): void
 ```
 
+Makes a warn log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -267,7 +275,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:124
 
 ***
 
@@ -565,6 +573,8 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 abstract subscribe<T>(options: SubscriptionOptions<T>): Promise<SubscriptionType<T, K>>
 ```
 
+Subscribe to an EventSub event.
+
 #### Type parameters
 
 | Type parameter |
@@ -573,9 +583,9 @@ abstract subscribe<T>(options: SubscriptionOptions<T>): Promise<SubscriptionType
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> | The options of the subscription. |
 
 #### Returns
 
@@ -583,7 +593,7 @@ abstract subscribe<T>(options: SubscriptionOptions<T>): Promise<SubscriptionType
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:59
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:100
 
 ***
 
@@ -593,6 +603,8 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:59
 abstract subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<SubscriptionType<T, K>[]>
 ```
 
+Subscribe to multiple EventSub events.
+
 #### Type parameters
 
 | Type parameter |
@@ -601,9 +613,9 @@ abstract subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<Subscrip
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] | The options of the subscriptions. |
 
 #### Returns
 
@@ -611,7 +623,7 @@ abstract subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<Subscrip
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:61
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:106
 
 ***
 

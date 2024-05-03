@@ -9,6 +9,8 @@ title: "SubscriptionOptions"
 type SubscriptionOptions<T>: Object;
 ```
 
+The options for creating a subscription.
+
 ## Type parameters
 
 | Type parameter | Value |
@@ -25,4 +27,4 @@ type SubscriptionOptions<T>: Object;
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/SubscriptionOptions.ts:7
+twitchfy/packages/eventsub/src/types/SubscriptionOptions.ts:9

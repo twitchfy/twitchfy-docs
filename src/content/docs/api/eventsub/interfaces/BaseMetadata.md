@@ -5,6 +5,8 @@ prev: false
 title: "BaseMetadata"
 ---
 
+The base metadata for all notification messages.
+
 ## Type parameters
 
 | Type parameter |

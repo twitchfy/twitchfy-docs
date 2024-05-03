@@ -9,6 +9,8 @@ title: "FragmentTypes"
 type FragmentTypes: "text" | "cheermote" | "emote" | "mention";
 ```
 
+The type of fragment.
+
 ## Source
 
-twitchfy/packages/eventsub/src/types/FragmentTypes.ts:1
+twitchfy/packages/eventsub/src/types/FragmentTypes.ts:4

@@ -5,6 +5,8 @@ prev: false
 title: "BaseSubscription"
 ---
 
+The base subscription for all notification messages.
+
 ## Type parameters
 
 | Type parameter |

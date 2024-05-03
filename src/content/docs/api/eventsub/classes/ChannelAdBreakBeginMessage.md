@@ -5,6 +5,8 @@ prev: false
 title: "ChannelAdBreakBeginMessage"
 ---
 
+The message received by the ChannelAdBreakBegin event.
+
 ## Extends
 
 - [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.ChannelAdBreakBegin`, `K`\>
@@ -26,13 +28,15 @@ new ChannelAdBreakBeginMessage<K>(
 data: ChannelAdBreakBeginEvent): ChannelAdBreakBeginMessage<K>
 ```
 
+Builds up a ChannelAdBreakBegin message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelAdBreakBegin`, `K`\> |
-| `data` | [`ChannelAdBreakBeginEvent`](/api/eventsub/interfaces/channeladbreakbeginevent/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelAdBreakBegin`, `K`\> | The subscription which trigger this message. |
+| `data` | `ChannelAdBreakBeginEvent` | The event data received with the subscription. |
 
 #### Returns
 
@@ -44,27 +48,29 @@ data: ChannelAdBreakBeginEvent): ChannelAdBreakBeginMessage<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/ChannelAdBreakBegin/ChannelAdBreakBeginMessage.ts:15
+twitchfy/packages/eventsub/src/structures/messages/ChannelAdBreakBegin/ChannelAdBreakBeginMessage.ts:40
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelAdBreakBegin`, `K`\> | - |
-| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
-| `duration` | `public` | `number` | - |
-| `isAutomatic` | `public` | `boolean` | - |
-| `requester` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelAdBreakBegin`, `K`\> | - |
-| `startedAt` | `public` | `Date` | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelAdBreakBegin`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelAdBreakBegin`, `K`\> | The broadcaster of the channel where the ad was begun. | - |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `duration` | `readonly` | `number` | The duration in seconds of the ad break. | - |
+| `isAutomatic` | `readonly` | `boolean` | Whether the ad break was automatically triggered or was manually triggered by the broadcaster. | - |
+| `requester` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelAdBreakBegin`, `K`\> | The user who requested the ad break. If the ad break was automatically triggered, this field is the broadcaster. | - |
+| `startedAt` | `readonly` | `Date` | The Date object of when the ad break started. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelAdBreakBegin`, `K`\> | The subscription which trigger this message. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
 
 ## Methods
 
-### checkSubscriptionType()
+### checkMessageType()
 
 ```ts
-checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+checkMessageType<U>(type: U): this is SubscriptionMessages<K>[U]
 ```
+
+Checks whether the message is of a certain type.
 
 #### Type parameters
 
@@ -74,18 +80,20 @@ checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type to check. |
 
 #### Returns
 
 `this is SubscriptionMessages<K>[U]`
 
+Whether the message is of the type.
+
 #### Inherited from
 
-[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkMessageType`](/api/eventsub/classes/basesubscriptionmessage/#checkmessagetype)
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:24

@@ -9,13 +9,15 @@ title: "WebSocketConnectionOptions"
 type WebSocketConnectionOptions: BaseConnectionOptions<WebSocketConnection> & Object;
 ```
 
+The options used to create a new WebSocketConnection.
+
 ## Type declaration
 
-| Member | Type |
-| :------ | :------ |
-| `proxy` | `string` |
-| `userToken` | `UserTokenAdapter`\<`boolean`\> |
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `proxy` | `string` | The proxy url used for the connection. |
+| `userToken` | `UserTokenAdapter`\<`boolean`\> | The user token used for the connection. |
 
 ## Source
 
-twitchfy/packages/eventsub/src/ws/types/WebSocketConnectionOptions.ts:5
+twitchfy/packages/eventsub/src/ws/types/WebSocketConnectionOptions.ts:8

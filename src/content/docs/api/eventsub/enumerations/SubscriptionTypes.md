@@ -5,6 +5,8 @@ prev: false
 title: "SubscriptionTypes"
 ---
 
+Types of subscriptions that can be created.
+
 ## Enumeration Members
 
 | Enumeration Member | Value |

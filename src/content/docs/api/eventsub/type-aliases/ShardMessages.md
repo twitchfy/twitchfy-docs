@@ -9,6 +9,8 @@ title: "ShardMessages"
 type ShardMessages: WebhookShardStart | SubscriptionNotification | WebSocketShardStart | Debug;
 ```
 
+The message types that can be received by the parent process from a shard.
+
 ## Source
 
-twitchfy/packages/eventsub/src/types/ShardMessages.ts:4
+twitchfy/packages/eventsub/src/types/ShardMessages.ts:7

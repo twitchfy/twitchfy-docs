@@ -9,14 +9,16 @@ title: "messageHandler"
 messageHandler(this: Object, message: Message): Promise<void>
 ```
 
+Handles a message received from the websocket server.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `this` | `Object` |
-| `this.connector` | [`WebSocket`](/api/eventsub/classes/websocket/) |
-| `this.resolve` | () => `any` |
-| `message` | `Message` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `this` | `Object` | The this object |
+| `this.connector` | [`WebSocket`](/api/eventsub/classes/websocket/) | - |
+| `this.resolve` | () => `any` | - |
+| `message` | `Message` | The message received from the websocket server. |
 
 ## Returns
 
@@ -24,4 +26,4 @@ messageHandler(this: Object, message: Message): Promise<void>
 
 ## Source
 
-twitchfy/packages/eventsub/src/ws/util/messageHandler.ts:12
+twitchfy/packages/eventsub/src/ws/util/messageHandler.ts:17

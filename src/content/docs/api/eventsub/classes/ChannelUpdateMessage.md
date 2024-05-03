@@ -5,6 +5,8 @@ prev: false
 title: "ChannelUpdateMessage"
 ---
 
+The message received by the ChannelUpdate event.
+
 ## Extends
 
 - [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.ChannelUpdate`, `K`\>
@@ -26,13 +28,15 @@ new ChannelUpdateMessage<K>(
 data: ChannelUpdateEvent): ChannelUpdateMessage<K>
 ```
 
+Builds up a ChannelUpdate message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> |
-| `data` | [`ChannelUpdateEvent`](/api/eventsub/interfaces/channelupdateevent/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | The subscription which trigger this message. |
+| `data` | [`ChannelUpdateEvent`](/api/eventsub/interfaces/channelupdateevent/) | The event data received with the subscription. |
 
 #### Returns
 
@@ -44,27 +48,29 @@ data: ChannelUpdateEvent): ChannelUpdateMessage<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts:22
+twitchfy/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateMessage.ts:45
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelUpdate`, `K`\> | - |
-| `category` | `public` | [`ChannelUpdateCategory`](/api/eventsub/classes/channelupdatecategory/)\<`K`\> | - |
-| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
-| `labels` | `public` | `string`[] | - |
-| `language` | `public` | `string` | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
-| `title` | `public` | `string` | - |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelUpdate`, `K`\> | The broadcaster of the channel which was updated. | - |
+| `category` | `readonly` | [`ChannelUpdateCategory`](/api/eventsub/classes/channelupdatecategory/)\<`K`\> | The category of the channel after it was updated. | - |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `labels` | `readonly` | `string`[] | The content classification labels of the channel after it was updated. | - |
+| `language` | `readonly` | `string` | The language of the channel after it was updated. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | The subscription which trigger this message. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+| `title` | `readonly` | `string` | The title of the channel after it was updated. | - |
 
 ## Methods
 
-### checkSubscriptionType()
+### checkMessageType()
 
 ```ts
-checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+checkMessageType<U>(type: U): this is SubscriptionMessages<K>[U]
 ```
+
+Checks whether the message is of a certain type.
 
 #### Type parameters
 
@@ -74,18 +80,20 @@ checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type to check. |
 
 #### Returns
 
 `this is SubscriptionMessages<K>[U]`
 
+Whether the message is of the type.
+
 #### Inherited from
 
-[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkMessageType`](/api/eventsub/classes/basesubscriptionmessage/#checkmessagetype)
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:24

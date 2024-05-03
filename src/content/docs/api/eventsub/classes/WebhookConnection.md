@@ -5,6 +5,8 @@ prev: false
 title: "WebhookConnection"
 ---
 
+A Webhook Connection.
+
 ## Extends
 
 - [`BaseConnection`](/api/eventsub/classes/baseconnection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\>
@@ -17,12 +19,14 @@ title: "WebhookConnection"
 new WebhookConnection(options: WebhookConnectionOptions, server: Express): WebhookConnection
 ```
 
+Builds up a new WebhookConnection.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/) |
-| `server` | `Express` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/) | The options for the connection. |
+| `server` | `Express` | The express server used for receiving Twitch data. |
 
 #### Returns
 
@@ -34,26 +38,26 @@ new WebhookConnection(options: WebhookConnectionOptions, server: Express): Webho
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:32
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:59
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `baseURL` | `readonly` | `string` | - |
-| `clientId` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
-| `clientSecret` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
-| `debug` | `public` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
-| `dropSubsAtStart` | `readonly` | `boolean` | - |
-| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
-| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
-| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
-| `secret` | `readonly` | `string` | - |
-| `server` | `readonly` | `Express` | - |
-| `startServer` | `readonly` | `boolean` | - |
-| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
-| `subscriptionRoute` | `readonly` | `string` | - |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `baseURL` | `readonly` | `string` | The base URL for the webhook callback. | - |
+| `clientId` | `readonly` | `string` | The client ID of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
+| `clientSecret` | `readonly` | `string` | The client secret of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
+| `debug` | `public` | `boolean` | Whether the connection is in debug mode or not. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
+| `dropSubsAtStart` | `readonly` | `boolean` | Whether to drop subscriptions at start. This will delete all subscriptions that are currently active within the client (only webhook created) to avoid duplicated subscriptions if any storage was set. | - |
+| `helixClient` | `readonly` | `HelixClient` | The Helix client used by the connection for making API Requests. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | The logger of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
+| `maintainSubscriptions` | `readonly` | `boolean` | Whether the connection should maintain the subscriptions or not between each start. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
+| `secret` | `readonly` | `string` | The secret used for creating subscriptions within this connection. | - |
+| `server` | `readonly` | `Express` | The express server used for receiving Twitch data. | - |
+| `startServer` | `readonly` | `boolean` | Whether to start the server when the connection is started. | - |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\> | The storage adapter used by the connection for storing subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
+| `subscriptionRoute` | `readonly` | `string` | The route for receiving Twitch messages.<br /><br />**Default**<br />` /subscriptions ` | - |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | The subscriptions of the connection. You will only receive events for this subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
 
 ## Accessors
 
@@ -63,13 +67,33 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:32
 get appToken(): TokenAdapter<"app", boolean>
 ```
 
+The app token used for the connection.
+
 #### Returns
 
 [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:116
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:163
+
+***
+
+### url
+
+```ts
+get url(): string
+```
+
+The URL for the webhook callback. This is a join between the base url and the subscription route.
+
+#### Returns
+
+`string`
+
+#### Source
+
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:81
 
 ## Methods
 
@@ -249,11 +273,13 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 makeDebug(...args: any[]): void
 ```
 
+Makes a debug log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -265,7 +291,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:113
 
 ***
 
@@ -275,11 +301,13 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 makeWarn(...args: any[]): void
 ```
 
+Makes a warn log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -291,7 +319,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:124
 
 ***
 
@@ -563,19 +591,23 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 setAuth(appToken: TokenAdapter<"app", boolean>): WebhookConnection
 ```
 
+Sets a new app token for the connection.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `appToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `appToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"app"`, `boolean`\> | The new app token. |
 
 #### Returns
 
 [`WebhookConnection`](/api/eventsub/classes/webhookconnection/)
 
+The connection.
+
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:108
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:153
 
 ***
 
@@ -611,12 +643,14 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 start(port?: number, callback?: () => void): Promise<boolean>
 ```
 
+Starts the Webhook Connection.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `port`? | `number` |
-| `callback`? | () => `void` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `port`? | `number` | The port to start the server at if the startServer option is set to true. |
+| `callback`? | () => `void` | A callback to be called when the server is started if the startServer option is set to true. |
 
 #### Returns
 
@@ -624,7 +658,7 @@ start(port?: number, callback?: () => void): Promise<boolean>
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:98
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:138
 
 ***
 
@@ -634,6 +668,8 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:98
 subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 ```
 
+Subscribe to an EventSub event.
+
 #### Type parameters
 
 | Type parameter |
@@ -642,9 +678,9 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> | The options of the subscription. |
 
 #### Returns
 
@@ -656,7 +692,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebhookSubscription<T>>
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:50
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:85
 
 ***
 
@@ -666,6 +702,8 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:50
 subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscription<T>[]>
 ```
 
+Subscribe to multiple EventSub events.
+
 #### Type parameters
 
 | Type parameter |
@@ -674,9 +712,9 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscripti
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] | The options of the subscriptions. |
 
 #### Returns
 
@@ -688,7 +726,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebhookSubscripti
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:71
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:106
 
 ***
 

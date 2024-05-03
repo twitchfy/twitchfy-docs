@@ -5,6 +5,8 @@ prev: false
 title: "ChannelFollowMessage"
 ---
 
+The message received by the ChannelFollow event.
+
 ## Extends
 
 - [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.ChannelFollow`, `K`\>
@@ -26,13 +28,15 @@ new ChannelFollowMessage<K>(
 data: ChannelFollowEvent): ChannelFollowMessage<K>
 ```
 
+Builds up a ChannelFollow message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> |
-| `data` | [`ChannelFollowEvent`](/api/eventsub/interfaces/channelfollowevent/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> | The subscription which trigger this message. |
+| `data` | [`ChannelFollowEvent`](/api/eventsub/interfaces/channelfollowevent/) | The event data received with the subscription. |
 
 #### Returns
 
@@ -44,25 +48,27 @@ data: ChannelFollowEvent): ChannelFollowMessage<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowMessage.ts:15
+twitchfy/packages/eventsub/src/structures/messages/ChannelFollow/ChannelFollowMessage.ts:33
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelFollow`, `K`\> | - |
-| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
-| `followedAt` | `public` | `Date` | - |
-| `follower` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelFollow`, `K`\> | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelFollow`, `K`\> | The broadcaster of the channel who was followed. | - |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `followedAt` | `readonly` | `Date` | The Date object when the follow occurred. | - |
+| `follower` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`ChannelFollow`, `K`\> | The follower who followed the channel. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelFollow`, `K`\> | The subscription which trigger this message. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
 
 ## Methods
 
-### checkSubscriptionType()
+### checkMessageType()
 
 ```ts
-checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+checkMessageType<U>(type: U): this is SubscriptionMessages<K>[U]
 ```
+
+Checks whether the message is of a certain type.
 
 #### Type parameters
 
@@ -72,18 +78,20 @@ checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type to check. |
 
 #### Returns
 
 `this is SubscriptionMessages<K>[U]`
 
+Whether the message is of the type.
+
 #### Inherited from
 
-[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkMessageType`](/api/eventsub/classes/basesubscriptionmessage/#checkmessagetype)
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:24

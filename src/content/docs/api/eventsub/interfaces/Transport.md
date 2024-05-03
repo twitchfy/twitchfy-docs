@@ -5,6 +5,8 @@ prev: false
 title: "Transport"
 ---
 
+The transport of the subscription.
+
 ## Properties
 
 | Property | Type |

@@ -5,6 +5,8 @@ prev: false
 title: "ConduitSubscriptionCallbackManager"
 ---
 
+The callback manager for a ConduitSubscription.
+
 ## Type parameters
 
 | Type parameter |
@@ -31,13 +33,13 @@ new ConduitSubscriptionCallbackManager<T>(conduit: Conduit): ConduitSubscription
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:12
+twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:21
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `conduit` | `public` | [`Conduit`](/api/eventsub/classes/conduit/) |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `conduit` | `readonly` | [`Conduit`](/api/eventsub/classes/conduit/) | The Conduit that created this manager. |
 
 ## Methods
 
@@ -47,38 +49,44 @@ twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:
 add(callback: ConduitSubscriptionCallback<T>): this
 ```
 
+Adds a callback to the manager.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `callback` | [`ConduitSubscriptionCallback`](/api/eventsub/type-aliases/conduitsubscriptioncallback/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | [`ConduitSubscriptionCallback`](/api/eventsub/type-aliases/conduitsubscriptioncallback/)\<`T`\> | The callback to add. |
 
 #### Returns
 
 `this`
 
+The manager.
+
 #### Source
 
-twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:19
+twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:33
 
 ***
 
 ### execute()
 
 ```ts
-execute(message: SubscriptionMessages<ConnectionTypes>[T]): void
+execute(message: SubscriptionMessages<ConnectionTypes>[T]): Promise<void>
 ```
+
+Executes all the callbacks with the message.
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/)\>\[`T`\] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/)\>\[`T`\] | The message to execute the callbacks with. |
 
 #### Returns
 
-`void`
+`Promise`\<`void`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:27
+twitchfy/packages/eventsub/src/structures/ConduitSubscriptionCallbackManager.ts:45

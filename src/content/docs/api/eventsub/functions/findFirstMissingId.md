@@ -9,11 +9,13 @@ title: "findFirstMissingId"
 findFirstMissingId(shards: ConduitShardData[]): string
 ```
 
+Finds the first unused or disable shard in a conduit and returns its id.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `shards` | `ConduitShardData`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `shards` | `ConduitShardData`[] | The id that was found. |
 
 ## Returns
 
@@ -21,4 +23,4 @@ findFirstMissingId(shards: ConduitShardData[]): string
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/findFirstMissingId.ts:3
+twitchfy/packages/eventsub/src/util/findFirstMissingId.ts:7

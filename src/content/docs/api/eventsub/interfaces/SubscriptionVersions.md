@@ -5,6 +5,8 @@ prev: false
 title: "SubscriptionVersions"
 ---
 
+The versions of the every subscription type. There are updated to the latest version.
+
 ## Properties
 
 | Property | Type |

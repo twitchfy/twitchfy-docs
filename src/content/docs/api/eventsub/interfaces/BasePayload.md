@@ -5,6 +5,8 @@ prev: false
 title: "BasePayload"
 ---
 
+The base payload for all notification messages.
+
 ## Type parameters
 
 | Type parameter | Value |

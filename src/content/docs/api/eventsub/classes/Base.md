@@ -5,6 +5,8 @@ prev: false
 title: "Base"
 ---
 
+The base class for all the structures.
+
 ## Extended by
 
 - [`ChannelUpdateCategory`](/api/eventsub/classes/channelupdatecategory/)
@@ -28,12 +30,14 @@ title: "Base"
 new Base<T, K>(connection: K, subscription: SubscriptionType<T, K>): Base<T, K>
 ```
 
+Builds up a Base message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. |
 
 #### Returns
 
@@ -41,11 +45,11 @@ new Base<T, K>(connection: K, subscription: SubscriptionType<T, K>): Base<T, K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/Base.ts:12
+twitchfy/packages/eventsub/src/structures/messages/Base.ts:26
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `connection` | `public` | `K` |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | `K` | The EventSub connection used. |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. |

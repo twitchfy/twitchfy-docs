@@ -12,6 +12,8 @@ SubscriptionRouter(
    next: NextFunction): void
 ```
 
+The router for the subscription route.
+
 ## Parameters
 
 | Parameter | Type |
@@ -26,4 +28,4 @@ SubscriptionRouter(
 
 ## Source
 
-twitchfy/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts:9
+twitchfy/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts:12

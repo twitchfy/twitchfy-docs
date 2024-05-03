@@ -9,6 +9,8 @@ title: "SubscriptionCallback"
 type SubscriptionCallback<T, K>: (message: SubscriptionMessages<K>[T]) => any | Promise<any>;
 ```
 
+The callback for a subscription.
+
 ## Type parameters
 
 | Type parameter | Value |
@@ -28,4 +30,4 @@ type SubscriptionCallback<T, K>: (message: SubscriptionMessages<K>[T]) => any | 
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/SubscriptionCallback.ts:7
+twitchfy/packages/eventsub/src/types/SubscriptionCallback.ts:10

@@ -12,6 +12,8 @@ ConduitSubscriptionRouter(
    next: NextFunction): void
 ```
 
+The router for the conduit subscription route.
+
 ## Parameters
 
 | Parameter | Type |
@@ -26,4 +28,4 @@ ConduitSubscriptionRouter(
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/ConduitSubscriptionRoute.ts:9
+twitchfy/packages/eventsub/src/util/ConduitSubscriptionRoute.ts:11

@@ -5,6 +5,8 @@ prev: false
 title: "Shard"
 ---
 
+A shard created within a Conduit.
+
 ## Constructors
 
 ### new Shard(conduit, data)
@@ -13,12 +15,14 @@ title: "Shard"
 new Shard(conduit: Conduit, data: ConduitShardData & Object): Shard
 ```
 
+Builds up a Shard.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `conduit` | [`Conduit`](/api/eventsub/classes/conduit/) |
-| `data` | `ConduitShardData` & `Object` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `conduit` | [`Conduit`](/api/eventsub/classes/conduit/) | The Conduit that created this shard. |
+| `data` | `ConduitShardData` & `Object` | The data from the API. If the shard is of type 'webhook', it aditionally includes the secret which is not returned by the API. |
 
 #### Returns
 
@@ -26,19 +30,19 @@ new Shard(conduit: Conduit, data: ConduitShardData & Object): Shard
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Shard.ts:20
+twitchfy/packages/eventsub/src/structures/Shard.ts:49
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `callback?` | `readonly` | `string` |
-| `conduit` | `readonly` | [`Conduit`](/api/eventsub/classes/conduit/) |
-| `id` | `readonly` | `string` |
-| `secret?` | `readonly` | `string` |
-| `sessionId?` | `readonly` | `string` |
-| `status` | `readonly` | `string` |
-| `type` | `readonly` | `"websocket"` \| `"webhook"` |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `callback?` | `readonly` | `string` | The callback of the shard. Only present in webhook type. |
+| `conduit` | `readonly` | [`Conduit`](/api/eventsub/classes/conduit/) | The Conduit that created this shard. |
+| `id` | `readonly` | `string` | The id of the shard. Starting from 0. |
+| `secret?` | `readonly` | `string` | The secret of the shard. Only present in webhook type. |
+| `sessionId?` | `readonly` | `string` | The session id of the shard. Only present in websocket type. |
+| `status` | `readonly` | `string` | The status of the shard. Probably 'enabled'. |
+| `type` | `readonly` | `"websocket"` \| `"webhook"` | The type of transport of the shard. |
 
 ## Methods
 
@@ -48,13 +52,15 @@ twitchfy/packages/eventsub/src/structures/Shard.ts:20
 delete(): Promise<Shard[]>
 ```
 
+Deletes the shard.
+
 #### Returns
 
 `Promise`\<[`Shard`](/api/eventsub/classes/shard/)[]\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Shard.ts:49
+twitchfy/packages/eventsub/src/structures/Shard.ts:86
 
 ***
 
@@ -64,9 +70,13 @@ twitchfy/packages/eventsub/src/structures/Shard.ts:49
 toAPI(): Object
 ```
 
+Converts the shard to the API format.
+
 #### Returns
 
 `Object`
+
+The shard into API format.
 
 | Member | Type | Value |
 | :------ | :------ | :------ |
@@ -79,4 +89,4 @@ toAPI(): Object
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/Shard.ts:37
+twitchfy/packages/eventsub/src/structures/Shard.ts:70

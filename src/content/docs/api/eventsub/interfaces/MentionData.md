@@ -5,10 +5,12 @@ prev: false
 title: "MentionData"
 ---
 
+The data of a mention set into the fragments of a message.
+
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `user_id` | `string` |
-| `user_login` | `string` |
-| `user_name` | `string` |
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| `user_id` | `string` | The ID of the mentioned user. |
+| `user_login` | `string` | The login name of the mentioned user. |
+| `user_name` | `string` | The display name of the mentioned user. |

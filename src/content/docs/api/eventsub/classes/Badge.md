@@ -5,6 +5,8 @@ prev: false
 title: "Badge"
 ---
 
+A badge which is assigned to an user.
+
 ## Constructors
 
 ### new Badge(data)
@@ -13,11 +15,13 @@ title: "Badge"
 new Badge(data: BadgeData): Badge
 ```
 
+Builds up a badge.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `data` | [`BadgeData`](/api/eventsub/interfaces/badgedata/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `data` | [`BadgeData`](/api/eventsub/interfaces/badgedata/) | The data of the badge. |
 
 #### Returns
 
@@ -25,12 +29,12 @@ new Badge(data: BadgeData): Badge
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/Badge.ts:11
+twitchfy/packages/eventsub/src/structures/messages/Badge.ts:27
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `id` | `public` | `string` |
-| `info` | `public` | `string` |
-| `setId` | `public` | `string` |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `id` | `readonly` | `string` | The ID of the badge. |
+| `info` | `readonly` | `string` | Additional information about the badge. This field is only presented in subscribed badges and contains the number of months the user has been subscribed for. |
+| `setId` | `readonly` | `string` | The ID of the set which contains the badge. |

@@ -9,11 +9,13 @@ title: "loadShards"
 loadShards(paths: string[]): Promise<string[]>
 ```
 
+Loads all shards path from the specified paths and directories.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `paths` | `string`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `paths` | `string`[] | The paths to load the shards from. |
 
 ## Returns
 
@@ -21,4 +23,4 @@ loadShards(paths: string[]): Promise<string[]>
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/loadShards.ts:4
+twitchfy/packages/eventsub/src/util/loadShards.ts:9

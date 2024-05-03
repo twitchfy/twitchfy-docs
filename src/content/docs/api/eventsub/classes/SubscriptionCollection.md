@@ -5,6 +5,8 @@ prev: false
 title: "SubscriptionCollection"
 ---
 
+The collection of subscriptions. This is an extended class of Map.
+
 ## Extends
 
 - `Map`\<`string`, [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\>\>
@@ -174,6 +176,8 @@ node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.ite
 exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<U, K>
 ```
 
+Checks whether a subscription exists in the collection by its type and options.
+
 #### Type parameters
 
 | Type parameter |
@@ -182,18 +186,20 @@ exist<U>(type: U, options: SubscriptionTypeOptions[U]): SubscriptionType<U, K>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
-| `options` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`U`\] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type of the subscription. |
+| `options` | [`SubscriptionTypeOptions`](/api/eventsub/interfaces/subscriptiontypeoptions/)\[`U`\] | The options used to create the subscription. |
 
 #### Returns
 
 [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\>
 
+Whether the subscription exists. If it exists, the subscription is returned.
+
 #### Source
 
-twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:18
+twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:38
 
 ***
 
@@ -229,8 +235,10 @@ node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.col
 ### get()
 
 ```ts
-get<U>(key: string): SubscriptionType<U, K>
+get<U>(id: string): SubscriptionType<U, K>
 ```
+
+Gets a subscription from the collection by its id.
 
 #### Type parameters
 
@@ -240,13 +248,15 @@ get<U>(key: string): SubscriptionType<U, K>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `key` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | The id of the subscription. |
 
 #### Returns
 
 [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\>
+
+The subscription if it exists, otherwise undefined.
 
 #### Overrides
 
@@ -254,7 +264,7 @@ get<U>(key: string): SubscriptionType<U, K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:10
+twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:18
 
 ***
 
@@ -311,8 +321,10 @@ node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.ite
 ### set()
 
 ```ts
-set<U>(key: string, value: SubscriptionType<U, K>): this
+set<U>(id: string, value: SubscriptionType<U, K>): this
 ```
+
+Sets a subscription into collection.
 
 #### Type parameters
 
@@ -322,14 +334,16 @@ set<U>(key: string, value: SubscriptionType<U, K>): this
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `key` | `string` |
-| `value` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | The id of the subscription. |
+| `value` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`U`, `K`\> | The subscription to set. |
 
 #### Returns
 
 `this`
+
+The updated collection.
 
 #### Overrides
 
@@ -337,7 +351,7 @@ set<U>(key: string, value: SubscriptionType<U, K>): this
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:14
+twitchfy/packages/eventsub/src/structures/SubscriptionCollection.ts:28
 
 ***
 

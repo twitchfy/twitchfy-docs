@@ -14,6 +14,8 @@ type StreamTypes:
   | "rerun";
 ```
 
+The types of stream. As for now, the only possible type 'live'.
+
 ## Source
 
-twitchfy/packages/eventsub/src/types/StreamTypes.ts:1
+twitchfy/packages/eventsub/src/types/StreamTypes.ts:4

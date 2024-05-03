@@ -5,6 +5,8 @@ prev: false
 title: "WebSocketSubscriptionCallbackManager"
 ---
 
+The callback manager for a WebSocketSubscription.
+
 ## Type parameters
 
 | Type parameter |
@@ -19,11 +21,13 @@ title: "WebSocketSubscriptionCallbackManager"
 new WebSocketSubscriptionCallbackManager<T>(connection: WebSocketConnection): WebSocketSubscriptionCallbackManager<T>
 ```
 
+Creates a new WebSocketSubscriptionCallbackManager.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | The connection that created this manager. |
 
 #### Returns
 
@@ -31,13 +35,13 @@ new WebSocketSubscriptionCallbackManager<T>(connection: WebSocketConnection): We
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:15
+twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:28
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `connection` | `public` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | The connection that created this manager. |
 
 ## Methods
 
@@ -47,19 +51,23 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManage
 add(callback: WebSocketSubscriptionCallback<T>): this
 ```
 
+Adds a callback to the manager.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `callback` | [`WebSocketSubscriptionCallback`](/api/eventsub/type-aliases/websocketsubscriptioncallback/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | [`WebSocketSubscriptionCallback`](/api/eventsub/type-aliases/websocketsubscriptioncallback/)\<`T`\> | The callback to add. |
 
 #### Returns
 
 `this`
 
+The manager.
+
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:22
+twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:40
 
 ***
 
@@ -69,11 +77,13 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManage
 execute(message: SubscriptionMessages<WebSocketConnection>[T]): Promise<void>
 ```
 
+Executes all the callbacks with the message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>\[`T`\] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `message` | [`SubscriptionMessages`](/api/eventsub/interfaces/subscriptionmessages/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\>\[`T`\] | The message to execute the callbacks with. |
 
 #### Returns
 
@@ -81,4 +91,4 @@ execute(message: SubscriptionMessages<WebSocketConnection>[T]): Promise<void>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:30
+twitchfy/packages/eventsub/src/ws/structures/WebSocketSubscriptionCallbackManager.ts:52

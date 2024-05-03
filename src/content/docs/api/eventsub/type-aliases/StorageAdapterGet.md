@@ -9,6 +9,8 @@ title: "StorageAdapterGet"
 type StorageAdapterGet<K, T>: K extends WebhookConnection ? Pick<WebhookSubscription<T>, "id" | "secret" | "type" | "options"> & Object : Pick<WebSocketSubscription<T>, "id" | "type" | "options"> & Object;
 ```
 
+The type to be returned for the get method in the storage adapter.
+
 ## Type parameters
 
 | Type parameter | Value |
@@ -18,4 +20,4 @@ type StorageAdapterGet<K, T>: K extends WebhookConnection ? Pick<WebhookSubscrip
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/StorageAdapterGet.ts:8
+twitchfy/packages/eventsub/src/types/StorageAdapterGet.ts:11

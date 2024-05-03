@@ -5,6 +5,8 @@ prev: false
 title: "SubscriptionTypeOptions"
 ---
 
+The options for every subscription type.
+
 ## Properties
 
 | Property | Type |

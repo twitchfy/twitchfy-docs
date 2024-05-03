@@ -5,6 +5,8 @@ prev: false
 title: "WebSocket"
 ---
 
+The custom WebSocket client for the EventSub connection.
+
 ## Extends
 
 - `client`
@@ -17,11 +19,13 @@ title: "WebSocket"
 new WebSocket(connection: WebSocketConnection): WebSocket
 ```
 
+Builds up a WebSocket client.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | The WebSocketConnection. |
 
 #### Returns
 
@@ -33,16 +37,15 @@ new WebSocket(connection: WebSocketConnection): WebSocket
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:16
+twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:36
 
 ## Properties
 
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
-| `_oldConnection` | `public` | [`WebSocket`](/api/eventsub/classes/websocket/) | - | - |
-| `connection` | `public` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | - | - |
-| `connectionURL` | `public` | `string` | - | - |
-| `wsConnection` | `public` | `connection` | - | - |
+| `connection` | `readonly` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | The WebSocketConnection. | - |
+| `connectionURL` | `public` | `string` | The connection URL. | - |
+| `wsConnection` | `public` | `connection` | The WebSocket connection. | - |
 | `captureRejectionSymbol` | `readonly` | *typeof* `captureRejectionSymbol` | Value: `Symbol.for('nodejs.rejection')`<br /><br />See how to write a custom `rejection handler`.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejectionSymbol` |
 | `captureRejections` | `static` | `boolean` | Value: [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)<br /><br />Change the default `captureRejections` option on all new `EventEmitter` objects.<br /><br />**Since**<br />v13.4.0, v12.16.0 | `client.captureRejections` |
 | `defaultMaxListeners` | `static` | `number` | By default, a maximum of `10` listeners can be registered for any single<br />event. This limit can be changed for individual `EventEmitter` instances<br />using the `emitter.setMaxListeners(n)` method. To change the default<br />for _all_`EventEmitter` instances, the `events.defaultMaxListeners` property<br />can be used. If this value is not a positive number, a `RangeError` is thrown.<br /><br />Take caution when setting the `events.defaultMaxListeners` because the<br />change affects _all_ `EventEmitter` instances, including those created before<br />the change is made. However, calling `emitter.setMaxListeners(n)` still has<br />precedence over `events.defaultMaxListeners`.<br /><br />This is not a hard limit. The `EventEmitter` instance will allow<br />more listeners to be added but will output a trace warning to stderr indicating<br />that a "possible EventEmitter memory leak" has been detected. For any single<br />`EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()` methods can be used to<br />temporarily avoid this warning:<br /><br />`js import { EventEmitter } from 'node:events'; const emitter = new EventEmitter(); emitter.setMaxListeners(emitter.getMaxListeners() + 1); emitter.once('event', () => {   // do stuff   emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0)); }); `<br /><br />The `--trace-warnings` command-line flag can be used to display the<br />stack trace for such warnings.<br /><br />The emitted warning can be inspected with `process.on('warning')` and will<br />have the additional `emitter`, `type`, and `count` properties, referring to<br />the event emitter instance, the event's name and the number of attached<br />listeners, respectively.<br />Its `name` property is set to `'MaxListenersExceededWarning'`.<br /><br />**Since**<br />v0.11.2 | `client.defaultMaxListeners` |
@@ -195,11 +198,13 @@ node\_modules/.pnpm/@types+websocket@1.0.10/node\_modules/@types/websocket/index
 connect(url?: string): Promise<void>
 ```
 
+Connects to the WebSocket server.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `url`? | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `url`? | `string` | The URL to connect to. If not specified it will use the default Twitch connection. The Promise will be resolved when Twitch sends the session_welcome message. |
 
 #### Returns
 
@@ -211,7 +216,7 @@ connect(url?: string): Promise<void>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:29
+twitchfy/packages/eventsub/src/ws/structures/WebSocket.ts:53
 
 ***
 

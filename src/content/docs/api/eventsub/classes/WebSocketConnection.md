@@ -5,6 +5,8 @@ prev: false
 title: "WebSocketConnection"
 ---
 
+The WebSocket connection used for EventSub.
+
 ## Extends
 
 - [`BaseConnection`](/api/eventsub/classes/baseconnection/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/)\>
@@ -17,11 +19,13 @@ title: "WebSocketConnection"
 new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnection
 ```
 
+Builds up a new WebSocketConnection.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`WebSocketConnectionOptions`](/api/eventsub/type-aliases/websocketconnectionoptions/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`WebSocketConnectionOptions`](/api/eventsub/type-aliases/websocketconnectionoptions/) | The options for the connection. |
 
 #### Returns
 
@@ -33,23 +37,23 @@ new WebSocketConnection(options: WebSocketConnectionOptions): WebSocketConnectio
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:20
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:35
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `clientId` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
-| `clientSecret` | `readonly` | `string` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
-| `debug` | `public` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
-| `helixClient` | `readonly` | `HelixClient` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
-| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
-| `maintainSubscriptions` | `readonly` | `boolean` | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
-| `proxy?` | `readonly` | `string` | - |
-| `sessionId` | `public` | `string` | - |
-| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
-| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
-| `ws` | `public` | [`WebSocket`](/api/eventsub/classes/websocket/) | - |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `clientId` | `readonly` | `string` | The client ID of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientId` |
+| `clientSecret` | `readonly` | `string` | The client secret of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`clientSecret` |
+| `debug` | `public` | `boolean` | Whether the connection is in debug mode or not. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`debug` |
+| `helixClient` | `readonly` | `HelixClient` | The Helix client used by the connection for making API Requests. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`helixClient` |
+| `logger` | `readonly` | [`Logger`](/api/eventsub/classes/logger/) | The logger of the connection. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`logger` |
+| `maintainSubscriptions` | `readonly` | `boolean` | Whether the connection should maintain the subscriptions or not between each start. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`maintainSubscriptions` |
+| `proxy?` | `readonly` | `string` | The proxy url used for the connection. | - |
+| `sessionId` | `public` | `string` | The session id of the connection. | - |
+| `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)\> | The storage adapter used by the connection for storing subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
+| `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebSocketConnection`](/api/eventsub/classes/websocketconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | The subscriptions of the connection. You will only receive events for this subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
+| `ws` | `public` | [`WebSocket`](/api/eventsub/classes/websocket/) | The WebSocket client used for the connection. | - |
 
 ## Accessors
 
@@ -59,13 +63,15 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:20
 get userToken(): UserTokenAdapter<boolean>
 ```
 
+Gets the user token that is being used for the connection.
+
 #### Returns
 
 `UserTokenAdapter`\<`boolean`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:99
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:123
 
 ## Methods
 
@@ -108,13 +114,15 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 connect(): Promise<void>
 ```
 
+Connects to the WebSocket server.
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:37
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:54
 
 ***
 
@@ -271,11 +279,13 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 makeDebug(...args: any[]): void
 ```
 
+Makes a debug log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -287,7 +297,7 @@ makeDebug(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:113
 
 ***
 
@@ -297,11 +307,13 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:63
 makeWarn(...args: any[]): void
 ```
 
+Makes a warn log
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to log. |
 
 #### Returns
 
@@ -313,7 +325,7 @@ makeWarn(...args: any[]): void
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/BaseConnection.ts:69
+twitchfy/packages/eventsub/src/structures/BaseConnection.ts:124
 
 ***
 
@@ -595,19 +607,23 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 setAuth(userToken: TokenAdapter<"implicit" | "code", boolean>): WebSocketConnection
 ```
 
+Sets the user token for the connection.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `userToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"implicit"` \| `"code"`, `boolean`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `userToken` | [`TokenAdapter`](/api/eventsub/classes/tokenadapter/)\<`"implicit"` \| `"code"`, `boolean`\> | The new user token to set. |
 
 #### Returns
 
 [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/)
 
+The connection.
+
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:92
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:113
 
 ***
 
@@ -643,6 +659,8 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 ```
 
+Subscribe to an EventSub event.
+
 #### Type parameters
 
 | Type parameter |
@@ -651,9 +669,9 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\> | The options of the subscription. |
 
 #### Returns
 
@@ -665,7 +683,7 @@ subscribe<T>(options: SubscriptionOptions<T>): Promise<WebSocketSubscription<T>>
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:43
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:60
 
 ***
 
@@ -675,6 +693,8 @@ twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:43
 subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscription<T>[]>
 ```
 
+Subscribe to multiple EventSub events.
+
 #### Type parameters
 
 | Type parameter |
@@ -683,9 +703,9 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`options` | [`SubscriptionOptions`](/api/eventsub/type-aliases/subscriptionoptions/)\<`T`\>[] | The options of the subscriptions. |
 
 #### Returns
 
@@ -697,7 +717,7 @@ subscribeAll<T>(...options: SubscriptionOptions<T>[]): Promise<WebSocketSubscrip
 
 #### Source
 
-twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:64
+twitchfy/packages/eventsub/src/ws/structures/WebSocketConnection.ts:81
 
 ***
 

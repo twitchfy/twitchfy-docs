@@ -5,6 +5,8 @@ prev: false
 title: "Cheermote"
 ---
 
+A cheermote sent into the fragments of a ChannelChatMessage event.
+
 ## Implements
 
 - [`CheermoteData`](/api/eventsub/interfaces/cheermotedata/)
@@ -17,11 +19,13 @@ title: "Cheermote"
 new Cheermote(cheermote: CheermoteData): Cheermote
 ```
 
+Builds up a cheermote.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `cheermote` | [`CheermoteData`](/api/eventsub/interfaces/cheermotedata/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `cheermote` | [`CheermoteData`](/api/eventsub/interfaces/cheermotedata/) | The data of the cheermote. |
 
 #### Returns
 
@@ -29,12 +33,12 @@ new Cheermote(cheermote: CheermoteData): Cheermote
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/Cheermote.ts:11
+twitchfy/packages/eventsub/src/structures/messages/Cheermote.ts:27
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `bits` | `public` | `number` |
-| `prefix` | `public` | `string` |
-| `tier` | `public` | `number` |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `bits` | `readonly` | `number` | The amount of bits the cheermote represents. |
+| `prefix` | `readonly` | `string` | The prefix of the cheermote. |
+| `tier` | `readonly` | `number` | The tier of the cheermote. |

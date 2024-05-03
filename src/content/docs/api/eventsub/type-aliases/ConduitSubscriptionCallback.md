@@ -9,6 +9,8 @@ title: "ConduitSubscriptionCallback"
 type ConduitSubscriptionCallback<T>: (message: SubscriptionMessages<Conduit>[T]) => any | Promise<any>;
 ```
 
+The callback for the conduit subscription.
+
 ## Type parameters
 
 | Type parameter |
@@ -27,4 +29,4 @@ type ConduitSubscriptionCallback<T>: (message: SubscriptionMessages<Conduit>[T])
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/ConduitSubscriptionCallback.ts:6
+twitchfy/packages/eventsub/src/types/ConduitSubscriptionCallback.ts:9

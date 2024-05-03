@@ -5,6 +5,8 @@ prev: false
 title: "ISubscription"
 ---
 
+The interface of the schema for saving subscription within the MongoAdapter.
+
 ## Extends
 
 - `Document`

@@ -5,6 +5,8 @@ prev: false
 title: "RedisAdapter"
 ---
 
+The Redis storage adapter.
+
 ## Extends
 
 - [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<`K`\>
@@ -23,11 +25,13 @@ title: "RedisAdapter"
 new RedisAdapter<K>(data: Object | Object | Object): RedisAdapter<K>
 ```
 
+Builds up the Redis storage adapter.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `data` | `Object` \| `Object` \| `Object` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `Object` \| `Object` \| `Object` | The data for the redis connection. |
 
 #### Returns
 
@@ -39,7 +43,7 @@ new RedisAdapter<K>(data: Object | Object | Object): RedisAdapter<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:14
+twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:20
 
 ## Properties
 
@@ -55,11 +59,13 @@ twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:14
 delete(id: string): Promise<void>
 ```
 
+Deletes a subscription from the storage.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `id` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | The id of the subscription which will be deleted. |
 
 #### Returns
 
@@ -71,7 +77,7 @@ delete(id: string): Promise<void>
 
 #### Source
 
-twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:49
+twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:55
 
 ***
 
@@ -81,6 +87,8 @@ twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:49
 get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 ```
 
+Gets a subscription from the storage.
+
 #### Type parameters
 
 | Type parameter | Value |
@@ -89,13 +97,15 @@ get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `id` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | The id of the subscription which will be get. |
 
 #### Returns
 
 `Promise`\<[`StorageAdapterGet`](/api/eventsub/type-aliases/storageadapterget/)\<`K`, `T`\>\>
+
+The basic data which will be needed to reload the subscription. You can attach other data to the object.
 
 #### Overrides
 
@@ -103,7 +113,7 @@ get<T>(id: string): Promise<StorageAdapterGet<K, T>>
 
 #### Source
 
-twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:43
+twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:49
 
 ***
 
@@ -112,6 +122,8 @@ twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:43
 ```ts
 getAll(): Promise<StorageAdapterGet<K, SubscriptionTypes>[]>
 ```
+
+Gets all subscriptions from the storage.
 
 #### Returns
 
@@ -123,7 +135,7 @@ getAll(): Promise<StorageAdapterGet<K, SubscriptionTypes>[]>
 
 #### Source
 
-twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:57
+twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:63
 
 ***
 
@@ -133,6 +145,8 @@ twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:57
 set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 ```
 
+Sets a subscription into the storage.
+
 #### Type parameters
 
 | Type parameter | Value |
@@ -141,10 +155,10 @@ set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `id` | `string` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | The id of the subscription which will be set. Probably you want to use the id as a key. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which will be set. |
 
 #### Returns
 
@@ -156,4 +170,4 @@ set<T>(id: string, subscription: SubscriptionType<T, K>): Promise<void>
 
 #### Source
 
-twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:22
+twitchfy/packages/eventsub/src/storage/adapters/RedisAdapter.ts:28

@@ -5,6 +5,8 @@ prev: false
 title: "BaseSubscriptionMessage"
 ---
 
+The base class for all the subscription messages.
+
 ## Extends
 
 - [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
@@ -24,12 +26,14 @@ title: "BaseSubscriptionMessage"
 new BaseSubscriptionMessage<T, K>(connection: K, subscription: SubscriptionType<T, K>): BaseSubscriptionMessage<T, K>
 ```
 
+Builds up a BaseSubscriptionMessage.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. |
 
 #### Returns
 
@@ -41,22 +45,24 @@ new BaseSubscriptionMessage<T, K>(connection: K, subscription: SubscriptionType<
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:7
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:15
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`T`, `K`\> | The subscription which trigger this message. | [`Base`](/api/eventsub/classes/base/).`subscription` |
 
 ## Methods
 
-### checkSubscriptionType()
+### checkMessageType()
 
 ```ts
-checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+checkMessageType<U>(type: U): this is SubscriptionMessages<K>[U]
 ```
+
+Checks whether the message is of a certain type.
 
 #### Type parameters
 
@@ -66,14 +72,16 @@ checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type to check. |
 
 #### Returns
 
 `this is SubscriptionMessages<K>[U]`
 
+Whether the message is of the type.
+
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:24

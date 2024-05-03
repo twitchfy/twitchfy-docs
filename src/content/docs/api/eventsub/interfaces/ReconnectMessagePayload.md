@@ -5,8 +5,10 @@ prev: false
 title: "ReconnectMessagePayload"
 ---
 
+The payload of a reconnect message.
+
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `session` | [`ReconnectMessageSession`](/api/eventsub/interfaces/reconnectmessagesession/) |
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| `session` | [`ReconnectMessageSession`](/api/eventsub/interfaces/reconnectmessagesession/) | The session data. |

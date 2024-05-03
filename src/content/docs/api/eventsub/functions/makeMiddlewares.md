@@ -9,12 +9,14 @@ title: "makeMiddlewares"
 makeMiddlewares(connection: WebhookConnection, server: Express): void
 ```
 
+Makes the middlewares for the webhook.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) |
-| `server` | `Express` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | [`WebhookConnection`](/api/eventsub/classes/webhookconnection/) | The connection to make the middlewares for. |
+| `server` | `Express` | The express server to use. |
 
 ## Returns
 
@@ -22,4 +24,4 @@ makeMiddlewares(connection: WebhookConnection, server: Express): void
 
 ## Source
 
-twitchfy/packages/eventsub/src/webhook/util/makeMiddlewares.ts:9
+twitchfy/packages/eventsub/src/webhook/util/makeMiddlewares.ts:14

@@ -5,6 +5,8 @@ prev: false
 title: "StreamOnlineMessage"
 ---
 
+The message received by the StreamOnline event.
+
 ## Extends
 
 - [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/)\<`SubscriptionTypes.StreamOnline`, `K`\>
@@ -26,13 +28,15 @@ new StreamOnlineMessage<K>(
 data: StreamOnlineEvent): StreamOnlineMessage<K>
 ```
 
+Builds up a StreamOnline message.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> |
-| `data` | [`StreamOnlineEvent`](/api/eventsub/interfaces/streamonlineevent/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> | The subscription which trigger this message. |
+| `data` | [`StreamOnlineEvent`](/api/eventsub/interfaces/streamonlineevent/) | The event data received with the subscription. |
 
 #### Returns
 
@@ -44,24 +48,26 @@ data: StreamOnlineEvent): StreamOnlineMessage<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineMessage.ts:14
+twitchfy/packages/eventsub/src/structures/messages/StreamOnline/StreamOnlineMessage.ts:28
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `broadcaster` | `public` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`StreamOnline`, `K`\> | - |
-| `connection` | `public` | `K` | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
-| `stream` | `public` | [`BaseStream`](/api/eventsub/classes/basestream/)\<`StreamOnline`, `K`\> | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `broadcaster` | `readonly` | [`BaseUser`](/api/eventsub/classes/baseuser/)\<`StreamOnline`, `K`\> | The broadcaster of the stream which went online. | - |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`connection` |
+| `stream` | `readonly` | [`BaseStream`](/api/eventsub/classes/basestream/)\<`StreamOnline`, `K`\> | The stream which went online. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`StreamOnline`, `K`\> | The subscription which trigger this message. | [`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).`subscription` |
 
 ## Methods
 
-### checkSubscriptionType()
+### checkMessageType()
 
 ```ts
-checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
+checkMessageType<U>(type: U): this is SubscriptionMessages<K>[U]
 ```
+
+Checks whether the message is of a certain type.
 
 #### Type parameters
 
@@ -71,18 +77,20 @@ checkSubscriptionType<U>(type: U): this is SubscriptionMessages<K>[U]
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `type` | `U` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `U` | The type to check. |
 
 #### Returns
 
 `this is SubscriptionMessages<K>[U]`
 
+Whether the message is of the type.
+
 #### Inherited from
 
-[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkSubscriptionType`](/api/eventsub/classes/basesubscriptionmessage/#checksubscriptiontype)
+[`BaseSubscriptionMessage`](/api/eventsub/classes/basesubscriptionmessage/).[`checkMessageType`](/api/eventsub/classes/basesubscriptionmessage/#checkmessagetype)
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:11
+twitchfy/packages/eventsub/src/structures/messages/BaseSubscriptionMessage.ts:24

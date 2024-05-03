@@ -9,6 +9,8 @@ title: "BaseConnectionOptions"
 type BaseConnectionOptions<K>: Object | Object;
 ```
 
+The options for building a base connection.
+
 ## Type parameters
 
 | Type parameter |
@@ -17,4 +19,4 @@ type BaseConnectionOptions<K>: Object | Object;
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/BaseConnectionOptions.ts:6
+twitchfy/packages/eventsub/src/types/BaseConnectionOptions.ts:9

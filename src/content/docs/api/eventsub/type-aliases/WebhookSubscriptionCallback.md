@@ -9,6 +9,8 @@ title: "WebhookSubscriptionCallback"
 type WebhookSubscriptionCallback<T>: (message: SubscriptionMessages<WebhookConnection>[T]) => any | Promise<any>;
 ```
 
+The callback for a WebhookSubscription.
+
 ## Type parameters
 
 | Type parameter |
@@ -27,4 +29,4 @@ type WebhookSubscriptionCallback<T>: (message: SubscriptionMessages<WebhookConne
 
 ## Source
 
-twitchfy/packages/eventsub/src/webhook/types/WebhookSubscriptionCallback.ts:8
+twitchfy/packages/eventsub/src/webhook/types/WebhookSubscriptionCallback.ts:10

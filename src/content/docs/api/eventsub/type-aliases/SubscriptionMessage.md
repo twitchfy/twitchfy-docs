@@ -16,6 +16,8 @@ type SubscriptionMessage<K>:
 | ChannelChatMessageMessage<K>;
 ```
 
+The message received by a subscription.
+
 ## Type parameters
 
 | Type parameter | Value |
@@ -24,4 +26,4 @@ type SubscriptionMessage<K>:
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/SubscriptionMessage.ts:4
+twitchfy/packages/eventsub/src/types/SubscriptionMessage.ts:7

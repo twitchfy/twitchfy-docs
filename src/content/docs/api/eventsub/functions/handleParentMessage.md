@@ -6,15 +6,17 @@ title: "handleParentMessage"
 ---
 
 ```ts
-handleParentMessage(this: WebhookConduit | WebSocketConduit, message: ShardIdReplace): Promise<void>
+handleParentMessage(this: WebhookShard | WebSocketShard, message: ShardIdReplace): Promise<void>
 ```
+
+Handles a parent message within a shard.
 
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `this` | [`WebhookConduit`](/api/eventsub/classes/webhookconduit/) \| [`WebSocketConduit`](/api/eventsub/classes/websocketconduit/) |
-| `message` | [`ShardIdReplace`](/api/eventsub/interfaces/shardidreplace/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `this` | [`WebhookShard`](/api/eventsub/classes/webhookshard/) \| [`WebSocketShard`](/api/eventsub/classes/websocketshard/) | - |
+| `message` | [`ShardIdReplace`](/api/eventsub/interfaces/shardidreplace/) | The message to handle. |
 
 ## Returns
 
@@ -22,4 +24,4 @@ handleParentMessage(this: WebhookConduit | WebSocketConduit, message: ShardIdRep
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/handleParentMessage.ts:5
+twitchfy/packages/eventsub/src/util/handleParentMessage.ts:10

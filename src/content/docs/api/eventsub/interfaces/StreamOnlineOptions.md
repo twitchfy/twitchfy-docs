@@ -5,8 +5,10 @@ prev: false
 title: "StreamOnlineOptions"
 ---
 
+Options for subscribing to the StreamOnline event.
+
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `broadcaster_user_id` | `string` |
+| Property | Type | Description |
+| :------ | :------ | :------ |
+| `broadcaster_user_id` | `string` | The broadcaster user ID to listen to stream online events for. |

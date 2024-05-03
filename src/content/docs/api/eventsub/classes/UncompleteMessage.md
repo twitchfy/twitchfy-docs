@@ -5,20 +5,23 @@ prev: false
 title: "UncompleteMessage"
 ---
 
+Represents a message that is not fully complete.
+
 ## Constructors
 
-### new UncompleteMessage(id, content)
+### new UncompleteMessage(data)
 
 ```ts
-new UncompleteMessage(id: string, content: string): UncompleteMessage
+new UncompleteMessage(data: UncompleteMessageData): UncompleteMessage
 ```
+
+Builds up a message that is not fully complete.
 
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `id` | `string` |
-| `content` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `data` | [`UncompleteMessageData`](/api/eventsub/interfaces/uncompletemessagedata/) | The data of the message. |
 
 #### Returns
 
@@ -26,11 +29,11 @@ new UncompleteMessage(id: string, content: string): UncompleteMessage
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/UncompleteMessage.ts:7
+twitchfy/packages/eventsub/src/structures/messages/UncompleteMessage.ts:20
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `content` | `public` | `string` |
-| `id` | `public` | `string` |
+| Property | Modifier | Type | Description |
+| :------ | :------ | :------ | :------ |
+| `content` | `readonly` | `string` | The content of the message. |
+| `id` | `readonly` | `string` | The ID of the message. |

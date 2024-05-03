@@ -9,6 +9,8 @@ title: "ConnectionTypes"
 type ConnectionTypes: WebSocketConnection | WebhookConnection | Conduit;
 ```
 
+The types of connections that can be used.
+
 ## Source
 
-twitchfy/packages/eventsub/src/types/ConnectionTypes.ts:5
+twitchfy/packages/eventsub/src/types/ConnectionTypes.ts:8

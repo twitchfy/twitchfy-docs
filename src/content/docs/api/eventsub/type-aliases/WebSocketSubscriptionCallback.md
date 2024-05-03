@@ -9,6 +9,8 @@ title: "WebSocketSubscriptionCallback"
 type WebSocketSubscriptionCallback<T>: (message: SubscriptionMessages<WebSocketConnection>[T]) => any | Promise<any>;
 ```
 
+The callback for a WebSocketSubscription.
+
 ## Type parameters
 
 | Type parameter |
@@ -27,4 +29,4 @@ type WebSocketSubscriptionCallback<T>: (message: SubscriptionMessages<WebSocketC
 
 ## Source
 
-twitchfy/packages/eventsub/src/ws/types/WebSocketSubscriptionCallback.ts:8
+twitchfy/packages/eventsub/src/ws/types/WebSocketSubscriptionCallback.ts:10

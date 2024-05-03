@@ -9,11 +9,13 @@ title: "startup"
 startup(this: WebSocketConnection): Promise<void>
 ```
 
+Used to start up the connection and reload subscriptions if the maintainSubscriptions option is enabled.
+
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `this` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `this` | [`WebSocketConnection`](/api/eventsub/classes/websocketconnection/) | The WebSocket connection. |
 
 ## Returns
 
@@ -21,4 +23,4 @@ startup(this: WebSocketConnection): Promise<void>
 
 ## Source
 
-twitchfy/packages/eventsub/src/ws/util/startup.ts:6
+twitchfy/packages/eventsub/src/ws/util/startup.ts:10

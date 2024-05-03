@@ -5,6 +5,8 @@ prev: false
 title: "ChannelUpdateCategory"
 ---
 
+The category of a channel which was updated in the ChannelUpdate event.
+
 ## Extends
 
 - [`Base`](/api/eventsub/classes/base/)\<`SubscriptionTypes.ChannelUpdate`, `K`\>
@@ -27,14 +29,16 @@ new ChannelUpdateCategory<K>(
 name: string): ChannelUpdateCategory<K>
 ```
 
+Builds up a ChannelUpdateCategory.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `connection` | `K` |
-| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> |
-| `id` | `string` |
-| `name` | `string` |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `connection` | `K` | The EventSub connection used. |
+| `subscription` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | The subscription which trigger this message. |
+| `id` | `string` | The ID of the category. |
+| `name` | `string` | The name of the category. |
 
 #### Returns
 
@@ -46,13 +50,13 @@ name: string): ChannelUpdateCategory<K>
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateCategory.ts:11
+twitchfy/packages/eventsub/src/structures/messages/ChannelUpdate/ChannelUpdateCategory.ts:27
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `connection` | `public` | `K` | [`Base`](/api/eventsub/classes/base/).`connection` |
-| `id` | `public` | `string` | - |
-| `name` | `public` | `string` | - |
-| `subscription` | `public` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | [`Base`](/api/eventsub/classes/base/).`subscription` |
+| Property | Modifier | Type | Description | Inherited from |
+| :------ | :------ | :------ | :------ | :------ |
+| `connection` | `readonly` | `K` | The EventSub connection used. | [`Base`](/api/eventsub/classes/base/).`connection` |
+| `id` | `readonly` | `string` | The ID of the category. | - |
+| `name` | `readonly` | `string` | The name of the category. | - |
+| `subscription` | `readonly` | [`SubscriptionType`](/api/eventsub/type-aliases/subscriptiontype/)\<`ChannelUpdate`, `K`\> | The subscription which trigger this message. | [`Base`](/api/eventsub/classes/base/).`subscription` |
