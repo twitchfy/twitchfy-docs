@@ -35,7 +35,7 @@ Within Twitchfy you can rapidly generate the token.
 import { HelixClient } from '@twitchfy/helix';
 
 const userToken = await HelixClient.generateUserToken({
-  clientID: 'myClientID',
+  clientId: 'myClientID',
   clientSecret: 'myClientSecret',
   code: 'mycode',
   redirectURI: 'redirectURI'
