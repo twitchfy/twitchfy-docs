@@ -20,7 +20,7 @@ If your aim is to develop an application based on Webhooks or Conduits you will 
 
 :::tip
 
-You can generate an app token within Twitchfy using `@twitchfy/helix'
+You can generate an app token within Twitchfy using `@twitchfy/helix`
 
 ```ts showLineNumbers copy
 
