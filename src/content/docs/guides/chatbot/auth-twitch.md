@@ -45,7 +45,7 @@ const userToken = await HelixClient.generateUserToken({
 :::
 :::tip
 
-After generating your user token, it's crucial to store it securely, whether in a database or a file. It's important to note that tokens expire, but if you're using a user access token generated with the Authorization Code Grant Flow, it will be automatically refreshed by the package. However, you still need to persist it to retrieve it at the beginning of your application in case it stops functioning suddenly.
+After generating your user token, it's crucial to store it securely, whether in a database or a file. It's important to note that tokens expire, but if you're using an user access token generated with the Authorization Code Grant Flow, it will be automatically refreshed by the package. However, you still need to persist it to retrieve it at the beginning of your application in case it stops working suddenly.
 
 To handle token refreshes, you can define a custom callback `onUserTokenRefresh` by overriding the Helix options like this:
 
