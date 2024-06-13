@@ -162,7 +162,7 @@ Sends a debug message to the parent thread.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebSocketShard.ts:147
+twitchfy/packages/eventsub/src/structures/WebSocketShard.ts:122
 
 ***
 
@@ -186,4 +186,4 @@ Sends a packet to the parent thread.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebSocketShard.ts:155
+twitchfy/packages/eventsub/src/structures/WebSocketShard.ts:130

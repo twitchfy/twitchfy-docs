@@ -28,4 +28,4 @@ The router for the conduit subscription route.
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/ConduitSubscriptionRoute.ts:11
+twitchfy/packages/eventsub/src/util/ConduitSubscriptionRoute.ts:8

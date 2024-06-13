@@ -26,4 +26,4 @@ Message emitted when a shard has received a subscription notification.
 
 ## Source
 
-twitchfy/packages/eventsub/src/types/ShardMessages.ts:43
+twitchfy/packages/eventsub/src/types/ShardMessages.ts:37

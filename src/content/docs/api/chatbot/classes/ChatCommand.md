@@ -29,16 +29,16 @@ new ChatCommand<T>(): ChatCommand<T>
 
 | Property | Modifier | Type | Description |
 | :------ | :------ | :------ | :------ |
-| `name` | `readonly` | `string` | The name of the command. |
-| `options` | `readonly` | [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | The options of the command. |
-| `permissions` | `readonly` | [`PermissionOrArray`](/api/chatbot/type-aliases/permissionorarray/)\<`T`\>[] | The permissions of the command. |
+| `name?` | `readonly` | `string` | The name of the command. |
+| `options?` | `readonly` | [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | The options of the command. |
+| `permissions?` | `readonly` | [`PermissionOrArray`](/api/chatbot/type-aliases/permissionorarray/)\<`T`\>[] | The permissions of the command. |
 
 ## Methods
 
 ### onPermissionFallback()?
 
 ```ts
-optional onPermissionFallback(ctx: TwitchContext<OptionsRecord, T>, permissions: RequiredPerms): any
+optional onPermissionFallback(ctx: TwitchContext<undefined | OptionsRecord, T>, permissions: RequiredPerms): any
 ```
 
 The fallback function of the command if the permissions aren't satisfied.
@@ -47,7 +47,7 @@ The fallback function of the command if the permissions aren't satisfied.
 
 | Parameter | Type |
 | :------ | :------ |
-| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<[`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/), `T`\> |
+| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`undefined` \| [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/), `T`\> |
 | `permissions` | [`RequiredPerms`](/api/chatbot/type-aliases/requiredperms/) |
 
 #### Returns
@@ -56,14 +56,14 @@ The fallback function of the command if the permissions aren't satisfied.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatCommand.ts:37
+twitchfy/packages/chatbot/src/structures/ChatCommand.ts:40
 
 ***
 
 ### run()?
 
 ```ts
-optional run(ctx: TwitchContext<OptionsRecord, T>): any
+optional run(ctx: TwitchContext<undefined | OptionsRecord, T>): any
 ```
 
 The run function of the command.
@@ -72,7 +72,7 @@ The run function of the command.
 
 | Parameter | Type |
 | :------ | :------ |
-| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<[`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/), `T`\> |
+| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`undefined` \| [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/), `T`\> |
 
 #### Returns
 
@@ -80,4 +80,4 @@ The run function of the command.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatCommand.ts:32
+twitchfy/packages/chatbot/src/structures/ChatCommand.ts:34

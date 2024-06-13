@@ -6,7 +6,7 @@ title: "SetPermissions"
 ---
 
 ```ts
-function SetPermissions<T>(...permission: PermissionOrArray<T>[]): (constructor: () => ChatCommand<T>) => void
+function SetPermissions<T>(...permission: PermissionOrArray<T>[]): <K>(target: K) => (...args: any[]) => __class<T, K> & K
 ```
 
 Set the permissions for the command.
@@ -29,15 +29,21 @@ Set the permissions for the command.
 
 The decorator function.
 
+### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* (...`args`: `any`[]) => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
+
 ### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `constructor` | () => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
+| `target` | `K` |
 
 ### Returns
 
-`void`
+(...`args`: `any`[]) => `__class`\<`T`, `K`\> & `K`
 
 ## Source
 

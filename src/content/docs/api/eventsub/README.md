@@ -117,8 +117,10 @@ title: "@twitchfy/eventsub"
 | [SubscriptionVersions](/api/eventsub/interfaces/subscriptionversions/) | The versions of the every subscription type. There are updated to the latest version. |
 | [Transport](/api/eventsub/interfaces/transport/) | The transport of the subscription. |
 | [UncompleteMessageData](/api/eventsub/interfaces/uncompletemessagedata/) | - |
+| [Warn](/api/eventsub/interfaces/warn/) | Message emitted when the shard needs to make a warning within the parent process. |
 | [WebSocketEvents](/api/eventsub/interfaces/websocketevents/) | The specific events emitted for the WebSocket connection. |
 | [WebSocketShardStart](/api/eventsub/interfaces/websocketshardstart/) | Message emitted when a shard is starting with a websocket transport. |
+| [WebhookCallbackVerified](/api/eventsub/interfaces/webhookcallbackverified/) | Message emitted when a webhook callback has been verified and consequently the shard has started. |
 | [WebhookEvents](/api/eventsub/interfaces/webhookevents/) | The specific event emitted for the Webhook connection. |
 | [WebhookShardStart](/api/eventsub/interfaces/webhookshardstart/) | Message emitted when a shard is starting with a webhook transport. |
 | [WelcomeMessage](/api/eventsub/interfaces/welcomemessage/) | The welcome message sent to the websocket client. |

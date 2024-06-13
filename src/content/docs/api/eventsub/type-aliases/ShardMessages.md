@@ -6,7 +6,13 @@ title: "ShardMessages"
 ---
 
 ```ts
-type ShardMessages: WebhookShardStart | SubscriptionNotification | WebSocketShardStart | Debug;
+type ShardMessages: 
+  | WebhookShardStart
+  | SubscriptionNotification
+  | WebSocketShardStart
+  | Debug
+  | Warn
+  | WebhookCallbackVerified;
 ```
 
 The message types that can be received by the parent process from a shard.

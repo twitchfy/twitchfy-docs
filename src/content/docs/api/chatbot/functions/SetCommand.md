@@ -6,7 +6,7 @@ title: "SetCommand"
 ---
 
 ```ts
-function SetCommand<T>(options: CommandOptions): (constructor: () => ChatCommand<T>) => void
+function SetCommand<T>(options: CommandOptions): <K>(target: K) => (...args: any[]) => __class<T, K> & K
 ```
 
 Define the command.
@@ -29,15 +29,21 @@ Define the command.
 
 The decorator function.
 
+### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* (...`args`: `any`[]) => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
+
 ### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `constructor` | () => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
+| `target` | `K` |
 
 ### Returns
 
-`void`
+(...`args`: `any`[]) => `__class`\<`T`, `K`\> & `K`
 
 ## Source
 

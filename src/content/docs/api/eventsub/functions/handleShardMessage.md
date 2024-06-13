@@ -27,4 +27,4 @@ Handles a shard message received by the parent process.
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/handleShardMessage.ts:14
+twitchfy/packages/eventsub/src/util/handleShardMessage.ts:15

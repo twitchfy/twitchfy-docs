@@ -16,7 +16,7 @@ A Webhook Connection.
 ### new WebhookConnection()
 
 ```ts
-new WebhookConnection(options: WebhookConnectionOptions, server: Express): WebhookConnection
+new WebhookConnection(options: WebhookConnectionOptions, server?: Express): WebhookConnection
 ```
 
 Builds up a new WebhookConnection.
@@ -26,7 +26,7 @@ Builds up a new WebhookConnection.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `options` | [`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/) | The options for the connection. |
-| `server` | `Express` | The express server used for receiving Twitch data. |
+| `server`? | `Express` | The express server used for receiving Twitch data. |
 
 #### Returns
 
@@ -38,7 +38,7 @@ Builds up a new WebhookConnection.
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:59
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:62
 
 ## Properties
 
@@ -75,7 +75,7 @@ The app token used for the connection.
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:163
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:168
 
 ***
 
@@ -93,7 +93,7 @@ The URL for the webhook callback. This is a join between the base url and the su
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:81
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:86
 
 ## Methods
 
@@ -422,6 +422,39 @@ node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladf
 
 ***
 
+### post()
+
+```ts
+post(
+   headers: IncomingHttpHeaders, 
+   body: any, 
+   verification: (challenge: string) => any, 
+   success: () => any, 
+invalidSignature?: () => any): Promise<any>
+```
+
+Used for handling incoming Twitch requests in your custom non-Express server.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `headers` | `IncomingHttpHeaders` | The headers of the request. |
+| `body` | `any` | The body of the request. |
+| `verification` | (`challenge`: `string`) => `any` | A callback to be called when the request is a webhook callback verification and you need to send the challenge. |
+| `success` | () => `any` | A callback to be called when the handling has suceeded. You will need to send a 200 status in the response after that. |
+| `invalidSignature`? | () => `any` | A callback which is executed when the signature that has been sent by the requester is incorrect. |
+
+#### Returns
+
+`Promise`\<`any`\>
+
+#### Source
+
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:181
+
+***
+
 ### prependListener()
 
 ```ts
@@ -607,7 +640,7 @@ The connection.
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:153
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:158
 
 ***
 
@@ -658,7 +691,7 @@ Starts the Webhook Connection.
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:138
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:143
 
 ***
 
@@ -692,7 +725,7 @@ Subscribe to an EventSub event.
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:85
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:90
 
 ***
 
@@ -726,7 +759,7 @@ Subscribe to multiple EventSub events.
 
 #### Source
 
-twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:106
+twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:111
 
 ***
 

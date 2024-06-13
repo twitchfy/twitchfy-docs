@@ -12,7 +12,7 @@ A Webhook Shard created within a Conduit.
 ### new WebhookShard()
 
 ```ts
-new WebhookShard(options: Pick<WebhookConnectionOptions, "baseURL" | "secret" | "startServer" | "subscriptionRoute">, server: Express): WebhookShard
+new WebhookShard(options: Pick<WebhookConnectionOptions, "baseURL" | "secret" | "startServer" | "subscriptionRoute">, server?: Express): WebhookShard
 ```
 
 Builds up a Webhook Shard.
@@ -22,7 +22,7 @@ Builds up a Webhook Shard.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `options` | `Pick`\<[`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/), `"baseURL"` \| `"secret"` \| `"startServer"` \| `"subscriptionRoute"`\> | The options for the shard. |
-| `server` | `Express` | The Express server to handle the subscription notifications. |
+| `server`? | `Express` | The Express server to handle the subscription notifications. |
 
 #### Returns
 
@@ -30,7 +30,7 @@ Builds up a Webhook Shard.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:71
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:67
 
 ## Properties
 
@@ -58,25 +58,7 @@ The id of the Conduit which this shard belongs to.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:95
-
-***
-
-### helixClient
-
-```ts
-get helixClient(): HelixClient
-```
-
-The HelixClient to interact with the Twitch API of this shard.
-
-#### Returns
-
-`HelixClient`
-
-#### Source
-
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:103
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:91
 
 ***
 
@@ -94,7 +76,7 @@ The id of the shard.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:110
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:99
 
 ***
 
@@ -112,7 +94,7 @@ The URL used for receiving the subscription notifications. This is the combinati
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:88
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:84
 
 ## Methods
 
@@ -136,7 +118,64 @@ Sends a debug packet to the parent thread to make a debug.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:173
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:180
+
+***
+
+### makeWarn()
+
+```ts
+makeWarn(...args: any[]): void
+```
+
+Sends a warn packet to the parent thread to make a warning.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`args` | `any`[] | The arguments to send. |
+
+#### Returns
+
+`void`
+
+#### Source
+
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:188
+
+***
+
+### post()
+
+```ts
+post(
+   headers: IncomingHttpHeaders, 
+   body: any, 
+   verification: (challenge: string) => any, 
+   success: () => any, 
+invalidSignature?: () => any): Promise<any>
+```
+
+Used for handling incoming Twitch requests in your custom non-Express server.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `headers` | `IncomingHttpHeaders` | The headers of the request. |
+| `body` | `any` | The body of the request. |
+| `verification` | (`challenge`: `string`) => `any` | A callback to be called when the request is a webhook callback verification and you need to send the challenge. |
+| `success` | () => `any` | A callback to be called when the handling has suceeded. You will need to send a 200 status in the response after that. |
+| `invalidSignature`? | () => `any` | A callback which is executed when the signature that has been sent by the requester is incorrect. |
+
+#### Returns
+
+`Promise`\<`any`\>
+
+#### Source
+
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:112
 
 ***
 
@@ -160,7 +199,7 @@ Sends a packet to the parent thread.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:181
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:196
 
 ***
 
@@ -185,4 +224,4 @@ Starts the shard.
 
 #### Source
 
-twitchfy/packages/eventsub/src/structures/WebhookShard.ts:119
+twitchfy/packages/eventsub/src/structures/WebhookShard.ts:154

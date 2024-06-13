@@ -24,4 +24,4 @@ Makes the middlewares for the webhook server.
 
 ## Source
 
-twitchfy/packages/eventsub/src/util/conduitMakeMiddlewares.ts:13
+twitchfy/packages/eventsub/src/util/conduitMakeMiddlewares.ts:11

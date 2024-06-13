@@ -12,10 +12,7 @@ Message emitted when a shard is starting with a webhook transport.
 | Property | Type |
 | :------ | :------ |
 | `shard` | `object` |
-| `shard.id` | `string` |
-| `shard.status` | `string` |
 | `shard.transport` | `object` |
 | `shard.transport.callback` | `string` |
-| `shard.transport.method` | `"webhook"` |
 | `shard.transport.secret` | `string` |
 | `topic` | `"shard.webhook.start"` |

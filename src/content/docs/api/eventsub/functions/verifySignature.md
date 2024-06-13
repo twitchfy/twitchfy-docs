@@ -6,7 +6,10 @@ title: "verifySignature"
 ---
 
 ```ts
-function verifySignature(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, secret: string): boolean
+function verifySignature(
+   headers: IncomingHttpHeaders, 
+   body: any, 
+   secret: string): boolean
 ```
 
 Verifies the signature of the request secret to ensure a secure enviroment.
@@ -15,7 +18,8 @@ Verifies the signature of the request secret to ensure a secure enviroment.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `req` | `Request`\<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`\<`string`, `any`\>\> | The request to verify. |
+| `headers` | `IncomingHttpHeaders` | The headers sent by Twitch. |
+| `body` | `any` | The body of the request. |
 | `secret` | `string` | The secret to use for the verification. |
 
 ## Returns
@@ -26,4 +30,4 @@ Whether the signature is valid.
 
 ## Source
 
-twitchfy/packages/eventsub/src/webhook/util/verifySignature.ts:10
+twitchfy/packages/eventsub/src/webhook/util/verifySignature.ts:12

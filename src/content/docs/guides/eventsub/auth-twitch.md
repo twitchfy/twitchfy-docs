@@ -29,5 +29,5 @@ import { HelixClient } from '@twitchfy/helix';
 HelixClient.generateAppToken({
     clientId: 'yourClientId',
     clientSecret: 'yourClientSecret'
-}).then((token) => console.log(`My token is ${token}`));
+}).then((token) => console.log(`My token is ${token.token}`));
 ```

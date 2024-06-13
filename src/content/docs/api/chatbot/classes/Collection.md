@@ -514,3 +514,39 @@ Returns an iterable of values in the map
 #### Source
 
 node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:134
+
+***
+
+### groupBy()
+
+```ts
+static groupBy<K, T>(items: Iterable<T>, keySelector: (item: T, index: number) => K): Map<K, T[]>
+```
+
+Groups members of an iterable according to the return value of the passed callback.
+
+#### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` |
+| `T` |
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `items` | `Iterable`\<`T`\> | An iterable. |
+| `keySelector` | (`item`: `T`, `index`: `number`) => `K` | A callback which will be invoked for each item in items. |
+
+#### Returns
+
+`Map`\<`K`, `T`[]\>
+
+#### Inherited from
+
+`Map.groupBy`
+
+#### Source
+
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.esnext.collection.d.ts:25

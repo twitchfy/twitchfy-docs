@@ -1,0 +1,156 @@
+---
+title: WebSocket
+sidebar:
+    order: 3
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components"
+
+This section will cover how to create a Websocket connection and subscribe to EventSub events with it.
+
+## Creating a WebSocket connection
+
+To start a WebSocket connection we need to create a new instance of [`WebSocketConnection`](/api/eventsub/classes/websocketconnection).
+
+```ts title='websocket.ts'
+
+import { WebSocketConnection } from '@twitchfy/eventsub'
+
+const connection = new WebSocketConnection({
+    clientId: 'clientId',
+    clientSecret: 'clientSecret',
+    userToken: 'myUserToken',
+    maintainSubscriptions: false
+})
+
+connection.connect();
+```
+
+:::tip
+For maintaining subscription between processes see [Subscription Reload](./subscriptionreload).
+:::
+
+To wait until the connection is fully operational you can either wait until the `connect` method promise is resolved or listen to `ConnectionReady` event.
+
+```ts title='websocket.ts' ins={11, 13-15}
+
+import { WebSocketConnection, Events } from '@twitchfy/eventsub'
+
+const connection = new WebSocketConnection({
+    clientId: 'clientId',
+    clientSecret: 'clientSecret',
+    userToken: 'myUserToken',
+    maintainSubscriptions: false
+})
+
+connection.connect()
+.then(() => console.log('Connection ready'));
+
+connection.on(Events.ConnectionReady, () => {
+    console.log('Connection ready x2')
+})
+```
+
+## Subscribing to events
+
+Having created a functional WebSocket connection is time to subscribe to our first event. 
+
+This example will show how to subscribe to a `StreamOnline` event.
+
+```ts title='websocket.ts' ins={16-18}
+
+import { WebSocketConnection, Events, SubscriptionTypes } from '@twitchfy/eventsub'
+
+const connection = new WebSocketConnection({
+    clientId: 'clientId',
+    clientSecret: 'clientSecret',
+    userToken: 'myUserToken',
+    maintainSubscriptions: false
+})
+
+connection.connect()
+.then(() => console.log('Connection ready'));
+
+connection.on(Events.ConnectionReady, async() => {
+    console.log('Connection ready x2');
+
+    await connection.subscribe({ type: SubscriptionTypes.StreamOnline, options: {
+        broadcaster_user_id: 'userId'
+    }})
+})
+```
+
+:::danger
+It's crucial to subscribe to events when the connection if fully estabilished. If not the package will likely throw an error
+:::
+
+:::tip
+You can subscribe to multiple events at once using `subscribeAll` method.
+:::
+
+## Listening events
+
+Now that you have created a new subscription we will listen to it and get notified whenever it is fired.
+
+To achive this we can either use a callback using the `onMessage` function in the subscription object or using the `SubscriptionMessage` event.
+
+<Tabs>
+<TabItem label="Callback">
+
+```ts showLineNumbers copy title="websocket.ts" ins={20-22}
+import { WebSocketConnection, Events, SubscriptionTypes } from '@twitchfy/eventsub'
+
+const connection = new WebSocketConnection({
+    clientId: 'clientId',
+    clientSecret: 'clientSecret',
+    userToken: 'myUserToken',
+    maintainSubscriptions: false
+})
+
+connection.connect()
+.then(() => console.log('Connection ready'));
+
+connection.on(Events.ConnectionReady, async() => {
+    console.log('Connection ready x2');
+
+    const subscription = await connection.subscribe({ type: SubscriptionTypes.StreamOnline, options: {
+        broadcaster_user_id: 'userId'
+    }})
+
+    subscription.onMessage((message) => {
+        console.log(`${message.broadcaster.displayName} has started a stream at ${message.stream.startedAt.toLocaleDateString()}`)
+    })
+})
+```
+</TabItem>
+
+<TabItem label="SubscriptionMessage">
+
+```ts showLineNumbers copy title="websocket.ts" ins={21-24}
+import { WebSocketConnection, Events, SubscriptionTypes } from '@twitchfy/eventsub'
+
+const connection = new WebSocketConnection({
+    clientId: 'clientId',
+    clientSecret: 'clientSecret',
+    userToken: 'myUserToken',
+    maintainSubscriptions: false
+})
+
+connection.connect()
+.then(() => console.log('Connection ready'));
+
+connection.on(Events.ConnectionReady, async() => {
+    console.log('Connection ready x2');
+
+    await connection.subscribe({ type: SubscriptionTypes.StreamOnline, options: {
+        broadcaster_user_id: 'userId'
+    }})
+})
+
+connection.on(Events.SubscriptionMessage, (message, subscription) => {
+    //checks if the subscription is the desired subscription
+    if(subscription.checkSubscriptionType(SubscriptionTypes.StreamOnline)) console.log(`${message.broadcaster.displayName} has started a stream at ${message.stream.startedAt.toLocaleDateString()}`)
+})
+```
+</TabItem>
+</Tabs>
