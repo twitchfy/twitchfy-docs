@@ -10,7 +10,7 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 Having authorized and created your chatbot account within Twitch it's time to build our first chatbot.
 
-First of all we have to install `@twitchfy/chatbot` package with our custom Node Package Manager.
+First of all we have to install `@twitchfy/chatbot` package with our Node Package Manager.
 
 <Tabs>
   <TabItem label="pnpm">
@@ -127,7 +127,7 @@ import type { EventSubConnection } from '@twitchfy/chatbot';
 
 declare module '@twitchfy/chatbot' {
   interface Options {
-    connection: EventSubConnection.Webhook // or WebSocket if you are using websocket
+    connection: EventSubConnection.Webhook // or any other type of connection.
   }
 }
 ```
@@ -253,14 +253,13 @@ chatbot.start().then(() => {
 
   chatbot.channels.join('channelId').then(() => console.log('Joined'))
 
-});
+});```
 
 :::note
 
-If you have an storage set into your chatbot's eventsub you won't need to join everytime you start your chatbot to the same channels.
+If you have an storage set into your chatbot's eventsub you won't need to join to the same channels everytime you start your application.
 
 :::
-```
 
 :::note
 To be able to join to channels you need either `channel:bot` scope from broadcaster or your chatbot to be a moderator of the channel you will join.
