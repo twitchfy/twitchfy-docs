@@ -6,7 +6,7 @@ title: "underline"
 ---
 
 ```ts
-underline(str: string): string
+function underline(str: string): string
 ```
 
 Make the text underline.

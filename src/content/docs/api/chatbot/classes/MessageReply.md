@@ -15,11 +15,11 @@ Represents a message reply.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new MessageReply(chatbot, data, chatroom)
+### new MessageReply()
 
 ```ts
 new MessageReply<T>(

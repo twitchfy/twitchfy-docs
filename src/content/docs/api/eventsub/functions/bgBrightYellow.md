@@ -6,7 +6,7 @@ title: "bgBrightYellow"
 ---
 
 ```ts
-bgBrightYellow(str: string): string
+function bgBrightYellow(str: string): string
 ```
 
 Set background color to bright yellow.

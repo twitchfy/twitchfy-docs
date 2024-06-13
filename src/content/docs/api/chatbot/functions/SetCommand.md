@@ -6,7 +6,7 @@ title: "SetCommand"
 ---
 
 ```ts
-SetCommand<T>(options: CommandOptions): (constructor: () => ChatCommand<T>) => void
+function SetCommand<T>(options: CommandOptions): (constructor: () => ChatCommand<T>) => void
 ```
 
 Define the command.
@@ -15,7 +15,7 @@ Define the command.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Parameters
 
@@ -29,16 +29,15 @@ Define the command.
 
 The decorator function.
 
-> ### Parameters
->
-> | Parameter | Type |
-> | :------ | :------ |
-> | `constructor` | () => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
->
-> ### Returns
->
-> `void`
->
+### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `constructor` | () => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
+
+### Returns
+
+`void`
 
 ## Source
 

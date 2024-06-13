@@ -6,7 +6,7 @@ title: "reset"
 ---
 
 ```ts
-reset(str: string): string
+function reset(str: string): string
 ```
 
 Reset the text modified

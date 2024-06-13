@@ -6,7 +6,7 @@ title: "dim"
 ---
 
 ```ts
-dim(str: string): string
+function dim(str: string): string
 ```
 
 The text emits only a small amount of light.

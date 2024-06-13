@@ -11,11 +11,11 @@ Represents a string option.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends `string` \| `null` | `null` |
+| `T` *extends* `string` \| `null` | `null` |
 
 ## Constructors
 
-### new StringOption(options)
+### new StringOption()
 
 ```ts
 new StringOption<T>(options?: OptionOptions<T>): StringOption<T>
@@ -39,7 +39,7 @@ twitchfy/packages/chatbot/src/structures/StringOption.ts:21
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `defaultValue` | `readonly` | `null` \| `T` | The default value of the option. |
-| `type` | `readonly` | `"string"` | The type of the option. It's always string. |
+| Property | Modifier | Type | Default value | Description |
+| :------ | :------ | :------ | :------ | :------ |
+| `defaultValue` | `readonly` | `null` \| `T` | `undefined` | The default value of the option. |
+| `type` | `readonly` | `"string"` | `'string'` | The type of the option. It's always string. |

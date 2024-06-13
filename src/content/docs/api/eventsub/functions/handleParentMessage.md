@@ -6,7 +6,7 @@ title: "handleParentMessage"
 ---
 
 ```ts
-handleParentMessage(this: WebhookShard | WebSocketShard, message: ShardIdReplace): Promise<void>
+function handleParentMessage(this: WebhookShard | WebSocketShard, message: ShardIdReplace): Promise<void>
 ```
 
 Handles a parent message within a shard.

@@ -11,16 +11,26 @@ The base class for all the subscription messages.
 
 - [`Base`](/api/eventsub/classes/base/)\<`T`, `K`\>
 
+## Extended by
+
+- [`ChannelAdBreakBeginMessage`](/api/eventsub/classes/channeladbreakbeginmessage/)
+- [`ChannelChatClearMessage`](/api/eventsub/classes/channelchatclearmessage/)
+- [`ChannelChatClearUserMessagesMessage`](/api/eventsub/classes/channelchatclearusermessagesmessage/)
+- [`ChannelFollowMessage`](/api/eventsub/classes/channelfollowmessage/)
+- [`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)
+- [`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)
+- [`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
-### new BaseSubscriptionMessage(connection, subscription)
+### new BaseSubscriptionMessage()
 
 ```ts
 new BaseSubscriptionMessage<T, K>(connection: K, subscription: SubscriptionType<T, K>): BaseSubscriptionMessage<T, K>
@@ -68,7 +78,7 @@ Checks whether the message is of a certain type.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 

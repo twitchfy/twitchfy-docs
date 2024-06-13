@@ -6,7 +6,7 @@ title: "notificationHandler"
 ---
 
 ```ts
-notificationHandler(connection: WebhookConnection | WebSocketConnection, payload: BasePayload<SubscriptionTypes>): Promise<void>
+function notificationHandler(connection: WebhookConnection | WebSocketConnection, payload: BasePayload<SubscriptionTypes>): Promise<void>
 ```
 
 Handles a subscription notification in a connection excluding the conduit.

@@ -15,11 +15,11 @@ The ban manager of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BanManager(chatbot, chatroom)
+### new BanManager()
 
 ```ts
 new BanManager<T>(chatbot: ChatBot<T>, chatroom: ChatRoom<T>): BanManager<T>

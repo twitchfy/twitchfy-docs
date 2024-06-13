@@ -6,7 +6,7 @@ title: "stripColor"
 ---
 
 ```ts
-stripColor(string: string): string
+function stripColor(string: string): string
 ```
 
 Remove ANSI escape codes from the string.

@@ -15,7 +15,7 @@ The callback for a WebSocketSubscription.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Parameters
 

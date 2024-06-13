@@ -11,11 +11,11 @@ Represents a boolean option for a command.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends `boolean` \| `null` | `null` |
+| `T` *extends* `boolean` \| `null` | `null` |
 
 ## Constructors
 
-### new BooleanOption(options)
+### new BooleanOption()
 
 ```ts
 new BooleanOption<T>(options?: OptionOptions<T>): BooleanOption<T>
@@ -39,7 +39,7 @@ twitchfy/packages/chatbot/src/structures/BooleanOption.ts:22
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `defaultValue` | `readonly` | `null` \| `T` | The default value of the option. |
-| `type` | `readonly` | `"boolean"` | The type of the option. Set to boolean. |
+| Property | Modifier | Type | Default value | Description |
+| :------ | :------ | :------ | :------ | :------ |
+| `defaultValue` | `readonly` | `null` \| `T` | `undefined` | The default value of the option. |
+| `type` | `readonly` | `"boolean"` | `'boolean'` | The type of the option. Set to boolean. |

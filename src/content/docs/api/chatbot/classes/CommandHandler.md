@@ -9,7 +9,7 @@ The command handler.
 
 ## Constructors
 
-### new CommandHandler(dir)
+### new CommandHandler()
 
 ```ts
 new CommandHandler(dir: string): CommandHandler

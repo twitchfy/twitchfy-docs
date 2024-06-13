@@ -11,7 +11,7 @@ Base class for building custom permissions.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
@@ -36,7 +36,7 @@ new BasePermission<T>(): BasePermission<T>
 ### check()
 
 ```ts
-abstract check(ctx: TwitchContext<Object, T>): boolean | Promise<boolean>
+abstract check(ctx: TwitchContext<object, T>): boolean | Promise<boolean>
 ```
 
 Check if the user has the custom permission to run the command.
@@ -45,7 +45,7 @@ Check if the user has the custom permission to run the command.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`Object`, `T`\> | The context of the command which was run. |
+| `ctx` | [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`object`, `T`\> | The context of the command which was run. |
 
 #### Returns
 

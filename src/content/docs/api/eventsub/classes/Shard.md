@@ -9,10 +9,10 @@ A shard created within a Conduit.
 
 ## Constructors
 
-### new Shard(conduit, data)
+### new Shard()
 
 ```ts
-new Shard(conduit: Conduit, data: ConduitShardData & Object): Shard
+new Shard(conduit: Conduit, data: ConduitShardData & object): Shard
 ```
 
 Builds up a Shard.
@@ -22,7 +22,7 @@ Builds up a Shard.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `conduit` | [`Conduit`](/api/eventsub/classes/conduit/) | The Conduit that created this shard. |
-| `data` | `ConduitShardData` & `Object` | The data from the API. If the shard is of type 'webhook', it aditionally includes the secret which is not returned by the API. |
+| `data` | `ConduitShardData` & `object` | The data from the API. If the shard is of type 'webhook', it aditionally includes the secret which is not returned by the API. |
 
 #### Returns
 
@@ -67,25 +67,25 @@ twitchfy/packages/eventsub/src/structures/Shard.ts:86
 ### toAPI()
 
 ```ts
-toAPI(): Object
+toAPI(): object
 ```
 
 Converts the shard to the API format.
 
 #### Returns
 
-`Object`
+`object`
 
 The shard into API format.
 
 | Member | Type | Value |
 | :------ | :------ | :------ |
-| `id` | `string` | - |
-| `transport` | `Object` | - |
-| `transport.callback` | `string` | - |
-| `transport.method` | `"websocket"` \| `"webhook"` | - |
-| `transport.secret` | `string` | - |
-| `transport.session_id` | `string` | - |
+| `id` | `string` | ... |
+| `transport` | `object` | ... |
+| `transport.callback` | `string` | ... |
+| `transport.method` | `"websocket"` \| `"webhook"` | ... |
+| `transport.secret` | `string` | ... |
+| `transport.session_id` | `string` | ... |
 
 #### Source
 

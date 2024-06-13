@@ -6,7 +6,7 @@ title: "LoggerOptions"
 ---
 
 ```ts
-type LoggerOptions: Object;
+type LoggerOptions: object;
 ```
 
 ## Type declaration

@@ -11,15 +11,20 @@ The base class for a user.
 
 - `Base`\<`T`\>
 
+## Extended by
+
+- [`User`](/api/chatbot/classes/user/)
+- [`Author`](/api/chatbot/classes/author/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseUser(chatbot, data)
+### new BaseUser()
 
 ```ts
 new BaseUser<T>(chatbot: ChatBot<T>, data: BaseUserData): BaseUser<T>

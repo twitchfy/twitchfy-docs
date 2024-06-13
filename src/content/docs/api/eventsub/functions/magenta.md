@@ -6,7 +6,7 @@ title: "magenta"
 ---
 
 ```ts
-magenta(str: string): string
+function magenta(str: string): string
 ```
 
 Set text color to magenta.

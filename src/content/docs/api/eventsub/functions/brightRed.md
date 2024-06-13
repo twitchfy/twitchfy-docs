@@ -6,7 +6,7 @@ title: "brightRed"
 ---
 
 ```ts
-brightRed(str: string): string
+function brightRed(str: string): string
 ```
 
 Set text color to bright red.

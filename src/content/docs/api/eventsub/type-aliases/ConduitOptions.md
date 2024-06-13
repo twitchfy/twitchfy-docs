@@ -6,7 +6,7 @@ title: "ConduitOptions"
 ---
 
 ```ts
-type ConduitOptions: BaseConnectionOptions<Conduit> & Object;
+type ConduitOptions: BaseConnectionOptions<Conduit> & object;
 ```
 
 The options for building a Conduit connection.

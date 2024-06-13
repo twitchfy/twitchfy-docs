@@ -9,7 +9,7 @@ A Webhook Shard created within a Conduit.
 
 ## Constructors
 
-### new WebhookShard(options, server)
+### new WebhookShard()
 
 ```ts
 new WebhookShard(options: Pick<WebhookConnectionOptions, "baseURL" | "secret" | "startServer" | "subscriptionRoute">, server: Express): WebhookShard
@@ -39,7 +39,7 @@ twitchfy/packages/eventsub/src/structures/WebhookShard.ts:71
 | `baseURL` | `readonly` | `string` | The base URL of the server for setting up the callback. |
 | `secret` | `readonly` | `string` | The secret of the shard. |
 | `server` | `readonly` | `Express` | The Express server to handle the subscription notifications. |
-| `startServer` | `readonly` | `boolean` | Whether to start the server at start.<br /><br />**Default**<br />` false ` |
+| `startServer` | `readonly` | `boolean` | <p>Whether to start the server at start.</p><p>**Default**</p><code>false</code> |
 | `subscriptionRoute` | `readonly` | `string` | The route where the subscription notifications will be sent. |
 
 ## Accessors

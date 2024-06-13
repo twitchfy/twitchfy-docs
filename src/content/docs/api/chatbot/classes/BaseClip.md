@@ -11,15 +11,19 @@ Represents the base class for all clips.
 
 - `Base`\<`T`\>
 
+## Extended by
+
+- [`Clip`](/api/chatbot/classes/clip/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseClip(chatbot, data)
+### new BaseClip()
 
 ```ts
 new BaseClip<T>(chatbot: ChatBot<T>, data: GetClip | PostCreateClip): BaseClip<T>

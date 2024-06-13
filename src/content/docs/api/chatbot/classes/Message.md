@@ -15,11 +15,11 @@ Represents a message in a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Message(chatbot, data, chatroom)
+### new Message()
 
 ```ts
 new Message<T>(

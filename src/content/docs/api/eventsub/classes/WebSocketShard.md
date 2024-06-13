@@ -9,7 +9,7 @@ A WebSocket Shard created within a Conduit.
 
 ## Constructors
 
-### new WebSocketShard(options)
+### new WebSocketShard()
 
 ```ts
 new WebSocketShard(options?: Pick<WebSocketConnectionOptions, "proxy">): WebSocketShard
@@ -33,10 +33,10 @@ twitchfy/packages/eventsub/src/structures/WebSocketShard.ts:58
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `proxy` | `readonly` | `string` | The proxy used for the WebSocket connection if it was specified. |
-| `ws` | `public` | [`WebSocketShardConnector`](/api/eventsub/classes/websocketshardconnector/) | The WebSocket connector for this shard. |
+| Property | Modifier | Type | Default value | Description |
+| :------ | :------ | :------ | :------ | :------ |
+| `proxy` | `readonly` | `string` | `undefined` | The proxy used for the WebSocket connection if it was specified. |
+| `ws` | `public` | [`WebSocketShardConnector`](/api/eventsub/classes/websocketshardconnector/) | `null` | The WebSocket connector for this shard. |
 
 ## Accessors
 

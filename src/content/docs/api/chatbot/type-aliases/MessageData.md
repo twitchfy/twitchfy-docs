@@ -15,8 +15,8 @@ The data of a message.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | - |
-| `K` extends [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `Object` |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | - |
+| `K` *extends* [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `object` |
 
 ## Source
 

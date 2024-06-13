@@ -15,14 +15,14 @@ The Redis storage adapter.
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
-### new RedisAdapter(data)
+### new RedisAdapter()
 
 ```ts
-new RedisAdapter<K>(data: Object | Object | Object): RedisAdapter<K>
+new RedisAdapter<K>(data: object | object | object): RedisAdapter<K>
 ```
 
 Builds up the Redis storage adapter.
@@ -31,7 +31,7 @@ Builds up the Redis storage adapter.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `data` | `Object` \| `Object` \| `Object` | The data for the redis connection. |
+| `data` | `object` \| `object` \| `object` | The data for the redis connection. |
 
 #### Returns
 
@@ -93,7 +93,7 @@ Gets a subscription from the storage.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -151,7 +151,7 @@ Sets a subscription into the storage.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 

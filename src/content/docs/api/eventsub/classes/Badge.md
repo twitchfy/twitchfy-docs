@@ -9,7 +9,7 @@ A badge which is assigned to an user.
 
 ## Constructors
 
-### new Badge(data)
+### new Badge()
 
 ```ts
 new Badge(data: BadgeData): Badge

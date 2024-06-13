@@ -6,7 +6,7 @@ title: "RestData"
 ---
 
 ```ts
-type RestData<T, K>: Object;
+type RestData<T, K>: object;
 ```
 
 The rest of data which builds up the [MessageData](../../api/chatbot/type-aliases/messagedata).
@@ -15,8 +15,8 @@ The rest of data which builds up the [MessageData](../../api/chatbot/type-aliase
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | - |
-| `K` extends [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `Object` |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | - |
+| `K` *extends* [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `object` |
 
 ## Type declaration
 

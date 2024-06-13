@@ -6,7 +6,7 @@ title: "blue"
 ---
 
 ```ts
-blue(str: string): string
+function blue(str: string): string
 ```
 
 Set text color to blue.

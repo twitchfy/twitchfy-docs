@@ -6,7 +6,7 @@ title: "conduitMessageHandler"
 ---
 
 ```ts
-conduitMessageHandler(this: Object, message: Message): Promise<void>
+function conduitMessageHandler(this: object, message: Message): Promise<void>
 ```
 
 Handles the messages received from the conduit.
@@ -15,7 +15,7 @@ Handles the messages received from the conduit.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `this` | `Object` | - |
+| `this` | `object` | - |
 | `this.connector` | [`WebSocketShardConnector`](/api/eventsub/classes/websocketshardconnector/) | - |
 | `this.resolve` | () => `any` | - |
 | `message` | `Message` | The message received from the conduit. |

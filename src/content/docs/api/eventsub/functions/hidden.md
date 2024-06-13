@@ -6,7 +6,7 @@ title: "hidden"
 ---
 
 ```ts
-hidden(str: string): string
+function hidden(str: string): string
 ```
 
 Make the text hidden.

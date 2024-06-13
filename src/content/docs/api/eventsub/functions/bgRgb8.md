@@ -6,7 +6,7 @@ title: "bgRgb8"
 ---
 
 ```ts
-bgRgb8(str: string, color: number): string
+function bgRgb8(str: string, color: number): string
 ```
 
 Set background color using paletted 8bit colors.

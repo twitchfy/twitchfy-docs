@@ -15,11 +15,11 @@ Represents a Twitch video.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Video(chatbot, data)
+### new Video()
 
 ```ts
 new Video<T>(chatbot: ChatBot<T>, data: Video): Video<T>

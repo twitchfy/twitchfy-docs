@@ -6,7 +6,7 @@ title: "bgMagenta"
 ---
 
 ```ts
-bgMagenta(str: string): string
+function bgMagenta(str: string): string
 ```
 
 Set background color to magenta.

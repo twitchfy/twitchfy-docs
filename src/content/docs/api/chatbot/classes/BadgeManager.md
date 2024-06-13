@@ -15,11 +15,11 @@ Represents an user badge's manager.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BadgeManager(chatbot, data)
+### new BadgeManager()
 
 ```ts
 new BadgeManager<T>(chatbot: ChatBot<T>, data: Badge[]): BadgeManager<T>
@@ -66,7 +66,7 @@ Gets a user's badge.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | The id of the badge to get. Possible values could be `subscriber`, `vip, `moderator`.<br />@returns The badge if the user has it. If not it will return `undefined`. |
+| `id` | `string` | <p>The id of the badge to get. Possible values could be `subscriber`, `vip, `moderator`.</p><p>@returns The badge if the user has it. If not it will return `undefined`.</p> |
 
 #### Returns
 

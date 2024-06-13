@@ -15,14 +15,14 @@ Represents a base cheermote returned by the EventSub.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseCheermote(chatbot, data)
+### new BaseCheermote()
 
 ```ts
-new BaseCheermote<T>(chatbot: ChatBot<T>, data: Cheermote & Object): BaseCheermote<T>
+new BaseCheermote<T>(chatbot: ChatBot<T>, data: Cheermote & object): BaseCheermote<T>
 ```
 
 Creates a new instance of the base cheermote.
@@ -32,7 +32,7 @@ Creates a new instance of the base cheermote.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
-| `data` | `Cheermote` & `Object` | The data of the cheermote returned by the EventSub. |
+| `data` | `Cheermote` & `object` | The data of the cheermote returned by the EventSub. |
 
 #### Returns
 

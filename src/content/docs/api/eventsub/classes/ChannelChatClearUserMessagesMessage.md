@@ -15,11 +15,11 @@ The message received by the ChannelChatClearUserMessages event.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
-### new ChannelChatClearUserMessagesMessage(connection, subscription, data)
+### new ChannelChatClearUserMessagesMessage()
 
 ```ts
 new ChannelChatClearUserMessagesMessage<K>(
@@ -73,7 +73,7 @@ Checks whether the message is of a certain type.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 

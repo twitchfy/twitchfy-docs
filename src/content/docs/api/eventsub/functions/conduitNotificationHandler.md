@@ -6,7 +6,7 @@ title: "conduitNotificationHandler"
 ---
 
 ```ts
-conduitNotificationHandler(this: WebhookShard | WebSocketShard, payload: BasePayload<SubscriptionTypes>): Promise<void>
+function conduitNotificationHandler(this: WebhookShard | WebSocketShard, payload: BasePayload<SubscriptionTypes>): Promise<void>
 ```
 
 Handles a subscription notification from the conduit.

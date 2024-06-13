@@ -13,7 +13,7 @@ A Webhook Connection.
 
 ## Constructors
 
-### new WebhookConnection(options, server)
+### new WebhookConnection()
 
 ```ts
 new WebhookConnection(options: WebhookConnectionOptions, server: Express): WebhookConnection
@@ -56,7 +56,7 @@ twitchfy/packages/eventsub/src/webhook/structures/WebhookConnection.ts:59
 | `server` | `readonly` | `Express` | The express server used for receiving Twitch data. | - |
 | `startServer` | `readonly` | `boolean` | Whether to start the server when the connection is started. | - |
 | `storage` | `readonly` | [`StorageAdapter`](/api/eventsub/classes/storageadapter/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/)\> | The storage adapter used by the connection for storing subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`storage` |
-| `subscriptionRoute` | `readonly` | `string` | The route for receiving Twitch messages.<br /><br />**Default**<br />` /subscriptions ` | - |
+| `subscriptionRoute` | `readonly` | `string` | <p>The route for receiving Twitch messages.</p><p>**Default**</p><code>/subscriptions</code> | - |
 | `subscriptions` | `readonly` | [`SubscriptionCollection`](/api/eventsub/classes/subscriptioncollection/)\<[`WebhookConnection`](/api/eventsub/classes/webhookconnection/), [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/)\> | The subscriptions of the connection. You will only receive events for this subscriptions. | [`BaseConnection`](/api/eventsub/classes/baseconnection/).`subscriptions` |
 
 ## Accessors
@@ -107,14 +107,14 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -140,14 +140,14 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\] |
+| ...`args` | `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\] |
 
 #### Returns
 
@@ -213,7 +213,7 @@ listenerCount<K>(eventName: K): number
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
@@ -245,7 +245,7 @@ listeners<K>(eventName: K): (...args: [WebhookConnection] | [WebhookSubscription
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
@@ -333,14 +333,14 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -366,14 +366,14 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -399,14 +399,14 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -432,14 +432,14 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -465,14 +465,14 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -498,7 +498,7 @@ rawListeners<K>(eventName: K): Listener<[WebhookConnection] | [WebhookSubscripti
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
@@ -530,7 +530,7 @@ removeAllListeners<K>(event?: K): this
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
@@ -562,14 +562,14 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof WebhookEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -674,7 +674,7 @@ Subscribe to an EventSub event.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -708,7 +708,7 @@ Subscribe to multiple EventSub events.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -760,9 +760,9 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
-| `EventName` extends `PropertyKey` | `EventNames` extends `never` ? `string` \| `symbol` : keyof `EventNames` |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
+| `EventName` *extends* `PropertyKey` | `EventNames` *extends* `never` ? `string` \| `symbol` : keyof `EventNames` |
 
 #### Parameters
 
@@ -798,10 +798,10 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` extends `Object` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` extends `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` extends `unknown`[] | `EventNames` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
+| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
 
 #### Parameters
 
@@ -838,10 +838,10 @@ options?: AbortableMethods): Promise<EventResult>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` extends `Object` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` extends `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` extends `unknown`[] | `EventNames` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
+| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
 
 #### Parameters
 

@@ -15,12 +15,12 @@ The collection of subscriptions. This is an extended class of Map.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
-### new SubscriptionCollection(entries)
+### new SubscriptionCollection()
 
 ```ts
 new SubscriptionCollection<K, T>(entries?: readonly readonly [string, SubscriptionType<T, K>][]): SubscriptionCollection<K, T>
@@ -44,7 +44,7 @@ new SubscriptionCollection<K, T>(entries?: readonly readonly [string, Subscripti
 
 node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:50
 
-### new SubscriptionCollection(iterable)
+### new SubscriptionCollection()
 
 ```ts
 new SubscriptionCollection<K, T>(iterable?: Iterable<readonly [string, SubscriptionType<T, K>]>): SubscriptionCollection<K, T>
@@ -182,7 +182,7 @@ Checks whether a subscription exists in the collection by its type and options.
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -244,7 +244,7 @@ Gets a subscription from the collection by its id.
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -330,7 +330,7 @@ Sets a subscription into collection.
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 

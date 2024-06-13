@@ -11,7 +11,7 @@ The command structure.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`DefaultConnection`](/api/chatbot/type-aliases/defaultconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`DefaultConnection`](/api/chatbot/type-aliases/defaultconnection/) |
 
 ## Constructors
 

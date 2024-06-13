@@ -6,7 +6,7 @@ title: "SubscriptionVersionsObject"
 ---
 
 ```ts
-const SubscriptionVersionsObject: Object;
+const SubscriptionVersionsObject: object;
 ```
 
 A helper for determining the latest version of a subscription type.

@@ -6,7 +6,7 @@ title: "EventSubOptions"
 ---
 
 ```ts
-type EventSubOptions<T>: T extends EventSubConnection.WebSocket ? OmitClientProps<WebSocketConnectionOptions> : T extends EventSubConnection.Webhook ? OmitClientProps<WebhookConnectionOptions> & Object : OmitClientProps<ConduitOptions>;
+type EventSubOptions<T>: T extends EventSubConnection.WebSocket ? OmitClientProps<WebSocketConnectionOptions> : T extends EventSubConnection.Webhook ? OmitClientProps<WebhookConnectionOptions> & object : OmitClientProps<ConduitOptions>;
 ```
 
 The options for the EventSub connection.
@@ -15,7 +15,7 @@ The options for the EventSub connection.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Source
 

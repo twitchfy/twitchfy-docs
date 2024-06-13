@@ -15,11 +15,11 @@ Represents the chatbot channel manager used to join to channels.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChannelManager(chatbot)
+### new ChannelManager()
 
 ```ts
 new ChannelManager<T>(chatbot: ChatBot<T>): ChannelManager<T>

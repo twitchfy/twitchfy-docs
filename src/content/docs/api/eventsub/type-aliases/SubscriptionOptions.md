@@ -6,7 +6,7 @@ title: "SubscriptionOptions"
 ---
 
 ```ts
-type SubscriptionOptions<T>: Object;
+type SubscriptionOptions<T>: object;
 ```
 
 The options for creating a subscription.
@@ -15,7 +15,7 @@ The options for creating a subscription.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Type declaration
 

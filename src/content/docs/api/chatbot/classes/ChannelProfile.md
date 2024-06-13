@@ -15,11 +15,11 @@ Represents a channel profile created when the chatbot joins to a channel.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChannelProfile(chatbot, data)
+### new ChannelProfile()
 
 ```ts
 new ChannelProfile<T>(chatbot: ChatBot<T>, data: ChannelProfileData): ChannelProfile<T>

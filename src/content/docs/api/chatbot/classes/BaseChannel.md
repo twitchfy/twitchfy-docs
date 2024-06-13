@@ -9,15 +9,19 @@ title: "BaseChannel"
 
 - `Base`\<`T`\>
 
+## Extended by
+
+- [`Channel`](/api/chatbot/classes/channel/)
+
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseChannel(chatbot, data, chatroom)
+### new BaseChannel()
 
 ```ts
 new BaseChannel<T>(

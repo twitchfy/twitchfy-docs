@@ -15,11 +15,11 @@ A subscription created within a Conduit.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
-### new ConduitSubscription(conduit, options, data)
+### new ConduitSubscription()
 
 ```ts
 new ConduitSubscription<T>(
@@ -79,7 +79,7 @@ Checks if the subscription is of a certain type.
 
 | Type parameter |
 | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 

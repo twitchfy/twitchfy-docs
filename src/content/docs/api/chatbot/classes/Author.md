@@ -15,14 +15,14 @@ Represents the author of a received message.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Author(chatbot, data)
+### new Author()
 
 ```ts
-new Author<T>(chatbot: ChatBot<T>, data: BaseUserData & Object): Author<T>
+new Author<T>(chatbot: ChatBot<T>, data: BaseUserData & object): Author<T>
 ```
 
 Creates a new instance of the author.
@@ -32,7 +32,7 @@ Creates a new instance of the author.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
-| `data` | [`BaseUserData`](/api/chatbot/interfaces/baseuserdata/) & `Object` | The data of the user. |
+| `data` | [`BaseUserData`](/api/chatbot/interfaces/baseuserdata/) & `object` | The data of the user. |
 
 #### Returns
 

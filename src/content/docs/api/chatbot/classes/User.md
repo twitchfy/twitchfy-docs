@@ -11,15 +11,19 @@ Represents a Twitch user.
 
 - [`BaseUser`](/api/chatbot/classes/baseuser/)\<`T`\>
 
+## Extended by
+
+- [`ChatBotUser`](/api/chatbot/classes/chatbotuser/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new User(chatbot, data)
+### new User()
 
 ```ts
 new User<T>(chatbot: ChatBot<T>, data: User): User<T>

@@ -11,7 +11,7 @@ The options for the storage of subscriptions.
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Properties
 

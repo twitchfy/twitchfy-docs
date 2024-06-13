@@ -6,7 +6,7 @@ title: "verifySignature"
 ---
 
 ```ts
-verifySignature(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, secret: string): boolean
+function verifySignature(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, secret: string): boolean
 ```
 
 Verifies the signature of the request secret to ensure a secure enviroment.

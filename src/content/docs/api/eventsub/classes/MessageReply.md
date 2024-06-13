@@ -9,7 +9,7 @@ A reply to a message including the message which was replied and the first messa
 
 ## Constructors
 
-### new MessageReply(data)
+### new MessageReply()
 
 ```ts
 new MessageReply(data: ReplyData): MessageReply

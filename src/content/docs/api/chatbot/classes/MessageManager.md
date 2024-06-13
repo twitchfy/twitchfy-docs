@@ -15,11 +15,11 @@ Represents the manager for the messages of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new MessageManager(chatbot, chatroom)
+### new MessageManager()
 
 ```ts
 new MessageManager<T>(chatbot: ChatBot<T>, chatroom: ChatRoom<T>): MessageManager<T>

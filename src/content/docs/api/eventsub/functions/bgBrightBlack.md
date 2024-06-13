@@ -6,7 +6,7 @@ title: "bgBrightBlack"
 ---
 
 ```ts
-bgBrightBlack(str: string): string
+function bgBrightBlack(str: string): string
 ```
 
 Set background color to bright black.

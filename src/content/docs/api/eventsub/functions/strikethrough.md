@@ -6,7 +6,7 @@ title: "strikethrough"
 ---
 
 ```ts
-strikethrough(str: string): string
+function strikethrough(str: string): string
 ```
 
 Put horizontal line through the center of the text.

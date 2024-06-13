@@ -6,7 +6,7 @@ title: "findFirstMissingId"
 ---
 
 ```ts
-findFirstMissingId(shards: ConduitShardData[]): string
+function findFirstMissingId(shards: ConduitShardData[]): string
 ```
 
 Finds the first unused or disable shard in a conduit and returns its id.

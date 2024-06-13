@@ -15,12 +15,12 @@ A collection of key-value pairs.
 
 | Type parameter |
 | :------ |
-| `T` extends `string` \| `number` \| `symbol` |
+| `T` *extends* `string` \| `number` \| `symbol` |
 | `V` |
 
 ## Constructors
 
-### new Collection(entries)
+### new Collection()
 
 ```ts
 new Collection<T, V>(entries?: null | readonly readonly [T, V][]): Collection<T, V>

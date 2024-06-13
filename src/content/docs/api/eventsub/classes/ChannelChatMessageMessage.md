@@ -15,11 +15,11 @@ The message received by the ChannelChatMessage event.
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
-### new ChannelChatMessageMessage(connection, subscription, data)
+### new ChannelChatMessageMessage()
 
 ```ts
 new ChannelChatMessageMessage<K>(
@@ -74,7 +74,7 @@ Checks whether the message is of a certain type.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `U` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `U` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 

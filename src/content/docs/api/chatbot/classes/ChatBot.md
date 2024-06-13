@@ -11,11 +11,11 @@ Represents a chatbot.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChatBot(options)
+### new ChatBot()
 
 ```ts
 new ChatBot<T>(options: ChatBotOptions<T>): ChatBot<T>

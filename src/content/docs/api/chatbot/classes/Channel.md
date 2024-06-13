@@ -15,11 +15,11 @@ Represents a Twitch channel.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Channel(chatbot, data)
+### new Channel()
 
 ```ts
 new Channel<T>(chatbot: ChatBot<T>, data: Channel): Channel<T>

@@ -15,11 +15,11 @@ Represents the settings of an automod.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new AutoModSettings(chatbot, automod, data)
+### new AutoModSettings()
 
 ```ts
 new AutoModSettings<T>(

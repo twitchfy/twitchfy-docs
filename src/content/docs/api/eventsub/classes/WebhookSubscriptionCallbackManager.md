@@ -11,11 +11,11 @@ The Webhook Subscription Callback Manager.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
-### new WebhookSubscriptionCallbackManager(connection)
+### new WebhookSubscriptionCallbackManager()
 
 ```ts
 new WebhookSubscriptionCallbackManager<T>(connection: WebhookConnection): WebhookSubscriptionCallbackManager<T>

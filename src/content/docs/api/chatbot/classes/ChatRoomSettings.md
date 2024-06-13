@@ -15,11 +15,11 @@ Represents the settings of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChatRoomSettings(chatbot, chatroom, data)
+### new ChatRoomSettings()
 
 ```ts
 new ChatRoomSettings<T>(

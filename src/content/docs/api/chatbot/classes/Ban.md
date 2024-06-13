@@ -15,11 +15,11 @@ Represents a ban in a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Ban(chatbot, data)
+### new Ban()
 
 ```ts
 new Ban<T>(chatbot: ChatBot<T>, data: Ban): Ban<T>

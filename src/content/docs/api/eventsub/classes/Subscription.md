@@ -17,11 +17,11 @@ A base subscription. Used as a parent of every type of subscription.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
-### new Subscription(options, data)
+### new Subscription()
 
 ```ts
 new Subscription<T>(options: SubscriptionOptions<T>, data: PostEventSubSubscription): Subscription<T>

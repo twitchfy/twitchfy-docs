@@ -6,7 +6,7 @@ title: "setColorEnabled"
 ---
 
 ```ts
-setColorEnabled(value: boolean): void
+function setColorEnabled(value: boolean): void
 ```
 
 Set changing text color to enabled or disabled

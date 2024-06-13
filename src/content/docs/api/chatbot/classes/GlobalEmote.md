@@ -15,14 +15,14 @@ Represents a Twitch global emote.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new GlobalEmote(chatbot, data)
+### new GlobalEmote()
 
 ```ts
-new GlobalEmote<T>(chatbot: ChatBot<T>, data: GlobalEmote & Object): GlobalEmote<T>
+new GlobalEmote<T>(chatbot: ChatBot<T>, data: GlobalEmote & object): GlobalEmote<T>
 ```
 
 Creates a new instance of the global emote.
@@ -32,7 +32,7 @@ Creates a new instance of the global emote.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
-| `data` | `GlobalEmote` & `Object` | The data of the global emote returned from the API. |
+| `data` | `GlobalEmote` & `object` | The data of the global emote returned from the API. |
 
 #### Returns
 

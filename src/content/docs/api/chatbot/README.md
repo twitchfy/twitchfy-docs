@@ -114,7 +114,7 @@ title: "@twitchfy/chatbot"
 | [FetchEmote](/api/chatbot/type-aliases/fetchemote/) | The returned value when fetching an emote. |
 | [MessageData](/api/chatbot/type-aliases/messagedata/) | The data of a message. |
 | [MessageEventData](/api/chatbot/type-aliases/messageeventdata/) | The data of a message event. |
-| [MessageTypes](/api/chatbot/type-aliases/messagetypes/) | - |
+| [MessageTypes](/api/chatbot/type-aliases/messagetypes/) | The type of message that can be received in ChannelChatMessage event. |
 | [OptionsRecord](/api/chatbot/type-aliases/optionsrecord/) | The options object of a command. |
 | [PermissionOrArray](/api/chatbot/type-aliases/permissionorarray/) | The permissions of the command. |
 | [PermissionRecord](/api/chatbot/type-aliases/permissionrecord/) | The permissions object of the command. |

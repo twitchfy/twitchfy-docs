@@ -6,7 +6,7 @@ title: "italic"
 ---
 
 ```ts
-italic(str: string): string
+function italic(str: string): string
 ```
 
 Make the text italic.

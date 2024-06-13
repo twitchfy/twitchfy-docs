@@ -11,11 +11,11 @@ The callback manager for a WebSocketSubscription.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
-### new WebSocketSubscriptionCallbackManager(connection)
+### new WebSocketSubscriptionCallbackManager()
 
 ```ts
 new WebSocketSubscriptionCallbackManager<T>(connection: WebSocketConnection): WebSocketSubscriptionCallbackManager<T>

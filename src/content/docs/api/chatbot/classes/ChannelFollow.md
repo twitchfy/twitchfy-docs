@@ -15,11 +15,11 @@ Represents a channel follow event.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChannelFollow(chatbot, data)
+### new ChannelFollow()
 
 ```ts
 new ChannelFollow<T>(chatbot: ChatBot<T>, data: ChannelFollowMessage<EventSubConnectionMap[T]>): ChannelFollow<T>

@@ -11,11 +11,11 @@ Represents a number option.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends `number` \| `null` | `null` |
+| `T` *extends* `number` \| `null` | `null` |
 
 ## Constructors
 
-### new NumberOption(options)
+### new NumberOption()
 
 ```ts
 new NumberOption<T>(options?: OptionOptions<T>): NumberOption<T>
@@ -39,7 +39,7 @@ twitchfy/packages/chatbot/src/structures/NumberOption.ts:21
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `defaultValue` | `readonly` | `null` \| `T` | The default value of the option. |
-| `type` | `readonly` | `"number"` | The type of the option. It's always number. |
+| Property | Modifier | Type | Default value | Description |
+| :------ | :------ | :------ | :------ | :------ |
+| `defaultValue` | `readonly` | `null` \| `T` | `undefined` | The default value of the option. |
+| `type` | `readonly` | `"number"` | `'number'` | The type of the option. It's always number. |

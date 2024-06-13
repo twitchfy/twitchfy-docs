@@ -6,7 +6,7 @@ title: "ConduitSubscriptionRouter"
 ---
 
 ```ts
-ConduitSubscriptionRouter(
+function ConduitSubscriptionRouter(
    req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, 
    res: Response<any, Record<string, any>, number>, 
    next: NextFunction): void

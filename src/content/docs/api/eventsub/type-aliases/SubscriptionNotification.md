@@ -6,7 +6,7 @@ title: "SubscriptionNotification"
 ---
 
 ```ts
-type SubscriptionNotification<T>: Object;
+type SubscriptionNotification<T>: object;
 ```
 
 Message emitted when a shard has received a subscription notification.
@@ -15,7 +15,7 @@ Message emitted when a shard has received a subscription notification.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) | [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Type declaration
 

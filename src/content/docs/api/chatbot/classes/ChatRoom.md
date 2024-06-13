@@ -15,11 +15,11 @@ Represents a Twitch chatroom of a channel.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChatRoom(chatbot, data)
+### new ChatRoom()
 
 ```ts
 new ChatRoom<T>(chatbot: ChatBot<T>, data: ChatRoomData): ChatRoom<T>

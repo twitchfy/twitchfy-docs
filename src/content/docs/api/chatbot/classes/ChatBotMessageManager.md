@@ -15,11 +15,11 @@ The message manager of the chatobot.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChatBotMessageManager(chatbot)
+### new ChatBotMessageManager()
 
 ```ts
 new ChatBotMessageManager<T>(chatbot: ChatBot<T>): ChatBotMessageManager<T>

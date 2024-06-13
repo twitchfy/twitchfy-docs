@@ -15,11 +15,11 @@ The timeout manager of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new TimeoutManager(chatbot, chatroom)
+### new TimeoutManager()
 
 ```ts
 new TimeoutManager<T>(chatbot: ChatBot<T>, chatroom: ChatRoom<T>): TimeoutManager<T>

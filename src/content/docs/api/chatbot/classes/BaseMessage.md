@@ -11,15 +11,21 @@ The base class for a message.
 
 - `Base`\<`T`\>
 
+## Extended by
+
+- [`Message`](/api/chatbot/classes/message/)
+- [`MessageReplyParent`](/api/chatbot/classes/messagereplyparent/)
+- [`MessageReplyThread`](/api/chatbot/classes/messagereplythread/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseMessage(chatbot, data)
+### new BaseMessage()
 
 ```ts
 new BaseMessage<T>(chatbot: ChatBot<T>, data: BaseMessageData): BaseMessage<T>

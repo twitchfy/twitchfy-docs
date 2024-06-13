@@ -15,11 +15,11 @@ Represents a Twitch stream.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Stream(chatbot, data)
+### new Stream()
 
 ```ts
 new Stream<T>(chatbot: ChatBot<T>, data: GetStream): Stream<T>

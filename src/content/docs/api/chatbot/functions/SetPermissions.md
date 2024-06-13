@@ -6,7 +6,7 @@ title: "SetPermissions"
 ---
 
 ```ts
-SetPermissions<T>(...permission: PermissionOrArray<T>[]): (constructor: () => ChatCommand<T>) => void
+function SetPermissions<T>(...permission: PermissionOrArray<T>[]): (constructor: () => ChatCommand<T>) => void
 ```
 
 Set the permissions for the command.
@@ -15,7 +15,7 @@ Set the permissions for the command.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Parameters
 
@@ -29,16 +29,15 @@ Set the permissions for the command.
 
 The decorator function.
 
-> ### Parameters
->
-> | Parameter | Type |
-> | :------ | :------ |
-> | `constructor` | () => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
->
-> ### Returns
->
-> `void`
->
+### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `constructor` | () => [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\> |
+
+### Returns
+
+`void`
 
 ## Source
 

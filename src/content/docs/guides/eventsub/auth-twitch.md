@@ -24,7 +24,7 @@ You can generate an app token within Twitchfy using `@twitchfy/helix'
 
 ```ts showLineNumbers copy
 
-import { HelixClient } from '@twitchfy/helix'
+import { HelixClient } from '@twitchfy/helix';
 
 HelixClient.generateAppToken({
     clientId: 'yourClientId',

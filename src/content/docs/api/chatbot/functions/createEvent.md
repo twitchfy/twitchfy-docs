@@ -6,7 +6,7 @@ title: "createEvent"
 ---
 
 ```ts
-createEvent<T>(data: 
+function createEvent<T>(data: 
   | EventData<T, "ChannelChatClear">
   | EventData<T, "ChannelFollow">
   | EventData<T, "ChannelUpdate">
@@ -27,7 +27,7 @@ Function to create an event.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Parameters
 

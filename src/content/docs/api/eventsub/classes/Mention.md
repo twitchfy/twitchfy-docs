@@ -9,7 +9,7 @@ A mention sent into the fragments of a ChannelChatMessage event .
 
 ## Constructors
 
-### new Mention(data)
+### new Mention()
 
 ```ts
 new Mention(data: MentionData): Mention

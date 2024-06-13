@@ -6,7 +6,7 @@ title: "DefaultConnection"
 ---
 
 ```ts
-type DefaultConnection: Options extends Object ? T : EventSubConnection;
+type DefaultConnection: Options extends object ? T : EventSubConnection;
 ```
 
 An infer type which will be used to determine the default connection type using TypeScript.

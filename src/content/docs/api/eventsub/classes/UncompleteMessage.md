@@ -9,7 +9,7 @@ Represents a message that is not fully complete.
 
 ## Constructors
 
-### new UncompleteMessage(data)
+### new UncompleteMessage()
 
 ```ts
 new UncompleteMessage(data: UncompleteMessageData): UncompleteMessage

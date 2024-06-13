@@ -9,7 +9,7 @@ Represents a logger utility for logging messages with various log levels.
 
 ## Constructors
 
-### new Logger(options)
+### new Logger()
 
 ```ts
 new Logger(options: LoggerOptions): Logger
@@ -33,15 +33,15 @@ twitchfy/packages/eventsub/src/logger/Logger.ts:94
 
 ## Properties
 
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `options` | `readonly` | `Required`\<[`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/)\> | The options for configuring the logger. |
-| `DEFAULT_OPTIONS` | `static` | `Required`\<[`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/)\> | The default options for the logger. |
-| `colorFunctions` | `static` | `Map`\<[`LogLevels`](/api/eventsub/enumerations/loglevels/), (`str`: `string`) => `string`\> | A map containing color functions for different log levels. |
-| `dirname` | `static` | `string` | - |
-| `prefixes` | `static` | `Map`\<[`LogLevels`](/api/eventsub/enumerations/loglevels/), `string`\> | A map containing prefixes for different log levels. |
-| `saveOnFile?` | `static` | `string`[] \| `"all"` | - |
-| `streams` | `static` | `Partial`\<`Record`\<`string`, `WriteStream`\>\> | - |
+| Property | Modifier | Type | Default value | Description |
+| :------ | :------ | :------ | :------ | :------ |
+| `options` | `readonly` | `Required`\<[`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/)\> | `undefined` | The options for configuring the logger. |
+| `DEFAULT_OPTIONS` | `static` | `Required`\<[`LoggerOptions`](/api/eventsub/type-aliases/loggeroptions/)\> | `...` | The default options for the logger. |
+| `colorFunctions` | `static` | `Map`\<[`LogLevels`](/api/eventsub/enumerations/loglevels/), (`str`: `string`) => `string`\> | `...` | A map containing color functions for different log levels. |
+| `dirname` | `static` | `string` | `'eventsub-logs'` | - |
+| `prefixes` | `static` | `Map`\<[`LogLevels`](/api/eventsub/enumerations/loglevels/), `string`\> | `...` | A map containing prefixes for different log levels. |
+| `saveOnFile?` | `static` | `string`[] \| `"all"` | `undefined` | - |
+| `streams` | `static` | `Partial`\<`Record`\<`string`, `WriteStream`\>\> | `{}` | - |
 
 ## Accessors
 

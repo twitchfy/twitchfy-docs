@@ -15,11 +15,11 @@ Represents a channel update event.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChannelUpdate(chatbot, data)
+### new ChannelUpdate()
 
 ```ts
 new ChannelUpdate<T>(chatbot: ChatBot<T>, data: ChannelUpdateMessage<EventSubConnectionMap[T]>): ChannelUpdate<T>

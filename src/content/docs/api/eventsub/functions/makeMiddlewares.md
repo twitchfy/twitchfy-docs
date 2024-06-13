@@ -6,7 +6,7 @@ title: "makeMiddlewares"
 ---
 
 ```ts
-makeMiddlewares(connection: WebhookConnection, server: Express): void
+function makeMiddlewares(connection: WebhookConnection, server: Express): void
 ```
 
 Makes the middlewares for the webhook.

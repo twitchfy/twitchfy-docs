@@ -6,7 +6,7 @@ title: "WebSocketConnectionOptions"
 ---
 
 ```ts
-type WebSocketConnectionOptions: BaseConnectionOptions<WebSocketConnection> & Object;
+type WebSocketConnectionOptions: BaseConnectionOptions<WebSocketConnection> & object;
 ```
 
 The options used to create a new WebSocketConnection.

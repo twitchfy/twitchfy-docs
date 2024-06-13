@@ -6,7 +6,7 @@ title: "handleShardMessage"
 ---
 
 ```ts
-handleShardMessage(this: Object, message: ShardMessages): Promise<void>
+function handleShardMessage(this: object, message: ShardMessages): Promise<void>
 ```
 
 Handles a shard message received by the parent process.
@@ -15,7 +15,7 @@ Handles a shard message received by the parent process.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `this` | `Object` | - |
+| `this` | `object` | - |
 | `this.conduit` | [`Conduit`](/api/eventsub/classes/conduit/) | - |
 | `this.resolve` | () => `void` | - |
 | `this.worker` | `Worker` | - |

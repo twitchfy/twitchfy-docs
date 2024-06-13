@@ -15,11 +15,11 @@ The base class for a user without an username.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseUserWithoutUsername(chatbot, data)
+### new BaseUserWithoutUsername()
 
 ```ts
 new BaseUserWithoutUsername<T>(chatbot: ChatBot<T>, data: Omit<BaseUserData, "login">): BaseUserWithoutUsername<T>

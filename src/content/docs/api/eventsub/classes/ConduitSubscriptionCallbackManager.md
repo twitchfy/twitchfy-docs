@@ -11,11 +11,11 @@ The callback manager for a ConduitSubscription.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 ## Constructors
 
-### new ConduitSubscriptionCallbackManager(conduit)
+### new ConduitSubscriptionCallbackManager()
 
 ```ts
 new ConduitSubscriptionCallbackManager<T>(conduit: Conduit): ConduitSubscriptionCallbackManager<T>

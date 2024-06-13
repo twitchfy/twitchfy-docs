@@ -6,7 +6,7 @@ title: "startup"
 ---
 
 ```ts
-startup(this: WebSocketConnection): Promise<void>
+function startup(this: WebSocketConnection): Promise<void>
 ```
 
 Used to start up the connection and reload subscriptions if the maintainSubscriptions option is enabled.
@@ -23,4 +23,4 @@ Used to start up the connection and reload subscriptions if the maintainSubscrip
 
 ## Source
 
-twitchfy/packages/eventsub/src/ws/util/startup.ts:10
+twitchfy/packages/eventsub/src/ws/util/startup.ts:11

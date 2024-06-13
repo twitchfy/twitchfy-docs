@@ -6,7 +6,7 @@ title: "isObject"
 ---
 
 ```ts
-isObject(o: any): boolean
+function isObject(o: any): boolean
 ```
 
 ## Parameters

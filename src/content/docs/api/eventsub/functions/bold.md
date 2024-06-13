@@ -6,7 +6,7 @@ title: "bold"
 ---
 
 ```ts
-bold(str: string): string
+function bold(str: string): string
 ```
 
 Make the text bold.

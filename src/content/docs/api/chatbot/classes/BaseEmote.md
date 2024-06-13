@@ -11,16 +11,20 @@ The base emote class.
 
 - `Base`\<`T`\>
 
+## Extended by
+
+- [`Emote`](/api/chatbot/classes/emote/)
+
 ## Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | - |
-| `K` extends [`EmoteType`](/api/chatbot/type-aliases/emotetype/) | [`EmoteType`](/api/chatbot/type-aliases/emotetype/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | - |
+| `K` *extends* [`EmoteType`](/api/chatbot/type-aliases/emotetype/) | [`EmoteType`](/api/chatbot/type-aliases/emotetype/) |
 
 ## Constructors
 
-### new BaseEmote(chatbot, data)
+### new BaseEmote()
 
 ```ts
 new BaseEmote<T, K>(chatbot: ChatBot<T>, data: BaseEmoteData): BaseEmote<T, K>

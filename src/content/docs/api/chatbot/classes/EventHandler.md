@@ -9,7 +9,7 @@ The event handler.
 
 ## Constructors
 
-### new EventHandler(dir)
+### new EventHandler()
 
 ```ts
 new EventHandler(dir: string): EventHandler

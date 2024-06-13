@@ -6,7 +6,7 @@ title: "black"
 ---
 
 ```ts
-black(str: string): string
+function black(str: string): string
 ```
 
 Set text color to black.

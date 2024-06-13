@@ -6,7 +6,7 @@ title: "loadShards"
 ---
 
 ```ts
-loadShards(paths: string[]): Promise<string[]>
+function loadShards(paths: string[]): Promise<string[]>
 ```
 
 Loads all shards path from the specified paths and directories.

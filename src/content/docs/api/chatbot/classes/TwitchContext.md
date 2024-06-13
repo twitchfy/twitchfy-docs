@@ -15,12 +15,12 @@ The context of the command.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `Object` |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`DefaultConnection`](/api/chatbot/type-aliases/defaultconnection/) |
+| `K` *extends* [`OptionsRecord`](/api/chatbot/type-aliases/optionsrecord/) | `object` |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`DefaultConnection`](/api/chatbot/type-aliases/defaultconnection/) |
 
 ## Constructors
 
-### new TwitchContext(chatbot, data)
+### new TwitchContext()
 
 ```ts
 new TwitchContext<K, T>(chatbot: ChatBot<T>, data: MessageData<T, K>): TwitchContext<K, T>

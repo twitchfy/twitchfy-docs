@@ -11,7 +11,7 @@ The options to build up a chatbot.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) | [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Properties
 
@@ -24,5 +24,5 @@ The options to build up a chatbot.
 | `helix?` | `Partial`\<`HelixClientOptions`\> | The options to build up the helix client. |
 | `optionOperator?` | `string` | The operator to separate the options in the command. |
 | `paths` | [`Paths`](/api/chatbot/interfaces/paths/) | The paths of the diffrent resources of the chatbot. See [Paths](../../api/chatbot/interfaces/paths). |
-| `prefix?` | (`message`: [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`Object`, `T`\>) => `string`[] | A callback to set up the prefixes of the chatbot commands.<br /><br /> |
+| `prefix?` | (`message`: [`TwitchContext`](/api/chatbot/classes/twitchcontext/)\<`object`, `T`\>) => `string`[] | <p>A callback to set up the prefixes of the chatbot commands.</p> |
 | `userToken` | `UserTokenAdapter`\<`boolean`\> | The user token of the chatbot Twitch account. |

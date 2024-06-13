@@ -6,7 +6,7 @@ title: "StartOptions"
 ---
 
 ```ts
-type StartOptions<T>: T extends EventSubConnection.Webhook ? Object : Object;
+type StartOptions<T>: T extends EventSubConnection.Webhook ? object : object;
 ```
 
 The options to start the chatbot.
@@ -23,7 +23,7 @@ A callback to execute when the chatbot is started. Only required if the chatbot 
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Source
 

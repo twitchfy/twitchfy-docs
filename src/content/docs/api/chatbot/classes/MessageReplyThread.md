@@ -15,16 +15,16 @@ Represents the message which started a thread of replies.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new MessageReplyThread(chatbot, data, chatroom)
+### new MessageReplyThread()
 
 ```ts
 new MessageReplyThread<T>(
    chatbot: ChatBot<T>, 
-   data: BaseMessageData, 
+   data: Omit<BaseMessageData, "content">, 
 chatroom: ChatRoom<T>): MessageReplyThread<T>
 ```
 
@@ -35,7 +35,7 @@ Creates a new instance of the message reply thread.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
-| `data` | [`BaseMessageData`](/api/chatbot/interfaces/basemessagedata/) | The data of the message. |
+| `data` | `Omit`\<[`BaseMessageData`](/api/chatbot/interfaces/basemessagedata/), `"content"`\> | The data of the message. |
 | `chatroom` | [`ChatRoom`](/api/chatbot/classes/chatroom/)\<`T`\> | The chatroom where the message was sent. |
 
 #### Returns

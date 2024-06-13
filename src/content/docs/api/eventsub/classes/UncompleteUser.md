@@ -9,7 +9,7 @@ Represents a user that is not fully completed as it doesn't have connection and 
 
 ## Constructors
 
-### new UncompleteUser(data)
+### new UncompleteUser()
 
 ```ts
 new UncompleteUser(data: BaseUserData): UncompleteUser

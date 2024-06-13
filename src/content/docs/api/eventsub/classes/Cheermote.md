@@ -13,7 +13,7 @@ A cheermote sent into the fragments of a ChannelChatMessage event.
 
 ## Constructors
 
-### new Cheermote(cheermote)
+### new Cheermote()
 
 ```ts
 new Cheermote(cheermote: CheermoteData): Cheermote

@@ -6,7 +6,7 @@ title: "bgRgb24"
 ---
 
 ```ts
-bgRgb24(str: string, color: number | Rgb): string
+function bgRgb24(str: string, color: number | Rgb): string
 ```
 
 Set background color using 24bit rgb.

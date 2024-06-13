@@ -15,11 +15,11 @@ Represents the automod of a chatroom.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new AutoMod(chatbot, chatroom)
+### new AutoMod()
 
 ```ts
 new AutoMod<T>(chatbot: ChatBot<T>, chatroom: ChatRoom<T>): AutoMod<T>

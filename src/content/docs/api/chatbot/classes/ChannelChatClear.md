@@ -15,11 +15,11 @@ Represents a channel chat clear event.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChannelChatClear(chatbot, data)
+### new ChannelChatClear()
 
 ```ts
 new ChannelChatClear<T>(chatbot: ChatBot<T>, data: ChannelChatClearMessage<EventSubConnectionMap[T]>): ChannelChatClear<T>

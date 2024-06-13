@@ -15,14 +15,14 @@ Represents a Twitch channel emote.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new ChannelEmote(chatbot, data)
+### new ChannelEmote()
 
 ```ts
-new ChannelEmote<T>(chatbot: ChatBot<T>, data: ChannelEmote & Object): ChannelEmote<T>
+new ChannelEmote<T>(chatbot: ChatBot<T>, data: ChannelEmote & object): ChannelEmote<T>
 ```
 
 #### Parameters
@@ -30,7 +30,7 @@ new ChannelEmote<T>(chatbot: ChatBot<T>, data: ChannelEmote & Object): ChannelEm
 | Parameter | Type |
 | :------ | :------ |
 | `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> |
-| `data` | `ChannelEmote` & `Object` |
+| `data` | `ChannelEmote` & `object` |
 
 #### Returns
 

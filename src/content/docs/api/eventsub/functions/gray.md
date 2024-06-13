@@ -6,7 +6,7 @@ title: "gray"
 ---
 
 ```ts
-gray(str: string): string
+function gray(str: string): string
 ```
 
 Set text color to gray.

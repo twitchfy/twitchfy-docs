@@ -9,7 +9,7 @@ The parent message which was replied by the message received within the ChannelC
 
 ## Constructors
 
-### new Parent(data)
+### new Parent()
 
 ```ts
 new Parent(data: ReplyData): Parent

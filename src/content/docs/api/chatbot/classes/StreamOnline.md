@@ -15,11 +15,11 @@ Represents a stream online event.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new StreamOnline(chatbot, data)
+### new StreamOnline()
 
 ```ts
 new StreamOnline<T>(chatbot: ChatBot<T>, data: StreamOnlineMessage<EventSubConnectionMap[T]>): StreamOnline<T>

@@ -6,7 +6,7 @@ title: "cyan"
 ---
 
 ```ts
-cyan(str: string): string
+function cyan(str: string): string
 ```
 
 Set text color to cyan.

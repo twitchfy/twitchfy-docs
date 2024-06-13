@@ -6,7 +6,7 @@ title: "rgb8"
 ---
 
 ```ts
-rgb8(str: string, color: number): string
+function rgb8(str: string, color: number): string
 ```
 
 Set text color using paletted 8bit colors.

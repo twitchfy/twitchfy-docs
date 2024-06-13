@@ -15,11 +15,11 @@ Represents a Twitch cheermote.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Cheermote(chatbot, data)
+### new Cheermote()
 
 ```ts
 new Cheermote<T>(chatbot: ChatBot<T>, data: Cheermote): Cheermote<T>

@@ -9,7 +9,7 @@ The first message of the reply thread received in the ChannelChatMessage event.
 
 ## Constructors
 
-### new Thread(data)
+### new Thread()
 
 ```ts
 new Thread(data: ReplyData): Thread

@@ -6,7 +6,7 @@ title: "inverse"
 ---
 
 ```ts
-inverse(str: string): string
+function inverse(str: string): string
 ```
 
 Invert background color and text color.

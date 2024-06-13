@@ -9,12 +9,12 @@ title: "TokenAdapter"
 
 | Type parameter | Value |
 | :------ | :------ |
-| `T` extends `TokenTypes` | `TokenTypes` |
-| `K` extends `boolean` | `T` extends `"code"` \| `"app"` ? `true` : `never` |
+| `T` *extends* `TokenTypes` | `TokenTypes` |
+| `K` *extends* `boolean` | `T` *extends* `"code"` \| `"app"` ? `true` : `never` |
 
 ## Constructors
 
-### new TokenAdapter(options)
+### new TokenAdapter()
 
 ```ts
 new TokenAdapter<T, K>(options: TokenAdapterOptions<T, K>): TokenAdapter<T, K>
@@ -38,8 +38,8 @@ node\_modules/.pnpm/@twitchfy+helix@1.0.3/node\_modules/@twitchfy/helix/dist/str
 
 | Property | Type |
 | :------ | :------ |
-| `refresh` | `T` extends `"app"` \| `"code"` ? `K` : `never` |
-| `refreshToken` | `T` extends `"code"` ? `K` extends `true` ? `string` : `never` : `never` |
+| `refresh` | `T` *extends* `"app"` \| `"code"` ? `K` : `never` |
+| `refreshToken` | `T` *extends* `"code"` ? `K` *extends* `true` ? `string` : `never` : `never` |
 | `token` | `string` |
 | `type` | `T` |
 

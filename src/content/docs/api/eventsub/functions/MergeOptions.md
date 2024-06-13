@@ -6,7 +6,7 @@ title: "MergeOptions"
 ---
 
 ```ts
-MergeOptions<T>(defaults: any, ...options: any[]): T
+function MergeOptions<T>(defaults: any, ...options: any[]): T
 ```
 
 ## Type parameters

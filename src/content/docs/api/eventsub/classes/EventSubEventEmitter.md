@@ -11,11 +11,15 @@ The EventSub Event Emitter of any type of connection.
 
 - `AsyncEventEmitter`\<`U`\>
 
+## Extended by
+
+- [`BaseConnection`](/api/eventsub/classes/baseconnection/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `U` extends [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/) \| [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/) \| [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/) |
+| `U` *extends* [`WebhookEvents`](/api/eventsub/interfaces/webhookevents/) \| [`WebSocketEvents`](/api/eventsub/interfaces/websocketevents/) \| [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/) |
 
 ## Constructors
 
@@ -51,14 +55,14 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -84,14 +88,14 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\] |
+| ...`args` | `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\] |
 
 #### Returns
 
@@ -157,7 +161,7 @@ listenerCount<K>(eventName: K): number
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
@@ -189,7 +193,7 @@ listeners<K>(eventName: K): (...args: U[keyof U]) => Awaitable<void>[]
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
@@ -221,14 +225,14 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -254,14 +258,14 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -287,14 +291,14 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -320,14 +324,14 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -353,14 +357,14 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -386,7 +390,7 @@ rawListeners<K>(eventName: K): Listener<U[keyof U]>[]
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
@@ -418,7 +422,7 @@ removeAllListeners<K>(event?: K): this
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
@@ -450,14 +454,14 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 | Type parameter |
 | :------ |
-| `K` extends `string` \| `number` \| `symbol` |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
 
 #### Returns
 
@@ -529,9 +533,9 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
-| `EventName` extends `PropertyKey` | `EventNames` extends `never` ? `string` \| `symbol` : keyof `EventNames` |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
+| `EventName` *extends* `PropertyKey` | `EventNames` *extends* `never` ? `string` \| `symbol` : keyof `EventNames` |
 
 #### Parameters
 
@@ -567,10 +571,10 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` extends `Object` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` extends `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` extends `unknown`[] | `EventNames` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
+| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
 
 #### Parameters
 
@@ -607,10 +611,10 @@ options?: AbortableMethods): Promise<EventResult>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` extends `Object` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` extends `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` extends `unknown`[] | `EventNames` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
+| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
 
 #### Parameters
 

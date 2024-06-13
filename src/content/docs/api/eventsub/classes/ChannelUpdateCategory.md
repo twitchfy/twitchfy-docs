@@ -15,11 +15,11 @@ The category of a channel which was updated in the ChannelUpdate event.
 
 | Type parameter | Value |
 | :------ | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) | [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Constructors
 
-### new ChannelUpdateCategory(connection, subscription, id, name)
+### new ChannelUpdateCategory()
 
 ```ts
 new ChannelUpdateCategory<K>(

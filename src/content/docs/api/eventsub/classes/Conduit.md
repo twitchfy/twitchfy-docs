@@ -13,7 +13,7 @@ Represents a Conduit connection.
 
 ## Constructors
 
-### new Conduit(options)
+### new Conduit()
 
 ```ts
 new Conduit(options: ConduitOptions): Conduit
@@ -123,14 +123,14 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -204,14 +204,14 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\] |
+| ...`args` | `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\] |
 
 #### Returns
 
@@ -277,7 +277,7 @@ listenerCount<K>(eventName: K): number
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
@@ -314,7 +314,7 @@ listeners<K>(eventName: K): (...args:
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
@@ -407,14 +407,14 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -440,14 +440,14 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -473,14 +473,14 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -506,14 +506,14 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -539,14 +539,14 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -577,7 +577,7 @@ rawListeners<K>(eventName: K): Listener<
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
@@ -614,7 +614,7 @@ removeAllListeners<K>(event?: K): this
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
@@ -646,14 +646,14 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 | Type parameter |
 | :------ |
-| `K` extends keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
+| `K` *extends* keyof AsyncEventEmitterPredefinedEvents \| keyof ConduitEvents |
 
 #### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
+| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : [`ConduitEvents`](/api/eventsub/interfaces/conduitevents/)\[`K`\]) => `void` |
 
 #### Returns
 
@@ -751,7 +751,7 @@ Subscribe to an EventSub event.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -785,7 +785,7 @@ Subscribe to multiple EventSub events.
 
 | Type parameter |
 | :------ |
-| `T` extends [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
+| `T` *extends* [`SubscriptionTypes`](/api/eventsub/enumerations/subscriptiontypes/) |
 
 #### Parameters
 
@@ -837,9 +837,9 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
-| `EventName` extends `PropertyKey` | `EventNames` extends `never` ? `string` \| `symbol` : keyof `EventNames` |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
+| `EventName` *extends* `PropertyKey` | `EventNames` *extends* `never` ? `string` \| `symbol` : keyof `EventNames` |
 
 #### Parameters
 
@@ -875,10 +875,10 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` extends `Object` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` extends `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` extends `unknown`[] | `EventNames` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
+| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
 
 #### Parameters
 
@@ -915,10 +915,10 @@ options?: AbortableMethods): Promise<EventResult>
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` extends `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` extends `Object` | `Emitter` extends `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` extends `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` extends `unknown`[] | `EventNames` extends keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
+| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
+| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
 
 #### Parameters
 

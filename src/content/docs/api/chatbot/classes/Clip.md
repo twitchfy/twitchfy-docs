@@ -15,11 +15,11 @@ Represents a Twitch clip.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new Clip(chatbot, data)
+### new Clip()
 
 ```ts
 new Clip<T>(chatbot: ChatBot<T>, data: GetClip): Clip<T>

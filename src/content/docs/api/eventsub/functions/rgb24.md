@@ -6,7 +6,7 @@ title: "rgb24"
 ---
 
 ```ts
-rgb24(str: string, color: number | Rgb): string
+function rgb24(str: string, color: number | Rgb): string
 ```
 
 Set text color using 24bit rgb.

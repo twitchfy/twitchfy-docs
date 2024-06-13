@@ -6,7 +6,7 @@ title: "BaseConnectionOptions"
 ---
 
 ```ts
-type BaseConnectionOptions<K>: Object | Object;
+type BaseConnectionOptions<K>: object | object;
 ```
 
 The options for building a base connection.
@@ -15,7 +15,7 @@ The options for building a base connection.
 
 | Type parameter |
 | :------ |
-| `K` extends [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
+| `K` *extends* [`ConnectionTypes`](/api/eventsub/type-aliases/connectiontypes/) |
 
 ## Source
 

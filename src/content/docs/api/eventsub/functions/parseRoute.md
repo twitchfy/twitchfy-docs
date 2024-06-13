@@ -6,7 +6,7 @@ title: "parseRoute"
 ---
 
 ```ts
-parseRoute(path: string): string
+function parseRoute(path: string): string
 ```
 
 Parses a route to ensure it starts with a forward slash.

@@ -9,7 +9,7 @@ An emote sent into the fragments of a ChannelChatMessage event.
 
 ## Constructors
 
-### new Emote(data)
+### new Emote()
 
 ```ts
 new Emote(data: EmoteData): Emote

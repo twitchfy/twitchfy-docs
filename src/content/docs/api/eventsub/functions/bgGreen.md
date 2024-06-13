@@ -6,7 +6,7 @@ title: "bgGreen"
 ---
 
 ```ts
-bgGreen(str: string): string
+function bgGreen(str: string): string
 ```
 
 Set background color to green.

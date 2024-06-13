@@ -6,7 +6,7 @@ title: "getColorEnabled"
 ---
 
 ```ts
-getColorEnabled(): boolean
+function getColorEnabled(): boolean
 ```
 
 Get whether text color change is enabled or disabled.

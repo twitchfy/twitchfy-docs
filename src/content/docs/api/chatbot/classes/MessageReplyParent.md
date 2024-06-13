@@ -15,11 +15,11 @@ Represents a message in a chatroom that was replied by another message.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new MessageReplyParent(chatbot, data, chatroom)
+### new MessageReplyParent()
 
 ```ts
 new MessageReplyParent<T>(

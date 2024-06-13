@@ -9,7 +9,7 @@ Represents a user that was mentioned in a message included in a mention fragment
 
 ## Constructors
 
-### new MentionUser(data)
+### new MentionUser()
 
 ```ts
 new MentionUser(data: MentionUserData): MentionUser

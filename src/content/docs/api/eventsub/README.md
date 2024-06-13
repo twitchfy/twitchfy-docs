@@ -133,7 +133,7 @@ title: "@twitchfy/eventsub"
 | [BaseConnectionOptions](/api/eventsub/type-aliases/baseconnectionoptions/) | The options for building a base connection. |
 | [BodyTypes](/api/eventsub/type-aliases/bodytypes/) | The possible types of body Twitch send to the webhook. |
 | [ConduitOptions](/api/eventsub/type-aliases/conduitoptions/) | The options for building a Conduit connection. |
-| [ConduitSubscriptionCallback](/api/eventsub/type-aliases/conduitsubscriptioncallback/) | - |
+| [ConduitSubscriptionCallback](/api/eventsub/type-aliases/conduitsubscriptioncallback/) | The callback for the conduit subscription. |
 | [ConnectionTypes](/api/eventsub/type-aliases/connectiontypes/) | The types of connections that can be used. |
 | [CustomCallback](/api/eventsub/type-aliases/customcallback/) | - |
 | [FragmentTypes](/api/eventsub/type-aliases/fragmenttypes/) | The type of fragment. |
@@ -144,15 +144,15 @@ title: "@twitchfy/eventsub"
 | [ShardMessages](/api/eventsub/type-aliases/shardmessages/) | The message types that can be received by the parent process from a shard. |
 | [StorageAdapterGet](/api/eventsub/type-aliases/storageadapterget/) | The type to be returned for the get method in the storage adapter. |
 | [StreamTypes](/api/eventsub/type-aliases/streamtypes/) | The types of stream. As for now, the only possible type 'live'. |
-| [SubscriptionCallback](/api/eventsub/type-aliases/subscriptioncallback/) | - |
+| [SubscriptionCallback](/api/eventsub/type-aliases/subscriptioncallback/) | The callback for a subscription. |
 | [SubscriptionMessage](/api/eventsub/type-aliases/subscriptionmessage/) | The message received by a subscription. |
 | [SubscriptionNotification](/api/eventsub/type-aliases/subscriptionnotification/) | Message emitted when a shard has received a subscription notification. |
 | [SubscriptionOptions](/api/eventsub/type-aliases/subscriptionoptions/) | The options for creating a subscription. |
 | [SubscriptionType](/api/eventsub/type-aliases/subscriptiontype/) | Type that determines the subscription type based on the connection type. |
 | [WebSocketConnectionOptions](/api/eventsub/type-aliases/websocketconnectionoptions/) | The options used to create a new WebSocketConnection. |
-| [WebSocketSubscriptionCallback](/api/eventsub/type-aliases/websocketsubscriptioncallback/) | - |
+| [WebSocketSubscriptionCallback](/api/eventsub/type-aliases/websocketsubscriptioncallback/) | The callback for a WebSocketSubscription. |
 | [WebhookConnectionOptions](/api/eventsub/type-aliases/webhookconnectionoptions/) | The options for bulding up a Webhook Connection. |
-| [WebhookSubscriptionCallback](/api/eventsub/type-aliases/webhooksubscriptioncallback/) | - |
+| [WebhookSubscriptionCallback](/api/eventsub/type-aliases/webhooksubscriptioncallback/) | The callback for a WebhookSubscription. |
 
 ## Variables
 
@@ -183,8 +183,8 @@ title: "@twitchfy/eventsub"
 | [bgGreen](/api/eventsub/functions/bggreen/) | Set background color to green. |
 | [bgMagenta](/api/eventsub/functions/bgmagenta/) | Set background color to magenta. |
 | [bgRed](/api/eventsub/functions/bgred/) | Set background color to red. |
-| [bgRgb24](/api/eventsub/functions/bgrgb24/) | Set background color using 24bit rgb. |
-| [bgRgb8](/api/eventsub/functions/bgrgb8/) | Set background color using paletted 8bit colors. |
+| [bgRgb24](/api/eventsub/functions/bgrgb24/) | Set background color using 24bit rgb. `color` can be a number in range `0x000000` to `0xffffff` or an `Rgb`.  To produce the color magenta:  ```ts      import { bgRgb24 } from "./colors.ts";      bgRgb24("foo", 0xff00ff);      bgRgb24("foo", {r: 255, g: 0, b: 255}); ``` |
+| [bgRgb8](/api/eventsub/functions/bgrgb8/) | Set background color using paletted 8bit colors. https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit |
 | [bgWhite](/api/eventsub/functions/bgwhite/) | Set background color to white. |
 | [bgYellow](/api/eventsub/functions/bgyellow/) | Set background color to yellow. |
 | [black](/api/eventsub/functions/black/) | Set text color to black. |
@@ -221,8 +221,8 @@ title: "@twitchfy/eventsub"
 | [parseRoute](/api/eventsub/functions/parseroute/) | Parses a route to ensure it starts with a forward slash. |
 | [red](/api/eventsub/functions/red/) | Set text color to red. |
 | [reset](/api/eventsub/functions/reset/) | Reset the text modified |
-| [rgb24](/api/eventsub/functions/rgb24/) | Set text color using 24bit rgb. |
-| [rgb8](/api/eventsub/functions/rgb8/) | Set text color using paletted 8bit colors. |
+| [rgb24](/api/eventsub/functions/rgb24/) | Set text color using 24bit rgb. `color` can be a number in range `0x000000` to `0xffffff` or an `Rgb`.  To produce the color magenta:  ```ts      import { rgb24 } from "./colors.ts";      rgb24("foo", 0xff00ff);      rgb24("foo", {r: 255, g: 0, b: 255}); ``` |
+| [rgb8](/api/eventsub/functions/rgb8/) | Set text color using paletted 8bit colors. https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit |
 | [setColorEnabled](/api/eventsub/functions/setcolorenabled/) | Set changing text color to enabled or disabled |
 | [startup](/api/eventsub/functions/startup/) | Used to start up the connection and reload subscriptions if the maintainSubscriptions option is enabled. |
 | [strikethrough](/api/eventsub/functions/strikethrough/) | Put horizontal line through the center of the text. |

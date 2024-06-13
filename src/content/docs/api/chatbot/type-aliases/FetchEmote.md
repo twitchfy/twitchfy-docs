@@ -15,8 +15,8 @@ The returned value when fetching an emote.
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
-| `K` extends `"global"` \| `"channel"` |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `K` *extends* `"global"` \| `"channel"` |
 
 ## Source
 

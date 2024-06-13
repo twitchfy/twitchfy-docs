@@ -11,15 +11,19 @@ The base class for a stream.
 
 - `Base`\<`T`\>
 
+## Extended by
+
+- [`Stream`](/api/chatbot/classes/stream/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
 
 ## Constructors
 
-### new BaseStream(chatbot, data)
+### new BaseStream()
 
 ```ts
 new BaseStream<T>(chatbot: ChatBot<T>, data: BaseStreamData): BaseStream<T>

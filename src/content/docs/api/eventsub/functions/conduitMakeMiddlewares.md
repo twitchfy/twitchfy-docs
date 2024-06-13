@@ -6,7 +6,7 @@ title: "conduitMakeMiddlewares"
 ---
 
 ```ts
-conduitMakeMiddlewares(this: WebhookShard, server: Express): void
+function conduitMakeMiddlewares(this: WebhookShard, server: Express): void
 ```
 
 Makes the middlewares for the webhook server.

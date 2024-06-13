@@ -11,19 +11,24 @@ Represents a Twitch emote. It could be either a global emote or a channel emote.
 
 - [`BaseEmote`](/api/chatbot/classes/baseemote/)\<`T`, `K`\>
 
+## Extended by
+
+- [`GlobalEmote`](/api/chatbot/classes/globalemote/)
+- [`ChannelEmote`](/api/chatbot/classes/channelemote/)
+
 ## Type parameters
 
 | Type parameter |
 | :------ |
-| `T` extends [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
-| `K` extends `"global"` \| `"channel"` |
+| `T` *extends* [`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/) |
+| `K` *extends* `"global"` \| `"channel"` |
 
 ## Constructors
 
-### new Emote(chatbot, data)
+### new Emote()
 
 ```ts
-new Emote<T, K>(chatbot: ChatBot<T>, data: ChannelEmote | GlobalEmote & Object): Emote<T, K>
+new Emote<T, K>(chatbot: ChatBot<T>, data: ChannelEmote | GlobalEmote & object): Emote<T, K>
 ```
 
 Creates a new instance of the emote.
@@ -33,7 +38,7 @@ Creates a new instance of the emote.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `chatbot` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. |
-| `data` | `ChannelEmote` \| `GlobalEmote` & `Object` | The data of the emote returned from the API. |
+| `data` | `ChannelEmote` \| `GlobalEmote` & `object` | The data of the emote returned from the API. |
 
 #### Returns
 
