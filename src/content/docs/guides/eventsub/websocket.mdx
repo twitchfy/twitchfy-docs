@@ -154,3 +154,18 @@ connection.on(Events.SubscriptionMessage, (message, subscription) => {
 ```
 </TabItem>
 </Tabs>
+
+## WebSocket Limits
+
+Twitch limits the amount of connections and subscriptions you can create using WebSockets. The limits are listed in their [official documentation](https://dev.twitch.tv/docs/eventsub/handling-websocket-events/#subscription-limits). Here is a brief summary about them:
+
+* You can create up to 3 diffrent connections with the same clientId and userToken.
+* Each WebSocket connection can create up to 300 enabled subscriptions.
+* There is a max of 10 cost.
+* There is a limit of 3 subscriptions with the same type and options.
+
+The limit is applied per userToken.
+
+:::note 
+If you want to know more about the cost of the subscriptions see [here](../subscription-cost).
+:::
