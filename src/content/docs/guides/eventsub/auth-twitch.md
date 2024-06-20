@@ -14,7 +14,7 @@ As you use an user token you will be only able to subscribe to events which the 
 For example, we have two users, User A and B. If you have the user token from User A you can subscribe to events such `Channel Follow` or `Channel Subscribe` from User A but not from User B
 :::
 
-For further information about how to generate an user token you can see the [full example](../chatbot/auth-twitch) in the chatbot guide and adapt it for your needs.
+For further information about how to generate an user token you can see the [full example](../../chatbot/auth-twitch) in the chatbot guide and adapt it for your needs.
 
 If your aim is to develop an application based on Webhooks or Conduits you will only need to generate an app token. For subscribing to events which need scopes and authorization from an user you will need the user to be authorized within your app with valid scopes.
 
