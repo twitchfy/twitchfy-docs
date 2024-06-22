@@ -87,7 +87,7 @@ optional [captureRejectionSymbol]<K>(
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:135
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:151
 
 ***
 
@@ -292,7 +292,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:837
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:875
 
 ***
 
@@ -333,7 +333,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:900
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:938
 
 ***
 
@@ -360,7 +360,7 @@ v1.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:752
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:790
 
 ***
 
@@ -401,7 +401,7 @@ v3.2.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:846
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:884
 
 ***
 
@@ -447,7 +447,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:765
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:803
 
 ***
 
@@ -486,7 +486,7 @@ v10.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:725
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:763
 
 ***
 
@@ -627,7 +627,7 @@ v0.3.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:637
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:675
 
 ***
 
@@ -677,7 +677,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:864
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:902
 
 ***
 
@@ -725,7 +725,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:880
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:918
 
 ***
 
@@ -789,7 +789,7 @@ v9.4.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:796
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:834
 
 ***
 
@@ -827,7 +827,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:736
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:774
 
 ***
 
@@ -944,7 +944,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:720
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:758
 
 ***
 
@@ -981,7 +981,7 @@ v0.3.5
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:746
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:784
 
 ***
 
@@ -1050,7 +1050,7 @@ v20.5.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:415
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:453
 
 ***
 
@@ -1106,7 +1106,7 @@ v15.2.0, v14.17.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:336
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:374
 
 ***
 
@@ -1162,7 +1162,7 @@ v19.9.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:365
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:403
 
 ***
 
@@ -1209,7 +1209,7 @@ v0.9.12
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:308
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:346
 
 ***
 
@@ -1279,6 +1279,28 @@ const ac = new AbortController();
 process.nextTick(() => ac.abort());
 ```
 
+Use the `close` option to specify an array of event names that will end the iteration:
+
+```js
+import { on, EventEmitter } from 'node:events';
+import process from 'node:process';
+
+const ee = new EventEmitter();
+
+// Emit later on
+process.nextTick(() => {
+  ee.emit('foo', 'bar');
+  ee.emit('foo', 42);
+  ee.emit('close');
+});
+
+for await (const event of on(ee, 'foo', { close: ['close'] })) {
+  console.log(event); // prints ['bar'] [42]
+}
+// the loop will exit after 'close' is emitted
+console.log('done'); // prints 'done'
+```
+
 ##### Parameters
 
 | Parameter | Type | Description |
@@ -1303,7 +1325,7 @@ v13.6.0, v12.16.0
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:281
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:319
 
 #### on(emitter, eventName, options)
 
@@ -1311,7 +1333,7 @@ node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:28
 static on(
    emitter: EventTarget, 
    eventName: string, 
-options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
+options?: StaticEventEmitterIteratorOptions): AsyncIterableIterator<any>
 ```
 
 ##### Parameters
@@ -1320,7 +1342,7 @@ options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
 | :------ | :------ |
 | `emitter` | `EventTarget` |
 | `eventName` | `string` |
-| `options`? | `StaticEventEmitterOptions` |
+| `options`? | `StaticEventEmitterIteratorOptions` |
 
 ##### Returns
 
@@ -1332,7 +1354,7 @@ options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:286
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:324
 
 ***
 
@@ -1446,7 +1468,7 @@ v11.13.0, v10.16.0
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:216
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:232
 
 #### once(emitter, eventName, options)
 
@@ -1475,7 +1497,7 @@ options?: StaticEventEmitterOptions): Promise<any[]>
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:221
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:237
 
 ***
 
@@ -1515,4 +1537,4 @@ v15.4.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.2/node\_modules/@types/node/events.d.ts:380
+node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:418

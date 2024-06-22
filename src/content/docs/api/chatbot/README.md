@@ -42,10 +42,11 @@ title: "@twitchfy/chatbot"
 | [ChannelUpdate](/api/chatbot/classes/channelupdate/) | Represents a channel update event. |
 | [ChatBot](/api/chatbot/classes/chatbot/) | Represents a chatbot. |
 | [ChatBotBanManager](/api/chatbot/classes/chatbotbanmanager/) | The ban manager of the chatbot. |
-| [ChatBotMessageManager](/api/chatbot/classes/chatbotmessagemanager/) | The message manager of the chatobot. |
+| [ChatBotMessageManager](/api/chatbot/classes/chatbotmessagemanager/) | The message manager of the chatbot. |
 | [ChatBotTimeoutManager](/api/chatbot/classes/chatbottimeoutmanager/) | The timeout manager of the chatbot. |
 | [ChatBotUser](/api/chatbot/classes/chatbotuser/) | Represents a Twitch chatbot user. |
 | [ChatBotUserManager](/api/chatbot/classes/chatbotusermanager/) | The user manager of the chatbot. |
+| [ChatBotWarnsManager](/api/chatbot/classes/chatbotwarnsmanager/) | The warns manager of the chatbot. |
 | [ChatCommand](/api/chatbot/classes/chatcommand/) | The command structure. |
 | [ChatRoom](/api/chatbot/classes/chatroom/) | Represents a Twitch chatroom of a channel. |
 | [ChatRoomSettings](/api/chatbot/classes/chatroomsettings/) | Represents the settings of a chatroom. |
@@ -72,6 +73,8 @@ title: "@twitchfy/chatbot"
 | [TwitchContext](/api/chatbot/classes/twitchcontext/) | The context of the command. |
 | [User](/api/chatbot/classes/user/) | Represents a Twitch user. |
 | [Video](/api/chatbot/classes/video/) | Represents a Twitch video. |
+| [Warning](/api/chatbot/classes/warning/) | Represents a warning. |
+| [WarnsManager](/api/chatbot/classes/warnsmanager/) | The warns manager of a chatroom. |
 
 ## Interfaces
 

@@ -44,7 +44,7 @@ Creates a new instance of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:60
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:65
 
 ## Properties
 
@@ -58,6 +58,7 @@ twitchfy/packages/chatbot/src/structures/ChatRoom.ts:60
 | `messages` | `readonly` | [`MessageManager`](/api/chatbot/classes/messagemanager/)\<`T`\> | The message manager of the chatroom. | - |
 | `settings` | `readonly` | [`ChatRoomSettingsManager`](/api/chatbot/classes/chatroomsettingsmanager/)\<`T`\> | The settings manager of the chatroom. | - |
 | `timeouts` | `readonly` | [`TimeoutManager`](/api/chatbot/classes/timeoutmanager/)\<`T`\> | The timeout manager of the chatroom. | - |
+| `warns` | `readonly` | [`WarnsManager`](/api/chatbot/classes/warnsmanager/)\<`T`\> | The warns manager of the chatroom. | - |
 
 ## Accessors
 
@@ -75,7 +76,7 @@ The Id of the chatroom. Its id is the same as the broadcaster id.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:75
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:81
 
 ## Methods
 
@@ -101,7 +102,7 @@ The announcement that was sent.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:147
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:153
 
 ***
 
@@ -127,7 +128,7 @@ The message that was sent. See [BaseMessage](/api/chatbot/api/chatbot/classes/ba
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:84
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:90
 
 ***
 
@@ -153,7 +154,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:129
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:135
 
 ***
 
@@ -179,7 +180,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:138
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:144
 
 ***
 
@@ -205,7 +206,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:102
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:108
 
 ***
 
@@ -231,7 +232,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:93
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:99
 
 ***
 
@@ -257,7 +258,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:111
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:117
 
 ***
 
@@ -283,7 +284,7 @@ The updated settings of the chatroom.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:120
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:126
 
 ***
 
@@ -309,4 +310,4 @@ The shoutout that was sent.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatRoom.ts:156
+twitchfy/packages/chatbot/src/structures/ChatRoom.ts:162

@@ -126,7 +126,7 @@ addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitt
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
 
 ***
 
@@ -159,7 +159,7 @@ emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:17
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:17
 
 ***
 
@@ -179,7 +179,7 @@ eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof WebhookEvents)[]
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:21
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:21
 
 ***
 
@@ -199,7 +199,7 @@ getMaxListeners(): number
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:14
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:14
 
 ***
 
@@ -231,7 +231,7 @@ listenerCount<K>(eventName: K): number
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
 
 ***
 
@@ -263,7 +263,7 @@ listeners<K>(eventName: K): (...args: [WebhookConnection] | [WebhookSubscription
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:15
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:15
 
 ***
 
@@ -352,7 +352,7 @@ off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredef
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
 
 ***
 
@@ -385,7 +385,7 @@ on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefi
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
 
 ***
 
@@ -418,7 +418,7 @@ once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPrede
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
 
 ***
 
@@ -484,7 +484,7 @@ prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventE
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
 
 ***
 
@@ -517,7 +517,7 @@ prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEv
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
 
 ***
 
@@ -549,7 +549,7 @@ rawListeners<K>(eventName: K): Listener<[WebhookConnection] | [WebhookSubscripti
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:16
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:16
 
 ***
 
@@ -581,7 +581,7 @@ removeAllListeners<K>(event?: K): this
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
 
 ***
 
@@ -614,7 +614,7 @@ removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEm
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:10
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:10
 
 ***
 
@@ -666,7 +666,7 @@ setMaxListeners(n: number): this
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:13
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:13
 
 ***
 
@@ -779,7 +779,7 @@ waitForAllListenersToComplete(): Promise<boolean>
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:22
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:22
 
 ***
 
@@ -814,7 +814,7 @@ static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:25
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:25
 
 ***
 
@@ -854,7 +854,7 @@ options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:29
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:29
 
 ***
 
@@ -894,4 +894,4 @@ options?: AbortableMethods): Promise<EventResult>
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.2.4/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:27
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:27

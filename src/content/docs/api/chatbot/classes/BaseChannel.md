@@ -149,6 +149,24 @@ The chatroom timeouts manager. See [TimeoutManager](../../api/chatbot/classes/ti
 
 twitchfy/packages/chatbot/src/structures/BaseChannel.ts:58
 
+***
+
+### warns
+
+```ts
+get warns(): WarnsManager<T>
+```
+
+The chatroom warns manager. See [WarnsManager](../../api/chatbot/classes/warnsmanager).
+
+#### Returns
+
+[`WarnsManager`](/api/chatbot/classes/warnsmanager/)\<`T`\>
+
+#### Source
+
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:73
+
 ## Methods
 
 ### clips()
@@ -173,7 +191,7 @@ An array containing the clips of the channel.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:91
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:98
 
 ***
 
@@ -193,7 +211,7 @@ The a Collection containing all the emotes of the channel.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:73
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:80
 
 ***
 
@@ -213,7 +231,7 @@ The fetched channel from the API.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:104
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:111
 
 ***
 
@@ -229,7 +247,7 @@ isModerator(): Promise<boolean>
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:96
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:103
 
 ***
 
@@ -249,4 +267,4 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:82
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:89

@@ -5,7 +5,7 @@ prev: false
 title: "ChatBotMessageManager"
 ---
 
-The message manager of the chatobot.
+The message manager of the chatbot.
 
 ## Extends
 

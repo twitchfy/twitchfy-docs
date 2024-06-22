@@ -32,7 +32,7 @@ new TokenAdapter<T, K>(options: TokenAdapterOptions<T, K>): TokenAdapter<T, K>
 
 #### Source
 
-node\_modules/.pnpm/@twitchfy+helix@1.0.3/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:7
+node\_modules/.pnpm/@twitchfy+helix@1.0.4/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:7
 
 ## Properties
 
@@ -57,7 +57,7 @@ isAppToken(): boolean
 
 #### Source
 
-node\_modules/.pnpm/@twitchfy+helix@1.0.3/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:11
+node\_modules/.pnpm/@twitchfy+helix@1.0.4/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:11
 
 ***
 
@@ -73,7 +73,7 @@ isUserToken(): boolean
 
 #### Source
 
-node\_modules/.pnpm/@twitchfy+helix@1.0.3/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:10
+node\_modules/.pnpm/@twitchfy+helix@1.0.4/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:10
 
 ***
 
@@ -95,7 +95,7 @@ setRefreshToken(refreshToken: string): this
 
 #### Source
 
-node\_modules/.pnpm/@twitchfy+helix@1.0.3/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:9
+node\_modules/.pnpm/@twitchfy+helix@1.0.4/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:9
 
 ***
 
@@ -117,4 +117,4 @@ setToken(token: string): this
 
 #### Source
 
-node\_modules/.pnpm/@twitchfy+helix@1.0.3/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:8
+node\_modules/.pnpm/@twitchfy+helix@1.0.4/node\_modules/@twitchfy/helix/dist/structures/TokenAdapter.d.ts:8
