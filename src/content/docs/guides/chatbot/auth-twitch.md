@@ -17,7 +17,7 @@ Chatbots on Twitch are essentially user accounts designed to execute actions pro
 After creating your chatbot account you will need to authorize within your app and get an `user access token` to perform bot actions and join diffrent chatrooms over Twitch. It's highly recommended to get an user access token from the `Authorization Code Grant Flow` as tokens generated within this flow can be refreshed, this library handle this refresh automatically. For further information about generating user access tokens see the official [Twitch API documentation](https://dev.twitch.tv/docs/authentication/).
 
 :::danger
-The basic scope which the user token needs for joining channels is `user:read:chat`. If you are building your chatbot using Webhooks, for the EventSub connection, it adittionally requires `user:bot` scope.
+The basic scopes which the user token needs for joining channels and sending chat messages is `user:read:chat` and `user:write:chat`. If you are building your chatbot using Webhooks, for the EventSub connection, it adittionally requires either `user:bot` scope and `channel:bot` from the broadcaster or the moderator status.
 
 Notice than if you want to perform actions such banning users or edit chat settings you will need specific scopes so, despite isn't highly recommended you can generate an user token with all scopes.
 :::
