@@ -201,7 +201,7 @@ connection.on(Events.SubscriptionMessage, (message, subscription) => {
 
 As mentioned at the start of this section, the package has been made to be used with an express server. Furthermore, there is a way to use another type of server which doesn't implies it has to be created with express.
 
-To achive this we are going to use the `post` function from the connection object to send the data we have received from our server. By default the events will be sent to the base url callback + '/subscriptions' route. Althrough you can customize it in the subscriptions options by setting the `subscriptionRoute` option. To see the full url where the events will go you can access to `WebhookConnection.url` field.
+To achive this we are going to use the `post` function from the connection object to send the data we have received from our server. By default the events will be sent to the base url callback +`/subscriptions` route. Althrough you can customize it in the subscriptions options by setting the `subscriptionRoute` option. To see the full url where the events will go you can access to `WebhookConnection.url` field.
 
 In this example we are going to use the node native module `https`.
 
