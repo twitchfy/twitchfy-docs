@@ -110,7 +110,7 @@ connection.on(Events.ConnectionReady, async() => {
 ```
 
 :::danger
-It's crucial to subscribe to events when the connection is fully estabilished. If not the package will likely throw an error
+It's crucial to subscribe to events when the connection is fully estabilished. If not the package will likely throw an error.
 :::
 
 :::tip
@@ -199,9 +199,9 @@ connection.on(Events.SubscriptionMessage, (message, subscription) => {
 
 ## Custom Server
 
-As mentioned at the start of this section, the package has been made to be used with an express server. Furthermore, there is a way to use another type of server which was not created with express.
+As mentioned at the start of this section, the package has been made to be used with an express server. Furthermore, there is a way to use another type of server which doesn't implies it has to be created with express.
 
-To achive this we are going to use the `post` function from the connection object to send the data we have received from our server. By default the events will be sent to the base url callback + `/subscriptions' route. Althrough you can customize it in the subscriptions options by setting the `subscriptionRoute` option. To see the full url where the events will go you can access to `WebhookConnection.url` field.
+To achive this we are going to use the `post` function from the connection object to send the data we have received from our server. By default the events will be sent to the base url callback + '/subscriptions' route. Althrough you can customize it in the subscriptions options by setting the `subscriptionRoute` option. To see the full url where the events will go you can access to `WebhookConnection.url` field.
 
 In this example we are going to use the node native module `https`.
 
@@ -244,12 +244,12 @@ In this example the `post` function is used whenever you receive a post request 
 
 In the challenge callback you will have to respond to the request with a `200` status code and send the challenge param. Furthermore you have to change the `Content-Type` header to `text/plain` and the `Content-Length` header to the length of the challenge param.
 
-In the success callback you will have to send a `200` status code to Twitch to say that all is ok and you have received the event.
+In the success callback you will have to send a `200` status code to Twitch to indicate that all is ok and you have received the event.
 
 :::note
 There is a third callback whenever the secret signature could not been verified.
 :::
 
 :::important
-If you fail to respond to the challenge callback any notification will be sent to you. Furhtermore, if you fail to respond to the success callback Twitch will try to send the event continously and finally will revoke the subscription.
+If you fail to respond to the challenge callback no events notifications will be sent to you. Furhtermore, if you fail to respond to the success callback Twitch will try to resend the event continously and finally will revoke the subscription.
 :::
