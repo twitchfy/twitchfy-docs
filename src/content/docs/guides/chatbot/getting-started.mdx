@@ -221,7 +221,7 @@ To join a channel you have to call `join` method in the chatbot [ChannelManager]
 It's recommended to join channels after the chatbot has fully started. If not it could led to anytype of errors.
 :::
 
-```ts showLineNumbers copy ins={27}
+```ts showLineNumbers copy ins={29}
 
 import { ChatBot, EventSubConnection } from "@twitchfy/chatbot";
 import { RedisAdapter, WebSocketConnection } from "@twitchfy/eventsub";
@@ -253,7 +253,8 @@ chatbot.start().then(() => {
 
   chatbot.channels.join('channelId').then(() => console.log('Joined'))
 
-});```
+});
+```
 
 :::note
 
