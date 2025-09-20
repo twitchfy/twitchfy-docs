@@ -74,7 +74,7 @@ Returns an iterable of entries in the map.
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:119
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:119
 
 ***
 
@@ -94,7 +94,7 @@ clear(): void
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:20
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:20
 
 ***
 
@@ -122,7 +122,7 @@ true if an element in the Map existed and has been removed, or false if the elem
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:24
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:24
 
 ***
 
@@ -144,7 +144,7 @@ Returns an iterable of key, value pairs for every entry in the map.
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:124
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:124
 
 ***
 
@@ -271,7 +271,7 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 ***
 
@@ -301,7 +301,7 @@ Returns the element associated with the specified key. If no element is associat
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:33
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:33
 
 ***
 
@@ -329,7 +329,7 @@ boolean indicating whether an element with the specified key exists or not.
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
 
 ***
 
@@ -351,7 +351,7 @@ Returns an iterable of keys in the map
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:129
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:129
 
 ***
 
@@ -445,7 +445,7 @@ Adds a new element with a specified key and value to the Map. If an element with
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:41
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.collection.d.ts:41
 
 ***
 
@@ -513,7 +513,7 @@ Returns an iterable of values in the map
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:134
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:134
 
 ***
 
@@ -549,4 +549,4 @@ Groups members of an iterable according to the return value of the passed callba
 
 #### Source
 
-node\_modules/.pnpm/typescript@5.5.2/node\_modules/typescript/lib/lib.esnext.collection.d.ts:25
+node\_modules/.pnpm/typescript@5.4.5/node\_modules/typescript/lib/lib.esnext.collection.d.ts:25

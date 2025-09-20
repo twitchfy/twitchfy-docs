@@ -42,6 +42,7 @@ title: "@twitchfy/chatbot"
 | [ChannelUpdate](/api/chatbot/classes/channelupdate/) | Represents a channel update event. |
 | [ChatBot](/api/chatbot/classes/chatbot/) | Represents a chatbot. |
 | [ChatBotBanManager](/api/chatbot/classes/chatbotbanmanager/) | The ban manager of the chatbot. |
+| [ChatBotChatterManager](/api/chatbot/classes/chatbotchattermanager/) | Represents a chatter manager. |
 | [ChatBotMessageManager](/api/chatbot/classes/chatbotmessagemanager/) | The message manager of the chatbot. |
 | [ChatBotTimeoutManager](/api/chatbot/classes/chatbottimeoutmanager/) | The timeout manager of the chatbot. |
 | [ChatBotUser](/api/chatbot/classes/chatbotuser/) | Represents a Twitch chatbot user. |
@@ -51,6 +52,7 @@ title: "@twitchfy/chatbot"
 | [ChatRoom](/api/chatbot/classes/chatroom/) | Represents a Twitch chatroom of a channel. |
 | [ChatRoomSettings](/api/chatbot/classes/chatroomsettings/) | Represents the settings of a chatroom. |
 | [ChatRoomSettingsManager](/api/chatbot/classes/chatroomsettingsmanager/) | Represents the manager for the settings of a chatroom. |
+| [ChatterManager](/api/chatbot/classes/chattermanager/) | Represents a chatter manager of a chatroom. |
 | [Cheermote](/api/chatbot/classes/cheermote/) | Represents a Twitch cheermote. |
 | [CheermoteTier](/api/chatbot/classes/cheermotetier/) | Represents a Twitch cheermote tier. |
 | [Clip](/api/chatbot/classes/clip/) | Represents a Twitch clip. |
@@ -67,6 +69,7 @@ title: "@twitchfy/chatbot"
 | [MessageReplyThread](/api/chatbot/classes/messagereplythread/) | Represents the message which started a thread of replies. |
 | [NumberOption](/api/chatbot/classes/numberoption/) | Represents a number option. |
 | [Stream](/api/chatbot/classes/stream/) | Represents a Twitch stream. |
+| [StreamOffline](/api/chatbot/classes/streamoffline/) | Represents a stream offline event. |
 | [StreamOnline](/api/chatbot/classes/streamonline/) | Represents a stream online event. |
 | [StringOption](/api/chatbot/classes/stringoption/) | Represents a string option. |
 | [TimeoutManager](/api/chatbot/classes/timeoutmanager/) | The timeout manager of a chatroom. |

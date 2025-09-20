@@ -35,7 +35,7 @@ Creates a new instance of the chatbot.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:140
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:147
 
 ## Properties
 
@@ -43,11 +43,12 @@ twitchfy/packages/chatbot/src/structures/ChatBot.ts:140
 | :------ | :------ | :------ | :------ |
 | `bans` | `readonly` | [`ChatBotBanManager`](/api/chatbot/classes/chatbotbanmanager/)\<`T`\> | The ban manager of the chatbot. |
 | `channels` | `readonly` | [`ChannelManager`](/api/chatbot/classes/channelmanager/)\<`T`\> | The manager of the chatbot channels. |
+| `chatters` | `readonly` | [`ChatBotChatterManager`](/api/chatbot/classes/chatbotchattermanager/)\<`T`\> | The chatters manager of the chatbot. |
 | `clientId` | `readonly` | `string` | The client Id of the Twitch's application. |
 | `clientSecret` | `readonly` | `string` | The client secret of the Twitch's application. |
 | `commands` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<`string`, [`ChatCommand`](/api/chatbot/classes/chatcommand/)\<`T`\>\> | A Collection of the chatbot commands. |
 | `connectionType` | `readonly` | `T` | The EventSub connection type used by the chatbot. |
-| `events` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<[`Events`](/api/chatbot/type-aliases/events/), \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelChatClear"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelFollow"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelUpdate"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"StreamOnline"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelChatMessage"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChatBotReady"`\>\> | A Collection of the chatbot events. |
+| `events` | `readonly` | [`Collection`](/api/chatbot/classes/collection/)\<[`Events`](/api/chatbot/type-aliases/events/), \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelChatClear"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelFollow"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelUpdate"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"StreamOnline"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChannelChatMessage"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"StreamOffline"`\> \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<`T`, `"ChatBotReady"`\>\> | A Collection of the chatbot events. |
 | `eventsub` | `readonly` | `EventSubConnectionMap`\[`T`\] | The EventSub connection of the chatbot. |
 | `helixClient` | `readonly` | `HelixClient` | The Helix client of the chatbot. |
 | `messages` | `readonly` | [`ChatBotMessageManager`](/api/chatbot/classes/chatbotmessagemanager/)\<`T`\> | The message manager of the chatbot. |
@@ -76,7 +77,7 @@ The app token of the Twitch application. The value is null if the chatbot is usi
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:367
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:390
 
 ***
 
@@ -94,7 +95,7 @@ The user token of the chatbot Twitch account to make requests.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:360
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:383
 
 ## Methods
 
@@ -120,7 +121,7 @@ The clip fetched from the API or null if the clip wasn't founded.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:329
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:352
 
 ***
 
@@ -146,7 +147,7 @@ An array containing the clips fetched from the API. If there isn't any clip foun
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:318
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:341
 
 ***
 
@@ -172,7 +173,7 @@ A boolean indicating whether the chatbot is moderator in the channel.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:340
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:363
 
 ***
 
@@ -192,7 +193,7 @@ An array containing the moderated channels of the chatbot.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:350
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:373
 
 ***
 
@@ -218,7 +219,7 @@ The current instance of the chatbot. When the promise is resolved the chatbot ha
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:228
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:236
 
 ***
 
@@ -244,7 +245,7 @@ A stream fetched from the API or null if the stream wasn't founded.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:308
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:331
 
 ***
 
@@ -266,7 +267,7 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:277
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:300
 
 #### streams(number)
 
@@ -290,7 +291,7 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:278
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:301
 
 #### streams(options, number)
 
@@ -315,4 +316,4 @@ An array containing the streams fetched from the API. If there isn't any stream 
 
 ##### Source
 
-twitchfy/packages/chatbot/src/structures/ChatBot.ts:279
+twitchfy/packages/chatbot/src/structures/ChatBot.ts:302

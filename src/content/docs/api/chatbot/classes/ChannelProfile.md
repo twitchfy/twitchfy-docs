@@ -51,7 +51,7 @@ twitchfy/packages/chatbot/src/structures/ChannelProfile.ts:28
 | Property | Modifier | Type | Description | Inherited from |
 | :------ | :------ | :------ | :------ | :------ |
 | `chatbot` | `readonly` | [`ChatBot`](/api/chatbot/classes/chatbot/)\<`T`\> | The current instance of the chatbot. | `Base.chatbot` |
-| `events` | `readonly` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"`)[] | The events from the channel that the chatbot is subscribed to. | - |
+| `events` | `readonly` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"`)[] | The events from the channel that the chatbot is subscribed to. | - |
 | `id` | `readonly` | `string` | The Id of the channel. | - |
 
 ## Methods
@@ -66,7 +66,8 @@ addEvent(event:
   | "ChannelFollow"
   | "ChannelUpdate"
   | "StreamOnline"
-| "ChannelChatMessage"): Promise<void>
+  | "ChannelChatMessage"
+| "StreamOffline"): Promise<void>
 ```
 
 Adds an event or events to the channel profile and listen to it. If the event is already added, it does nothing.
@@ -75,7 +76,7 @@ Adds an event or events to the channel profile and listen to it. If the event is
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` | The event or events to add. |
+| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"` | The event or events to add. |
 
 ##### Returns
 
@@ -93,7 +94,8 @@ addEvent(event: (
   | "ChannelFollow"
   | "ChannelUpdate"
   | "StreamOnline"
-| "ChannelChatMessage")[]): Promise<void>
+  | "ChannelChatMessage"
+| "StreamOffline")[]): Promise<void>
 ```
 
 Adds an event or events to the channel profile and listen to it. If the event is already added, it does nothing.
@@ -102,7 +104,7 @@ Adds an event or events to the channel profile and listen to it. If the event is
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `event` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"`)[] | The event or events to add. |
+| `event` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"`)[] | The event or events to add. |
 
 ##### Returns
 
@@ -142,7 +144,8 @@ hasEvent(event:
   | "ChannelFollow"
   | "ChannelUpdate"
   | "StreamOnline"
-  | "ChannelChatMessage"): boolean
+  | "ChannelChatMessage"
+  | "StreamOffline"): boolean
 ```
 
 Checks if one event is being listened.
@@ -151,7 +154,7 @@ Checks if one event is being listened.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` | The event to check. |
+| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"` | The event to check. |
 
 #### Returns
 
@@ -171,7 +174,8 @@ removeEvent(event:
   | "ChannelFollow"
   | "ChannelUpdate"
   | "StreamOnline"
-| "ChannelChatMessage"): Promise<void>
+  | "ChannelChatMessage"
+| "StreamOffline"): Promise<void>
 ```
 
 Removes an event from the channel profile and stop listening to it. If the event is not added, it does nothing.
@@ -180,7 +184,7 @@ Removes an event from the channel profile and stop listening to it. If the event
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` | The event to remove. |
+| `event` |  \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"` | The event to remove. |
 
 #### Returns
 

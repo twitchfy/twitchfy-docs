@@ -11,7 +11,8 @@ type ChannelEvents: keyof Pick<typeof SubscriptionTypes,
   | "ChannelFollow"
   | "ChannelUpdate"
   | "StreamOnline"
-| "ChannelChatMessage">;
+  | "ChannelChatMessage"
+| "StreamOffline">;
 ```
 
 The EventSub events which the chatbot could listen.

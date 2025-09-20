@@ -19,5 +19,5 @@ The events from the channel that the chatbot is subscribed to.
 
 | Property | Type |
 | :------ | :------ |
-| `events` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"`)[] |
+| `events` | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"`)[] |
 | `id` | `string` |

@@ -28,4 +28,4 @@ The router for the subscription route.
 
 ## Source
 
-twitchfy/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts:9
+twitchfy/packages/eventsub/src/webhook/routes/SubscriptionRoute.ts:15

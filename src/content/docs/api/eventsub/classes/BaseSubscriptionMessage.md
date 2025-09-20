@@ -20,6 +20,7 @@ The base class for all the subscription messages.
 - [`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)
 - [`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)
 - [`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)
+- [`StreamOfflineMessage`](/api/eventsub/classes/streamofflinemessage/)
 
 ## Type parameters
 

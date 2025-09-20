@@ -2,7 +2,7 @@
 editUrl: false
 next: false
 prev: false
-title: "ChannelChatMessage"
+title: "ChannelChatMessageOptions"
 ---
 
 Options for subscribing to the ChannelChatMessage event.

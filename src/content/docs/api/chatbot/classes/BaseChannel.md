@@ -115,6 +115,24 @@ twitchfy/packages/chatbot/src/structures/BaseChannel.ts:44
 
 ***
 
+### chatters
+
+```ts
+get chatters(): ChatterManager<T>
+```
+
+The chatroom chatters manager. See [ChatterManager](../../api/chatbot/classes/chattermanager).
+
+#### Returns
+
+[`ChatterManager`](/api/chatbot/classes/chattermanager/)\<`T`\>
+
+#### Source
+
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:81
+
+***
+
 ### messages
 
 ```ts
@@ -191,7 +209,7 @@ An array containing the clips of the channel.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:98
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:106
 
 ***
 
@@ -211,7 +229,7 @@ The a Collection containing all the emotes of the channel.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:80
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:88
 
 ***
 
@@ -231,7 +249,7 @@ The fetched channel from the API.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:111
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:119
 
 ***
 
@@ -247,7 +265,7 @@ isModerator(): Promise<boolean>
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:103
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:111
 
 ***
 
@@ -267,4 +285,4 @@ The current stream or null if the stream is offline.
 
 #### Source
 
-twitchfy/packages/chatbot/src/structures/BaseChannel.ts:89
+twitchfy/packages/chatbot/src/structures/BaseChannel.ts:97

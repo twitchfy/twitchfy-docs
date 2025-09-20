@@ -13,7 +13,8 @@ type SubscriptionMessage<K>:
   | StreamOnlineMessage<K>
   | ChannelAdBreakBeginMessage<K>
   | ChannelChatClearUserMessagesMessage<K>
-| ChannelChatMessageMessage<K>;
+  | ChannelChatMessageMessage<K>
+| StreamOfflineMessage<K>;
 ```
 
 The message received by a subscription.

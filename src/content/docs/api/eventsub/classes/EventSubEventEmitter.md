@@ -47,79 +47,145 @@ twitchfy/packages/eventsub/src/structures/BaseConnection.ts:20
 
 ### addListener()
 
+#### addListener(eventName, listener)
+
 ```ts
-addListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+addListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.addListener`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:7
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:17
+
+#### addListener(eventName, listener)
+
+```ts
+addListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.addListener`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
 
 ***
 
 ### emit()
 
+#### emit(eventName, args)
+
 ```ts
-emit<K>(eventName: K, ...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]): boolean
+emit<K>(eventName: K, ...args: InternalGetAsyncEventEmitterEventParameters<AsyncEventEmitter<U>, K, U>): boolean
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| ...`args` | `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\] |
+| ...`args` | `InternalGetAsyncEventEmitterEventParameters`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\> |
 
-#### Returns
+##### Returns
 
 `boolean`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.emit`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:17
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:37
+
+#### emit(eventName, args)
+
+```ts
+emit<K>(eventName: K, ...args: InternalGetAsyncEventEmitterEventParameters<AsyncEventEmitter<U>, K, U>): boolean
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| ...`args` | `InternalGetAsyncEventEmitterEventParameters`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\> |
+
+##### Returns
+
+`boolean`
+
+##### Inherited from
+
+`AsyncEventEmitter.emit`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:38
 
 ***
 
 ### eventNames()
 
 ```ts
-eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof U)[]
+eventNames(): (string | symbol)[] & keyof AsyncEventEmitterPredefinedEvents[] & keyof U[]
 ```
 
 #### Returns
 
-(keyof AsyncEventEmitterPredefinedEvents \| keyof `U`)[]
+(`string` \| `symbol`)[] & keyof `AsyncEventEmitterPredefinedEvents`[] & keyof `U`[]
 
 #### Inherited from
 
@@ -127,7 +193,7 @@ eventNames(): (keyof AsyncEventEmitterPredefinedEvents | keyof U)[]
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:21
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:45
 
 ***
 
@@ -147,333 +213,701 @@ getMaxListeners(): number
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:14
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:32
 
 ***
 
 ### listenerCount()
 
+#### listenerCount(eventName)
+
 ```ts
 listenerCount<K>(eventName: K): number
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
 
-#### Returns
+##### Returns
 
 `number`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.listenerCount`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:18
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:39
+
+#### listenerCount(eventName)
+
+```ts
+listenerCount(eventName: string | symbol): number
+```
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `string` \| `symbol` |
+
+##### Returns
+
+`number`
+
+##### Inherited from
+
+`AsyncEventEmitter.listenerCount`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:40
 
 ***
 
 ### listeners()
 
+#### listeners(eventName)
+
 ```ts
-listeners<K>(eventName: K): (...args: U[keyof U]) => Awaitable<void>[]
+listeners<K>(eventName: K): Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>[]
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
 
-#### Returns
+##### Returns
 
-(...`args`: `U`\[keyof `U`\]) => `Awaitable`\<`void`\>[]
+`Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\>[]
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.listeners`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:15
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:33
+
+#### listeners(eventName)
+
+```ts
+listeners<K>(eventName: K): Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>[]
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+
+##### Returns
+
+`Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\>[]
+
+##### Inherited from
+
+`AsyncEventEmitter.listeners`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:34
 
 ***
 
 ### off()
 
+#### off(eventName, listener)
+
 ```ts
-off<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+off<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.off`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:11
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:25
+
+#### off(eventName, listener)
+
+```ts
+off<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.off`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:26
 
 ***
 
 ### on()
 
+#### on(eventName, listener)
+
 ```ts
-on<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+on<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.on`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:8
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
+
+#### on(eventName, listener)
+
+```ts
+on<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.on`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
 
 ***
 
 ### once()
 
+#### once(eventName, listener)
+
 ```ts
-once<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+once<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.once`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:9
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:21
+
+#### once(eventName, listener)
+
+```ts
+once<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.once`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:22
 
 ***
 
 ### prependListener()
 
+#### prependListener(eventName, listener)
+
 ```ts
-prependListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+prependListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.prependListener`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:19
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:41
+
+#### prependListener(eventName, listener)
+
+```ts
+prependListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.prependListener`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:42
 
 ***
 
 ### prependOnceListener()
 
+#### prependOnceListener(eventName, listener)
+
 ```ts
-prependOnceListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+prependOnceListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.prependOnceListener`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:20
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:43
+
+#### prependOnceListener(eventName, listener)
+
+```ts
+prependOnceListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.prependOnceListener`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:44
 
 ***
 
 ### rawListeners()
 
+#### rawListeners(eventName)
+
 ```ts
-rawListeners<K>(eventName: K): Listener<U[keyof U]>[]
+rawListeners<K>(eventName: K): InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>[]
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
 
-#### Returns
+##### Returns
 
-`Listener`\<`U`\[keyof `U`\]\>[]
+`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>[]
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.rawListeners`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:16
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:35
+
+#### rawListeners(eventName)
+
+```ts
+rawListeners<K>(eventName: K): InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>[]
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+
+##### Returns
+
+`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>[]
+
+##### Inherited from
+
+`AsyncEventEmitter.rawListeners`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:36
 
 ***
 
 ### removeAllListeners()
 
+#### removeAllListeners(event)
+
 ```ts
-removeAllListeners<K>(event?: K): this
+removeAllListeners<K>(event: K): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `event` | `K` |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.removeAllListeners`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:27
+
+#### removeAllListeners(event)
+
+```ts
+removeAllListeners<K>(event?: K): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `number` \| `symbol` |
+
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `event`? | `K` |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.removeAllListeners`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:12
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:28
+
+#### removeAllListeners(event)
+
+```ts
+removeAllListeners(event: string | symbol): this
+```
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.removeAllListeners`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:29
+
+#### removeAllListeners(event)
+
+```ts
+removeAllListeners(event?: string | symbol): this
+```
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `event`? | `string` \| `symbol` |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.removeAllListeners`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:30
 
 ***
 
 ### removeListener()
 
+#### removeListener(eventName, listener)
+
 ```ts
-removeListener<K>(eventName: K, listener: (...args: K extends keyof AsyncEventEmitterPredefinedEvents ? AsyncEventEmitterPredefinedEvents[K<K>] : U[K]) => void): this
+removeListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter |
 | :------ |
 | `K` *extends* `string` \| `number` \| `symbol` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
 | `eventName` | `K` |
-| `listener` | (...`args`: `K` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`K`\<`K`\>\] : `U`\[`K`\]) => `void` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
 
-#### Returns
+##### Returns
 
 `this`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.removeListener`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:10
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:23
+
+#### removeListener(eventName, listener)
+
+```ts
+removeListener<K>(eventName: K, listener: Exclude<InternalAsyncEventEmitterInternalListenerForEvent<AsyncEventEmitter<U>, K, U>["listener"], undefined>): this
+```
+
+##### Type parameters
+
+| Type parameter |
+| :------ |
+| `K` *extends* `string` \| `symbol` |
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `eventName` | `K` |
+| `listener` | `Exclude`\<`InternalAsyncEventEmitterInternalListenerForEvent`\<`AsyncEventEmitter`\<`U`\>, `K`, `U`\>\[`"listener"`\], `undefined`\> |
+
+##### Returns
+
+`this`
+
+##### Inherited from
+
+`AsyncEventEmitter.removeListener`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:24
 
 ***
 
@@ -499,7 +933,7 @@ setMaxListeners(n: number): this
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:13
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:31
 
 ***
 
@@ -519,119 +953,203 @@ waitForAllListenersToComplete(): Promise<boolean>
 
 #### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:22
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:46
 
 ***
 
 ### listenerCount()
 
+#### listenerCount(emitter, eventName)
+
 ```ts
-static listenerCount<Emitter, EventNames, EventName>(emitter: Emitter, eventName: keyof AsyncEventEmitterPredefinedEvents | EventName): number
+static listenerCount<EventMap, EventName>(emitter: AsyncEventEmitter<EventMap>, eventName: EventName | keyof AsyncEventEmitterPredefinedEvents): number
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `Events`\> ? `Events` : `never` |
-| `EventName` *extends* `PropertyKey` | `EventNames` *extends* `never` ? `string` \| `symbol` : keyof `EventNames` |
+| `EventMap` *extends* `object` | - |
+| `EventName` *extends* `PropertyKey` | keyof `EventMap` \| keyof AsyncEventEmitterPredefinedEvents |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `emitter` | `Emitter` |
-| `eventName` | keyof AsyncEventEmitterPredefinedEvents \| `EventName` |
+| `emitter` | `AsyncEventEmitter`\<`EventMap`\> |
+| `eventName` | `EventName` \| keyof AsyncEventEmitterPredefinedEvents |
 
-#### Returns
+##### Returns
 
 `number`
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.listenerCount`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:25
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:49
+
+#### listenerCount(emitter, eventName)
+
+```ts
+static listenerCount(emitter: AsyncEventEmitter<any>, eventName: string | symbol): number
+```
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `emitter` | `AsyncEventEmitter`\<`any`\> |
+| `eventName` | `string` \| `symbol` |
+
+##### Returns
+
+`number`
+
+##### Inherited from
+
+`AsyncEventEmitter.listenerCount`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:50
 
 ***
 
 ### on()
 
+#### on(emitter, eventName, options)
+
 ```ts
-static on<Emitter, EventNames, EventName, EventResult>(
-   emitter: Emitter, 
+static on<EventMap, EventName>(
+   emitter: AsyncEventEmitter<EventMap>, 
    eventName: EventName, 
-options?: AbortableMethods): AsyncGenerator<EventResult, void, unknown>
+options?: AbortableMethods): AsyncGenerator<InternalGetAsyncEventEmitterEventParameters<AsyncEventEmitter<EventMap>, EventName, EventMap>, void, unknown>
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `EventMap` *extends* `object` | - |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventMap` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `emitter` | `Emitter` |
+| `emitter` | `AsyncEventEmitter`\<`EventMap`\> |
 | `eventName` | `EventName` |
 | `options`? | `AbortableMethods` |
 
-#### Returns
+##### Returns
 
-`AsyncGenerator`\<`EventResult`, `void`, `unknown`\>
+`AsyncGenerator`\<`InternalGetAsyncEventEmitterEventParameters`\<`AsyncEventEmitter`\<`EventMap`\>, `EventName`, `EventMap`\>, `void`, `unknown`\>
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.on`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:29
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:53
+
+#### on(emitter, eventName, options)
+
+```ts
+static on(
+   emitter: AsyncEventEmitter<any>, 
+   eventName: string | symbol, 
+options?: AbortableMethods): AsyncGenerator<any[], void, unknown>
+```
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `emitter` | `AsyncEventEmitter`\<`any`\> |
+| `eventName` | `string` \| `symbol` |
+| `options`? | `AbortableMethods` |
+
+##### Returns
+
+`AsyncGenerator`\<`any`[], `void`, `unknown`\>
+
+##### Inherited from
+
+`AsyncEventEmitter.on`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:54
 
 ***
 
 ### once()
 
+#### once(emitter, eventName, options)
+
 ```ts
-static once<Emitter, EventNames, EventName, EventResult>(
-   emitter: Emitter, 
+static once<EventMap, EventName>(
+   emitter: AsyncEventEmitter<EventMap>, 
    eventName: EventName, 
-options?: AbortableMethods): Promise<EventResult>
+options?: AbortableMethods): Promise<InternalGetAsyncEventEmitterEventParameters<AsyncEventEmitter<EventMap>, EventName, EventMap>>
 ```
 
-#### Type parameters
+##### Type parameters
 
 | Type parameter | Value |
 | :------ | :------ |
-| `Emitter` *extends* `AsyncEventEmitter`\<`any`, `any`\> | - |
-| `EventNames` *extends* `object` | `Emitter` *extends* `AsyncEventEmitter`\<`Events`, `any`\> ? `Events` : `Record`\<`PropertyKey`, `unknown`[]\> |
-| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventNames` |
-| `EventResult` *extends* `unknown`[] | `EventNames` *extends* keyof `AsyncEventEmitterPredefinedEvents` ? `AsyncEventEmitterPredefinedEvents`\[`EventName`\] : `EventNames`\[`EventName`\] |
+| `EventMap` *extends* `object` | - |
+| `EventName` *extends* `PropertyKey` | keyof AsyncEventEmitterPredefinedEvents \| keyof `EventMap` |
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `emitter` | `Emitter` |
+| `emitter` | `AsyncEventEmitter`\<`EventMap`\> |
 | `eventName` | `EventName` |
 | `options`? | `AbortableMethods` |
 
-#### Returns
+##### Returns
 
-`Promise`\<`EventResult`\>
+`Promise`\<`InternalGetAsyncEventEmitterEventParameters`\<`AsyncEventEmitter`\<`EventMap`\>, `EventName`, `EventMap`\>\>
 
-#### Inherited from
+##### Inherited from
 
 `AsyncEventEmitter.once`
 
-#### Source
+##### Source
 
-node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.3.0/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:27
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:51
+
+#### once(emitter, eventName, options)
+
+```ts
+static once(
+   emitter: AsyncEventEmitter<any>, 
+   eventName: string | symbol, 
+options?: AbortableMethods): Promise<any[]>
+```
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `emitter` | `AsyncEventEmitter`\<`any`\> |
+| `eventName` | `string` \| `symbol` |
+| `options`? | `AbortableMethods` |
+
+##### Returns
+
+`Promise`\<`any`[]\>
+
+##### Inherited from
+
+`AsyncEventEmitter.once`
+
+##### Source
+
+node\_modules/.pnpm/@vladfrangu+async\_event\_emitter@2.4.6/node\_modules/@vladfrangu/async\_event\_emitter/dist/index.d.ts:52

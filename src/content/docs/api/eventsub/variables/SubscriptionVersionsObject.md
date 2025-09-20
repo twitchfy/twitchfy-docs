@@ -21,6 +21,7 @@ A helper for determining the latest version of a subscription type.
 | `channel.chat.message` | `string` | '1' |
 | `channel.follow` | `string` | '2' |
 | `channel.update` | `string` | '2' |
+| `stream.offline` | `string` | '1' |
 | `stream.online` | `string` | '1' |
 
 ## Source

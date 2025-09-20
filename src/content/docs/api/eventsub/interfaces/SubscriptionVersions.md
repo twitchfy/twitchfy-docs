@@ -17,4 +17,5 @@ The versions of the every subscription type. There are updated to the latest ver
 | `channel.chat.message` | `"1"` |
 | `channel.follow` | `"2"` |
 | `channel.update` | `"2"` |
+| `stream.offline` | `"1"` |
 | `stream.online` | `"1"` |

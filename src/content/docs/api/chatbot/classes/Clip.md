@@ -103,6 +103,31 @@ twitchfy/packages/chatbot/src/structures/Clip.ts:104
 
 ## Methods
 
+### download()
+
+```ts
+download(): Promise<object>
+```
+
+Downloads the clip's video data. For this to work, the bot has to be an editor of the clip's channel and the user token must have the `editor:manage:clips` scope or `channel:manage:clips` if the bot is the broadcaster of the channel.
+
+#### Returns
+
+`Promise`\<`object`\>
+
+An object of buffers containing the clip's video data in either portrait or landscape format. The field is null if the download URL doesn't exist or the fetch fails.
+
+| Member | Type |
+| :------ | :------ |
+| `landscape` | `null` \| `Buffer` |
+| `portrait` | `null` \| `Buffer` |
+
+#### Source
+
+twitchfy/packages/chatbot/src/structures/Clip.ts:142
+
+***
+
 ### fetch()
 
 ```ts
@@ -124,6 +149,31 @@ The fetched clip. Returns null if the clip was not found (probably because it wa
 #### Source
 
 twitchfy/packages/chatbot/src/structures/BaseClip.ts:47
+
+***
+
+### getDownloadURL()
+
+```ts
+getDownloadURL(): Promise<object>
+```
+
+Fetches the download URLs of the clip. Either landscape or portrait. For this to work, the bot has to be an editor of the clip's channel and the user token must have the `editor:manage:clips` scope or `channel:manage:clips` if the bot is the broadcaster of the channel.
+
+#### Returns
+
+`Promise`\<`object`\>
+
+An object with each download URL. The field is null if the download URL doesn't exist.
+
+| Member | Type |
+| :------ | :------ |
+| `landscape` | `null` \| `string` |
+| `portrait` | `null` \| `string` |
+
+#### Source
+
+twitchfy/packages/chatbot/src/structures/Clip.ts:130
 
 ***
 

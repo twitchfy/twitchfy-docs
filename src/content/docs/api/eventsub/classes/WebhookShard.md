@@ -12,7 +12,7 @@ A Webhook Shard created within a Conduit.
 ### new WebhookShard()
 
 ```ts
-new WebhookShard(options: Pick<WebhookConnectionOptions, "baseURL" | "secret" | "startServer" | "subscriptionRoute">, server?: Express): WebhookShard
+new WebhookShard(options: Pick<WebhookConnectionOptions, "baseURL" | "subscriptionRoute" | "startServer" | "secret">, server?: Express): WebhookShard
 ```
 
 Builds up a Webhook Shard.
@@ -21,7 +21,7 @@ Builds up a Webhook Shard.
 
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
-| `options` | `Pick`\<[`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/), `"baseURL"` \| `"secret"` \| `"startServer"` \| `"subscriptionRoute"`\> | The options for the shard. |
+| `options` | `Pick`\<[`WebhookConnectionOptions`](/api/eventsub/type-aliases/webhookconnectionoptions/), `"baseURL"` \| `"subscriptionRoute"` \| `"startServer"` \| `"secret"`\> | The options for the shard. |
 | `server`? | `Express` | The Express server to handle the subscription notifications. |
 
 #### Returns

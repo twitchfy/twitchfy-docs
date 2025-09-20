@@ -17,4 +17,5 @@ Types of subscriptions that can be created.
 | `ChannelChatMessage` | `"channel.chat.message"` |
 | `ChannelFollow` | `"channel.follow"` |
 | `ChannelUpdate` | `"channel.update"` |
+| `StreamOffline` | `"stream.offline"` |
 | `StreamOnline` | `"stream.online"` |

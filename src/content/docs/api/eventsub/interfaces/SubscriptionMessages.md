@@ -23,4 +23,5 @@ The messages from every EventSub event.
 | `channel.chat.message` | [`ChannelChatMessageMessage`](/api/eventsub/classes/channelchatmessagemessage/)\<`K`\> |
 | `channel.follow` | [`ChannelFollowMessage`](/api/eventsub/classes/channelfollowmessage/)\<`K`\> |
 | `channel.update` | [`ChannelUpdateMessage`](/api/eventsub/classes/channelupdatemessage/)\<`K`\> |
+| `stream.offline` | [`StreamOfflineMessage`](/api/eventsub/classes/streamofflinemessage/)\<`K`\> |
 | `stream.online` | [`StreamOnlineMessage`](/api/eventsub/classes/streamonlinemessage/)\<`K`\> |

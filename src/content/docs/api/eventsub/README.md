@@ -48,6 +48,7 @@ title: "@twitchfy/eventsub"
 | [RedisAdapter](/api/eventsub/classes/redisadapter/) | The Redis storage adapter. |
 | [Shard](/api/eventsub/classes/shard/) | A shard created within a Conduit. |
 | [StorageAdapter](/api/eventsub/classes/storageadapter/) | The base class for building up a storage adapter used for reloading subscriptions. |
+| [StreamOfflineMessage](/api/eventsub/classes/streamofflinemessage/) | The message received by the StreamOffline event. |
 | [StreamOnlineMessage](/api/eventsub/classes/streamonlinemessage/) | The message received by the StreamOnline event. |
 | [Subscription](/api/eventsub/classes/subscription/) | A base subscription. Used as a parent of every type of subscription. |
 | [SubscriptionCollection](/api/eventsub/classes/subscriptioncollection/) | The collection of subscriptions. This is an extended class of Map. |
@@ -83,8 +84,8 @@ title: "@twitchfy/eventsub"
 | [ChannelAdBreakBeginOptions](/api/eventsub/interfaces/channeladbreakbeginoptions/) | The options for subscribing to the ChannelAdBreakBegin event. |
 | [ChannelChatClearOptions](/api/eventsub/interfaces/channelchatclearoptions/) | The options for subscribing to the ChannelChatClear event. |
 | [ChannelChatClearUserMessagesOptions](/api/eventsub/interfaces/channelchatclearusermessagesoptions/) | Options for subscribing to the ChannelChatClearUserMessages event. |
-| [ChannelChatMessage](/api/eventsub/interfaces/channelchatmessage/) | Options for subscribing to the ChannelChatMessage event. |
 | [ChannelChatMessageEvent](/api/eventsub/interfaces/channelchatmessageevent/) | The event sent by Twitch when a message is sent in a channel. |
+| [ChannelChatMessageOptions](/api/eventsub/interfaces/channelchatmessageoptions/) | Options for subscribing to the ChannelChatMessage event. |
 | [ChannelFollowEvent](/api/eventsub/interfaces/channelfollowevent/) | An event that represents a broadcaster being followed by a user. |
 | [ChannelFollowOptions](/api/eventsub/interfaces/channelfollowoptions/) | The options for subscribing to the ChannelFollow event. |
 | [ChannelUpdateEvent](/api/eventsub/interfaces/channelupdateevent/) | The event sent by Twitch when a broadcaster updates their channel properties such the title of his stream. |
@@ -109,6 +110,8 @@ title: "@twitchfy/eventsub"
 | [Rgb](/api/eventsub/interfaces/rgb/) | RGB 8-bits per channel. Each in range `0->255` or `0x00->0xff` |
 | [ShardIdReplace](/api/eventsub/interfaces/shardidreplace/) | Message emitted when there is a need to replace the id of a shard. |
 | [StorageOptions](/api/eventsub/interfaces/storageoptions/) | The options for the storage of subscriptions. |
+| [StreamOfflineEvent](/api/eventsub/interfaces/streamofflineevent/) | The event sent by Twitch when a stream goes offline. |
+| [StreamOfflineOptions](/api/eventsub/interfaces/streamofflineoptions/) | Options for subscribing to the StreamOffline event. |
 | [StreamOnlineEvent](/api/eventsub/interfaces/streamonlineevent/) | The event sent by Twitch when a stream goes online. |
 | [StreamOnlineOptions](/api/eventsub/interfaces/streamonlineoptions/) | Options for subscribing to the StreamOnline event. |
 | [SubscriptionEvents](/api/eventsub/interfaces/subscriptionevents/) | The events that can be sent by Twitch and are supported by the package. |

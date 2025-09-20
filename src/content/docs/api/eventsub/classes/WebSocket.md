@@ -86,7 +86,7 @@ optional [captureRejectionSymbol]<K>(
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:151
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:136
 
 ***
 
@@ -291,7 +291,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:875
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:859
 
 ***
 
@@ -332,7 +332,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:938
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:922
 
 ***
 
@@ -343,7 +343,7 @@ getMaxListeners(): number
 ```
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](WebSocket.md).
+set by `emitter.setMaxListeners(n)` or defaults to [EventEmitter.defaultMaxListeners](WebSocketShardConnector.md).
 
 #### Returns
 
@@ -359,7 +359,7 @@ v1.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:790
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:774
 
 ***
 
@@ -400,7 +400,7 @@ v3.2.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:884
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:868
 
 ***
 
@@ -446,7 +446,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:803
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:787
 
 ***
 
@@ -485,7 +485,7 @@ v10.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:763
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:747
 
 ***
 
@@ -626,7 +626,7 @@ v0.3.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:675
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:659
 
 ***
 
@@ -676,7 +676,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:902
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:886
 
 ***
 
@@ -724,7 +724,7 @@ v6.0.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:918
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:902
 
 ***
 
@@ -788,7 +788,7 @@ v9.4.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:834
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:818
 
 ***
 
@@ -826,7 +826,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:774
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:758
 
 ***
 
@@ -943,7 +943,7 @@ v0.1.26
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:758
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:742
 
 ***
 
@@ -980,7 +980,7 @@ v0.3.5
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:784
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:768
 
 ***
 
@@ -1049,7 +1049,7 @@ v20.5.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:453
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:437
 
 ***
 
@@ -1105,7 +1105,7 @@ v15.2.0, v14.17.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:374
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:358
 
 ***
 
@@ -1161,7 +1161,7 @@ v19.9.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:403
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:387
 
 ***
 
@@ -1208,7 +1208,7 @@ v0.9.12
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:346
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:330
 
 ***
 
@@ -1220,7 +1220,7 @@ node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:34
 static on(
    emitter: EventEmitter<DefaultEventMap>, 
    eventName: string | symbol, 
-options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
+options?: StaticEventEmitterIteratorOptions): AsyncIterator<any[], any, any>
 ```
 
 ```js
@@ -1302,15 +1302,15 @@ console.log('done'); // prints 'done'
 
 ##### Parameters
 
-| Parameter | Type | Description |
-| :------ | :------ | :------ |
-| `emitter` | `EventEmitter`\<`DefaultEventMap`\> | - |
-| `eventName` | `string` \| `symbol` | The name of the event being listened for |
-| `options`? | `StaticEventEmitterOptions` | - |
+| Parameter | Type |
+| :------ | :------ |
+| `emitter` | `EventEmitter`\<`DefaultEventMap`\> |
+| `eventName` | `string` \| `symbol` |
+| `options`? | `StaticEventEmitterIteratorOptions` |
 
 ##### Returns
 
-`AsyncIterableIterator`\<`any`\>
+`AsyncIterator`\<`any`[], `any`, `any`\>
 
 An `AsyncIterator` that iterates `eventName` events emitted by the `emitter`
 
@@ -1324,7 +1324,7 @@ v13.6.0, v12.16.0
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:319
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:303
 
 #### on(emitter, eventName, options)
 
@@ -1332,7 +1332,7 @@ node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:31
 static on(
    emitter: EventTarget, 
    eventName: string, 
-options?: StaticEventEmitterIteratorOptions): AsyncIterableIterator<any>
+options?: StaticEventEmitterIteratorOptions): AsyncIterator<any[], any, any>
 ```
 
 ##### Parameters
@@ -1345,7 +1345,7 @@ options?: StaticEventEmitterIteratorOptions): AsyncIterableIterator<any>
 
 ##### Returns
 
-`AsyncIterableIterator`\<`any`\>
+`AsyncIterator`\<`any`[], `any`, `any`\>
 
 ##### Inherited from
 
@@ -1353,7 +1353,7 @@ options?: StaticEventEmitterIteratorOptions): AsyncIterableIterator<any>
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:324
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:308
 
 ***
 
@@ -1365,7 +1365,7 @@ node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:32
 static once(
    emitter: EventEmitter<DefaultEventMap>, 
    eventName: string | symbol, 
-options?: Pick<StaticEventEmitterOptions, "signal">): Promise<any[]>
+options?: StaticEventEmitterOptions): Promise<any[]>
 ```
 
 Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given
@@ -1451,7 +1451,7 @@ ee.emit('foo'); // Prints: Waiting for the event was canceled!
 | :------ | :------ |
 | `emitter` | `EventEmitter`\<`DefaultEventMap`\> |
 | `eventName` | `string` \| `symbol` |
-| `options`? | `Pick`\<`StaticEventEmitterOptions`, `"signal"`\> |
+| `options`? | `StaticEventEmitterOptions` |
 
 ##### Returns
 
@@ -1467,7 +1467,7 @@ v11.13.0, v10.16.0
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:232
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:217
 
 #### once(emitter, eventName, options)
 
@@ -1496,7 +1496,7 @@ options?: StaticEventEmitterOptions): Promise<any[]>
 
 ##### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:237
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:222
 
 ***
 
@@ -1520,7 +1520,7 @@ setMaxListeners(5, target, emitter);
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `n`? | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| ...`eventTargets`? | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | - |
+| ...`eventTargets`? | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | Zero or more {EventTarget} or {EventEmitter} instances. If none are specified, `n` is set as the default max for all newly created {EventTarget} and {EventEmitter} objects. |
 
 #### Returns
 
@@ -1536,4 +1536,4 @@ v15.4.0
 
 #### Source
 
-node\_modules/.pnpm/@types+node@20.14.8/node\_modules/@types/node/events.d.ts:418
+node\_modules/.pnpm/@types+node@20.19.17/node\_modules/@types/node/events.d.ts:402

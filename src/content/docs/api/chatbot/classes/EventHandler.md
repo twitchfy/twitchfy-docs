@@ -48,6 +48,7 @@ load(): Promise<(
   | EventData<EventSubConnection, "ChannelUpdate">
   | EventData<EventSubConnection, "StreamOnline">
   | EventData<EventSubConnection, "ChannelChatMessage">
+  | EventData<EventSubConnection, "StreamOffline">
 | EventData<EventSubConnection, "ChatBotReady">)[]>
 ```
 
@@ -61,6 +62,7 @@ Load the events.
   \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<[`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/), `"ChannelUpdate"`\>
   \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<[`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/), `"StreamOnline"`\>
   \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<[`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/), `"ChannelChatMessage"`\>
+  \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<[`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/), `"StreamOffline"`\>
   \| [`EventData`](/api/chatbot/type-aliases/eventdata/)\<[`EventSubConnection`](/api/chatbot/enumerations/eventsubconnection/), `"ChatBotReady"`\>)[]\>
 
 The loaded events.

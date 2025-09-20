@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import { createStarlightTypeDocPlugin } from 'starlight-typedoc'
@@ -8,6 +8,9 @@ const [eventsubTypeDoc, eventsubSidebar] = createStarlightTypeDocPlugin()
 
 // https://astro.build/config
 export default defineConfig({
+	image: {
+		service: passthroughImageService(),
+	},
 	integrations: [
 		starlight({
 			title: 'Twitchfy',
@@ -56,7 +59,8 @@ export default defineConfig({
 						enumMembersFormat: "table",
 						typeDeclarationFormat: "table",
 						indexFormat: "table",
-						expandParameters: true
+						expandParameters: true,
+						skipErrorChecking: true
 					}
 				}),
 				eventsubTypeDoc({
@@ -70,7 +74,8 @@ export default defineConfig({
 						enumMembersFormat: "table",
 						typeDeclarationFormat: "table",
 						indexFormat: "table",
-						expandParameters: true
+						expandParameters: true,
+						skipErrorChecking: true
 					}
 				})
 			],

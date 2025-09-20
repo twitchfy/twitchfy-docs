@@ -87,7 +87,8 @@ join(id: string, events?: (
   | "ChannelFollow"
   | "ChannelUpdate"
   | "StreamOnline"
-| "ChannelChatMessage")[]): Promise<ChannelProfile<T>>
+  | "ChannelChatMessage"
+| "StreamOffline")[]): Promise<ChannelProfile<T>>
 ```
 
 Join a channel and listen to messages.
@@ -97,7 +98,7 @@ Join a channel and listen to messages.
 | Parameter | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | The id of the channel to join. |
-| `events`? | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"`)[] | The EventSub events you will listen  to. See [ChannelEvents](../../api/chatbot/type-aliases/channelevents). |
+| `events`? | ( \| `"ChannelChatClear"` \| `"ChannelFollow"` \| `"ChannelUpdate"` \| `"StreamOnline"` \| `"ChannelChatMessage"` \| `"StreamOffline"`)[] | The EventSub events you will listen  to. See [ChannelEvents](../../api/chatbot/type-aliases/channelevents). |
 
 #### Returns
 
