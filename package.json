@@ -13,26 +13,26 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/starlight": "^0.21.5",
-    "@expressive-code/plugin-line-numbers": "^0.35.3",
-    "@twitchfy/api-types": "^1.0.2",
-    "@twitchfy/chatbot": "^1.0.10",
-    "@twitchfy/eventsub": "^1.0.6",
-    "@twitchfy/helix": "^1.0.4",
-    "@types/node": "^20.14.8",
+    "@expressive-code/plugin-line-numbers": "^0.35.6",
+    "@twitchfy/api-types": "^1.0.4",
+    "@twitchfy/chatbot": "^1.0.19",
+    "@twitchfy/eventsub": "^1.0.11",
+    "@twitchfy/helix": "^1.0.9",
+    "@types/node": "^20.19.17",
     "@types/websocket": "^1.0.10",
-    "@vladfrangu/async_event_emitter": "^2.3.0",
-    "astro": "^4.11.0",
-    "express": "^4.19.2",
-    "ioredis": "^5.4.1",
-    "mongoose": "^8.4.3",
+    "@vladfrangu/async_event_emitter": "^2.4.6",
+    "astro": "^4.16.19",
+    "express": "^4.21.2",
+    "ioredis": "^5.7.0",
+    "mongoose": "^8.18.1",
     "sharp": "^0.32.6",
     "starlight-typedoc": "^0.12.2",
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "4.0.3",
-    "typescript": "^5.5.2",
+    "typescript": "^5.9.2",
     "websocket": "^1.0.35"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21"
+    "@types/express": "^4.17.23"
   }
 }
